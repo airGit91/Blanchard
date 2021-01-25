@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --white: #fff;
-    --black: #000;
-}
-
 .header__burger{
     cursor: pointer;
 }
