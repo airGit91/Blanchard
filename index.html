@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <title>Blanchard</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container container">
             <div class="header__burger burger">
                 <span></span>
-              </div>
+            </div>
 
             <nav class="header__nav nav">
                 
             </nav>
 
             <picture class="header__logo logo">
-                <source  srcset="images/logo-320.png" media="(min-width:320px) and (max-width:767px)">
-                <img class="header__logo" src="./images/" alt="Логотип-Blanchard">
+                <source media="(min-width:320px) and (max-width:767px)" srcset="images/logo-320.svg">
+                <img class="logo__image" src="#" alt="Логотип-Blanchard">
             </picture>
+
+            <button aria-label="Поиск" class="header__search search" type="button"></button>
         </div>
     </header>
 </body>
