@@ -10,31 +10,33 @@
         display: flex;
         flex-direction: column;
         min-height: 355px;
-        padding-top: 30px;
-        padding-right: 26px;
-        padding-left: 29px;
-        padding-bottom: 45px;
+        padding-top: 79px;
         background-image: url(../images/320/birmingham-museums-320-1.png);
         background-repeat: no-repeat;
     }
 
     .hero__main-title{
+        padding-left: 31px;
+        padding-right: 31px;
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
+        letter-spacing: 1.35px;
         text-align: center;
         color: var(--white);
     }
 
     .hero__content{
-        display: inline-block;
-        padding-top: 16px;
+        padding-top: 13px;
+        padding-right: 26px;
+        padding-left: 29px;
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 16px;
+        letter-spacing: 0.4px;
         text-align: center;
         color: var(--white);
     }
@@ -42,11 +44,11 @@
     .hero__link{
         align-self: center;
         max-width: 200px;
-        margin-top: 20px;
-        padding-top: 11px;
-        padding-right: 16.1px;
+        margin-top: 40px;
+        padding-top: 12px;
+        padding-right: 19px;
         padding-bottom: 14.45px;
-        padding-left: 19.1px;
+        padding-left: 22px;
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: bold;
