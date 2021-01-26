@@ -1,18 +1,20 @@
+/* Open Sans Regular */
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
-    font-weight: 400;
-    /* Браузер сначала попробует найти шрифт локально */
+    font-weight: normal;
     src: local("Open Sans"),
-         /* Если не получилось, загрузит woff2 */
-         url("/fonts/roboto.woff2") format("woff2"),
-         /* Если браузер не поддерживает woff2, загрузит woff */
-         url("/fonts/roboto.woff") format("woff");
+         url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+  }
 
 ul{
     list-style-type: none;
@@ -20,6 +22,11 @@ ul{
 
 a{
     text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 .header__burger{
