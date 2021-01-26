@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blanchard"> 
+    <meta name="Keywords" content="картинная галерея, выставка, картины, картины онлайн"> 
+    <meta name="author" content="Nick Volkov">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -51,21 +55,31 @@
 
     <main class="main">
         <div class="main__hero_container hero">
-            <section class="hero__section">
-                <h1 class="hero__main-title">
-                    Прикоснитесь к прекрасному
-                </h1>
-                <p class="hero__content">
-                    Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-                </p>
-                <a href="#" class="hero__link">Подписаться на рассылку</a>
-            </section>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide hero__section">
+                        <h1 class="hero__main-title">
+                            Прикоснитесь к прекрасному
+                        </h1>
+                        <p class="hero__content">
+                            Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+                        </p>
+                        <a href="#" class="hero__link">Подписаться на рассылку</a>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+            </div>
         </div>
     </main>
 
     <footer class="footer">
 
     </footer>
+
+    <script src="./scripts/swiper-bundle.min.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>
