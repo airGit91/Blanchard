@@ -7,6 +7,15 @@
          url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 
+/* Open Sans Bold */
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    src: local("Open Sans"),
+         url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
 * {
     box-sizing: border-box;
 }
@@ -27,6 +36,11 @@ a{
 
 button{
     cursor: pointer;
+}
+
+h1,
+p{
+    margin: 0;
 }
 
 .header__burger{
