@@ -58,4 +58,9 @@
         background-color: var(--purple);
         border-radius: 100px;
     }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
 }
