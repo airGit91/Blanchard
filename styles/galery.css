@@ -1,0 +1,35 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .galery__container{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .galery{
+        min-height: 962px;
+        margin-top: 40px;
+        padding-top: 51px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-image: url(../images/320/background-galery-320.png);
+        background-repeat: no-repeat;
+    }
+    
+    .galery__title{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--white);
+    }
+
+    .galery__text-select{
+        padding-top: 13px;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--white);
+    }
+}

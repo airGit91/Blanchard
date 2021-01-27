@@ -8,11 +8,13 @@
     <meta name="author" content="Nick Volkov">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./styles/choices.css">
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/about-us.css">
+    <link rel="stylesheet" href="./styles/galery.css">
     <title>Blanchard</title>
 </head>
 <body>
@@ -91,7 +93,7 @@
                 <div class="swiper-button swiper-button-prev"></div>
             </div>
         </div>
-        <section class="about-us">
+        <section class="main__about-us about-us">
             <div class="about-us__container">
                 <h2 class="about-us__title">О нас</h2>
                 <p class="about-us__content">
@@ -99,6 +101,18 @@
                 </p>
             </div>
         </section>
+            <div class="galery__container">
+                <section class="main__galery galery">
+                    <h2 class="galery__title">Галерея</h2>
+
+                    <p class="galery__text-select">Фильтровать по:</p>
+                    <select name="select" class="galery__select">
+                        <option value="">Автор</option>
+                        <option value="">Направление</option>
+                        <option value="">Техника</option>
+                    </select>
+                </section>
+            </div>
     </main>
 
     <footer class="footer">
@@ -106,6 +120,7 @@
     </footer>
 
     <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/choices.min.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>

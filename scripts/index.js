@@ -27,3 +27,9 @@ header__list.onclick = function() {
   header__burger.classList.remove('active');
   back.classList.toggle('lock');
 }
+
+const element = document.querySelector('select');
+            const choices = new Choices(element, {
+                searchEnabled: false,
+                itemSelectText: '',
+            });
