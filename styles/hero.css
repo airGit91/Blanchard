@@ -11,8 +11,19 @@
         flex-direction: column;
         min-height: 355px;
         padding-top: 79px;
-        background-image: url(../images/320/birmingham-museums-320-1.png);
         background-repeat: no-repeat;
+    }
+
+    .hero__section--1{
+        background-image: url(../images/320/birmingham-museums-320-1.png);
+    }
+
+    .hero__section--2{
+        background-image: url(../images/320/birmingham-museums-320-2.png);
+    }
+
+    .hero__section--3{
+        background-image: url(../images/320/birmingham-museums-320-3.png);
     }
 
     .hero__main-title{
