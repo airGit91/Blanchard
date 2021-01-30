@@ -5,6 +5,7 @@ let swiper = new Swiper('.swiper-container', {
   pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      type: 'fraction',
   },
   navigation: {
       nextEl: '.swiper-button-next',

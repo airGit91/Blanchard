@@ -32,4 +32,67 @@
         line-height: 32px;
         color: var(--white);
     }
+
+    .galery__images{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 429px;
+        padding-top: 79px;
+        background-repeat: no-repeat;
+    }
+
+    .galery__images--1{
+        background-image: url(../images/320/bc-galery-320-1.jpg);
+    }
+
+    .galery__swiper{
+        top: 96%;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: var(--white);
+        background: #666666;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .galery__swiper-prev{
+        left: 80px;
+    }
+
+    .galery__swiper-next{
+        right: 80px;
+    }
+
+    .galery__swiper-prev::after,
+    .galery__swiper-next::after{
+        content: none;
+    }
+
+    .galery__swiper-prev{
+        background-position: 10px;
+        background-image: url('../icons/prev-arr.svg');
+        background-repeat: no-repeat;
+    }
+
+    .galery__swiper-next{
+        background-position: 10px;
+        background-image: url('../icons/arr-next.svg');
+        background-repeat: no-repeat;
+    }
+
+    .swiper-pagination-fraction{
+        bottom: 7px;
+        left: 0;
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 32px;
+        text-align: center;
+        color: var(--white);
+    }
 }

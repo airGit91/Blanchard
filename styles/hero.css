@@ -74,4 +74,8 @@
     .swiper-button-prev{
         display: none;
     }
+
+    .hero > .swiper-container > .swiper-pagination-fraction{
+        display: none;
+    }
 }
