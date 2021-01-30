@@ -82,7 +82,7 @@
 }
 
 .choices[data-type*='select-one']:after {
-  content: url('../icons/arr-galery.svg');
+  content: url('../icons/320/arr-galery.svg');
   height: 0;
   width: 0;
   position: absolute;
@@ -95,7 +95,7 @@
 }
 
 .choices[data-type*='select-one'].is-open:after {
-  content:url('../icons/arr-galery.svg');
+  content:url('../icons/320/arr-galery.svg');
   position: absolute;
   right: 25px;
   top: 74%;

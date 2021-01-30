@@ -184,13 +184,13 @@
 
     .galery__swiper-prev{
         background-position: 10px;
-        background-image: url('../icons/prev-arr.svg');
+        background-image: url('../icons/320/prev-arr.svg');
         background-repeat: no-repeat;
     }
 
     .galery__swiper-next{
         background-position: 10px;
-        background-image: url('../icons/arr-next.svg');
+        background-image: url('../icons/320/arr-next.svg');
         background-repeat: no-repeat;
     }
 
@@ -206,5 +206,21 @@
         line-height: 32px;
         text-align: center;
         color: var(--white);
+    }
+
+    .galery__content{
+        padding-top: 8px;
+        padding-right: 19px;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.6px;
+        color: var(--white);
+    }
+
+    .galery__content_link{
+        color: var(--purple);
     }
 }

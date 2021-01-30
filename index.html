@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/about-us.css">
     <link rel="stylesheet" href="./styles/galery.css">
+    <link rel="stylesheet" href="./styles/catalog.css">
     <title>Blanchard</title>
 </head>
 <body>
@@ -101,55 +102,82 @@
                 </p>
             </div>
         </section>
-            <div class="galery__container">
-                <section class="main__galery galery">
-                    <h2 class="galery__title">Галерея</h2>
+        <div class="galery__container">
+            <section class="main__galery galery">
+                <h2 class="galery__title">Галерея</h2>
 
-                    <p class="galery__text-select">Фильтровать по:</p>
-                    <select name="select" class="galery__select">
-                        <option value="">Автор</option>
-                        <option value="">Направление</option>
-                        <option value="">Техника</option>
-                    </select>
+                <p class="galery__text-select">Фильтровать по:</p>
+                <select name="select" class="galery__select">
+                    <option value="">Автор</option>
+                    <option value="">Направление</option>
+                    <option value="">Техника</option>
+                </select>
 
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide galery__images galery__images--1"></div>
-                            <div class="swiper-slide galery__images galery__images--2"></div>
-                            <div class="swiper-slide galery__images galery__images--3"></div>
-                            <div class="swiper-slide galery__images galery__images--4"></div>
-                            <div class="swiper-slide galery__images galery__images--5"></div>
-                            <div class="swiper-slide galery__images galery__images--6"></div>
-                            <div class="swiper-slide galery__images galery__images--7"></div>
-                            <div class="swiper-slide galery__images galery__images--8"></div>
-                            <div class="swiper-slide galery__images galery__images--9"></div>
-                            <div class="swiper-slide galery__images galery__images--10"></div>
-                            <div class="swiper-slide galery__images galery__images--11"></div>
-                            <div class="swiper-slide galery__images galery__images--12"></div>
-                            <div class="swiper-slide galery__images galery__images--13"></div>
-                            <div class="swiper-slide galery__images galery__images--14"></div>
-                            <div class="swiper-slide galery__images galery__images--15"></div>
-                            <div class="swiper-slide galery__images galery__images--16"></div>
-                            <div class="swiper-slide galery__images galery__images--17"></div>
-                            <div class="swiper-slide galery__images galery__images--18"></div>
-                            <div class="swiper-slide galery__images galery__images--19"></div>
-                            <div class="swiper-slide galery__images galery__images--20"></div>
-                            <div class="swiper-slide galery__images galery__images--21"></div>
-                            <div class="swiper-slide galery__images galery__images--22"></div>
-                            <div class="swiper-slide galery__images galery__images--23"></div>
-                            <div class="swiper-slide galery__images galery__images--24"></div>
-                            <div class="swiper-slide galery__images galery__images--25"></div>
-                            <div class="swiper-slide galery__images galery__images--26"></div>
-                            <div class="swiper-slide galery__images galery__images--27"></div>
-                            <div class="swiper-slide galery__images galery__images--28"></div>
-                            <div class="swiper-slide galery__images galery__images--29"></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <button type="button" class="galery__swiper galery__swiper-prev swiper-button swiper-button-prev"></button>
-                        <button type="button" class="galery__swiper galery__swiper-next swiper-button swiper-button-next"></button>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide galery__images galery__images--1"></div>
+                        <div class="swiper-slide galery__images galery__images--2"></div>
+                        <div class="swiper-slide galery__images galery__images--3"></div>
+                        <div class="swiper-slide galery__images galery__images--4"></div>
+                        <div class="swiper-slide galery__images galery__images--5"></div>
+                        <div class="swiper-slide galery__images galery__images--6"></div>
+                        <div class="swiper-slide galery__images galery__images--7"></div>
+                        <div class="swiper-slide galery__images galery__images--8"></div>
+                        <div class="swiper-slide galery__images galery__images--9"></div>
+                        <div class="swiper-slide galery__images galery__images--10"></div>
+                        <div class="swiper-slide galery__images galery__images--11"></div>
+                        <div class="swiper-slide galery__images galery__images--12"></div>
+                        <div class="swiper-slide galery__images galery__images--13"></div>
+                        <div class="swiper-slide galery__images galery__images--14"></div>
+                        <div class="swiper-slide galery__images galery__images--15"></div>
+                        <div class="swiper-slide galery__images galery__images--16"></div>
+                        <div class="swiper-slide galery__images galery__images--17"></div>
+                        <div class="swiper-slide galery__images galery__images--18"></div>
+                        <div class="swiper-slide galery__images galery__images--19"></div>
+                        <div class="swiper-slide galery__images galery__images--20"></div>
+                        <div class="swiper-slide galery__images galery__images--21"></div>
+                        <div class="swiper-slide galery__images galery__images--22"></div>
+                        <div class="swiper-slide galery__images galery__images--23"></div>
+                        <div class="swiper-slide galery__images galery__images--24"></div>
+                        <div class="swiper-slide galery__images galery__images--25"></div>
+                        <div class="swiper-slide galery__images galery__images--26"></div>
+                        <div class="swiper-slide galery__images galery__images--27"></div>
+                        <div class="swiper-slide galery__images galery__images--28"></div>
+                        <div class="swiper-slide galery__images galery__images--29"></div>
                     </div>
-                </section>
-            </div>
+                    <div class="swiper-pagination"></div>
+                    <button type="button" class="galery__swiper galery__swiper-prev swiper-button swiper-button-prev"></button>
+                    <button type="button" class="galery__swiper galery__swiper-next swiper-button swiper-button-next"></button>
+                </div>
+
+                <p class="galery__content">
+                    Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="galery__content_link" href="#">авторизуйтесь,</a> либо воспользуйтесь лицензией. 
+                </p>
+            </section>
+        </div>
+
+        <div class="catalog__container">
+            <section class="main_catalog catalog">
+                <h2 class="catalog__subtitle">Каталог</h2>
+                <ul class="catalog__list-btn">
+                    <li class="catalog__item-btn">
+                        <button class="catalog__btn btn-france"></button>
+                    </li>
+                    <li class="catalog__item-btn">
+                        <button class="catalog__btn btn-germany"></button>
+                    </li>
+                    <li class="catalog__item-btn">
+                        <button class="catalog__btn btn-italy"></button>
+                    </li>
+                    <li class="catalog__item-btn">
+                        <button class="catalog__btn btn-russia"></button>
+                    </li>
+                    <li class="catalog__item-btn">
+                        <button class="catalog__btn btn-belgium"></button>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">

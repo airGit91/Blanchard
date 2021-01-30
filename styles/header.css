@@ -102,7 +102,7 @@
     .header__search{
         width: 16px;
         height: 16px;
-        background-image: url(../icons/Search-320.svg);
+        background-image: url(../icons/320/Search-320.svg);
         background-repeat: no-repeat;
         border: none;
         background-color: var(--black);

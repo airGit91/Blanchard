@@ -1,0 +1,55 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .catalog__container{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .catalog{
+        padding-top: 80px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: var(--white);
+    }
+
+    .catalog__subtitle{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--black);
+    }
+
+    .catalog__list-btn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog__btn{
+        height: 32px;
+        width: 32px;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 50px;
+    }
+
+    .btn-france{
+        background-image: url(../icons/320/france.svg);
+    }
+
+    .btn-russia{
+        background-image: url(../icons/320/russia.svg);
+    }
+
+    .btn-italy{
+        background-image: url(../icons/320/italy.svg);
+    }
+
+    .btn-germany{
+        background-image: url(../icons/320/germany.svg);
+    }
+
+    .btn-belgium{
+        background-image: url(../icons/320/belgium.svg);
+    }
+}
