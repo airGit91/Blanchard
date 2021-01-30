@@ -46,8 +46,120 @@
         background-image: url(../images/320/bc-galery-320-1.jpg);
     }
 
+    .galery__images--2{
+        background-image: url(../images/320/bc-galery-320-2.jpg);
+    }
+
+    .galery__images--3{
+        background-image: url(../images/320/bc-galery-320-3.jpg);
+    }
+
+    .galery__images--4{
+        background-image: url(../images/320/bc-galery-320-4.jpg);
+    }
+
+    .galery__images--5{
+        background-image: url(../images/320/bc-galery-320-5.jpg);
+    }
+
+    .galery__images--6{
+        background-image: url(../images/320/bc-galery-320-6.jpg);
+    }
+
+    .galery__images--7{
+        background-image: url(../images/320/bc-galery-320-7.jpg);
+    }
+
+    .galery__images--8{
+        background-image: url(../images/320/bc-galery-320-8.jpg);
+    }
+
+    .galery__images--9{
+        background-image: url(../images/320/bc-galery-320-9.jpg);
+    }
+
+    .galery__images--10{
+        background-image: url(../images/320/bc-galery-320-10.jpg);
+    }
+
+    .galery__images--11{
+        background-image: url(../images/320/bc-galery-320-11.jpg);
+    }
+
+    .galery__images--12{
+        background-image: url(../images/320/bc-galery-320-12.jpg);
+    }
+
+    .galery__images--13{
+        background-image: url(../images/320/bc-galery-320-13.jpg);
+    }
+
+    .galery__images--14{
+        background-image: url(../images/320/bc-galery-320-14.jpg);
+    }
+
+    .galery__images--15{
+        background-image: url(../images/320/bc-galery-320-15.jpg);
+    }
+
+    .galery__images--16{
+        background-image: url(../images/320/bc-galery-320-16.jpg);
+    }
+
+    .galery__images--17{
+        background-image: url(../images/320/bc-galery-320-17.jpg);
+    }
+
+    .galery__images--18{
+        background-image: url(../images/320/bc-galery-320-18.jpg);
+    }
+
+    .galery__images--19{
+        background-image: url(../images/320/bc-galery-320-19.jpg);
+    }
+
+    .galery__images--20{
+        background-image: url(../images/320/bc-galery-320-20.jpg);
+    }
+
+    .galery__images--21{
+        background-image: url(../images/320/bc-galery-320-21.jpg);
+    }
+
+    .galery__images--22{
+        background-image: url(../images/320/bc-galery-320-22.jpg);
+    }
+
+    .galery__images--23{
+        background-image: url(../images/320/bc-galery-320-23.jpg);
+    }
+
+    .galery__images--24{
+        background-image: url(../images/320/bc-galery-320-24.jpg);
+    }
+
+    .galery__images--25{
+        background-image: url(../images/320/bc-galery-320-25.jpg);
+    }
+
+    .galery__images--26{
+        background-image: url(../images/320/bc-galery-320-26.jpg);
+    }
+
+    .galery__images--27{
+        background-image: url(../images/320/bc-galery-320-27.jpg);
+    }
+
+    .galery__images--28{
+        background-image: url(../images/320/bc-galery-320-28.jpg);
+    }
+
+    .galery__images--29{
+        background-image: url(../images/320/bc-galery-320-29.jpg);
+    }
+
     .galery__swiper{
-        top: 96%;
+        top: 95%;
         display: inline-block;
         height: 30px;
         width: 30px;
@@ -83,14 +195,14 @@
     }
 
     .swiper-pagination-fraction{
-        bottom: 7px;
+        bottom: 10px;
         left: 0;
         width: 100%;
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         line-height: 32px;
         text-align: center;
         color: var(--white);
