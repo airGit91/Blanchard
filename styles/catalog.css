@@ -52,4 +52,25 @@
     .btn-belgium{
         background-image: url(../icons/320/belgium.svg);
     }
+
+    .catalog__list{
+        border-top: 1px solid var(--gray);
+    }
+
+    .catalog__item{
+        padding-top: 20px;
+        padding-right: 0;
+        padding-bottom: 22px;
+        padding-left: 0;
+        text-align: start;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .catalog__item_btn{
+        
+    }
 }
