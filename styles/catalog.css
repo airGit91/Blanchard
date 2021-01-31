@@ -68,8 +68,25 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 32px;
-        background-image: url('../icons/320/bc-catalog-arr-up.svg');
+        background-image: url('../icons/320/bc-catalog-arr-down.png');
         background-repeat: no-repeat;
+        background-position: right;
         border-bottom: 1px solid var(--gray);
+    }
+
+    .accordion{
+        transition: .4s;
+      }
+
+    .catalog_panel{
+        color: var(--bblack);
+        background-color: inherit;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
     }
 }
