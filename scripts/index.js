@@ -35,17 +35,21 @@ const element = document.querySelector('select');
                 itemSelectText: '',
             });
 
-let acc = document.getElementsByClassName("accordion");
+let acc = document.getElementsByClassName('accordion');
+let arr = document.getElementsByClassName('catalog__item');
 let i;
 
 for (i = 0; i < acc.length; i++) {
-acc[i].addEventListener("click", function() {
-  this.classList.toggle("active");
+acc[i].addEventListener('click', function() {
+  this.classList.toggle('active');
   let panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     }else{
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panel.scrollHeight + 'px';
     }
+    arr.style.backgroundImage = 'url(../icons/320/bc-catalog-arr-up.png)';
   });
 }
+      arr.style.backgroundImage = 'url(../icons/320/bc-catalog-arr-up.png)';
+  
