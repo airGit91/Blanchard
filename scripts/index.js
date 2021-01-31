@@ -48,8 +48,5 @@ acc[i].addEventListener('click', function() {
     }else{
       panel.style.maxHeight = panel.scrollHeight + 'px';
     }
-    arr.style.backgroundImage = 'url(../icons/320/bc-catalog-arr-up.png)';
   });
 }
-      arr.style.backgroundImage = 'url(../icons/320/bc-catalog-arr-up.png)';
-  
