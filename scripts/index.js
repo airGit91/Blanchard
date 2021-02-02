@@ -36,7 +36,6 @@ const element = document.querySelector('select');
             });
 
 let acc = document.getElementsByClassName('accordion');
-let arr = document.getElementsByClassName('catalog__item');
 let i;
 
 for (i = 0; i < acc.length; i++) {
@@ -50,3 +49,14 @@ acc[i].addEventListener('click', function() {
     }
   });
 }
+
+// let catalog__item = document.getElementsByClassName('catalog__item');
+//     catalog__item.addEventListener('click', function(){
+//     classList.toggle('accordion__item');
+//   });
+
+// let catalog__item = document.querySelectorAll('catalog__item');
+//   catalog__item.onclick = (event) =>{
+//     let target = event.target;
+//     target.classList.toggle('accordion__item');
+// };

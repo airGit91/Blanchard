@@ -68,10 +68,26 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 32px;
-        background-image: url('../icons/320/bc-catalog-arr-down.png');
+        background-image: url('../icons/320/bc-catalog-arr-down.svg');
         background-repeat: no-repeat;
         background-position: right;
         border-bottom: 1px solid var(--gray);
+    }
+
+    .accordion__item{
+        padding-top: 20px;
+        padding-right: 0;
+        padding-bottom: 22px;
+        padding-left: 0;
+        text-align: start;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        background-image: url('../icons/320/bc-catalog-arr-up.svg');
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     .accordion{
