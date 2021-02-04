@@ -13,6 +13,15 @@ let swiper = new Swiper('.swiper-container', {
   },
 });
 
+let eventSwiper = new Swiper('.swiper-container-event', {
+  cssMode: true,
+  spaceBetween: 30,
+  loop: true,
+      pagination: {
+        el: '.swiper-pagination'
+      },
+    });
+
 let header__burger = document.querySelector('.header__burger');
 let header__list = document.querySelector('.header__list');
 let back = document.querySelector('body');
