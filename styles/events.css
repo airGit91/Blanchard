@@ -1,0 +1,30 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .events__container{
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .events{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .events__subtitle{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--dark-gray);
+    }
+
+    .events__images{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 703px;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+    }
+}
