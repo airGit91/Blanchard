@@ -33,6 +33,35 @@
     }
 
     .events__content{
-        position: absolute;
+        position: relative;
+        top: 200px;
+        padding-top: 14px;
+        font-family: "Open Sans", sans-serif;
+        
+    }
+
+    .events__little-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        color: var(--space-gray);
+    }
+
+    .events__content-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: var(--dark-gray);
+    }
+
+    .events__content-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--dark-gray);
     }
 }
