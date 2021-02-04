@@ -45,18 +45,28 @@ acc[i].addEventListener('click', function() {
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     }else{
-      panel.style.maxHeight = panel.scrollHeight + 'px';
+      // panel.style.maxHeight = panel.scrollHeight + 'px';
+      panel.style.maxHeight = '800px';
+
     }
   });
 }
 
-// let catalog__item = document.getElementsByClassName('catalog__item');
+//  let catalog__item = document.getElementsByClassName('catalog__item');
 //     catalog__item.addEventListener('click', function(){
 //     classList.toggle('accordion__item');
 //   });
 
-// let catalog__item = document.querySelectorAll('catalog__item');
+// let catalog__item = document.getElementById('catalog__item');
 //   catalog__item.onclick = (event) =>{
 //     let target = event.target;
 //     target.classList.toggle('accordion__item');
 // };
+
+// let catalogItem = document.querySelectorAll('.catalog__item');
+// for (let i=0, length = catalogItem.length; i < length; i++) {
+//   catalogItem.addEventListener('click', event =>{
+//   classList.toggle('accordion__item');
+//   event.preventDefault();
+//   });
+// }
