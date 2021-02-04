@@ -27,4 +27,12 @@
         margin-top: 20px;
         background-repeat: no-repeat;
     }
+
+    .events__images--1{
+        background-image: url(../images/320/bc-events-320-1.jpg);
+    }
+
+    .events__content{
+        position: absolute;
+    }
 }
