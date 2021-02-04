@@ -36,11 +36,30 @@
         background-image: url(../images/320/bc-events-320-1.jpg);
     }
 
+    .events__images--2{
+        background-image: url(../images/320/bc-events-320-2.jpg);
+    }
+
+    .events__images--3{
+        background-image: url(../images/320/bc-events-320-3.jpg);
+    }
+
+    .events__images--4{
+        background-image: url(../images/320/bc-events-320-4.jpg);
+    }
+
+    .events__images--5{
+        background-image: url(../images/320/bc-events-320-5.jpg);
+    }
+
+
     .events__content{
         position: relative;
         top: 200px;
+        min-height: 483px;
         padding-top: 14px;
         padding-right: 10.58px;
+        padding-bottom: 50px;
         padding-left: 28.58px;
         font-family: "Open Sans", sans-serif;
         border: 1px solid var(--gray);
