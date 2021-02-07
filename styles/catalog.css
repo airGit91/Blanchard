@@ -33,21 +33,18 @@
         border-radius: 50px;
     }
 
-    .catalog__btn:hover{
+    .catalog__btn:active{
+        border: 2px solid #9D5CD0;
         border-radius: 29px;
         filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+        background-position:  center;
     }
 
     .catalog__btn:focus{
         outline: none;
         border: 2px solid #9D5CD0;
         border-radius: 23px;
-        background-position:  center;
-    }
-
-    .catalog__btn:active{
-        border: 2px solid #9D5CD0;
-        background-position:  center;
+        background-position: center;
     }
 
     .btn-france{

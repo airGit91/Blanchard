@@ -113,10 +113,11 @@
         margin-left: -1px;
         padding: 9px;
         outline: 2px solid var(--purple);
+        background-image: url(../icons/320/search-hover.svg);
         background-position: center;
     }
 
-    .header__search:hover{
+    .header__search:active{
         background-image: url(../icons/320/search-hover.svg);
     }
 }
