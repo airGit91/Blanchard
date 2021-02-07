@@ -106,5 +106,17 @@
         background-repeat: no-repeat;
         border: none;
         background-color: var(--black);
+        transition: .3s;
+    }
+
+    .header__search:focus{
+        margin-left: -1px;
+        padding: 9px;
+        outline: 2px solid var(--purple);
+        background-position: center;
+    }
+
+    .header__search:hover{
+        background-image: url(../icons/320/search-hover.svg);
     }
 }
