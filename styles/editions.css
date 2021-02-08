@@ -28,12 +28,12 @@
     }
 
     .editions__item{
-        padding-top: 10px;
+        padding-top: 5px;
         padding-right: 0;
-        padding-bottom: 11px;
+        padding-bottom: 5px;
         padding-left: 0;
         text-align: start;
-        background-image: url('../icons/320/bc-catalog-arr-down.svg');
+        background-image: url('../icons/320/arr-galery.svg');
         background-repeat: no-repeat;
         background-position: right;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -45,6 +45,71 @@
         font-weight: bold;
         font-size: 16px;
         line-height: 32px;
+        color: var(--white);
+    }
+
+    .editions__panel{
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--white);
+        background-color: inherit;
+        overflow: hidden;
+    }
+
+    .edition__panel_list{
+        padding-right: 0;
+        padding-left: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .edition__list_item{
+        min-height: 38px;
+    }
+
+    .edition__list_item > label{
+        position: relative;
+    }
+
+    #check{
+        display: none;
+    }
+
+    #check + .edition__checkbox{
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        border: 1px solid var(--white);
+      }
+
+      #check + .edition__checkbox:before{
+        content: '\2713';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+      }
+      
+      #check:checked + .edition__checkbox:before{
+        opacity: 1;
+      }
+
+    .edition__checkbox_text{
+        padding-left: 22px;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
         color: var(--white);
     }
 }
