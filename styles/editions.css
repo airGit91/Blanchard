@@ -22,4 +22,29 @@
         line-height: 38px;
         color: var(--white);
     }
+
+    .editions__list{
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .editions__item{
+        padding-top: 10px;
+        padding-right: 0;
+        padding-bottom: 11px;
+        padding-left: 0;
+        text-align: start;
+        background-image: url('../icons/320/bc-catalog-arr-down.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .editions__item-text{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--white);
+    }
 }
