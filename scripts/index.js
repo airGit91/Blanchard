@@ -66,30 +66,57 @@ acc[i].addEventListener('click', function() {
 //     classList.toggle('accordion__item');
 //   });
 
-// let catalog__item = document.getElementById('catalog__item');
-//   catalog__item.onclick = (event) =>{
+
+
+// const catalog__item = document.querySelectorAll('catalog__item');
+// catalog__item.forEach(
+//   catalog__item.onclick = (event) => {
 //     let target = event.target;
 //     target.classList.toggle('accordion__item');
-// };
+//   }
+// )
 
-const catalog__item = document.querySelectorAll('catalog__item');
-catalog__item.forEach(
-  catalog__item.onclick = (event) => {
+// var listItems = document.querySelectorAll('li');
+// for(var i = 0; i < listItems.length; i++){
+//     listItems[i].addEventListener('click', function(event) {
+//       this.classList.toggle('clicked');
+//     });
+// }
+
+window.addEventListener('DOMContentLoaded',function(){
+  const catalog__item_1 = document.getElementById('catalog__item_1');
+  catalog__item_1.onclick = (event) =>{
     let target = event.target;
     target.classList.toggle('accordion__item');
-  }
-)
-
-var listItems = document.querySelectorAll('li');
-for(var i = 0; i < listItems.length; i++){
-    listItems[i].addEventListener('click', function(event) {
-      this.classList.toggle('clicked');
-    });
-}
-
-// window.addEventListener('DOMContentLoaded',function(){
-//   const block = document.querySelectorAll('.block');
-//   block.forEach(element => {
-//         element.style.color = 'red';
-//       });
-// });
+  };
+  const catalog__item_2 = document.getElementById('catalog__item_2');
+  catalog__item_2.onclick = (event) =>{
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  };
+  const catalog__item_3 = document.getElementById('catalog__item_3');
+  catalog__item_3.onclick = (event) =>{
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  };
+  const catalog__item_4 = document.getElementById('catalog__item_4');
+  catalog__item_4.onclick = (event) =>{
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  };
+  const catalog__item_5 = document.getElementById('catalog__item_5');
+  catalog__item_5.onclick = (event) =>{
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  };
+  const catalog__item_6 = document.getElementById('catalog__item_6');
+  catalog__item_6.onclick = (event) =>{
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  };
+  const catalog__item_7 = document.getElementById('catalog__item_7');
+  catalog__item_7.onclick = (event) =>{
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  };
+});
