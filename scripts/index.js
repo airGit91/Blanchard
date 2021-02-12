@@ -72,10 +72,24 @@ acc[i].addEventListener('click', function() {
 //     target.classList.toggle('accordion__item');
 // };
 
-// let catalogItem = document.querySelectorAll('.catalog__item');
-// for (let i=0, length = catalogItem.length; i < length; i++) {
-//   catalogItem.addEventListener('click', event =>{
-//   classList.toggle('accordion__item');
-//   event.preventDefault();
-//   });
-// }
+const catalog__item = document.querySelectorAll('catalog__item');
+catalog__item.forEach(
+  catalog__item.onclick = (event) => {
+    let target = event.target;
+    target.classList.toggle('accordion__item');
+  }
+)
+
+var listItems = document.querySelectorAll('li');
+for(var i = 0; i < listItems.length; i++){
+    listItems[i].addEventListener('click', function(event) {
+      this.classList.toggle('clicked');
+    });
+}
+
+// window.addEventListener('DOMContentLoaded',function(){
+//   const block = document.querySelectorAll('.block');
+//   block.forEach(element => {
+//         element.style.color = 'red';
+//       });
+// });
