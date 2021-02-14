@@ -50,4 +50,14 @@
         line-height: 32px;
         columns: var(--dark-gray);
     }
+
+    .swiper-container-projects{
+        position: relative;
+    }
+
+    .projects__partners{
+        position: relative;
+        height: 65px;
+        width: 195px;
+    }
 }
