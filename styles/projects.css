@@ -9,4 +9,45 @@
         padding-right: 15px;
         padding-left: 14px;
     }
+
+    .projects__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--dark-gray);
+    }
+
+    .projects__content{
+        padding-top: 12px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.6px;
+        color: var(--dark-gray);
+    }
+
+    .projects__btn{
+        width: 16px;
+        height: 16px;
+        background-image: url(../icons/320/tootype-320.svg);
+        background-color: var(--white);
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+    }
+
+    .projects__content_link{
+        color: var(--purple);
+    }
+
+    .projects__subtitle{
+        padding-top: 12px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        columns: var(--dark-gray);
+    }
 }
