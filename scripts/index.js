@@ -99,6 +99,10 @@ window.addEventListener('DOMContentLoaded',function(){
     };
 
     let projectSwiper = new Swiper('.projects__swiper', {
+      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
