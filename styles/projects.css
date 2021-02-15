@@ -51,4 +51,29 @@
         line-height: 32px;
         columns: var(--dark-gray);
     }
+
+    .projects__swiper{
+        position: relative;
+    }
+
+    .projects__slide-container{
+        padding-left: 50px;
+    }
+
+    .swiper__slide-content{
+        height: 65px;
+        width: 195px;
+        border: 1px solid #CACACA;
+    }
+
+    .swiper__projects_btn{
+        top: 95%;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        color: var(--white);
+        background: #666666;
+        border: none;
+        border-radius: 50%;
+    }
 }
