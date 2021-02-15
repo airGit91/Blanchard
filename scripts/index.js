@@ -97,4 +97,11 @@ window.addEventListener('DOMContentLoaded',function(){
       let target = event.target;
       target.classList.toggle('accordion__item');
     };
+
+    let projectSwiper = new Swiper('.projects__swiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 });
