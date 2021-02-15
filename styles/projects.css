@@ -57,10 +57,10 @@
     }
 
     .projects__slide-container{
-        
+        padding-left: 50px;
     }
 
-    .swiper__slide{
+    .swiper__slide-content{
         height: 65px;
         width: 195px;
         border: 1px solid #CACACA;
