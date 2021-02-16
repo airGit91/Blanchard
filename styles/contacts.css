@@ -1,0 +1,33 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .contacts__container{
+        max-width: 320px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .contacts__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        color: var(--dark-gray);
+    }
+
+    .contacts__subtitle{
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--dark-gray);
+    }
+
+    .contacts__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: var(--dark-gray);
+    }
+}
