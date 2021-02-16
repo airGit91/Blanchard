@@ -67,7 +67,6 @@
         border: 1px solid var(--gray);
         background-repeat: no-repeat;
         background-position: center;
-        transition-duration: .3s;
     }
 
     .projects__slide--1{
