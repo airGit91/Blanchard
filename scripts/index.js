@@ -104,8 +104,8 @@ window.addEventListener('DOMContentLoaded',function(){
       spaceBetween: 30,
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.projects__btn-next',
+        prevEl: '.projects__btn-prev',
       },
     });
 });
