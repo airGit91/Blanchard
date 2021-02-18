@@ -108,4 +108,49 @@ window.addEventListener('DOMContentLoaded',function(){
         prevEl: '.projects__btn-prev',
       },
     });
+
+    // let myMap;
+    // // Дождёмся загрузки API и готовности DOM.
+    // ymaps.ready(init);
+
+    // function init () {
+    //     // Создание экземпляра карты и его привязка к контейнеру с
+    //     // заданным id ("map").
+    //     myMap = new ymaps.Map('map', {
+    //         // При инициализации карты обязательно нужно указать
+    //         // её центр и коэффициент масштабирования.
+    //         center: [55.76, 37.64], // Москва
+    //         zoom: 10
+    //     }, {
+    //         searchControlProvider: 'yandex#search'
+    //     });
+    // }
+
+    ymaps.ready(function () {
+      let myMap = new ymaps.Map('map', {
+          center: [55.75784872240947,37.5994923144472],
+          zoom: 13
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemarkWithContent = new ymaps.Placemark([55.75784872240947,37.5994923144472], {
+          hintContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+          balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+          iconContent: '',
+      }, {
+          iconLayout: 'default#imageWithContent',
+          iconImageHref: '../icons/320/map-target.svg',
+          iconImageSize: [20, 20],
+          iconImageOffset: [-24, -24],
+          iconContentOffset: [15, 15],
+          iconContentLayout: MyIconContentLayout
+      });
+
+  myMap.geoObjects
+      .add(myPlacemarkWithContent);
+  });
 });
