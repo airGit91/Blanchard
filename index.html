@@ -6,6 +6,7 @@
     <meta name="description" content="Blanchard"> 
     <meta name="Keywords" content="картинная галерея, выставка, картины, картины онлайн"> 
     <meta name="author" content="Nick Volkov">
+
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/choices.css">
@@ -21,6 +22,7 @@
     <link rel="stylesheet" href="./styles/editions.css">
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/contacts.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=189dc73f-f9b3-41d7-b9bc-a89e60aa0fb7&lang=ru_RU" type="text/javascript"></script>
     <script src="./scripts/swiper.min.js"></script>
@@ -1098,20 +1100,51 @@
                 
                 <div id="map" class="YandexMap"></div>
 
-                <h2 class="contacts__form_title">Заказать обратный звонок</h2>
+                <div class="contacts__container">
+                    <h2 class="contacts__form_title">Заказать обратный звонок</h2>
 
-                <form class="contacts__form" enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru/">  
-                    <input class="contacts__input" type="text" name="name" placeholder="Имя*" required/>
-                    <input id="contacts__tel" class="contacts__input" type="tel" name="phone" placeholder="Телефон*" required/>
-                    <button class="contacts__submit" type="submit">Заказать</button>
-                </form>
+                    <form class="contacts__form" enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru/">  
+                        <input class="contacts__input" type="text" name="name" placeholder="Имя*" required/>
+                        <input id="contacts__tel" class="contacts__input" type="tel" name="phone" placeholder="Телефон*" required/>
+                        <button class="contacts__submit" type="submit">Заказать</button>
+                    </form>
 
-                <p class="contacts__text">Связаться в один клик</p>
+                    <p class="contacts__text">Связаться в один клик</p>
+
+                    <address class="contacts__msg">
+                        <ul class="contacts__list-msg"> 
+                            <li class="contacts__item-msg">
+                                <a class="contacts__msg-link wtsp" href="https://www.whatsapp.com/?lang=ru"  target="_blank" rel="noopener" aria-label="Вотсап"></a>
+                            </li>
+        
+                            <li class="contacts__item-msg">
+                                <a class="contacts__msg-link telegram" href="https://web.telegram.org/#/login" target="_blank" rel="noopener" aria-label="Телеграмм"></a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
         </section>
     </main>
 
     <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__list-socials">
+                <li class="footer__item-socials">
+                    <a href="https://vk.com/" class="footer__link vk" target="_blank" rel="noopener" aria-label="группа вконтакте"></a>
+                </li>
+                <li class="footer__item-socials">
+                    <a href="https://www.instagram.com/?hl=ru" class="footer__link inst" target="_blank" rel="noopener" aria-label="инстаграмм"></a>
+                </li>
+                <li class="footer__item-socials">
+                    <a href="https://www.facebook.com/" class="footer__link fb" target="_blank" rel="noopener" aria-label="фейсбук"></a>
+                </li>
+            </ul>
 
+            <picture class="footer__logo logo">
+                <source media="(min-width:320px) and (max-width:767px)" srcset="images/logo-320.svg">
+                <img class="logo__image" src="#" alt="Логотип-Blanchard">
+            </picture>
+        </div>
     </footer>
 </body>
 </html>

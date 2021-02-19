@@ -85,4 +85,28 @@
         line-height: 32px;
         color: var(--dark-gray);
     }
+
+    .contacts__msg{
+        padding-top: 10px;
+    }
+
+    .contacts__list-msg{
+        display: flex;
+    }
+
+    .contacts__msg-link{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+    }
+
+   .wtsp{
+    background-image: url('../icons/320/Whatsapp-Icon.svg');
+   }
+
+   .telegram{
+    background-image: url('../icons/320/telegram-Icon.svg');
+   }
 }

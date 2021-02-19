@@ -3,7 +3,7 @@
         position: relative;
         z-index: 4;
         max-height: 45px;
-        background-color: #000;
+        background-color: var(--black);
     }
   
   .header__container{
