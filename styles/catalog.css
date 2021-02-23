@@ -23,7 +23,7 @@
     .catalog__list-btn{
         display: flex;
         justify-content: space-between;
-        padding-top: 20px;
+        padding-top: 12px;
     }
 
     .catalog__btn{
@@ -74,7 +74,7 @@
     }
 
     .catalog__item{
-        padding-top: 20px;
+        padding-top: 22px;
         padding-right: 0;
         padding-bottom: 22px;
         padding-left: 0;
@@ -91,7 +91,7 @@
     }
 
     .accordion__item{
-        padding-top: 20px;
+        padding-top: 22px;
         padding-right: 0;
         padding-bottom: 22px;
         padding-left: 0;
@@ -104,6 +104,7 @@
         background-image: url('../icons/320/bc-catalog-arr-up.svg');
         background-repeat: no-repeat;
         background-position: right;
+        border-bottom: 1px solid var(--purple);
     }
 
     .accordion{
@@ -127,7 +128,8 @@
     }
 
     .panel__list{
-        padding-top: 15px;
+        padding-top: 18px;
+        border-bottom: 1px solid var(--purple);
     }
 
     .catalog__panel-link{
