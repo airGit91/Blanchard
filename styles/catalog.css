@@ -69,14 +69,15 @@
     }
 
     .catalog__list{
-        margin-top: 14px;
+        margin-top: 18px;
         border-top: 1px solid var(--gray);
     }
 
     .catalog__item{
-        padding-top: 22px;
+        display: flex;
+        align-items: center;
+        height: 73px;
         padding-right: 0;
-        padding-bottom: 22px;
         padding-left: 0;
         text-align: start;
         font-family: "Open Sans", sans-serif;
@@ -91,19 +92,9 @@
     }
 
     .accordion__item{
-        padding-top: 22px;
-        padding-right: 0;
-        padding-bottom: 22px;
-        padding-left: 0;
-        text-align: start;
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
-        background-image: url('../icons/320/bc-catalog-arr-up.svg');
         background-repeat: no-repeat;
         background-position: right;
+        background-image: url('../icons/320/bc-catalog-arr-up.svg');
         border-bottom: 1px solid var(--purple);
     }
 
