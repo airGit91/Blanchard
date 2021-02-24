@@ -239,6 +239,11 @@
         padding-right: 13px;
     }
 
+    .header__logo{
+        position: relative;
+        bottom: 8px;
+    }
+
     .header__search{
         width: 29.45px;
         height: 28.82px;

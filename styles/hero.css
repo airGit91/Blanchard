@@ -1,3 +1,7 @@
+.hero__section{
+    background-repeat: no-repeat;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
     .main__hero_container{
         max-width: 320px;
@@ -11,7 +15,6 @@
         flex-direction: column;
         min-height: 355px;
         padding-top: 79px;
-        background-repeat: no-repeat;
     }
 
     .hero__section--1{
@@ -106,12 +109,11 @@
 
     .hero__section{
         position: relative;
-        top: -45px;
+        top: -100px;
         display: flex;
         flex-direction: column;
         min-height: 768px;
         padding-top: 79px;
-        background-repeat: no-repeat;
     }
 
     .hero__section--1{
