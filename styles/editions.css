@@ -81,37 +81,54 @@
         position: relative;
     }
 
-    #check{
-        display: none;
+      /* Option */
+
+    .option {
+        display: block;
+        margin-bottom: 0.5em;
     }
 
-    #check + .edition__checkbox{
-        position: absolute;
-        top: 3px;
-        left: 0;
-        width: 12px;
-        height: 12px;
-        text-align: center;
-        border: 1px solid var(--white);
-      }
+    .check {
+        padding-left: 1.3em;
+    }
 
-      #check + .edition__checkbox:before{
-        content: '\2713';
+    .check__input {
         position: absolute;
-        top: -10px;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity .3s ease-in-out;
-      }
-      
-      #check:checked + .edition__checkbox:before{
-        opacity: 1;
-      }
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
 
-    .edition__checkbox_text{
-        padding-left: 22px;
+    .check__box {
+        position: absolute;
+        left: 2px;
+        margin-top: 12px;
+        width: 10px;
+        height: 10px;
+        overflow: hidden;
+        background-color: inherit;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        box-shadow: 0 0 0 0.1em var(--purple);
+    }
+
+        /* Checked */
+
+    .check__input:checked + .check__box {
+        background-color: inherit;
+        background-image: url('../icons/320/checbox.svg');
+    }
+
+        /* Focused */
+
+    .check__input:focus + .check__box {
+        box-shadow:
+            0 0 0 0.1em var(--purple);
+    }
+
+    .check__text{
+        margin-left: 2px;
         font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -119,6 +136,12 @@
         line-height: 22px;
         letter-spacing: 1px;
         color: var(--white);
+    }
+
+    .check__text:hover,
+    .check__text:active,
+    .check__text:focus{
+        color: var(--purple);
     }
 
     .edition__cost{

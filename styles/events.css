@@ -28,7 +28,7 @@
         display: flex;
         flex-direction: column;
         min-height: 703px;
-        margin-top: 20px;
+        margin-top: 10px;
         background-repeat: no-repeat;
     }
 
@@ -75,7 +75,7 @@
     }
 
     .events__content-title{
-        padding-top: 14px;
+        padding-top: 4px;
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
@@ -92,7 +92,8 @@
     }
 
     .events__link{
-        padding-bottom: 3px;
+        position: absolute;
+        bottom: 49px;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;

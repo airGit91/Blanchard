@@ -47,7 +47,6 @@ window.addEventListener('DOMContentLoaded',function(){
         panel.style.maxHeight = null;
       }else{
         panel.style.maxHeight = panel.scrollHeight + 'px';
-        // panel.style.maxHeight = '800px';
       }
     });
   }
@@ -136,7 +135,6 @@ window.addEventListener('DOMContentLoaded',function(){
       .add(myPlacemarkWithContent);
   });
 
-  
     function setCursorPosition(pos, elem) {
         elem.focus();
         if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
@@ -166,5 +164,4 @@ window.addEventListener('DOMContentLoaded',function(){
         input.addEventListener("input", mask, false);
         input.addEventListener("focus", mask, false);
         input.addEventListener("blur", mask, false);
-    
 });

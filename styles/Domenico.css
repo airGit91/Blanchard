@@ -2,7 +2,7 @@
     .Domenico__container{
         max-width: 320px;
         margin: 0 auto;
-        margin-top: 18px;
+        margin-top: 76px;
     }
 
     .Domenico{
@@ -11,6 +11,7 @@
     }
 
     .Domenico__subtitle{
+        padding-top: 16px;
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-style: normal;
@@ -24,12 +25,12 @@
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 32px;
         letter-spacing: 0.6px;
     }
 
     .Domenico__little-title{
-        margin-top: 20px;
+        margin-top: 14px;
         margin-bottom: 10px;
         font-family: "Open Sans", sans-serif;
         font-style: normal;
