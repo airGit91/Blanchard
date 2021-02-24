@@ -85,6 +85,7 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 32px;
+        color: var(--dark-gray);
         background-image: url('../icons/320/bc-catalog-arr-down.svg');
         background-repeat: no-repeat;
         background-position: right;
@@ -101,10 +102,6 @@
     .accordion{
         transition: .4s;
       }
-
-    .catalog__item_text{
-        color: var(--dark-gray);
-    }
 
     .catalog_panel{
         max-height: 0;
