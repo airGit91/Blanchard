@@ -1,14 +1,42 @@
+.header{
+    position: relative;
+    z-index: 4;
+    background-color: var(--black);
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__burger:focus{
+    outline: 2px solid var(--purple);
+}
+
+.header__burger > span,
+.header__burger::before,
+.header__burger::after,
+.header__list{
+    transition: all 0.3s ease 0s;
+}
+
+.header__nav_link{
+    color: var(--white);
+}
+
+.header__search{
+    background-repeat: no-repeat;
+    border: none;
+    background-color: var(--black);
+    transition: .3s;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
     .header{
-        position: relative;
-        z-index: 4;
         max-height: 45px;
-        background-color: var(--black);
     }
   
   .header__container{
-        display: flex;
-        justify-content: space-between;
         max-width: 320px;
         margin: 0 auto;
         padding: 15px;
@@ -22,17 +50,12 @@
         height: 18px;
     }
 
-    .header__burger:focus{
-        outline: 2px solid var(--purple);
-    }
-
     .header__burger > span {
         position: absolute;
         width: 15.6px;
         height: 2px;
         top: 8px;
         background-color: #fff;
-        transition: all 0.3s ease 0s;
     }
 
     .header__burger::before,
@@ -43,7 +66,6 @@
         left: 0;
         content: '';
         background-color: #fff;
-        transition: all 0.3s ease 0s;
     }
 
     .header__burger::before {
@@ -87,7 +109,6 @@
         margin: 0;
         padding: 50px 0;
         background-image: linear-gradient(5deg, #eeeae9 0%, #777777 50%, #000000 100%);
-        transition: all 0.3s ease 0s;
         overflow: auto;
     }
 
@@ -96,7 +117,6 @@
         padding: 12px 24px;
         font-size: 20px;
         text-align: center;
-        color: var(--white);
     }
 
     .header__logo{
@@ -107,10 +127,6 @@
         width: 16px;
         height: 16px;
         background-image: url(../icons/320/Search-320.svg);
-        background-repeat: no-repeat;
-        border: none;
-        background-color: var(--black);
-        transition: .3s;
     }
 
     .header__search:focus{
@@ -123,5 +139,120 @@
 
     .header__search:active{
         background-image: url(../icons/320/search-hover.svg);
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+    .header{
+        max-height: 100px;
+    }
+
+    .header__container{
+        max-width: 768px;
+        margin: 0 auto;
+        padding-top: 36.7px;
+        padding-right: 50px;
+        padding-bottom: 29px;
+        padding-left: 50px;
+    }
+
+    .header__burger {
+        position: relative;
+        z-index: 4;
+        display: block;
+        width: 36px;
+        height: 28px;
+    }
+
+    .header__burger > span {
+        position: absolute;
+        width: 28.2px;
+        height: 3.65px;
+        top: 12px;
+        background-color: #fff;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        position: absolute;
+        width: 100%;
+        height: 3.65px;
+        left: 0;
+        content: '';
+        background-color: #fff;
+    }
+
+    .header__burger::before {
+        width: 36px;
+        top: 0;
+    }
+    .header__burger::after {
+        bottom: 0;
+        width: 24px;
+    }
+
+    .header__burger.active:before {
+        top: 11px;
+        transform: rotate(45deg);
+    }
+
+    .header__burger.active:after {
+        bottom: 12px;
+        width: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .header__burger.active > span {
+        transform: scale(0);
+    }
+
+    .header__list.active {
+        top: 0;
+    }
+
+    .header__nav{
+        display: contents;
+    }
+
+    .header__list{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 3;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 50px 0;
+        background-image: linear-gradient(5deg, #eeeae9 0%, #777777 50%, #000000 100%);
+        overflow: auto;
+    }
+
+    .header__nav_link{
+        display: block;
+        padding: 12px 24px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header__logo{
+        padding-right: 13px;
+    }
+
+    .header__search{
+        width: 29.45px;
+        height: 28.82px;
+        background-image: url(../icons/768/Search-768.svg);
+    }
+
+    .header__search:focus{
+        padding: 9px;
+        outline: 2px solid var(--purple);
+        background-image: url(../icons/768/Search-768-hover.svg);
+        background-position: center;
+    }
+
+    .header__search:active{
+        background-image: url(../icons/768/Search-768-hover.svg);
     }
 }

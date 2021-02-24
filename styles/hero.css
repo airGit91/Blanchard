@@ -97,3 +97,32 @@
         display: none;
     }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .main__hero_container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .hero__section{
+        position: relative;
+        top: -45px;
+        display: flex;
+        flex-direction: column;
+        min-height: 768px;
+        padding-top: 79px;
+        background-repeat: no-repeat;
+    }
+
+    .hero__section--1{
+        background-image: url(../images/768/bc-hero-768-1.jpg);
+    }
+
+    .hero__section--2{
+        background-image: url(../images/768/bc-hero-768-2.jpg);
+    }
+
+    .hero__section--3{
+        background-image: url(../images/768/bc-hero-768-3.jpg);
+    }
+}
