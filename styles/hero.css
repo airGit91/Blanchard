@@ -149,15 +149,29 @@
     }
 
     .hero__content{
+        padding-top: 4px;
+        padding-left: 4px;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
         line-height: 30px;
+        letter-spacing: 0.5px;
     }
 
     .hero__link{
-        max-width: 314px;
+        max-width: 317px;
         margin-top: 135px;
-        padding: 13px 35px;
+        padding-top: 22px;
+        padding-right: 29px;
+        padding-bottom: 22px;
+        padding-left: 39px;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+        display: none;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        display: none;
     }
 }
