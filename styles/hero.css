@@ -2,6 +2,11 @@
     background-repeat: no-repeat;
 }
 
+.hero__main-title{
+    font-family: "Open Sans", sans-serif;
+    color: var(--white);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
     .main__hero_container{
         max-width: 320px;
@@ -32,13 +37,11 @@
     .hero__main-title{
         padding-left: 31px;
         padding-right: 31px;
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
         letter-spacing: 1.35px;
         text-align: center;
-        color: var(--white);
     }
 
     .hero__content{
@@ -126,5 +129,12 @@
 
     .hero__section--3{
         background-image: url(../images/768/bc-hero-768-3.jpg);
+    }
+
+    .hero__main-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 98px;
     }
 }
