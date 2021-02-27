@@ -1,7 +1,26 @@
+.galery__container{
+    margin: 0 auto;
+}
+
+.galery{
+    background-repeat: no-repeat;
+}
+
+.galery__title{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--white);
+}
+
+.galery__text-select{
+    font-family: "Open Sans", sans-serif;
+    color: var(--white);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .galery__container{
         max-width: 320px;
-        margin: 0 auto;
     }
     
     .galery{
@@ -11,26 +30,19 @@
         padding-right: 15px;
         padding-left: 15px;
         background-image: url(../images/320/bc-galery-320.jpg);
-        background-repeat: no-repeat;
     }
     
     .galery__title{
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: normal;
         font-size: 28px;
         line-height: 38px;
-        color: var(--white);
     }
 
     .galery__text-select{
         padding-top: 13px;
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 32px;
-        color: var(--white);
     }
 
     .galery__images{
@@ -223,4 +235,48 @@
     .galery__content_link{
         color: var(--purple);
     }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .galery__container{
+        max-width: 768px;
+    }
+
+    .galery{
+        min-height: 1169px;
+        padding-top: 80px;
+        padding-right: 50px;
+        padding-left: 50px;
+        background-image: url(../images/768/bc-galery-768.jpg);
+    }
+
+    .galery__title{
+        font-size: 48px;
+        line-height: 65px;
+    }
+
+    .galery__text-select{
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.6px;
+    }
+
+    .choices__inner{
+        width: 280px;
+        margin-top: 8px;
+    }
+
+    .choices[data-type*='select-one']:after{
+        top: 43%;
+        left: 38%;
+    }
+
+    .choices[data-type*='select-one'].is-open:after {
+        left: 40%;
+      }
+
+      .choices__list--dropdown{
+        width: 280px;
+      }
 }
