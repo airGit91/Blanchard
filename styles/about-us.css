@@ -1,3 +1,12 @@
+.about-us__title{
+    font-family: "Open Sans", sans-serif;
+}
+
+.about-us__content{
+    font-family: "Open Sans", sans-serif;
+    color: var(--dark-gray)
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
     .about-us__container{
         max-width: 320px;
@@ -7,23 +16,46 @@
     }
 
     .about-us__title{
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 28px;
         line-height: 38px;
-        color: var(--dark-gray)
     }
 
     .about-us__content{
         padding-top: 12px;
         padding-right: 16px;
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         letter-spacing: 0.5px;
         line-height: 28px;
         color: var(--dark-gray);
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .about-us__container{
+        max-width: 768px;
+        margin: 0 auto;
+        margin-top: 6px;
+        padding-left: 50px;
+    }
+
+    .about-us__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 65px;
+    }
+
+    .about-us__content{
+        padding-top: 15px;
+        padding-right: 34px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
     }
 }
