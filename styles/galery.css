@@ -18,6 +18,10 @@
     color: var(--white);
 }
 
+#choices--select-1s-item-choice-1{
+    display: none;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .galery__container{
         max-width: 320px;
@@ -262,6 +266,10 @@
         letter-spacing: 0.6px;
     }
 
+    .choices{
+        margin-bottom: 0;
+    }
+
     .choices__inner{
         width: 280px;
         margin-top: 8px;
@@ -279,4 +287,24 @@
       .choices__list--dropdown{
         width: 280px;
       }
+
+      .swiper-pagination{
+        display: inline-block;
+        height: 30px;
+        color: var(--white);
+      }
+
+      .swiper-pagination-fraction{
+          top: 0%;
+          left: -40%;
+      }
+      
+      .galery__images{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 594px;
+        margin-top: 30px;
+        background-repeat: no-repeat;
+    }
 }
