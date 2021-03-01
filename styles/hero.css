@@ -19,6 +19,10 @@
     border-radius: 100px;
 }
 
+.hero > .swiper-container > .swiper-pagination{
+    display: none;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
     .main__hero_container{
         max-width: 320px;
