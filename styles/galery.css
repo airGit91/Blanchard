@@ -305,6 +305,12 @@
       .galery__swiper{
         width: 30px;
         height: 30px;
+        background-color: #666;
+        border: none;
+        border-radius: 50%;
+        background-image: url('../icons/768/arr-galery.svg');
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
       }
 
       .swiper-button-next, .swiper-button-prev{
@@ -313,18 +319,23 @@
 
       .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
         left: 0;
+        transform: rotate(180deg);
     }
 
     .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
         left: 15%;
     }
-      
-      .galery__images{
+  
+    .galery__images{
         position: relative;
         display: flex;
         flex-direction: column;
         min-height: 594px;
         margin-top: 30px;
         background-repeat: no-repeat;
+    }
+
+    .galery__images--1{
+        background-image: url('../images/768/bc-galery-768-1.jpg')
     }
 }
