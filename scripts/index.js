@@ -13,6 +13,20 @@ window.addEventListener('DOMContentLoaded',function(){
         prevEl: '.swiper-button-prev',
     },
   });
+
+  let swiperGalery = new Swiper('.swiper-container-galery', {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  });
   
   let header__burger = document.querySelector('.header__burger');
   let header__list = document.querySelector('.header__list');

@@ -328,14 +328,17 @@
   
     .galery__images{
         position: relative;
-        display: flex;
-        flex-direction: column;
-        min-height: 594px;
-        margin-top: 30px;
+        height: 280px;
+        width: 317px;
         background-repeat: no-repeat;
     }
 
     .galery__images--1{
         background-image: url('../images/768/bc-galery-768-1.jpg')
+    }
+   
+
+    .main__galery > .swiper-container{
+        display: none;
     }
 }
