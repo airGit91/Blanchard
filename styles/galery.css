@@ -289,20 +289,31 @@
         width: 280px;
       }
 
-      .swiper-pagination{
+      .main__galery > .swiper-container{
+        display: none;
+    }
+
+    .swiper-container-galery{
+        position: relative;
+    }
+
+    .swiper-pagination{
+        position: absolute;
         display: inline-block;
         height: 30px;
         color: var(--white);
       }
 
       .swiper-pagination-fraction{
-        top: 20%;
+        display: inline-block;
+        top: 15%;
         left: -40%;
         font-size: 16px;
         line-height: 32px;
       }
 
       .galery__swiper{
+        position: absolute;
         width: 30px;
         height: 30px;
         background-color: #666;
@@ -317,7 +328,7 @@
           top: 23%;
       }
 
-      .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
         left: 0;
         transform: rotate(180deg);
     }
@@ -335,10 +346,5 @@
 
     .galery__images--1{
         background-image: url('../images/768/bc-galery-768-1.jpg')
-    }
-   
-
-    .main__galery > .swiper-container{
-        display: none;
     }
 }
