@@ -15,8 +15,9 @@ window.addEventListener('DOMContentLoaded',function(){
   });
 
   let swiperGalery = new Swiper('.swiper-container-galery', {
-    // slidesPerView: 4,
+    cssMode: true,
     loop: true,
+    spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
