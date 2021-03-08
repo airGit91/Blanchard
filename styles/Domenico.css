@@ -1,3 +1,7 @@
+.Domenico__little-title{
+    color: var(--space-gray);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .Domenico__container{
         max-width: 320px;
@@ -12,7 +16,6 @@
 
     .Domenico__subtitle{
         padding-top: 16px;
-        font-family: "Open Sans", sans-serif;
         font-weight: 600;
         font-style: normal;
         font-size: 24px;
@@ -21,7 +24,6 @@
     }
 
     .Domenico__content{
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -32,12 +34,10 @@
     .Domenico__little-title{
         margin-top: 14px;
         margin-bottom: 10px;
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
         line-height: 16px;
-        color: var(--space-gray);
     }
 }
 
@@ -47,5 +47,32 @@
         padding-top: 50px;
         padding-right: 50px;
         padding-left: 50px;
+    }
+
+    .Domenico__subtitle{
+        padding-top: 27px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.6px;
+    }
+
+    .Domenico__little-title{
+        padding-top: 7px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.3px;
+    }
+
+    .Domenico__content{
+        padding-top: 7px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.6px;
     }
 }
