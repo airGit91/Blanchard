@@ -66,15 +66,6 @@ window.addEventListener('DOMContentLoaded',function(){
     });
   }
   
-  let eventSwiper = new Swiper('.swiper-container-event', {
-    cssMode: true,
-    spaceBetween: 30,
-    loop: true,
-        pagination: {
-          el: '.swiper-pagination'
-        },
-  });
-  
     const catalog__item_1 = document.getElementById('catalog__item_1');
     catalog__item_1.onclick = (event) =>{
       let target = event.target;
@@ -110,6 +101,15 @@ window.addEventListener('DOMContentLoaded',function(){
       let target = event.target;
       target.classList.toggle('accordion__item');
     };
+
+    let eventSwiper = new Swiper('.swiper-container-event', {
+      cssMode: true,
+      spaceBetween: 30,
+      loop: true,
+          pagination: {
+            el: '.swiper-pagination'
+          },
+    });
 
     let projectSwiper = new Swiper('.projects__swiper', {
       cssMode: true,
