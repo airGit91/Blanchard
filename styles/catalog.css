@@ -72,6 +72,14 @@
         background-image: url(../icons/320/belgium.svg);
     }
 
+    .catalog__text{
+        display: none;
+    }
+
+    .panel__container{
+        display: none;
+    }
+
     .catalog__list{
         margin-top: 18px;
         border-top: 1px solid var(--gray);
@@ -198,11 +206,11 @@
     .catalog__list{
         grid-column-start: 1;
         grid-column-end: 3;
-        margin-top: 30px;
+        margin-top: 20px;
         border-top: 1px solid var(--gray);
     }
 
-        .catalog__item{
+    .catalog__item{
         display: flex;
         align-items: center;
         height: 113px;
@@ -238,9 +246,16 @@
         overflow: hidden;
     }
 
-    .panel__list{
+    .panel__container{
+        display: grid;
+        grid-template-columns: 208px 208px 185px;
+        grid-column-gap: 34px;
         padding-top: 17px;
         border-bottom: 1px solid var(--purple);
+    }
+
+    .panel__list{
+        display: none;
     }
 
     .catalog__panel-link{
