@@ -104,7 +104,16 @@ window.addEventListener('DOMContentLoaded',function(){
 
     let eventSwiper = new Swiper('.swiper-container-event', {
       cssMode: true,
-      spaceBetween: 30,
+      spaceBetween: 33,
+      loop: true,
+          pagination: {
+            el: '.swiper-pagination'
+          },
+    });
+
+    let eventSwiperDesc = new Swiper('.swiper-container__event-desc', {
+      cssMode: true,
+      spaceBetween: 33,
       loop: true,
           pagination: {
             el: '.swiper-pagination'
