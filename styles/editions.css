@@ -241,3 +241,7 @@
         border-radius: 100px;
     }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    
+}
