@@ -1,3 +1,7 @@
+.editions__subtitle{
+    color: var(--white);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .editions__container{
         max-width: 320px;
@@ -15,12 +19,10 @@
     }
 
     .editions__subtitle{
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 28px;
         line-height: 38px;
-        color: var(--white);
     }
 
     .editions__list{
@@ -243,5 +245,22 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
-    
+    .editions__container{
+        margin: 0 auto;
+    }
+
+    .editions{
+        padding-top: 80px;
+        padding-left: 46px;
+        background-image: url(../images/768/bc-edition-764.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .editions__subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 65px;
+        letter-spacing: 1.5px;
+    }
 }
