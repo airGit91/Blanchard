@@ -270,4 +270,13 @@
         font-size: 16px;
         line-height: 32px;
     }
+
+    .edition__panel_list{
+        display: none;
+    }
+
+    .edition__panel_list-desc{
+        display: grid;
+        grid-template-columns: 134px 246px 222px;
+    }
 }

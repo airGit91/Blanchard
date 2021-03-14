@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded',function(){
   let swiper = new Swiper('.swiper-container', {
+    cssMode: true,
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
