@@ -132,6 +132,21 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
+    let swiperEdition = new Swiper('.swiper-edition', {
+      cssMode: true,
+      loop: true,
+      spaceBetween: 33,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          type: 'fraction',
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+    });
+
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {
           center: [55.75784872240947,37.5994923144472],

@@ -243,12 +243,18 @@
         display: none;
     }
 
+    .edition__list_books{
+        display: none;
+    }
+
     .editions__container{
         margin: 0 auto;
         margin-top: 84px;
     }
 
     .editions{
+        position: relative;
+        min-height: 1048px;
         padding-top: 80px;
         padding-left: 46px;
         background-image: url(../images/768/bc-edition-764.jpg);

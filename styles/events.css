@@ -15,6 +15,10 @@
     .swiper-container__event-desc{
         display: none;
     }
+
+    .events__btn{
+        display: none;
+    }
     
     .events__container{
         max-width: 320px;
