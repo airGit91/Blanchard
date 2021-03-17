@@ -381,4 +381,64 @@
         background-color: rgba(157, 92, 208, 0.5);
         border: none;
     }
+
+    .swiper__container_editions{
+        position: relative;
+    }
+
+    .swiper-pagination{
+        position: absolute;
+        display: inline-block;
+        height: 30px;
+        color: var(--white);
+      }
+
+      .swiper-pagination-fraction{
+        display: inline-block;
+        top: 14%;
+        left: -40%;
+        font-size: 16px;
+        line-height: 32px;
+      }
+
+    .editions__swiper{
+        position: absolute;
+        top: 73px;
+        width: 30px;
+        height: 30px;
+        background-color: #666;
+        border: none;
+        border-radius: 50%;
+        background-image: url('../icons/768/arr-galery.svg');
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+    }
+
+    .editions__swiper-prev{
+        left: 3px;
+    }
+
+    .editions__swiper-next{
+        left: 105px;
+    }
+
+    .editions__images{
+        position: relative;
+        display: grid;
+        grid-template-columns: 290px 290px;
+        grid-template-rows: 433px 433px;
+        grid-column-gap: 34px;
+    }
+
+    .editions__images{
+        background-repeat: no-repeat;
+    }
+
+    .editions__images--1{
+        background-image: url('../images/768/edition-book-1.jpg');
+    }
+
+    .editions__images--1{
+        background-image: url('../images/768/edition-book-2.jpg');
+    }
 }

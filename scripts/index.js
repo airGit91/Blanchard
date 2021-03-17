@@ -29,6 +29,8 @@ window.addEventListener('DOMContentLoaded',function(){
         prevEl: '.swiper-button-prev',
     },
   });
+
+  
   
   let header__burger = document.querySelector('.header__burger');
   let header__list = document.querySelector('.header__list');
@@ -132,10 +134,10 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
-    let swiperEdition = new Swiper('.swiper-edition', {
+    let editionsSwiperDesc = new Swiper('.swiper__container_editions', {
       cssMode: true,
       loop: true,
-      spaceBetween: 33,
+      spaceBetween: 30,
       pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -146,6 +148,7 @@ window.addEventListener('DOMContentLoaded',function(){
           prevEl: '.swiper-button-prev',
       },
     });
+
 
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {
