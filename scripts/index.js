@@ -30,8 +30,6 @@ window.addEventListener('DOMContentLoaded',function(){
     },
   });
 
-  
-  
   let header__burger = document.querySelector('.header__burger');
   let header__list = document.querySelector('.header__list');
   let back = document.querySelector('body');
@@ -134,7 +132,7 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
-    let editionsSwiperDesc = new Swiper('.swiper__container_editions', {
+    let swiperEditions = new Swiper('.swiper__editions', {
       cssMode: true,
       loop: true,
       spaceBetween: 30,
