@@ -4,7 +4,11 @@
 .check__text,
 .edition__cost,
 .edition__cost-text,
-.edition__cost-number{
+.edition__cost-number,
+.edition__book-name,
+.edition__book-author,
+.edition__book-cost,
+.edition__item_btn{
     color: var(--white);
 }
 
@@ -201,14 +205,12 @@
         font-weight: bold;
         font-size: 12px;
         line-height: 16px;
-        color: var(--white);
     }
 
     .edition__book-author{
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
-        color: var(--white);
     }
 
     .edition__book-cost{
@@ -216,7 +218,6 @@
         font-weight: normal;
         font-size: 12px;
         line-height: 16px;
-        color: var(--white);
     }
 
     .edition__item_btn{
@@ -231,7 +232,6 @@
         font-size: 12px;
         line-height: 16px;
         text-align: center;
-        color: var(--white);
         background-color: inherit;
         border: 2px solid var(--purple);
         border-radius: 100px;
@@ -388,7 +388,7 @@
 
     .swiper__editions > .swiper-button-next, 
     .swiper__editions > .swiper-button-prev {
-        top: 9.5%;
+        top: 7.5%;
     }
 
     .swiper__editions > .swiper-button-prev{
@@ -400,7 +400,63 @@
     }
 
     .swiper__editions > .swiper-pagination-fraction {
-        top: 6.7%;
+        top: 5.2%;
         left: -40.5%;
+    }
+
+    .editions__images{
+        margin-top: 110px;
+        padding-left: 31px;
+    }
+
+    .editions__list_books{
+        display: grid;
+        grid-template-columns: 290px 290px;
+        grid-template-rows: 433px 433px;
+        grid-column-gap: 34px;
+    }
+
+    .edition__flex-container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 11px;
+    }
+
+    .edition__book-name{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .edition__book-author{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .edition__book-cost{
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .edition__item_btn{
+        width: 120px;
+        margin-top: 14px;
+        padding-top: 7px;
+        padding-right: 15.17px;
+        padding-bottom: 9px;
+        padding-left: 15.17px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        background-color: inherit;
+        border: 2px solid var(--purple);
+        border-radius: 100px;
     }
 }
