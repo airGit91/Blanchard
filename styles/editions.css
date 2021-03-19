@@ -412,7 +412,7 @@
     .editions__list_books{
         display: grid;
         grid-template-columns: 290px 290px;
-        grid-template-rows: 433px 433px;
+        grid-template-rows: 433px;
         grid-column-gap: 34px;
     }
 

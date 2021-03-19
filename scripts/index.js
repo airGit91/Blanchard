@@ -147,6 +147,17 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
+    let projectSwiperDesc = new Swiper('.projects__swiper-desc', {
+      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.projects__btn-next',
+        prevEl: '.projects__btn-prev',
+      },
+    });
+
 
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {

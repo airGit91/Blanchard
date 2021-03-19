@@ -1,4 +1,54 @@
+.projects__title,
+.projects__content,
+.projects__subtitle{
+    color: var(--dark-gray);
+}
+
+.projects__btn,
+.swiper__projects_btn{
+    color: var(--white);
+}
+
+.projects__content_link{
+    color: var(--purple);
+}
+
+.swiper__slide-content{
+    border: 1px solid var(--gray);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper__projects_btn{
+    top: 65%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 50%;
+}
+
+.swiper__projects_btn{
+    position: relative;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-position:  center;
+}
+
+.projects__btn-prev{
+    background-image: url('../icons/320/arr-projects-left.svg');
+}
+
+.projects__btn-next{
+    background-image: url('../icons/320/arr-projects-right.svg');
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .projects__swiper-desc{
+        display: none;
+    }
+
     .projects__container{
         max-width: 320px;
         margin: 0 auto;
@@ -16,7 +66,6 @@
         font-weight: normal;
         font-size: 28px;
         line-height: 38px;
-        color: var(--dark-gray);
     }
 
     .projects__content{
@@ -26,21 +75,15 @@
         font-size: 16px;
         line-height: 32px;
         letter-spacing: 0.6px;
-        color: var(--dark-gray);
     }
 
     .projects__btn{
         width: 16px;
         height: 16px;
         background-image: url(../icons/320/tootype-320.svg);
-        background-color: var(--white);
         background-repeat: no-repeat;
         border: none;
         outline: none;
-    }
-
-    .projects__content_link{
-        color: var(--purple);
     }
 
     .projects__subtitle{
@@ -49,7 +92,6 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 32px;
-        columns: var(--dark-gray);
     }
 
     .projects__swiper{
@@ -64,9 +106,6 @@
     .swiper__slide-content{
         height: 65px;
         width: 195px;
-        border: 1px solid var(--gray);
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
     .projects__slide--1{
@@ -149,33 +188,183 @@
         background-image: url('../images/320/proj-partners-focus-9.jpg');
         background-size: 55%;
     }
-    
 
     .swiper__projects_btn{
-        top: 65%;
-        display: inline-block;
-        height: 30px;
-        width: 30px;
-        color: var(--white);
-        background-color: #ececec;
-        border: none;
-        border-radius: 50%;
-    }
-
-    .swiper__projects_btn{
-        position: relative;
         bottom: 45px;
-        z-index: 10;
-        background-repeat: no-repeat;
-        background-position:  center;
     }
 
     .projects__btn-prev{
-        background-image: url('../icons/320/arr-projects-left.svg');
     }
 
     .projects__btn-next{
         left: 225px;
-        background-image: url('../icons/320/arr-projects-right.svg');
     }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .projects__swiper{
+        display: none;
+    }
+
+    .projects__container{
+        max-width: 768px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .projects{
+        padding-right: 50px;
+        padding-left: 46px;
+    }
+
+    .projects__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 65px;
+        letter-spacing: 1.8px;
+    }
+
+    .projects__content{
+        padding-top: 16px;
+        padding-left: 2px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.6px;
+    }
+
+    .projects__btn{
+        width: 16px;
+        height: 16px;
+        background-image: url(../icons/320/tootype-320.svg);
+        background-repeat: no-repeat;
+        border: none;
+        outline: none;
+    }
+
+    .projects__content_link{
+        display: inline-block;
+    }
+
+    .projects__subtitle{
+        padding-top: 26px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.4px;
+    }
+
+    .projects__swiper-desc{
+        position: relative;
+        margin-top: 28px;
+    }
+
+    .projects__slide-container{
+        display: grid;
+        grid-template-columns: 264px 264px;
+        grid-template-rows: 106px;
+        grid-column-gap: 34px;
+        padding-left: 56px;
+    }
+
+    .swiper__slide-content{
+        height: 106px;
+        width: 264px;
+    }
+
+    .projects__slide--1{
+        background-image: url('../images/768/proj-partners-1.jpg');
+    }
+
+    .projects__slide--2{
+        background-image: url('../images/768/proj-partners-2.jpg');
+    }
+
+    .projects__slide--3{
+        background-image: url('../images/768/proj-partners-3.jpg');
+    }
+
+    .projects__slide--4{
+        background-image: url('../images/768/proj-partners-4.jpg');
+    }
+
+    .projects__slide--5{
+        background-image: url('../images/768/proj-partners-5.jpg');
+    }
+
+    .projects__slide--6{
+        background-image: url('../images/768/proj-partners-6.jpg');
+    }
+
+    .projects__slide--7{
+        background-image: url('../images/768/proj-partners-7.jpg');
+    }
+
+    .projects__slide--8{
+        background-image: url('../images/768/proj-partners-8.jpg');
+    }
+
+    .projects__slide--9{
+        background-image: url('../images/768/proj-partners-9.jpg');
+    }
+
+    .projects__slide--1:hover{
+        background-image: url('../images/320/proj-partners-focus-1.jpg');
+        background-size: 80%;
+    }
+
+    .projects__slide--2:hover{
+        background-image: url('../images/320/proj-partners-focus-2.jpg');
+        background-size: 82%;
+    }
+
+    .projects__slide--3:hover{
+        background-image: url('../images/320/proj-partners-focus-3.jpg');
+        background-size: 77%;
+    }
+
+    .projects__slide--4:hover{
+        background-image: url('../images/320/proj-partners-focus-4.jpg');
+        background-size: 47%;
+    }
+
+    .projects__slide--5:hover{
+        background-image: url('../images/320/proj-partners-focus-5.jpg');
+        background-size: 57%;
+    }
+
+    .projects__slide--6:hover{
+        background-image: url('../images/320/proj-partners-focus-6.jpg');
+        background-size: 77%;
+    }
+
+    .projects__slide--7:hover{
+        background-image: url('../images/320/proj-partners-focus-7.jpg');
+        background-size: 77%;
+    }
+
+    .projects__slide--8:hover{
+        background-image: url('../images/320/proj-partners-focus-8.jpg');
+        background-size: 57%;
+    }
+
+    .projects__slide--9:hover{
+        background-image: url('../images/320/proj-partners-focus-9.jpg');
+        background-size: 72%;
+    }
+
+    .swiper__projects_btn{
+        bottom: 67px;
+    }
+
+    .projects__btn-prev{
+        left: 5px;
+    }
+
+    .projects__btn-next{
+        left: 607px;
+    } 
 }
