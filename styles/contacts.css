@@ -1,4 +1,8 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .contacts__tittle-desc{
+        display: none;
+    }
+    
     .contacts{
         max-width: 320px;
         margin: 0 auto;
@@ -109,4 +113,25 @@
    .telegram{
     background-image: url('../icons/320/telegram-Icon.svg');
    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .contacts__title{
+        display: none;
+    }
+
+    .contacts{
+        max-width: 768px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .contacts__tittle-desc{
+        padding-left: 46px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 65px;
+        color: var(--dark-gray);
+    }
 }

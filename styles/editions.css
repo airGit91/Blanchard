@@ -25,6 +25,14 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+    .swiper__editions > .galery__swiper{
+        display: none;
+    }
+
+    .swiper__editions{
+        display: none;
+    }
+    
     .editions__container{
         max-width: 320px;
         margin: 0 auto;
@@ -248,6 +256,7 @@
     }
 
     .editions__container{
+        max-width: 768px;
         margin: 0 auto;
         margin-top: 84px;
     }
@@ -278,17 +287,11 @@
 
     .editions__list{
         margin-top: 16px;
-        padding-left: 4px;
-    }
-
-    .edition__panel_list-desc{
-        display: grid;
-        grid-template-columns: 134px 246px 222px;
     }
 
     .edition__panel_desc{
         display: grid;
-        grid-template-columns: 134px 246px 222px;
+        grid-template-columns: 134px 253px 222px;
         grid-column-gap: 49px;
     }
 
@@ -388,7 +391,7 @@
 
     .swiper__editions > .swiper-button-next, 
     .swiper__editions > .swiper-button-prev {
-        top: 7.5%;
+        top: 13.5%;
     }
 
     .swiper__editions > .swiper-button-prev{
@@ -400,7 +403,7 @@
     }
 
     .swiper__editions > .swiper-pagination-fraction {
-        top: 5.2%;
+        top: 10%;
         left: -40.5%;
     }
 
@@ -412,7 +415,7 @@
     .editions__list_books{
         display: grid;
         grid-template-columns: 290px 290px;
-        grid-template-rows: 433px;
+        grid-template-rows: 436px;
         grid-column-gap: 34px;
     }
 

@@ -123,6 +123,7 @@
     }
 
     .events__container{
+        max-width: 768px;
         margin: 0 auto;
         margin-top: 71px;
         padding-right: 50px;
