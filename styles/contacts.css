@@ -137,10 +137,6 @@
         margin-top: 50px;
     }
 
-    .contacts__flex-container{
-        display: flex;
-    }
-
     .contacts__tittle-desc{
         padding-left: 46px;
         font-style: normal;
@@ -248,8 +244,19 @@
         background-image: url('../icons/768/telegram-Icon-768.svg');
     }
 
-    .YandexMap__desc {
+    .YandexMap{
+        position: absolute;
+        padding-top: 14px;
+        right: 0;
         width: 338px; 
         height: 700px;
+    }
+
+    .ymaps-2-1-78-map{
+        height: 700px !important;
+    }
+
+    [class*="ground-pane"]{
+        filter: grayscale(1);
     }
 }
