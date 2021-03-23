@@ -216,4 +216,9 @@ window.addEventListener('DOMContentLoaded',function(){
         input.addEventListener("input", mask, false);
         input.addEventListener("focus", mask, false);
         input.addEventListener("blur", mask, false);
+
+        let inputDesc = document.querySelector("#contacts__tel-desc");
+        inputDesc.addEventListener("input", mask, false);
+        inputDesc.addEventListener("focus", mask, false);
+        inputDesc.addEventListener("blur", mask, false);
 });
