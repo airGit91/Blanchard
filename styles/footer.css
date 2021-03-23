@@ -1,14 +1,16 @@
+.footer{
+    background-color: var(--black);
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .footer{
         height: 132px;
         margin-top: 30px;
-        background-color: var(--black);
     }
 
     .footer__container{
         max-width: 320px;
         margin: 0 auto;
-        
     }
 
     .footer__list-socials{
@@ -41,5 +43,56 @@
     .footer__logo{
         display: flex;
         justify-content: center;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .footer{
+        height: 140px;
+    }
+
+    .footer__container{
+        max-width: 768px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .footer__list-socials{
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__item-socials{
+        display: flex;
+    }
+
+    .footer__link{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        /* margin-right: 20px; */
+        background-repeat: no-repeat;
+    }
+
+    .vk{
+        background-image: url('../icons/768/vk-768.svg');
+    }
+
+    .inst{
+        background-image: url('../icons/768/instagram-768.svg');
+    }
+
+    .fb{
+        background-image: url('../icons/768/fb-768.svg');
+    }
+
+    .footer__logo{
+        display: flex;
     }
 }

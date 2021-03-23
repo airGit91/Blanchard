@@ -132,6 +132,7 @@
     }
 
     .contacts{
+        position: relative;
         max-width: 768px;
         margin: 0 auto;
         margin-top: 50px;
@@ -232,7 +233,7 @@
         display: inline-block;
         width: 60px;
         height: 60px;
-        margin-right: 20px;
+        margin-right: 27px;
         background-repeat: no-repeat;
     }
 
@@ -248,12 +249,13 @@
         position: absolute;
         padding-top: 14px;
         right: 0;
-        width: 338px; 
-        height: 700px;
+        min-width: 338px; 
+        min-height: 700px;
     }
 
     .ymaps-2-1-78-map{
-        height: 700px !important;
+        min-width: 338px;
+        min-height: 700px;
     }
 
     [class*="ground-pane"]{
