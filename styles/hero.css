@@ -114,7 +114,7 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .main__hero_container{
         max-width: 768px;
         max-height: 745px;
@@ -178,5 +178,23 @@
 
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
         display: none;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+    .main__hero_container{
+        max-width: 1024px;
+    }
+
+    .hero__section--1{
+        background-image: url(../images/1024/bc-hero-1024-1.jpg);
+    }
+
+    .hero__section--2{
+        background-image: url(../images/1024/bc-hero-1024-2.jpg);
+    }
+
+    .hero__section--3{
+        background-image: url(../images/1024/bc-hero-1024-3.jpg);
     }
 }

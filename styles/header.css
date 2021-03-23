@@ -142,7 +142,7 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1) {
     .header{
         max-height: 100px;
     }
@@ -259,5 +259,20 @@
 
     .header__search:active{
         background-image: url(../icons/768/Search-768-hover.svg);
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+    .header{
+        max-height: 100px;
+    }
+
+    .header__container{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 36.7px;
+        padding-right: 50px;
+        padding-bottom: 29px;
+        padding-left: 50px;
     }
 }
