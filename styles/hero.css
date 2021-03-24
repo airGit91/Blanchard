@@ -2,18 +2,12 @@
     background-repeat: no-repeat;
 }
 
-.hero__main-title{
-    font-family: "Open Sans", sans-serif;
-    color: var(--white);
-}
-
+.hero__main-title,
 .hero__content{
-    font-family: "Open Sans", sans-serif;
     color: var(--white);
 }
 
 .hero__link{
-    font-family: "Open Sans", sans-serif;
     color: var(--white);
     background-color: var(--purple);
     border-radius: 100px;
@@ -203,7 +197,25 @@
     }
 
     .hero__main-title{
+        padding-top: 10px;
         padding-right: 142px;
+        line-height: 83px;
         letter-spacing: 3px;
+    }
+
+    .hero__content{
+        padding-top: 9px;
+        letter-spacing: 0.7px;
+    }
+
+    .hero__link{
+        max-width: 317px;
+        margin-top: 135px;
+        padding-top: 24px;
+        padding-right: 29px;
+        padding-bottom: 26px;
+        padding-left: 39px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
     }
 }
