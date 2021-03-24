@@ -28,7 +28,7 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .about-us__container{
         max-width: 768px;
         margin: 0 auto;
@@ -59,8 +59,14 @@
     .about-us__container{
         max-width: 1024px;
         margin: 0 auto;
+        padding-top: 80px;
         padding-right: 50px;
         padding-bottom: 70px;
         padding-left: 50px;
+    }
+
+    .about-us__content{
+        padding-right: 5px;
+        letter-spacing: 0.3px;
     }
 }

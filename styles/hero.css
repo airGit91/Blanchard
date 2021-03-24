@@ -111,7 +111,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .main__hero_container{
         max-width: 768px;
-        max-height: 745px;
+        max-height: 669px;
         margin: 0 auto;
     }
 
@@ -210,12 +210,12 @@
 
     .hero__link{
         max-width: 317px;
-        margin-top: 135px;
+        margin-top: 131px;
         padding-top: 24px;
         padding-right: 29px;
         padding-bottom: 26px;
         padding-left: 39px;
         font-weight: bold;
-        letter-spacing: 1.5px;
+        letter-spacing: -0.9px;
     }
 }
