@@ -158,7 +158,6 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
-
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {
           center: [55.75784872240947,37.5994923144472],

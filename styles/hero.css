@@ -186,6 +186,10 @@
         max-width: 1024px;
     }
 
+    .hero__section{
+        padding-right: 235px;
+    }
+
     .hero__section--1{
         background-image: url(../images/1024/bc-hero-1024-1.jpg);
     }
@@ -196,5 +200,10 @@
 
     .hero__section--3{
         background-image: url(../images/1024/bc-hero-1024-3.jpg);
+    }
+
+    .hero__main-title{
+        padding-right: 142px;
+        letter-spacing: 3px;
     }
 }
