@@ -210,12 +210,12 @@
 
     .hero__link{
         max-width: 317px;
-        margin-top: 131px;
+        margin-top: 135px;
         padding-top: 24px;
         padding-right: 29px;
         padding-bottom: 26px;
         padding-left: 39px;
         font-weight: bold;
-        letter-spacing: -0.9px;
+        letter-spacing: 1.6px;
     }
 }

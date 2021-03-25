@@ -491,3 +491,251 @@
         color: var(--white);
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+    .galery__container{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .galery{
+        min-height: 839px;
+        padding-top: 80px;
+        padding-right: 50px;
+        padding-left: 50px;
+        background-image: url(../images/1024/bc-galery-1024.jpg);
+    }
+
+    .galery__title{
+        font-size: 48px;
+        line-height: 65px;
+    }
+
+    .galery__text-select{
+        margin-top: 16px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 1px;
+    }
+
+    .choices{
+        margin-bottom: 0;
+    }
+
+    .choices__inner{
+        width: 30%;
+    }
+
+    .choices__list--dropdown{
+        width: 30%;
+    }
+
+    .choices[data-type*='select-one']:after {
+        left: 27.5%;
+        top: 35%;
+    }
+
+    .choices[data-type*='select-one'].is-open:after {
+        left: 28.6%;
+      }
+
+      .main__galery > .swiper-container{
+        display: none;
+    }
+
+    .swiper-container-galery{
+        position: relative;
+    }
+
+    .swiper-pagination{
+        position: absolute;
+        display: inline-block;
+        height: 30px;
+        color: var(--white);
+    }
+
+    .swiper-pagination-fraction {
+        display: inline-block;
+        top: -18.6%;
+        left: -7.2%;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .galery__swiper{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #666;
+        border: none;
+        border-radius: 50%;
+        background-image: url('../icons/768/arr-galery.svg');
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        top: -15.7%;
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: 35.7%;
+        transform: rotate(180deg);
+    }
+
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        left: 46.8%;
+    }
+    
+    .galery__images{
+        position: relative;
+        display: grid;
+        grid-template-columns: 317px 317px;
+        grid-template-rows: 280px 280px;
+        grid-column-gap: 35px;
+        grid-row-gap: 36px;
+        width: 317px;
+        margin-top: 165px;
+        background-repeat: no-repeat;
+    }
+
+    .galery__images--1{
+        background-image: url('../images/768/bc-galery-768-1.jpg');
+    }
+    
+    .galery__images--2{
+        background-image: url('../images/768/bc-galery-768-2.jpg');
+    }
+    
+    .galery__images--3{
+        background-image: url('../images/768/bc-galery-768-3.jpg');
+    }
+    
+    .galery__images--4{
+        background-image: url('../images/768/bc-galery-768-4.jpg');
+    }
+
+    .galery__images--5{
+        background-image: url('../images/768/bc-galery-768-5.jpg');
+    }
+    
+    .galery__images--6{
+        background-image: url('../images/768/bc-galery-768-6.jpg');
+    }
+    
+    .galery__images--7{
+        background-image: url('../images/768/bc-galery-768-7.jpg');
+    }
+    
+    .galery__images--8{
+        background-image: url('../images/768/bc-galery-768-8.jpg');
+    }
+    .galery__images--9{
+        background-image: url('../images/768/bc-galery-768-9.jpg');
+    }
+    
+    .galery__images--10{
+        background-image: url('../images/768/bc-galery-768-10.jpg');
+    }
+    
+    .galery__images--11{
+        background-image: url('../images/768/bc-galery-768-11.jpg');
+    }
+    
+    .galery__images--12{
+        background-image: url('../images/768/bc-galery-768-12.jpg');
+    }
+
+    .galery__images--13{
+        background-image: url('../images/768/bc-galery-768-13.jpg');
+    }
+    
+    .galery__images--14{
+        background-image: url('../images/768/bc-galery-768-14.jpg');
+    }
+    
+    .galery__images--15{
+        background-image: url('../images/768/bc-galery-768-15.jpg');
+    }
+    
+    .galery__images--16{
+        background-image: url('../images/768/bc-galery-768-16.jpg');
+    }
+
+    .galery__images--17{
+        background-image: url('../images/768/bc-galery-768-17.jpg');
+    }
+    
+    .galery__images--18{
+        background-image: url('../images/768/bc-galery-768-18.jpg');
+    }
+    
+    .galery__images--19{
+        background-image: url('../images/768/bc-galery-768-19.jpg');
+    }
+    
+    .galery__images--20{
+        background-image: url('../images/768/bc-galery-768-20.jpg');
+    }
+
+    .galery__images--21{
+        background-image: url('../images/768/bc-galery-768-21.jpg');
+    }
+    
+    .galery__images--22{
+        background-image: url('../images/768/bc-galery-768-22.jpg');
+    }
+    
+    .galery__images--23{
+        background-image: url('../images/768/bc-galery-768-23.jpg');
+    }
+    
+    .galery__images--24{
+        background-image: url('../images/768/bc-galery-768-24.jpg');
+    }
+    .galery__images--25{
+        background-image: url('../images/768/bc-galery-768-25.jpg');
+    }
+    
+    .galery__images--26{
+        background-image: url('../images/768/bc-galery-768-26.jpg');
+    }
+    
+    .galery__images--27{
+        background-image: url('../images/768/bc-galery-768-27.jpg');
+    }
+    
+    .galery__images--27{
+        background-image: url('../images/768/bc-galery-768-27.jpg');
+    }
+
+    .galery__images--28{
+        background-image: url('../images/768/bc-galery-768-28.jpg');
+    }
+    
+    .galery__images--29{
+        background-image: url('../images/768/bc-galery-768-29.jpg');
+    }
+    
+    .galery__images--30{
+        background-image: url('../images/768/bc-galery-768-30.jpg');
+    }
+    
+    .galery__images--31{
+        background-image: url('../images/768/bc-galery-768-11.jpg');
+    } 
+
+    .galery__images--32{
+        background-image: url('../images/768/bc-galery-768-12.jpg');
+    } 
+
+    .galery__content{
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--white);
+    }
+}
