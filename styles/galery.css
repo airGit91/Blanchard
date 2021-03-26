@@ -343,7 +343,7 @@
     .galery__images{
         position: relative;
         display: grid;
-        grid-template-columns: 317px 317px;
+        grid-template-columns: 280px 280px;
         grid-template-rows: 280px 280px;
         grid-column-gap: 35px;
         grid-row-gap: 36px;
@@ -553,7 +553,7 @@
         display: inline-block;
         height: 30px;
         color: var(--white);
-    }
+    }   
 
     .swiper-pagination-fraction {
         display: inline-block;
@@ -596,7 +596,6 @@
         grid-column-gap: 35px;
         grid-row-gap: 36px;
         width: 317px;
-        margin-top: 165px;
         background-repeat: no-repeat;
     }
 
