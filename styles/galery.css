@@ -734,11 +734,12 @@
     } 
 
     .galery__content{
-        margin-top: 30px;
+        position: relative;
+        bottom: 233px;
+        width: 285px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 32px;
-        color: var(--white);
     }
 }
