@@ -500,7 +500,7 @@
 
     .galery{
         position: relative;
-        min-height: 839px;
+        max-height: 839px;
         padding-top: 80px;
         padding-right: 50px;
         padding-left: 50px;
