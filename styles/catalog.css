@@ -3,7 +3,9 @@
   }
 
   .catalog__subtitle,
-  .catalog__text{
+  .catalog__text,
+  .catalog__panel-link,
+  .catalog_panel{
     color: var(--dark-gray);
   }
 
@@ -120,7 +122,6 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        color: var(--dark-gray);
         background-color: inherit;
         overflow: hidden;
     }
@@ -135,7 +136,6 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        color: var(--dark-gray);
     }
 }
 
@@ -245,7 +245,6 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        color: var(--dark-gray);
         background-color: inherit;
         overflow: hidden;
     }
@@ -267,11 +266,14 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        color: var(--dark-gray);
     }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+    .Domenico__container{
+        display: none;
+    }
+    
     .catalog__container{
         max-width: 1024px;
         margin: 0 auto;
@@ -342,10 +344,43 @@
         letter-spacing: 0.6px;
     }
 
-    .catalog__list{
+    .Domenico{
         grid-column-start: 1;
+        grid-column-end: 2;
+        padding-top: 5px;
+    }
+
+    .Domenico__subtitle{
+        padding-top: 27px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.6px;
+    }
+
+    .Domenico__little-title{
+        padding-top: 7px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.3px;
+    }
+
+    .Domenico__content{
+        padding-top: 7px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.4px;
+    }
+
+    .catalog__list{
+        grid-column-start: 2;
         grid-column-end: 3;
-        margin-top: 20px;
+        margin-top: 4px;
         border-top: 1px solid var(--gray);
     }
 
@@ -380,16 +415,16 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        color: var(--dark-gray);
         background-color: inherit;
         overflow: hidden;
     }
 
     .panel__container{
         display: grid;
-        grid-template-columns: 208px 208px 185px;
+        grid-template-columns: 208px 208px;
         grid-column-gap: 34px;
-        padding-top: 17px;
+        padding-top: 10px;
+        padding-bottom: 7px;
         border-bottom: 1px solid var(--purple);
     }
 
@@ -402,6 +437,5 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        color: var(--dark-gray);
     }
 }
