@@ -140,6 +140,10 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+    .catalog__Domenico{
+        display: none;
+    }
+    
     .catalog__container{
         max-width: 768px;
         margin: 0 auto;
@@ -297,12 +301,14 @@
     }
 
     .catalog__list-btn{
+        position: relative;
+        right: 61%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 18px;
-        padding-right: 18px;
-        padding-left: 39px;
+        padding-right: 5px;
+        padding-left: 2px;
     }
 
     .catalog__btn{

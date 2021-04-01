@@ -180,6 +180,10 @@
         max-width: 1024px;
     }
 
+    .hero > .swiper-container{
+        max-height: 668px;
+    }
+
     .hero__section{
         padding-right: 235px;
     }
