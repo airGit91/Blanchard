@@ -463,3 +463,43 @@
         border-radius: 100px;
     }
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+    .edition__panel_list{
+        display: none;
+    }
+
+    .edition__list_books{
+        display: none;
+    }
+
+    .editions__container{
+        max-width: 1024px;
+        margin: 0 auto;
+        margin-top: 79px;
+    }
+
+    .editions{
+        position: relative;
+        min-height: 763px;
+        padding-top: 82px;
+        padding-left: 46px;
+        background-image: url(../images/1024/bc-editions-1024.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .editions__subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 65px;
+        letter-spacing: 0.6px;
+    }
+
+    .editions__item-text{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
