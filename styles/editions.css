@@ -32,7 +32,7 @@
     .swiper__editions{
         display: none;
     }
-    
+
     .editions__container{
         max-width: 320px;
         margin: 0 auto;
@@ -389,7 +389,7 @@
         position: relative;
     }
 
-    .swiper__editions > .swiper-button-next, 
+    .swiper__editions > .swiper-button-next,
     .swiper__editions > .swiper-button-prev {
         top: 13.5%;
     }
@@ -475,13 +475,13 @@
 
     .editions__container{
         max-width: 1024px;
+        max-height: 763px;
         margin: 0 auto;
         margin-top: 79px;
     }
 
     .editions{
         position: relative;
-        min-height: 763px;
         padding-top: 82px;
         padding-left: 46px;
         background-image: url(../images/1024/bc-editions-1024.jpg);
@@ -511,28 +511,30 @@
 
     .swiper__editions{
         position: relative;
+        bottom: 618px;
+        left: 27.5%;
     }
 
-    .swiper__editions > .swiper-button-next, 
+    .swiper__editions > .swiper-button-next,
     .swiper__editions > .swiper-button-prev {
-        top: -64.5%;
+        top: 13.1%;
     }
 
     .swiper__editions > .swiper-button-prev{
-        left: 30.5%;
+        left: 2.9%;
     }
 
     .swiper__editions > .swiper-button-next{
-        left: 40.8%;
+        left: 13.3%;
     }
 
     .swiper__editions > .swiper-pagination-fraction {
-        top: -67%;
-        left: -13%;
+        top: 9.5%;
+        left: -40.4%;
     }
 
     .edition__panel_desc{
-        
+
     }
 
     .edition__list_item > label{
@@ -633,7 +635,7 @@
         display: grid;
         grid-template-columns: 290px 290px;
         grid-template-rows: 436px;
-        grid-column-gap: 34px;
+        grid-column-gap: 47px;
     }
 
     .edition__flex-container{

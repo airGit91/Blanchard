@@ -57,7 +57,7 @@
 
     .projects{
         padding-right: 15px;
-        padding-bottom: 50px;   
+        padding-bottom: 50px;
         padding-left: 14px;
     }
 
@@ -366,5 +366,9 @@
 
     .projects__btn-next{
         left: 607px;
-    } 
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+
 }
