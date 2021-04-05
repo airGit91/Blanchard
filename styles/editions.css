@@ -482,6 +482,7 @@
 
     .editions{
         position: relative;
+        max-height: 768px;
         padding-top: 82px;
         padding-left: 46px;
         background-image: url(../images/1024/bc-editions-1024.jpg);
