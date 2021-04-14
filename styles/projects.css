@@ -418,4 +418,106 @@
     line-height: 32px;
     letter-spacing: 0.4px;
   }
+
+  .projects__swiper-desc{
+    position: relative;
+    margin-top: 21px;
+  }
+
+  .projects__slide-container{
+    display: grid;
+    grid-template-columns: 384px 384px;
+    grid-template-rows: 128px;
+    grid-column-gap: 50px;
+    padding-left: 56px;
+  }
+
+  .swiper__slide-content{
+      height: 128px;
+      width: 384px;
+  }
+
+  .swiper__projects_btn{
+    bottom: 80px;
+}
+
+.projects__btn-prev{
+    left: 5px;
+}
+
+.projects__btn-next{
+    left: 863px;
+  }
+
+  .projects__slide--1{
+    background-image: url('../images/1024/proj-partners-1.jpg');
+  }
+
+.projects__slide--2{
+    background-image: url('../images/1024/proj-partners-2.jpg');
+  }
+
+.projects__slide--3{
+    background-image: url('../images/1024/proj-partners-3.jpg');
+  }
+
+.projects__slide--4{
+    background-image: url('../images/1024/proj-partners-4.jpg');
+  }
+
+.projects__slide--5{
+    background-image: url('../images/1024/proj-partners-5.jpg');
+  }
+
+.projects__slide--6{
+    background-image: url('../images/1024/proj-partners-6.jpg');
+  }
+
+.projects__slide--7{
+    background-image: url('../images/1024/proj-partners-7.jpg');
+  }
+
+.projects__slide--8{
+    background-image: url('../images/1024/proj-partners-8.jpg');
+  }
+
+.projects__slide--9{
+    background-image: url('../images/1024/proj-partners-9.jpg');
+  }
+
+.projects__slide--1:hover{
+    background-image: url('../images/320/proj-partners-focus-1.jpg');
+  }
+
+.projects__slide--2:hover{
+    background-image: url('../images/320/proj-partners-focus-2.jpg');
+  }
+
+.projects__slide--3:hover{
+    background-image: url('../images/320/proj-partners-focus-3.jpg');
+  }
+
+.projects__slide--4:hover{
+    background-image: url('../images/320/proj-partners-focus-4.jpg');
+  }
+
+.projects__slide--5:hover{
+    background-image: url('../images/320/proj-partners-focus-5.jpg');
+  }
+
+.projects__slide--6:hover{
+    background-image: url('../images/320/proj-partners-focus-6.jpg');
+  }
+
+.projects__slide--7:hover{
+    background-image: url('../images/320/proj-partners-focus-7.jpg');
+  }
+
+.projects__slide--8:hover{
+    background-image: url('../images/320/proj-partners-focus-8.jpg');
+  }
+
+.projects__slide--9:hover{
+    background-image: url('../images/320/proj-partners-focus-9.jpg');
+  }
 }

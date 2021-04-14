@@ -143,7 +143,7 @@
     .catalog__Domenico{
         display: none;
     }
-    
+
     .catalog__container{
         max-width: 768px;
         margin: 0 auto;
@@ -151,7 +151,7 @@
         padding-right: 50px;
         padding-left: 50px;
     }
-    
+
     .catalog{
         display: grid;
         grid-template-columns: 184px 487px;
@@ -277,7 +277,7 @@
     .Domenico__container{
         display: none;
     }
-    
+
     .catalog__container{
         max-width: 1024px;
         margin: 0 auto;
@@ -343,6 +343,7 @@
         grid-column-start: 1;
         grid-column-end: 3;
         padding-top: 15px;
+        margin-bottom: 36px;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
