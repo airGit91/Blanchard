@@ -30,6 +30,21 @@ window.addEventListener('DOMContentLoaded',function(){
     },
   });
 
+  let swiperGaleryDesc = new Swiper('.galery-container-desc', {
+    cssMode: true,
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+  });
+
   let header__burger = document.querySelector('.header__burger');
   let header__list = document.querySelector('.header__list');
   let back = document.querySelector('body');

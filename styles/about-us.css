@@ -69,3 +69,31 @@
         padding-right: 9px;
     }
 }
+
+@media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
+  .about-us__container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-right: 639px;
+    padding-bottom: 70px;
+    padding-left: 158px;
+  }
+
+  .about-us__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+  }
+
+.about-us__content{
+    padding-top: 15px;
+    padding-right: 34px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+  }
+}

@@ -238,6 +238,7 @@
   .main__hero_container{
     max-width: 1920px;
     margin: 0 auto;
+    height: 700px;
   }
 
   .hero > .swiper-container{
@@ -250,14 +251,14 @@
     display: flex;
     flex-direction: column;
     min-height: 768px;
-    padding-top: 240px;
+    padding-top: 170px;
     padding-right: 58px;
     padding-left: 155px;
 }
 
   .hero__nav{
     position: relative;
-    top: -140px;
+    top: -70px;
     left: -153px;
     display: flex;
     justify-content: space-between;
@@ -273,7 +274,7 @@
   .hero__list{
     position: relative;
     display: flex;
-    flex-basis: 63%;
+    flex-basis: 65%;
     justify-content: space-between;
   }
 
@@ -339,7 +340,7 @@
   }
 
   .hero__main-title{
-    /* padding-right: 60px; */
+    width: 587px;
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
@@ -348,12 +349,25 @@
   }
 
   .hero__content{
-    padding-top: 4px;
+    width: 587px;
+    padding-top: 10px;
     padding-left: 4px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.5px;
+  }
+
+  .hero__link{
+    max-width: 317px;
+    margin-top: 94px;
+    padding-top: 24px;
+    padding-right: 29px;
+    padding-bottom: 26px;
+    padding-left: 39px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    font-size: 16px;
   }
 }
