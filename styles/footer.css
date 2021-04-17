@@ -46,7 +46,7 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .footer{
         height: 140px;
     }
@@ -76,7 +76,6 @@
         display: inline-block;
         width: 60px;
         height: 60px;
-        /* margin-right: 20px; */
         background-repeat: no-repeat;
     }
 
@@ -95,4 +94,12 @@
     .footer__logo{
         display: flex;
     }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+
+.footer__container{
+    max-width: 1024px;
+
+  }
 }

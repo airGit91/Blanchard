@@ -33,28 +33,28 @@ window.addEventListener('DOMContentLoaded',function(){
   let header__burger = document.querySelector('.header__burger');
   let header__list = document.querySelector('.header__list');
   let back = document.querySelector('body');
-  
+
   header__burger.onclick = function() {
       header__burger.classList.toggle('active');
       header__list.classList.toggle('active');
       back.classList.toggle('lock');
   }
-  
+
   header__list.onclick = function() {
     header__list.classList.remove('active');
     header__burger.classList.remove('active');
     back.classList.toggle('lock');
   }
-  
+
   const element = document.querySelector('select');
               const choices = new Choices(element, {
                   searchEnabled: false,
                   itemSelectText: '',
               });
-  
+
   let acc = document.getElementsByClassName('accordion');
   let i;
-  
+
   for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded',function(){
       }
     });
   }
-  
+
     const catalog__item_1 = document.getElementById('catalog__item_1');
     catalog__item_1.onclick = (event) =>{
       let target = event.target;
@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded',function(){
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {
           center: [55.75784872240947,37.5994923144472],
-          zoom: 13
+          zoom: 14
       }, {
           searchControlProvider: 'yandex#search'
       }),
@@ -200,7 +200,7 @@ window.addEventListener('DOMContentLoaded',function(){
             range.select()
         }
     }
-    
+
     function mask(event) {
         let matrix = "+7 (___) ___ ____",
             i = 0,

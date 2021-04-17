@@ -511,9 +511,10 @@
     }
 
     .swiper__editions{
-        position: relative;
-        bottom: 618px;
-        left: 27.5%;
+      position: relative;
+      bottom: 621px;
+      left: 270px;
+      width: 708px;
     }
 
     .swiper__editions > .swiper-button-next,
@@ -522,16 +523,16 @@
     }
 
     .swiper__editions > .swiper-button-prev{
-        left: 2.9%;
+        left: 3.9%;
     }
 
     .swiper__editions > .swiper-button-next{
-        left: 13.3%;
+        left: 18.4%;
     }
 
     .swiper__editions > .swiper-pagination-fraction {
         top: 9.5%;
-        left: -40.4%;
+        left: -37%;
     }
 
     .edition__list_item > label{
@@ -539,6 +540,7 @@
     }
 
     .check__text{
+        padding-left: 4px;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
