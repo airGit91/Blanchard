@@ -137,6 +137,11 @@ window.addEventListener('DOMContentLoaded',function(){
             el: '.swiper-pagination',
             clickable: true,
           },
+      breakpoints:{
+        1920:{
+          spaceBetween: 50,
+        }
+      }
     });
 
     let projectSwiper = new Swiper('.projects__swiper', {

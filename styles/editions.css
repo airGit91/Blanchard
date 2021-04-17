@@ -681,3 +681,165 @@
         border-radius: 100px;
     }
 }
+
+@media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
+  .edition__panel_list{
+    display: none;
+  }
+
+  .edition__list_books{
+    display: none;
+  }
+
+  .editions__container{
+    max-width: 1920px;
+    max-height: 763px;
+    margin: 0 auto;
+    margin-top: 79px;
+  }
+
+  .editions{
+    position: relative;
+    max-height: 768px;
+    padding-top: 82px;
+    padding-left: 157px;
+    background-image: url(../images/1920/bc-editions-1920.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .editions__subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.6px;
+  }
+
+  .editions__list{
+    margin-top: 16px;
+    padding-left: 2px;
+  }
+
+  .editions__item-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.6px;
+  }
+
+  .swiper__editions{
+    position: relative;
+    bottom: 391px;
+    left: 452px;
+    width: 1150px;
+  }
+
+  .swiper__editions > .swiper-button-next,
+  .swiper__editions > .swiper-button-prev {
+      top: -78.9%;
+    }
+
+    .swiper__editions > .swiper-button-prev{
+      left: 0;
+  }
+
+  .swiper__editions > .swiper-button-next{
+      left: 9%;
+  }
+
+  .swiper__editions > .swiper-pagination-fraction {
+    top: -89.5%;
+    left: -44.4%;
+  }
+
+  .edition__list_item > label{
+    position: relative;
+  }
+
+  .check__text{
+    padding-left: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .option {
+    display: block;
+  }
+
+  .check {
+    padding-left: 1.3em;
+  }
+
+  .check__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .check__box {
+    position: absolute;
+    left: 2px;
+    margin-top: 9px;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0 0 0 0.1em var(--white);
+  }
+
+  /* Focused */
+  .check__input:focus + .check__box {
+    box-shadow:
+        0 0 0 0.1em var(--purple);
+  }
+
+  .edition__cost{
+    padding-top: 25px;
+    padding-left: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .edition__cost-form{
+    position: relative;
+    display: flex;
+    max-width: 277px;
+    max-height: 40px;
+    margin-top: 6px;
+    margin-left: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+  }
+
+  .edition__cost-text{
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .edition__cost-number{
+    min-height: 39px;
+    max-width: 73px;
+    padding-left: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: start;
+    line-height: 32px;
+    background-color: rgba(157, 92, 208, 0.5);
+    border: none;
+  }
+}
