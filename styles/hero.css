@@ -178,6 +178,7 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .main__hero_container{
         max-width: 1024px;
+        margin: 0 auto;
     }
 
     .hero > .swiper-container{
@@ -223,4 +224,113 @@
         letter-spacing: 1.6px;
         font-size: 16px;
     }
+}
+
+@media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
+  .swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    display: none;
+  }
+
+  .main__hero_container{
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .hero > .swiper-container{
+    height: 800px;
+  }
+
+  .hero__section{
+    position: relative;
+    top: -100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 768px;
+    padding-top: 240px;
+    padding-right: 58px;
+    padding-left: 155px;
+}
+
+  .hero__nav{
+    position: relative;
+    top: -140px;
+    left: -153px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 112.4%;
+    height: 70px;
+    padding-top: 7px;
+    padding-left: 155px;
+    padding-right: 160px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .hero__list{
+    position: relative;
+    display: flex;
+    flex-basis: 63%;
+    justify-content: space-between;
+  }
+
+  .hero__item{
+    color: var(--white);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .hero__arr{
+    height: 13px;
+    width: 7px;
+    border: none;
+    background-color: inherit;
+    background-image: url(../icons/1024/arr-down.svg);
+    background-repeat: no-repeat;
+  }
+
+  .hero__search{
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-color: inherit;
+    background-image: url(../icons/1024/hero-search-1920.svg);
+    background-repeat: no-repeat;
+  }
+
+.hero__section--1{
+    background-image: url(../images/1920/bc-hero-1920-1.jpg);
+  }
+
+.hero__section--2{
+    background-image: url(../images/1920/bc-hero-1920-2.jpg);
+  }
+
+.hero__section--3{
+    background-image: url(../images/1920/bc-hero-1920-3.jpg);
+  }
+
+  .hero__main-title{
+    /* padding-right: 60px; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: 2px;
+  }
+
+  .hero__content{
+    padding-top: 4px;
+    padding-left: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
 }
