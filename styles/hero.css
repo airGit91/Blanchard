@@ -119,6 +119,10 @@
         margin: 0 auto;
     }
 
+    .hero > .swiper-container{
+        max-height: 669px;
+    }
+
     .hero__section{
         position: relative;
         top: -100px;
@@ -143,7 +147,7 @@
     }
 
     .hero__main-title{
-        padding-right: 60px;
+        padding-right: 76px;
         font-style: normal;
         font-weight: bold;
         font-size: 72px;
@@ -168,6 +172,9 @@
         padding-right: 29px;
         padding-bottom: 22px;
         padding-left: 39px;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 1.1px;
     }
 
     .swiper-button-next:after, .swiper-button-prev:after{

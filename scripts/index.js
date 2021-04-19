@@ -120,7 +120,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
     let eventSwiper = new Swiper('.swiper-container-event', {
       cssMode: true,
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 33,
       loop: true,
           pagination: {
@@ -146,6 +146,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
     let projectSwiper = new Swiper('.projects__swiper', {
       cssMode: true,
+      slidesPerView: 2,
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -157,8 +158,9 @@ window.addEventListener('DOMContentLoaded',function(){
 
     let swiperEditions = new Swiper('.swiper__editions', {
       cssMode: true,
+      slidesPerView: 2,
       loop: true,
-      spaceBetween: 30,
+      spaceBetween: 34,
       pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -167,6 +169,17 @@ window.addEventListener('DOMContentLoaded',function(){
       navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+      },
+      breakpoints:{
+        1024:{
+          spaceBetween: 50,
+        }
+      },
+      breakpoints:{
+        1920:{
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
       },
     });
 

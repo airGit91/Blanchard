@@ -387,36 +387,31 @@
 
     .swiper__editions{
         position: relative;
+        top: 107px;
+        left: 30px;
+        max-width: 614px;
     }
 
     .swiper__editions > .swiper-button-next,
     .swiper__editions > .swiper-button-prev {
-        top: 13.5%;
+        top: -8.5%;
     }
 
     .swiper__editions > .swiper-button-prev{
-        left: 3px;
+      left: -4.3%;
     }
 
     .swiper__editions > .swiper-button-next{
-        left: 14.5%;
+      left: 12.3%;
     }
 
     .swiper__editions > .swiper-pagination-fraction {
-        top: 10%;
-        left: -40.5%;
+        top: -14%;
+        left: -44%;
     }
 
     .editions__images{
-        margin-top: 110px;
-        padding-left: 31px;
-    }
-
-    .editions__list_books{
-        display: grid;
-        grid-template-columns: 290px 290px;
-        grid-template-rows: 436px;
-        grid-column-gap: 34px;
+        max-width: 290px;
     }
 
     .edition__flex-container{
@@ -513,8 +508,8 @@
     .swiper__editions{
       position: relative;
       bottom: 621px;
-      left: 270px;
-      width: 708px;
+      left: 298px;
+      width: 629px;
     }
 
     .swiper__editions > .swiper-button-next,
@@ -523,16 +518,16 @@
     }
 
     .swiper__editions > .swiper-button-prev{
-        left: 3.9%;
+        left: 0;
     }
 
     .swiper__editions > .swiper-button-next{
-        left: 18.4%;
+        left: 16.1%;
     }
 
     .swiper__editions > .swiper-pagination-fraction {
         top: 9.5%;
-        left: -37%;
+        left: -40%;
     }
 
     .edition__list_item > label{
@@ -626,15 +621,8 @@
     }
 
     .editions__images{
+        max-width: 290px;
         margin-top: 110px;
-        padding-left: 31px;
-    }
-
-    .editions__list_books{
-        display: grid;
-        grid-template-columns: 290px 290px;
-        grid-template-rows: 436px;
-        grid-column-gap: 47px;
     }
 
     .edition__flex-container{
@@ -730,14 +718,14 @@
 
   .swiper__editions{
     position: relative;
-    bottom: 391px;
+    bottom: 506px;
     left: 452px;
     width: 1150px;
   }
 
   .swiper__editions > .swiper-button-next,
   .swiper__editions > .swiper-button-prev {
-      top: -78.9%;
+      top: -8%;
     }
 
     .swiper__editions > .swiper-button-prev{
@@ -749,7 +737,7 @@
   }
 
   .swiper__editions > .swiper-pagination-fraction {
-    top: -89.5%;
+    top: -12.5%;
     left: -44.4%;
   }
 
@@ -841,5 +829,49 @@
     line-height: 32px;
     background-color: rgba(157, 92, 208, 0.5);
     border: none;
+  }
+
+  .edition__flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .edition__book-name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  .edition__book-author{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .edition__book-cost{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .edition__item_btn{
+    width: 120px;
+    margin-top: 14px;
+    padding-top: 7px;
+    padding-right: 15.17px;
+    padding-bottom: 9px;
+    padding-left: 15.17px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    background-color: inherit;
+    border: 2px solid var(--purple);
+    border-radius: 100px;
   }
 }

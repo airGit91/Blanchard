@@ -260,6 +260,10 @@
       display: none;
     }
 
+    .galery-container-desc{
+      display: none;
+    }
+
     .galery__container{
         max-width: 768px;
         margin: 0 auto;

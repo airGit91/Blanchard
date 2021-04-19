@@ -141,12 +141,6 @@
         line-height: 65px;
     }
 
-    .events-swiper__container{
-        display: grid;
-        grid-template-columns: 317px 317px;
-        grid-column-gap: 34px;
-    }
-
     .events__images{
         position: relative;
         max-width: 317px;
