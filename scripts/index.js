@@ -141,14 +141,30 @@ window.addEventListener('DOMContentLoaded',function(){
         1920:{
           spaceBetween: 50,
         }
-      }
+      },
     });
 
     let projectSwiper = new Swiper('.projects__swiper', {
       cssMode: true,
-      slidesPerView: 2,
       slidesPerView: 1,
       spaceBetween: 30,
+      loop: true,
+      navigation: {
+        nextEl: '.projects__btn-next',
+        prevEl: '.projects__btn-prev',
+      },
+      breakpoints:{
+        768:{
+          slidesPerView: 2,
+          spaceBetween: 20,
+        }
+      },
+    });
+
+    let projectSwiperDesc = new Swiper('.projects__swiper-desc', {
+      cssMode: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
       loop: true,
       navigation: {
         nextEl: '.projects__btn-next',
@@ -180,17 +196,6 @@ window.addEventListener('DOMContentLoaded',function(){
           slidesPerView: 3,
           spaceBetween: 50,
         }
-      },
-    });
-
-    let projectSwiperDesc = new Swiper('.projects__swiper-desc', {
-      cssMode: true,
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: '.projects__btn-next',
-        prevEl: '.projects__btn-prev',
       },
     });
 
