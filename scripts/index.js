@@ -156,7 +156,11 @@ window.addEventListener('DOMContentLoaded',function(){
       breakpoints:{
         768:{
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 34,
+        },
+        1024:{
+          slidesPerView: 2,
+          spaceBetween: 50,
         }
       },
     });
