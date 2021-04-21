@@ -169,17 +169,6 @@ window.addEventListener('DOMContentLoaded',function(){
       },
     });
 
-    let projectSwiperDesc = new Swiper('.projects__swiper-desc', {
-      cssMode: true,
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: '.projects__btn-next',
-        prevEl: '.projects__btn-prev',
-      },
-    });
-
     let swiperEditions = new Swiper('.swiper__editions', {
       cssMode: true,
       slidesPerView: 2,

@@ -365,25 +365,25 @@
 
   .contacts__msg{
     margin-top: 15px;
-}
+  }
 
-.contacts__list-msg{
+  .contacts__list-msg{
     display: flex;
-}
+  }
 
-.contacts__msg-link{
+  .contacts__msg-link{
     display: inline-block;
     width: 60px;
     height: 60px;
     margin-right: 27px;
     background-repeat: no-repeat;
-}
+  }
 
-.wtsp{
+  .wtsp{
     background-image: url('../icons/768/Whatsapp-Icon-768.svg');
-}
+  }
 
-.telegram{
+  .telegram{
     background-image: url('../icons/768/telegram-Icon-768.svg');
   }
 
@@ -401,6 +401,147 @@
   }
 
 [class*="ground-pane"]{
+    filter: grayscale(1);
+  }
+}
+
+@media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
+  .contacts__title{
+    display: none;
+  }
+
+.contacts__container{
+    display: none;
+  }
+
+  .contacts{
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .contacts__tittle-desc{
+    padding-left: 159px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 1.7px;
+  }
+
+  .contacts__desc{
+    display: inline-block;
+    margin-top: 14px;
+    padding-top: 124px;
+    padding-right: 45px;
+    padding-bottom: 104px;
+    padding-left: 160px;
+    height: 700px;
+    width: 683px;
+    border: 1px solid #CACACA;
+  }
+
+  .contacts__subtitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .contacts__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+  }
+
+  .contacts__form_title{
+    margin-top: 31px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.7px;
+  }
+
+  .contacts__form{
+    padding-top: 16px;
+  }
+
+  .contacts__input{
+    height: 40px;
+    width: 85%;
+    margin-bottom: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 100px;
+  }
+
+  .contacts__submit{
+    display: block;
+    width: 155px;
+    height: 58px;
+    border: 2px solid var(--purple);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--purple);
+    background-color: inherit;
+  }
+
+  .contacts__text_subtitle{
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+  }
+
+  .contacts__msg{
+    margin-top: 15px;
+  }
+
+  .contacts__list-msg{
+    display: flex;
+  }
+
+  .contacts__msg-link{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 27px;
+    background-repeat: no-repeat;
+  }
+
+  .wtsp{
+    background-image: url('../icons/768/Whatsapp-Icon-768.svg');
+  }
+
+  .telegram{
+    background-image: url('../icons/768/telegram-Icon-768.svg');
+  }
+
+  .YandexMap{
+    position: absolute;
+    padding-top: 13px;
+    right: 17px;
+    min-width: 1220px;
+    min-height: 700px;
+  }
+
+  .ymaps-2-1-78-map{
+    min-width: 1220px;
+    min-height: 700px;
+  }
+
+  [class*="ground-pane"]{
     filter: grayscale(1);
   }
 }
