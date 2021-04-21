@@ -45,6 +45,11 @@ a{
     cursor: pointer;
 }
 
+a:focus{
+  border: 2px solid #7943A4;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
 button{
     cursor: pointer;
 }
