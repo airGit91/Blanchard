@@ -141,7 +141,6 @@
     .catalog_panel{
         max-height: 0;
         transition: max-height 0.3s ease-out;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -162,7 +161,7 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
     .catalog__Domenico{
         display: none;
     }
@@ -243,7 +242,6 @@
     .catalog_panel{
         max-height: 0;
         transition: max-height 0.3s ease-out;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -388,7 +386,6 @@
     .catalog_panel{
         max-height: 0;
         transition: max-height 0.3s ease-out;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -453,6 +450,26 @@
     border-radius: 50px;
   }
 
+    .btn-france{
+      background-image: url(../icons/768/france-768.svg);
+  }
+
+  .btn-russia{
+      background-image: url(../icons/768/russia-768.svg);
+  }
+
+  .btn-italy{
+      background-image: url(../icons/768/italy-768.svg);
+  }
+
+  .btn-germany{
+      background-image: url(../icons/768/germany-768.svg);
+  }
+
+  .btn-belgium{
+      background-image: url(../icons/768/bellgium-768.svg);
+  }
+
   .catalog__text{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -510,7 +527,6 @@
   .catalog_panel{
     max-height: 0;
     transition: max-height 0.3s ease-out;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
