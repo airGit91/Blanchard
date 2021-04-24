@@ -1,28 +1,28 @@
-/* Open Sans Regular */
 @font-face {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    src: local("Open Sans"),
-         url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2"),
+       url("../fonts/OpenSans-Regular.woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
-/* Open Sans Bold */
 @font-face {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    src: local("Open Sans"),
-         url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2"),
+       url("../fonts/OpenSans-SemiBold.woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
 }
 
-/* Open Sans Bold */
 @font-face {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    src: local("Open Sans"),
-         url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff"),
+       url("../fonts/OpenSans-Bold.woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
 
 * {
@@ -30,7 +30,8 @@
 }
 
 html,body {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Open Sans";
     scroll-behavior: smooth;
   }
 

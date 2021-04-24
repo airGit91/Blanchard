@@ -269,14 +269,13 @@
 
   .hero__nav{
     position: relative;
-    top: -70px;
+    top: -75px;
     left: -153px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 112.4%;
     height: 70px;
-    padding-top: 7px;
     padding-left: 155px;
     padding-right: 160px;
     background: rgba(0, 0, 0, 0.4);
@@ -324,8 +323,7 @@
 
   .hero__search-input{
     width: 218px;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.85);
@@ -351,34 +349,34 @@
   }
 
   .hero__main-title{
-    width: 587px;
+    position: relative;
+    bottom: 1%;
+    width: 597px;
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
     line-height: 90px;
-    letter-spacing: 2px;
   }
 
   .hero__content{
     width: 587px;
-    padding-top: 10px;
+    padding-top: 2px;
     padding-left: 4px;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
-    letter-spacing: 0.5px;
   }
 
   .hero__link{
-    max-width: 317px;
+    max-width: 322px;
     margin-top: 94px;
-    padding-top: 24px;
+    padding-top: 25px;
     padding-right: 29px;
     padding-bottom: 26px;
     padding-left: 39px;
     font-weight: bold;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.3px;
     font-size: 16px;
   }
 }

@@ -519,22 +519,17 @@
   }
 
   .projects__title{
-    font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 65px;
-    letter-spacing: 1.8px;
   }
 
   .projects__content{
     width: 1080px;
-    padding-top: 16px;
-    padding-left: 2px;
-    font-style: normal;
-    font-weight: normal;
+    padding-top: 19px;
+    font-weight: 600;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0.4px;
   }
 
   .projects__btn{
@@ -552,7 +547,6 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: 0.4px;
   }
 
   .projects__swiper{
