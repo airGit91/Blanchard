@@ -13,22 +13,36 @@
     outline: 2px solid var(--purple);
 }
 
-.header__burger > span,
-.header__burger::before,
-.header__burger::after,
+.header__burger > span{
+  transition: 0.3s ease 0s;
+}
+.header__burger::before{
+  transition: 0.3s ease 0s;
+}
+.header__burger::after{
+  transition: 0.3s ease 0s;
+}
 .header__list{
-    transition: all 0.3s ease 0s;
+    transition: 0.3s ease 0s;
 }
 
-.header__nav_link{
+.header__link{
     color: var(--white);
+}
+
+.header__link:hover{
+  color: var(--hover-purple);
+}
+
+.header__link:active{
+  color: var(--active-purple);
 }
 
 .header__search{
     background-repeat: no-repeat;
     border: none;
     background-color: var(--black);
-    transition: .3s;
+    transition-duration: .3s;
 }
 
 
@@ -117,7 +131,7 @@
         overflow: auto;
     }
 
-    .header__nav_link{
+    .header__link{
         display: block;
         padding: 12px 24px;
         font-size: 20px;
@@ -153,7 +167,7 @@
   }
 
   .header{
-        max-height: 100px;
+        /* max-height: 100px; */
     }
 
     .header__container{
@@ -237,7 +251,7 @@
         overflow: auto;
     }
 
-    .header__nav_link{
+    .header__link{
         display: block;
         padding: 12px 24px;
         font-size: 20px;
@@ -277,7 +291,7 @@
   }
 
   .header{
-        max-height: 100px;
+        /* max-height: 100px; */
     }
 
     .header__container{
@@ -300,16 +314,16 @@
   }
 
   .header{
-    max-height: 100px;
+    /* max-height: 100px; */
   }
 
 .header__container{
-    max-width: 1920px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-top: 30px;
-    padding-right: 158px;
+    /* padding-right: 158px; */
     padding-bottom: 29px;
-    padding-left: 159px;
+    /* padding-left: 159px; */
   }
 
   .header__nav{
@@ -323,14 +337,14 @@
     justify-content: space-between;
   }
 
-  .header__nav_link{
+  .header__link{
     font-size: 18px;
   }
 
   .header__enter{
     position: relative;
     padding-bottom: 6px;
-    width: 75px;
+    padding-left: 15px;
     text-align: right;
     font-size: 18px;
     color: var(--white);

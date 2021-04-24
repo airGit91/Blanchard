@@ -89,7 +89,7 @@
   margin-top: -2.5px;
   pointer-events: none;
   transition-duration: .3s;
-  transition: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .choices[data-type*='select-one'].is-open:after {
