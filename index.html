@@ -38,8 +38,9 @@
 
             <picture class="header__logo logo">
                 <source media="(min-width:320px) and (max-width:767px)" srcset="images/logo-320.svg">
-                <source media="(min-width:768px) and (max-width:1920px)" srcset="images/logo-768.svg">
-                <source media="(min-width:1920px)" srcset="images/logo-1024.svg">
+                <source media="(min-width:768px) and (max-width:1023px)" srcset="images/logo-768.svg">
+                <source media="(min-width:1024px) and (max-width:1919px)" srcset="images/logo-1024.svg">
+                <source media="(min-width:1920px)" srcset="images/logo-1920.svg">
                 <img class="logo__image" src="#" alt="Логотип-Blanchard">
             </picture>
 
@@ -50,21 +51,27 @@
                     <li class="header__item">
                         <a class="header__link" href="#about_us">О нас</a>
                     </li>
+
                     <li class="header__item">
                         <a class="header__link" href="#galery">Галерея</a>
                     </li>
+
                     <li class="header__item">
                         <a class="header__link" href="#catalog">Каталог</a>
                     </li>
+
                     <li class="header__item">
                         <a class="header__link" href="#events">События</a>
                     </li>
+
                     <li class="header__item">
                         <a class="header__link" href="#editions">Издания</a>
                     </li>
+
                     <li class="header__item">
                         <a class="header__link" href="#projects">Проекты</a>
                     </li>
+
                     <li class="header__item">
                         <a class="header__link" href="#contacts">Контакты</a>
                     </li>
@@ -73,6 +80,40 @@
 
             <button aria-label="Вход" class="header__enter" type="button">Войти</button>
         </div>
+
+        <div class="header__nav-container">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <ul class="header__nav-items">
+                <li class="header__nav-item">
+                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Реализм</button>
+                </li>
+
+                <li class="header__nav-item">
+                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Импрессионизм</button>
+                </li>
+
+                <li class="header__nav-item">
+                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Постимпрессионизм</button>
+                </li>
+
+                <li class="header__nav-item">
+                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Авангард</button>
+                </li>
+
+                <li class="header__nav-item">
+                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Футуризм</button>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <form class="hero__form" action="#" method="POST" action="https://echo.htmlacademy.ru/">
+                <button aria-label="Поиск по сайту" class="hero__search" type="button" tabindex="0"></button>
+                <input class="header__nav-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
+              </form>
+            </li>
+          </ul>
+        </div>
     </header>
 
     <main class="main">
@@ -80,102 +121,29 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <section class="swiper-slide hero__section hero__section--1">
-                        <div class="hero__nav">
-                          <ul class="hero__list">
-                            <li class="hero__item">Реализм
-                              <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                            </li>
-                            <li class="hero__item">Импрессионизм
-                              <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                            </li>
-                            <li class="hero__item">Постимпрессионизм
-                              <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                            </li>
-                            <li class="hero__item">Авангард
-                              <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                            </li>
-                            <li class="hero__item">Футуризм
-                              <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                            </li>
-                          </ul>
-
-                          <form class="hero__form" action="#" method="POST" action="https://echo.htmlacademy.ru/">
-                            <button aria-label="Поиск по сайту" class="hero__search" type="button" tabindex="0"></button>
-                            <input class="hero__search-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
-                          </form>
-                        </div>
-
-                        <h1 class="hero__main-title">
+                        <p class="hero__main-title">
                             Прикоснитесь к прекрасному
-                        </h1>
+                        </p>
                         <p class="hero__content">
                             Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
                         </p>
                         <a href="#contacts" class="hero__link">Подписаться на рассылку</a>
                     </section>
+
                     <section class="swiper-slide hero__section hero__section--2">
-                      <div class="hero__nav">
-                        <ul class="hero__list">
-                          <li class="hero__item">Реализм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Импрессионизм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Постимпрессионизм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Авангард
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Футуризм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                        </ul>
-
-                        <form class="hero__form" action="#" method="POST" action="https://echo.htmlacademy.ru/">
-                          <button aria-label="Поиск по сайту" class="hero__search" type="button" tabindex="0"></button>
-                          <input class="hero__search-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
-                        </form>
-                      </div>
-
-                        <h1 class="hero__main-title">
+                        <p class="hero__main-title">
                             Прикоснитесь к прекрасному
-                        </h1>
+                        </p>
                         <p class="hero__content">
                             Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
                         </p>
                         <a href="#contacts" class="hero__link">Подписаться на рассылку</a>
                     </section>
+
                     <section class="swiper-slide hero__section hero__section--3">
-                      <div class="hero__nav">
-                        <ul class="hero__list">
-                          <li class="hero__item">Реализм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Импрессионизм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Постимпрессионизм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Авангард
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                          <li class="hero__item">Футуризм
-                            <button aria-label="выпадающий список" class="hero__arr" type="button" tabindex="0"></button>
-                          </li>
-                        </ul>
-
-                        <form class="hero__form" action="#" method="POST" action="https://echo.htmlacademy.ru/">
-                          <button aria-label="Поиск по сайту" class="hero__search" type="button" tabindex="0"></button>
-                          <input class="hero__search-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
-                        </form>
-                      </div>
-
-                        <h1 class="hero__main-title">
+                        <p class="hero__main-title">
                             Прикоснитесь к прекрасному
-                        </h1>
+                        </p>
                         <p class="hero__content">
                             Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
                         </p>
@@ -2220,9 +2188,11 @@
             </ul>
 
             <picture class="footer__logo logo">
-                <source media="(min-width:320px) and (max-width:767px)" srcset="images/logo-320.svg">
-                    <source media="(min-width:768px)" srcset="images/logo-768.svg">
-                <img class="logo__image" src="#" alt="Логотип-Blanchard">
+              <source media="(min-width:320px) and (max-width:767px)" srcset="images/logo-320.svg">
+              <source media="(min-width:768px) and (max-width:1023px)" srcset="images/logo-768.svg">
+              <source media="(min-width:1024px) and (max-width:1919px)" srcset="images/logo-1024.svg">
+              <source media="(min-width:1920px)" srcset="images/logo-1920.svg">
+              <img class="logo__image" src="#" alt="Логотип-Blanchard">
             </picture>
         </div>
     </footer>
