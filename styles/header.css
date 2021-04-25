@@ -390,6 +390,14 @@
     background-repeat: no-repeat;
   }
 
+  .header__nav-btn:hover{
+    color: var(--hover-purple);
+  }
+
+  /* .header__nav-btn:hover .header__nav-btn::after{
+    color: var(--hover-purple);
+  } */
+
   .hero__form{
     position: relative;
   }
