@@ -49,8 +49,8 @@
     }
 
     .hero__main-title{
-        padding-left: 31px;
-        padding-right: 31px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
@@ -71,7 +71,6 @@
     }
 
     .hero__link{
-        max-width: 200px;
         margin-top: 40px;
         padding-top: 12px;
         padding-right: 19px;
