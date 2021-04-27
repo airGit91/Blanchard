@@ -28,6 +28,11 @@
     font-weight: 600;
 }
 
+/* .header__nav-item:hover > .header__link,
+.header__nav-item:hover > .header__link:after{
+  color: var(--hover-purple);
+} */
+
 .header__link:hover{
   color: var(--hover-purple);
 }

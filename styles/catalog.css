@@ -235,8 +235,9 @@
         font-size: 24px;
         background-image: url('../icons/768/bc-catalog-arr-down.svg');
     }
+
     .accordion__item{
-        background-image: url('../icons/768/bc-catalog-arr-up.svg');
+      background-image: url('../icons/768/bc-catalog-arr-up.svg');
     }
 
     .catalog_panel{
@@ -383,6 +384,11 @@
         font-size: 24px;
         background-image: url('../icons/768/bc-catalog-arr-down.svg');
     }
+
+    .accordion__item{
+      background-image: url('../icons/768/bc-catalog-arr-up.svg');
+    }
+
     .catalog_panel{
         max-height: 0;
         transition: max-height 0.3s ease-out;
@@ -522,6 +528,10 @@
     height: 113px;
     font-size: 24px;
     background-image: url('../icons/768/bc-catalog-arr-down.svg');
+  }
+
+  .accordion__item{
+    background-image: url('../icons/768/bc-catalog-arr-up.svg');
   }
 
   .catalog_panel{
