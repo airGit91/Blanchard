@@ -1,14 +1,27 @@
 .events__subtitle{
-    color: var(--dark-gray);
+  font-weight: normal;
+  color: var(--dark-gray);
 }
 
 .events__little-title{
-    color: var(--space-gray);
+  color: var(--space-gray);
 }
 
 .events__link{
-    color: var(--purple);
-    border-bottom: 1px solid var(--purple);
+  color: var(--purple);
+  border-bottom: 1px solid var(--purple);
+}
+
+.events__container{
+  margin: 0 auto;
+}
+
+.events__images{
+  background-repeat: no-repeat;
+}
+
+.events__content{
+  border: 1px solid var(--gray);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
@@ -22,7 +35,6 @@
 
     .events__container{
         max-width: 320px;
-        margin: 0 auto;
         margin-top: 50px;
     }
 
@@ -32,8 +44,6 @@
     }
 
     .events__subtitle{
-        font-style: normal;
-        font-weight: normal;
         font-size: 28px;
         line-height: 38px;
     }
@@ -48,7 +58,6 @@
         flex-direction: column;
         min-height: 703px;
         margin-top: 10px;
-        background-repeat: no-repeat;
     }
 
     .events__images--1{
@@ -79,11 +88,9 @@
         padding-right: 10.58px;
         padding-bottom: 50px;
         padding-left: 28.58px;
-        border: 1px solid var(--gray);
     }
 
     .events__little-title{
-        font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
@@ -92,7 +99,6 @@
 
     .events__content-title{
         padding-top: 4px;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
@@ -100,7 +106,6 @@
     }
 
     .events__content-text{
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -110,7 +115,6 @@
     .events__link{
         position: absolute;
         bottom: 49px;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -128,15 +132,12 @@
 
     .events__container{
         max-width: 768px;
-        margin: 0 auto;
         margin-top: 71px;
         padding-right: 50px;
         padding-left: 49px;
     }
 
     .events__subtitle{
-        font-style: normal;
-        font-weight: normal;
         font-size: 48px;
         line-height: 65px;
     }
@@ -146,7 +147,6 @@
         max-width: 317px;
         min-height: 685px;
         margin-top: 15px;
-        background-repeat: no-repeat;
     }
 
     .events__images--1{
@@ -177,12 +177,10 @@
         padding-right: 10.58px;
         padding-bottom: 50px;
         padding-left: 28.58px;
-        border: 1px solid var(--gray);
     }
 
     .events__little-title{
         padding-left: 7px;
-        font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
@@ -194,7 +192,6 @@
         padding-top: 4px;
         padding-right: 4px;
         padding-left: 7px;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
@@ -205,7 +202,6 @@
         padding-top: 2px;
         padding-right: 11px;
         padding-left: 5px;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -216,7 +212,6 @@
         position: absolute;
         bottom: 49px;
         left: 36px;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 25px;
@@ -246,15 +241,12 @@
 
     .events__container{
         max-width: 1024px;
-        margin: 0 auto;
         margin-top: 32px;
         padding-right: 50px;
         padding-left: 49px;
     }
 
     .events__subtitle{
-        font-style: normal;
-        font-weight: normal;
         font-size: 48px;
         line-height: 65px;
     }
@@ -268,7 +260,6 @@
         max-width: 317px;
         min-height: 685px;
         margin-top: 15px;
-        background-repeat: no-repeat;
     }
 
     .events__images--1{
@@ -299,12 +290,10 @@
         padding-right: 10.58px;
         padding-bottom: 50px;
         padding-left: 28.58px;
-        border: 1px solid var(--gray);
     }
 
     .events__little-title{
         padding-left: 7px;
-        font-style: normal;
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
@@ -316,7 +305,6 @@
         padding-top: 4px;
         padding-right: 4px;
         padding-left: 7px;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
@@ -327,7 +315,6 @@
         padding-top: 2px;
         padding-right: 11px;
         padding-left: 5px;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
@@ -338,7 +325,6 @@
         position: absolute;
         bottom: 49px;
         left: 36px;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 25px;
@@ -368,15 +354,12 @@
 
   .events__container{
     max-width: 1920px;
-    margin: 0 auto;
     margin-top: 124px;
     padding-right: 50px;
     padding-left: 158px;
   }
 
   .events__subtitle{
-    font-style: normal;
-    font-weight: normal;
     font-size: 48px;
     line-height: 65px;
   }
@@ -391,7 +374,6 @@
     min-height: 700px;
     max-width: 500px;
     margin-top: 15px;
-    background-repeat: no-repeat;
   }
 
   .events__images--1{
@@ -422,12 +404,10 @@
     padding-right: 10.58px;
     padding-bottom: 50px;
     padding-left: 44px;
-    border: 1px solid var(--gray);
   }
 
   .events__little-title{
     padding-left: 7px;
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -439,7 +419,6 @@
     padding-top: 4px;
     padding-right: 4px;
     padding-left: 7px;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
@@ -450,7 +429,6 @@
     padding-top: 2px;
     padding-right: 25px;
     padding-left: 5px;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
@@ -461,7 +439,6 @@
     position: absolute;
     bottom: 42px;
     left: 52px;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;

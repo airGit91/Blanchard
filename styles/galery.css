@@ -7,19 +7,15 @@
 }
 
 .galery__title{
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
     font-weight: normal;
     color: var(--white);
 }
 
 .galery__text-select{
-    font-family: "Open Sans", sans-serif;
     color: var(--white);
 }
 
 .galery__content{
-    font-style: normal;
     font-weight: normal;
     color: var(--white);
 }
@@ -28,16 +24,14 @@
     color: var(--purple);
 }
 
+.galery__images{
+  background-repeat: no-repeat;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .swiper-container-galery{
         display: none;
     }
-
-    /* .galery-container-desc > .swiper-pagination-fraction,
-    .galery-container-desc > .galery__swiper-prev,
-    .galery-container-desc > .galery__swiper-next{
-      display: none;
-    } */
 
     .galery-container-desc{
       display: none;
@@ -63,7 +57,6 @@
 
     .galery__text-select{
         padding-top: 13px;
-        font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 32px;
@@ -75,7 +68,6 @@
         flex-direction: column;
         min-height: 429px;
         padding-top: 79px;
-        background-repeat: no-repeat;
     }
 
     .galery__images--1{
@@ -234,8 +226,6 @@
         bottom: 10px;
         left: 0;
         width: 100%;
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
         font-weight: normal;
         font-size: 16px;
         letter-spacing: 2px;
@@ -369,7 +359,6 @@
         grid-row-gap: 36px;
         width: 317px;
         margin-top: 165px;
-        background-repeat: no-repeat;
     }
 
     .galery__images--1{
@@ -504,7 +493,6 @@
 
     .galery__content{
         margin-top: 30px;
-        font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 32px;
@@ -624,7 +612,6 @@
         grid-column-gap: 35px;
         grid-row-gap: 36px;
         width: 317px;
-        background-repeat: no-repeat;
     }
 
     .galery__images--1{
@@ -761,7 +748,6 @@
         position: relative;
         bottom: 233px;
         width: 285px;
-        font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 32px;
@@ -880,7 +866,6 @@
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     width: 350px;
-    background-repeat: no-repeat;
   }
 
   .galery__images--1{
@@ -1007,7 +992,6 @@
     position: relative;
     bottom: 200px;
     width: 350px;
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 32px;
