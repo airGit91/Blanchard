@@ -349,15 +349,21 @@
       border: none;
       background-image: url(../icons/1024/enter.svg);
       background-repeat: no-repeat;
-      background-position: 0px 12px;
+      background-position: 0px 14px;
   }
 
   .header__enter:hover{
     color: var(--hover-purple);
+    background-image: url(../icons/1024/enter-hover.svg);
+    background-repeat: no-repeat;
+    background-position: -4px 14px;
   }
 
   .header__enter:active{
     color: var(--active-purple);
+    background-image: url(../icons/1024/enter-active.svg);
+    background-repeat: no-repeat;
+    background-position: -4px 14px;
   }
 
   .header__enter:focus{
