@@ -40,6 +40,21 @@
   background-repeat: no-repeat;
 }
 
+.contacts__submit:focus{
+  box-shadow:  0 0 0 5px #fff, 0 0 0 8px var(--hover-purple);
+}
+
+.contacts__submit:hover{
+  background-color: var(--hover-purple);
+  color: #fff;
+}
+
+.contacts__submit:active{
+  background-color: var(--active-purple);
+  box-shadow:  0 0 0 2px #fff, 0 0 0 5px var(--hover-purple);
+  color: #fff;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .contacts__tittle-desc{
         display: none;

@@ -112,11 +112,30 @@
   line-height: 16px;
 }
 
+.editions__images{
+  padding-bottom: 5px;
+}
+
 .edition__item_btn{
   text-align: center;
   background-color: inherit;
   border: 2px solid var(--purple);
   border-radius: 100px;
+}
+
+.edition__item_btn:focus{
+  box-shadow:  0 0 0 2px rgba(0, 0, 0, 1), 0 0 0 4px var(--hover-purple);
+}
+
+.edition__item_btn:hover{
+  background-color: var(--purple);
+  color: #fff;
+}
+
+.edition__item_btn:active{
+  background-color: var(--active-purple);
+  box-shadow: 0 0 0 3px var(--hover-purple);
+  color: #fff;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
