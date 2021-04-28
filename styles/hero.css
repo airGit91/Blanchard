@@ -1,16 +1,43 @@
 .hero__section{
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .hero__main-title,
 .hero__content{
-    color: var(--white);
+  color: var(--white);
 }
 
 .hero__link{
-    color: var(--white);
-    background-color: var(--purple);
-    border-radius: 100px;
+  color: var(--white);
+  background-color: var(--purple);
+  border-radius: 100px;
+}
+
+.hero__link:hover{
+  padding-top: 22px;
+  padding-right: 26px;
+  padding-bottom: 24px;
+  padding-left: 36px;
+  border: 3px solid var(--border-hover);
+}
+
+.hero__link:focus{
+  padding-top: 25px;
+  padding-right: 29px;
+  padding-bottom: 26px;
+  padding-left: 39px;
+  border: none;
+  outline: none;
+  box-shadow:  0 0 0 2px #fff, 0 0 0 5px var(--hover-purple);
+}
+
+.hero__link:active{
+  padding-top: 22px;
+  padding-right: 26px;
+  padding-bottom: 24px;
+  padding-left: 36px;
+  background-color: var(--active-purple);
+  border: 3px solid var(--border-hover);
 }
 
 .hero > .swiper-container > .swiper-pagination{
