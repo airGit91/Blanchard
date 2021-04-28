@@ -70,15 +70,44 @@
 }
 
 .catalog__item:hover{
-  color: var(--purple);
-  border-top: 1px solid var(--purple);
-  border-bottom: 1px solid var(--purple);
+  color: var(--active-purple);
+  border-top: 1px solid var(--active-purple);
+  border-bottom: 1px solid var(--active-purple);
 }
 
 .accordion__item{
+  color: var(--active-purple);
+  background-image: url(../icons/768/bc-catalog-arr-up.svg);
   background-repeat: no-repeat;
   background-position: right;
-  border-bottom: 1px solid var(--purple);
+  border-top: 1px solid var(--active-purple);
+  border-bottom: 1px solid var(--active-purple);
+}
+
+.catalog__panel-link:focus{
+  outline: 2px solid var(--focus-purple);
+}
+
+.catalog__panel-link:after{
+  display: block;
+  margin-top: 1px;
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--purple);
+  transition: width .3s ease-in-out;
+}
+
+.catalog__panel-link:hover{
+  color:var(--purple);
+}
+
+.catalog__panel-link:hover:after{
+  width: 100%;
+}
+
+.catalog__panel-link:active{
+  color: var(--active-purple);
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
