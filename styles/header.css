@@ -539,6 +539,85 @@
     font-size: 14px;
     line-height: 19px;
     color: var(--white);
+  }
+
+  .tinto{
     background-image: url('../images/1920/Тинторетто.jpg');
+  }
+
+  .frid{
+    background-image: url('../images/1920/Фридрих.jpg');
+  }
+
+  .leo{
+    background-image: url('../images/1920/Леонардо.jpg');
+  }
+
+  .verr{
+    background-image: url('../images/1920/Веррокью.jpg');
+  }
+
+  .mone{
+    background-image: url('../images/1920/Моне.jpg');
+  }
+
+  .sisley{
+    background-image: url('../images/1920/Сислей.jpg');
+  }
+
+  .mane{
+    background-image: url('../images/1920/Мане.jpg');
+  }
+
+  .renuar{
+    background-image: url('../images/1920/Ренуар.jpg');
+  }
+
+  .gog{
+    background-image: url('../images/1920/ВанГог.jpg');
+  }
+
+  .sez{
+    background-image: url('../images/1920/Сезанн.jpg');
+  }
+
+  .gogen{
+    background-image: url('../images/1920/Гоген.jpg');
+  }
+
+  .sera{
+    background-image: url('../images/1920/Сера.jpg');
+  }
+
+  .kand{
+    background-image: url('../images/1920/Кандински.jpg');
+  }
+
+  .marin{
+    background-image: url('../images/1920/Мариннети.jpg');
+  }
+
+  .malevich{
+    background-image: url('../images/1920/Малевич.jpg');
+  }
+
+  .picasso{
+    background-image: url('../images/1920/Пикассо.jpg');
+  }
+
+  .karra{
+    background-image: url('../images/1920/Карра.jpg');
+  }
+
+  .prat{
+    background-image: url('../images/1920/Прателла.jpg');
+  }
+
+  .severini{
+    background-image: url('../images/1920/Северинни.jpg');
+  }
+
+  .balla{
+    background-image: url('../images/1920/Балла.jpg');
   }
 }
