@@ -9,11 +9,17 @@
     justify-content: space-between;
 }
 
+.header__burger{
+  background-color: inherit;
+  border: none;
+}
+
 .header__burger:focus{
     outline: 2px solid var(--purple);
 }
 
 .header__burger > span{
+  left: 0;
   transition: 0.3s ease 0s;
 }
 .header__burger::before{
