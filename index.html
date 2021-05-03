@@ -7,6 +7,7 @@
     <meta name="Keywords" content="картинная галерея, выставка, картины, картины онлайн">
     <meta name="author" content="Nick Volkov">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/simplebar.css">
     <link rel="stylesheet" href="./styles/swiper-min.css">
     <link rel="stylesheet" href="./styles/choices.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -23,9 +24,11 @@
     <link rel="stylesheet" href="./styles/contacts.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
+    <script defer src="./scripts/simplebar.js"></script>
     <script defer src="./scripts/swiper.min.js"></script>
     <script defer src="./scripts/choices.min.js"></script>
     <script defer src="https://api-maps.yandex.ru/2.1/?apikey=189dc73f-f9b3-41d7-b9bc-a89e60aa0fb7&lang=ru_RU"></script>
+    <script defer src="./scripts/jquery.js"></script>
     <script defer src="./scripts/index.js"></script>
 
     <title>Blanchard</title>
@@ -84,48 +87,51 @@
 
         <div class="header__nav-container">
           <ul class="header__nav-list">
-            <!-- <li class="header__nav-item">
-              <ul class="header__nav-items">
-                <li class="header__nav-item">
-                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Реализм</button>
-                </li>
-
-                <li class="header__nav-item">
-                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Импрессионизм</button>
-                </li>
-
-                <li class="header__nav-item">
-                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Постимпрессионизм</button>
-                </li>
-
-                <li class="header__nav-item">
-                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Авангард</button>
-                </li>
-
-                <li class="header__nav-item">
-                  <button aria-label="выпадающий список" class="header__nav-btn" type="button" tabindex="0">Футуризм</button>
-                </li>
-
-                <li class="header__nav-item">
-                  <form class="hero__form" action="#" method="POST" action="https://echo.htmlacademy.ru/">
-                    <button aria-label="Поиск по сайту" class="hero__search" type="button" tabindex="0"></button>
-                    <input class="header__nav-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
-                  </form>
-                </li>
-              </ul>
-            </li> -->
-            <!-- <li class="header__nav-item">
-              <form class="hero__form" action="#" method="POST" action="https://echo.htmlacademy.ru/">
-                <button aria-label="Поиск по сайту" class="hero__search" type="button" tabindex="0"></button>
-                <input class="header__nav-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
-              </form>
-            </li> -->
             <li class="header__nav-item">
               <button aria-label="выпадающий список" class="header__nav-btn" type="button">Реализм</button>
+              <div class="header__dropdown header__active" data-simplebar>
+                <ul class="header__sub-nav-list">
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Тинторетто</a>
+                  </li>
+
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Фридрих</a>
+                  </li>
+
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Леонардо</a>
+                  </li>
+
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Верроккьо</a>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="header__nav-item">
               <button aria-label="выпадающий список" class="header__nav-btn" type="button">Импрессионизм</button>
+              <div class="header__dropdown header__active" data-simplebar>
+                <ul class="header__sub-nav-list">
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Моне</a>
+                  </li>
+
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Сислей</a>
+                  </li>
+
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Мане</a>
+                  </li>
+
+                  <li class="header__sub-nav-item">
+                    <a href="" class="header__sub-link">Ренуар</a>
+                  </li>
+                  </li>
+                </ul>
+              </div>
             </li>
 
             <li class="header__nav-item">
@@ -139,12 +145,12 @@
             <li class="header__nav-item">
               <button aria-label="выпадающий список" class="header__nav-btn" type="button">Футуризм</button>
             </li>
-
-            <li class="header__nav-item">
-                <button aria-label="Поиск по сайту" class="hero__search" type="button"></button>
-                <input class="header__nav-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
-            </li>
           </ul>
+
+          <div class="header__search-desc">
+            <button aria-label="Поиск по сайту" class="hero__search" type="button"></button>
+            <input class="header__nav-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
+          </div>
         </div>
     </header>
 

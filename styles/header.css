@@ -371,22 +371,23 @@
   }
 
   .header__nav-container{
-    position: relative;
+    position: absolute;
     width: 1920px;
+    display: flex;
     margin: 0 auto;
+    padding-left: 158px;
+    padding-right: 160px;
+    background: rgba(0, 0, 0, 0.4);
   }
 
   .header__nav-list{
-    position: absolute;
     display: flex;
     justify-content: space-between;
+    flex-basis: 63.7%;
     align-items: center;
     width: 100%;
-    padding-left: 158px;
-    padding-right: 160px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    background: rgba(0, 0, 0, 0.4);
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 
   .header__nav-items{
@@ -396,15 +397,7 @@
   }
 
   .header__nav-item{
-    flex-grow: 1;
-  }
-
-  .header__nav-list > .header__nav-item:nth-child(5){
-    flex-grow: 3;
-  }
-
-  .header__nav-list > .header__nav-item:last-child{
-    flex-grow: 0;
+    position: relative;
   }
 
   .header__nav-item:hover > .header__nav-btn{
@@ -449,19 +442,19 @@
     background-repeat: no-repeat;
   }
 
-  .hero__form{
-    position: relative;
+  .header__search-desc{
+    align-self: center;
+    margin-left: auto;
   }
 
-  .hero__form:hover > .hero__search{
+  .header__search-desc:hover > .hero__search{
     background-image: url(../icons/1024/search-purple.svg);
   }
 
-  .hero__form:hover > .header__nav-input{
+  .header__search-desc:hover > .header__nav-input{
     outline: none;
     border-bottom: 1px solid var(--hover-purple);
   }
-
 
   .hero__search{
     position: relative;
@@ -493,5 +486,59 @@
 
   .header__nav-input[type="search"]::placeholder{
     color: var(--white);
+  }
+
+  .header__dropdown{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .simplebar-track.simplebar-vertical{
+    width: 2px;
+    margin-top: 40px;
+    margin-right: 19px;
+    margin-bottom: 25px;
+    background-color: var(--black);
+  }
+
+  .simplebar-scrollbar:before{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 28px;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 0;
+  }
+
+  .simplebar-scrollbar.simplebar-visible::before{
+    opacity: 1;
+  }
+
+  .header__sub-nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .header__sub-nav-item{
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  .header__sub-link{
+    display: block;
+    height: 40px;
+    width: 220px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--white);
+    background-image: url('../images/1920/Тинторетто.jpg');
   }
 }

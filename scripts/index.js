@@ -1,4 +1,18 @@
 window.addEventListener('DOMContentLoaded',function(){
+
+  $(document).ready(function () {
+    $('.header__active').hide();
+    $('.header__nav-btn').click(function(){
+      $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
+    });
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest(".header__nav-btn").length) {
+        $('.header__active').hide();
+      }
+      e.stopPropagation();
+    });
+  });
+
   let swiper = new Swiper('.swiper-container', {
     cssMode: true,
     slidesPerView: 1,
