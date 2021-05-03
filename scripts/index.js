@@ -5,11 +5,18 @@ window.addEventListener('DOMContentLoaded',function(){
     $('.header__nav-btn').click(function(){
       $(this).next().slideToggle('slow').siblings('div:visible').slideUp('slow');
     });
-    $(document).on('click', function(e) {
-      if (!$(e.target).closest(".header__nav-btn").length) {
-        $('.header__active').hide();
+    // $(document).on('click', function(e) {
+    //   if (!$(e.target).closest(".header__nav-btn").length) {
+    //     $('.header__active').hide();
+    //   }
+    //   e.stopPropagation();
+    // });
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+      var div = $(".header__active"); // тут указываем ID элемента
+      if (!div.is(e.target) // если клик был не по нашему блоку
+          && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.hide(); // скрываем его
       }
-      e.stopPropagation();
     });
   });
 
