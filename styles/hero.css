@@ -141,7 +141,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .main__hero_container{
-        max-width: 768px;
+        /* max-width: 768px; */
         max-height: 669px;
         margin: 0 auto;
     }
@@ -159,6 +159,7 @@
         padding-top: 207px;
         padding-right: 58px;
         padding-left: 46px;
+        background-size: 100%;
     }
 
     .hero__section--1{
@@ -175,21 +176,17 @@
 
     .hero__main-title{
         padding-right: 76px;
-        font-style: normal;
         font-weight: bold;
         font-size: 72px;
         line-height: 90px;
-        letter-spacing: 2px;
     }
 
     .hero__content{
         padding-top: 4px;
         padding-left: 4px;
-        font-style: normal;
         font-weight: bold;
         font-size: 18px;
         line-height: 30px;
-        letter-spacing: 0.5px;
     }
 
     .hero__link{

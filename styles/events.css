@@ -174,7 +174,7 @@
     }
 
     .events__container{
-        max-width: 768px;
+        /* max-width: 768px; */
         margin-top: 71px;
         padding-right: 50px;
         padding-left: 49px;

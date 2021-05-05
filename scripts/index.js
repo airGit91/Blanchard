@@ -157,9 +157,9 @@ window.addEventListener('DOMContentLoaded',function(){
       slidesPerView: 1,
       spaceBetween: 33,
       loop: true,
-          pagination: {
-            el: '.swiper-pagination'
-          },
+      pagination: {
+        el: '.swiper-pagination'
+      },
     });
 
     let eventSwiperDesc = new Swiper('.swiper-container__event-desc', {
@@ -167,10 +167,10 @@ window.addEventListener('DOMContentLoaded',function(){
       slidesPerView: 3,
       spaceBetween: 27,
       loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
       breakpoints:{
         1920:{
           spaceBetween: 50,
@@ -179,17 +179,19 @@ window.addEventListener('DOMContentLoaded',function(){
     });
 
     let projectSwiper = new Swiper('.projects__swiper', {
-      // cssMode: true,
+      cssMode: true,
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
-      effect: "flip",
-      grabCursor: true,
       navigation: {
         nextEl: '.projects__btn-next',
         prevEl: '.projects__btn-prev',
       },
       breakpoints:{
+        // 320:{
+        //   effect: "flip",
+        //   grabCursor: true,
+        // },
         768:{
           slidesPerView: 2,
           spaceBetween: 34,

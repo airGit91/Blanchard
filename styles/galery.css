@@ -302,7 +302,7 @@
     }
 
     .galery__container{
-        max-width: 768px;
+        /* max-width: 768px; */
         margin: 0 auto;
     }
 
@@ -312,6 +312,7 @@
         padding-right: 50px;
         padding-left: 50px;
         background-image: url(../images/768/bc-galery-768.jpg);
+        background-size: 100%;
     }
 
     .galery__title{
@@ -544,6 +545,24 @@
         font-size: 16px;
         line-height: 32px;
         color: var(--white);
+    }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+      .choices__inner{
+        width: 100%;
+    }
+
+    .choices[data-type*='select-one']:after{
+        left: inherit;
+    }
+
+    .choices[data-type*='select-one'].is-open:after {
+        left: inherit;
+    }
+
+    .choices__list--dropdown{
+        width: 100%;
     }
 }
 
