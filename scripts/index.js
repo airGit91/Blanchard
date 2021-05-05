@@ -1,9 +1,12 @@
 window.addEventListener('DOMContentLoaded',function(){
 
   $(document).ready(function () {
+    $('.mask-phone').mask('+7 (999) 999-99-99');
+
     $('.header__active').hide();
     $('.header__nav-btn').click(function(){
       $(this).next().slideToggle('slow');
+
       $(document).mouseup(function (e){ // событие клика по веб-документу
         let div = $(".header__active"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
@@ -12,6 +15,35 @@ window.addEventListener('DOMContentLoaded',function(){
         }
       });
     });
+
+    $('.header__burger').click(function(){
+      $('.header__burger').toggleClass('active');
+      $('.header__list').toggleClass('active');
+      $('body').toggleClass('active');
+    });
+
+    $('.header__list').click(function(){
+      $('.header__list').removeClass('active');
+      $('.header__burger').removeClass('active');
+      $('body').removeClass('active');
+    });
+
+    $('#header__burger').click(function(){
+      const checked = $(this).is(":checked");
+      if (checked) {
+        $('body').css('overflow', 'hidden');
+        $('body').bind('touchmove', false);
+      } else {
+        $('body').css('overflow', 'scroll');
+        $('body').unbind('touchmove');
+      }
+    });
+
+    $('.header__item').click(function () {
+      $('#header__burger').prop('checked', false);
+      $('body').css('overflow','scroll');
+      $('body').unbind('touchmove');
+     });
   });
 
   let swiper = new Swiper('.swiper-container', {
@@ -60,22 +92,6 @@ window.addEventListener('DOMContentLoaded',function(){
     },
   });
 
-  let header__burger = document.querySelector('.header__burger');
-  let header__list = document.querySelector('.header__list');
-  let back = document.querySelector('body');
-
-  header__burger.onclick = function() {
-      header__burger.classList.toggle('active');
-      header__list.classList.toggle('active');
-      back.classList.toggle('lock');
-  }
-
-  header__list.onclick = function() {
-    header__list.classList.remove('active');
-    header__burger.classList.remove('active');
-    back.classList.toggle('lock');
-  }
-
   const element = document.querySelector('select');
               const choices = new Choices(element, {
                   searchEnabled: false,
@@ -83,9 +99,8 @@ window.addEventListener('DOMContentLoaded',function(){
               });
 
   let acc = document.getElementsByClassName('accordion');
-  let i;
 
-  for (i = 0; i < acc.length; i++) {
+  for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function() {
     this.classList.toggle('active');
     let panel = this.nextElementSibling;
@@ -96,6 +111,10 @@ window.addEventListener('DOMContentLoaded',function(){
       }
     });
   }
+
+    // $('.catalog__item').click(function(){
+    //   toggleClass('accordion__item');
+    // })
 
     const catalog__item_1 = document.getElementById('catalog__item_1');
     catalog__item_1.onclick = (event) =>{
@@ -250,27 +269,4 @@ window.addEventListener('DOMContentLoaded',function(){
             range.select()
         }
     }
-
-    function mask(event) {
-        let matrix = "+7 (___) ___ ____",
-            i = 0,
-            def = matrix.replace(/\D/g, ""),
-            val = this.value.replace(/\D/g, "");
-        if (def.length >= val.length) val = def;
-        this.value = matrix.replace(/./g, function(a) {
-            return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
-        });
-        if (event.type == "blur") {
-            if (this.value.length == 2) this.value = ""
-        } else setCursorPosition(this.value.length, this)
-    };
-        let input = document.querySelector("#contacts__tel");
-        input.addEventListener("input", mask, false);
-        input.addEventListener("focus", mask, false);
-        input.addEventListener("blur", mask, false);
-
-        let inputDesc = document.querySelector("#contacts__tel-desc");
-        inputDesc.addEventListener("input", mask, false);
-        inputDesc.addEventListener("focus", mask, false);
-        inputDesc.addEventListener("blur", mask, false);
 });

@@ -29,6 +29,7 @@
     <script defer src="./scripts/choices.min.js"></script>
     <script defer src="https://api-maps.yandex.ru/2.1/?apikey=189dc73f-f9b3-41d7-b9bc-a89e60aa0fb7&lang=ru_RU"></script>
     <script defer src="./scripts/jquery.js"></script>
+    <script defer src="./scripts/maskedinput.js"></script>
     <script defer src="./scripts/index.js"></script>
 
     <title>Blanchard</title>
@@ -36,9 +37,11 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <button class="header__burger">
+            <input id="header__burger" type="checkbox"/>
+
+            <label class="header__burger" for="header__burger">
                 <span></span>
-            </button>
+            </label>
 
             <picture class="header__logo logo">
                 <source media="(min-width:320px) and (max-width:767px)" srcset="images/logo-320.svg">
@@ -227,6 +230,7 @@
                 <a href="#contacts" class="hero__link">Подписаться на рассылку</a>
             </section>
         </div>
+
         <section id="about_us" class="main__about-us about-us">
             <div class="about-us__container">
                 <h2 class="about-us__title">О нас</h2>
@@ -236,6 +240,7 @@
                 </p>
             </div>
         </section>
+
         <div class="galery__container">
             <section id="galery" class="main__galery galery">
                 <h2 class="galery__title">Галерея</h2>
@@ -1610,7 +1615,9 @@
                 <h2 class="Domenico__subtitle">
                     Доменико Гирландайо
                 </h2>
+
                 <p class="Domenico__little-title">2 июня 1448 — 11 января 1494.</p>
+
                 <p class="Domenico__content">
                     Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
                 </p>
@@ -1632,6 +1639,7 @@
                                 <a href="#" class="events__link">Подробнее</a>
                             </div>
                         </div>
+
                         <div class="swiper-slide events__images events__images--2">
                             <div class="events__content">
                                 <p class="events__little-title">ММОМА</p>
@@ -1641,6 +1649,7 @@
                                 <a href="#" class="events__link">Подробнее</a>
                             </div>
                         </div>
+
                         <div class="swiper-slide events__images events__images--3">
                             <div class="events__content">
                                 <p class="events__little-title">Еврейский музей</p>
@@ -1650,6 +1659,7 @@
                                 <a href="#" class="events__link">Подробнее</a>
                             </div>
                         </div>
+
                         <div class="swiper-slide events__images events__images--4">
                             <div class="events__content">
                                 <p class="events__little-title">Третьяковка на Крымском валу</p>
@@ -1659,6 +1669,7 @@
                                 <a href="#" class="events__link">Подробнее</a>
                             </div>
                         </div>
+
                         <div class="swiper-slide events__images events__images--5">
                             <div class="events__content">
                                 <p class="events__little-title">ММАМ</p>
@@ -1669,6 +1680,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-pagination"></div>
                 </div>
 
@@ -1720,6 +1732,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-pagination"></div>
                 </div>
 
@@ -1839,6 +1852,7 @@
                                         <span class="check__text">Бестселлеры</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1846,6 +1860,7 @@
                                         <span class="check__text">Искусство</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1853,6 +1868,7 @@
                                         <span class="check__text">Архитектура</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1870,6 +1886,7 @@
                                         <span class="check__text">Мода</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1877,6 +1894,7 @@
                                         <span class="check__text">Детям</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1884,6 +1902,7 @@
                                         <span class="check__text">Художественная литература</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1901,6 +1920,7 @@
                                         <span class="check__text">Путеводители</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1908,6 +1928,7 @@
                                         <span class="check__text">Философия</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1915,6 +1936,7 @@
                                         <span class="check__text">Учебная литература</span>
                                     </label>
                                 </li>
+
                                 <li class="edition__list_item">
                                     <label class="check option">
                                         <input class="check__input" type="checkbox">
@@ -1948,9 +1970,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-1.jpg">
                             <img class="" src="#" alt="Искусство цвета">
                         </picture>
+
                         <p class="edition__book-name">Искусство цвета</p>
                         <p class="edition__book-author">Иттен, Иоханнес</p>
                         <p class="edition__book-cost">620 р</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                     <li class="edition__item_books">
@@ -1958,9 +1982,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-2.jpg">
                             <img class="" src="#" alt="Типографика">
                         </picture>
+
                         <p class="edition__book-name">Типографика</p>
                         <p class="edition__book-author">Рудер, Эмиль</p>
                         <p class="edition__book-cost">2 450 руб</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                     <li class="edition__item_books">
@@ -1968,9 +1994,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-3.jpg">
                             <img class="" src="#" alt="Книга про буквы">
                         </picture>
+
                         <p class="edition__book-name">Книга про буквы</p>
                         <p class="edition__book-author">Гордон, Юрий</p>
                         <p class="edition__book-cost">2 200 руб</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                     <li class="edition__item_books">
@@ -1978,9 +2006,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-4.jpg">
                             <img class="" src="#" alt="Николай Ильин">
                         </picture>
+
                         <p class="edition__book-name">Николай Ильин</p>
                         <p class="edition__book-author">Кричевский, Влади...</p>
                         <p class="edition__book-cost">1 100 руб</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                     <li class="edition__item_books">
@@ -1988,9 +2018,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-5.jpg">
                             <img class="" src="#" alt="Модульные сетки...">
                         </picture>
+
                         <p class="edition__book-name">Модульные сетки...</p>
                         <p class="edition__book-author">Мюллер-Брокманн...</p>
                         <p class="edition__book-cost">1 450 руб</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                     <li class="edition__item_books">
@@ -1998,9 +2030,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-6.jpg">
                             <img class="" src="#" alt="Эволюция графич...">
                         </picture>
+
                         <p class="edition__book-name">Эволюция графич...</p>
                         <p class="edition__book-author">Хеллер, Чваст</p>
                         <p class="edition__book-cost">3 200 руб</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                     <li class="edition__item_books">
@@ -2008,9 +2042,11 @@
                             <source media="(min-width:320px) and (max-width:767px)" srcset="images/320/edition-book-7.jpg">
                             <img class="" src="#" alt="Искусство и визуа...">
                         </picture>
+
                         <p class="edition__book-name">Искусство и визуа...</p>
                         <p class="edition__book-author">Арнхейм, Рудольф</p>
                         <p class="edition__book-cost">2 200 руб</p>
+
                         <button class="edition__item_btn" type="button">Заказать</button>
                     </li>
                 </ul>
@@ -2047,6 +2083,7 @@
                           </div>
 
                           <p class="edition__book-author">Рудер, Эмиль</p>
+
                           <button class="edition__item_btn" type="button">Заказать</button>
                         </div>
 
@@ -2063,6 +2100,7 @@
                           </div>
 
                           <p class="edition__book-author">Гордон, Юрий</p>
+
                           <button class="edition__item_btn" type="button">Заказать</button>
                         </div>
 
@@ -2079,6 +2117,7 @@
                           </div>
 
                           <p class="edition__book-author">Кричевский, Вла...</p>
+
                           <button class="edition__item_btn" type="button">Заказать</button>
                         </div>
 
@@ -2095,6 +2134,7 @@
                           </div>
 
                           <p class="edition__book-author">Мюллер-Брокма...</p>
+
                           <button class="edition__item_btn" type="button">Заказать</button>
                         </div>
 
@@ -2111,6 +2151,7 @@
                           </div>
 
                           <p class="edition__book-author">Искусство и ви..</p>
+
                           <button class="edition__item_btn" type="button">Заказать</button>
                         </div>
 
@@ -2120,16 +2161,20 @@
                             <source media="(min-width:1920px)" srcset="images/1920/edition-book-7.jpg">
                             <img class="" src="#" alt="Книга про буквы">
                           </picture>
+
                           <div class="edition__flex-container">
                             <p class="edition__book-name">Искусство и ви...</p>
                             <p class="edition__book-cost">2 200 руб</p>
                           </div>
+
                           <p class="edition__book-author">Арнхейм, Рудольф</p>
+
                           <button class="edition__item_btn" type="button">Заказать</button>
                         </div>
                     </div>
 
                     <div class="swiper-pagination"></div>
+
                     <button type="button" class="galery__swiper galery__swiper-prev swiper-button swiper-button-prev"></button>
                     <button type="button" class="galery__swiper galery__swiper-next swiper-button swiper-button-next"></button>
                 </div>
@@ -2152,27 +2197,34 @@
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--1"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--2"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--3"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--4"></div>
                         </div>
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--5"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--6"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--7"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--8"></div>
                         </div>
+
                         <div class="swiper-slide projects__slide-container">
                             <div class="swiper__slide-content projects__slide--9"></div>
                         </div>
@@ -2200,7 +2252,7 @@
 
                     <form class="contacts__form" enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru/">
                         <input class="contacts__input" type="text" name="name" placeholder="Имя*" required/>
-                        <input id="contacts__tel" class="contacts__input" type="tel" name="phone" placeholder="Телефон*" required/>
+                        <input class="contacts__input mask-phone form-control" type="tel" name="phone" placeholder="Телефон*" required/>
                         <button class="contacts__submit" type="submit">Заказать</button>
                     </form>
 
@@ -2227,7 +2279,7 @@
 
                     <form class="contacts__form" enctype="multipart/form-data" method="POST" action="https://echo.htmlacademy.ru/">
                         <input class="contacts__input" type="text" name="name" placeholder="Имя*" required/>
-                        <input id="contacts__tel-desc" class="contacts__input" type="tel" name="phone" placeholder="Телефон*" required/>
+                        <input class="contacts__input mask-phone form-control" type="tel" name="phone" placeholder="Телефон*" required/>
                         <button class="contacts__submit" type="submit">Заказать</button>
                     </form>
 
@@ -2255,9 +2307,11 @@
                 <li class="footer__item-socials">
                     <a href="https://vk.com/" class="footer__link vk" target="_blank" rel="noopener" aria-label="группа вконтакте"></a>
                 </li>
+
                 <li class="footer__item-socials">
                     <a href="https://www.instagram.com/?hl=ru" class="footer__link inst" target="_blank" rel="noopener" aria-label="инстаграмм"></a>
                 </li>
+
                 <li class="footer__item-socials">
                     <a href="https://www.facebook.com/" class="footer__link fb" target="_blank" rel="noopener" aria-label="фейсбук"></a>
                 </li>
