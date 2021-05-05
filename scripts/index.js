@@ -179,10 +179,12 @@ window.addEventListener('DOMContentLoaded',function(){
     });
 
     let projectSwiper = new Swiper('.projects__swiper', {
-      cssMode: true,
+      // cssMode: true,
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      effect: "flip",
+      grabCursor: true,
       navigation: {
         nextEl: '.projects__btn-next',
         prevEl: '.projects__btn-prev',

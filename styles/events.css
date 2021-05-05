@@ -9,7 +9,6 @@
 
 .events__link{
   color: var(--purple);
-  /* border-bottom: 1px solid var(--purple); */
 }
 
 .events__container{
@@ -77,7 +76,7 @@
     }
 
     .events__container{
-        max-width: 320px;
+        /* max-width: 320px; */
         margin-top: 50px;
     }
 
@@ -101,6 +100,7 @@
         flex-direction: column;
         min-height: 703px;
         margin-top: 10px;
+        background-size: 100% 28.4%;
     }
 
     .events__images--1{
