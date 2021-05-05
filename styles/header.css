@@ -25,17 +25,22 @@
 
 .header__burger > span{
   left: 0;
-  transition: 0.3s ease 0s;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 .header__burger::before{
-  transition: 0.3s ease 0s;
+
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 .header__burger::after{
-  transition: 0.3s ease 0s;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 .header__list{
-  transition-duration: 0.25s;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 .header__link{

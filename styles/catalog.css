@@ -1,5 +1,5 @@
 .accordion{
-    transition: .4s;
+    transition-duration: .4s;
   }
 
   .catalog__subtitle,
