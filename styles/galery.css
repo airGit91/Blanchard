@@ -572,7 +572,7 @@
     }
 
     .galery__container{
-        max-width: 1024px;
+        /* max-width: 1024px; */
         margin: 0 auto;
     }
 
@@ -583,6 +583,7 @@
         padding-right: 50px;
         padding-left: 50px;
         background-image: url(../images/1024/bc-galery-1024.jpg);
+        background-size: 100%;
     }
 
     .galery__title{

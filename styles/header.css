@@ -316,16 +316,13 @@
   }
 
   .header{
-    width: 1024px;
+    /* width: 1024px; */
     margin: 0 auto;
   }
 
   .header__container{
       margin: 0 auto;
-      padding-top: 36.7px;
-      padding-right: 50px;
-      padding-bottom: 29px;
-      padding-left: 50px;
+      padding: 36.7px 50px 17px 50px;
   }
 }
 

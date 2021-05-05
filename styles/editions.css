@@ -408,7 +408,7 @@
     }
 
     .editions__container{
-        max-width: 1024px;
+        /* max-width: 1024px; */
         max-height: 763px;
         margin-top: 79px;
     }
@@ -419,6 +419,7 @@
         padding-top: 82px;
         padding-left: 46px;
         background-image: url(../images/1024/bc-editions-1024.jpg);
+        background-size: 100%;
     }
 
     .editions__subtitle{
@@ -517,15 +518,19 @@
     .edition__item_btn{
         width: 120px;
         margin-top: 14px;
-        padding-top: 7px;
-        padding-right: 15.17px;
-        padding-bottom: 9px;
-        padding-left: 15.17px;
+        padding: 7px 15.17px 9px 15.17px;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 22px;
     }
+}
+
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+  .swiper__editions{
+    left: 500px;
+    width: 629px;
+  }
 }
 
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
@@ -642,10 +647,7 @@
   .edition__item_btn{
     width: 120px;
     margin-top: 14px;
-    padding-top: 7px;
-    padding-right: 15.17px;
-    padding-bottom: 9px;
-    padding-left: 15.17px;
+    padding: 7px 15.17px 9px 15.17px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

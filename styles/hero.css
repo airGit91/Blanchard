@@ -14,28 +14,19 @@
 }
 
 .hero__link:hover{
-  padding-top: 22px;
-  padding-right: 26px;
-  padding-bottom: 24px;
-  padding-left: 36px;
+  padding: 22px 26px 24px 36px;
   border: 3px solid var(--border-hover);
 }
 
 .hero__link:focus{
-  padding-top: 25px;
-  padding-right: 29px;
-  padding-bottom: 26px;
-  padding-left: 39px;
+  padding: 25px 29px 26px 39px;
   border: none;
   outline: none;
   box-shadow:  0 0 0 2px #fff, 0 0 0 5px var(--hover-purple);
 }
 
 .hero__link:active{
-  padding-top: 22px;
-  padding-right: 26px;
-  padding-bottom: 24px;
-  padding-left: 36px;
+  padding: 22px 26px 24px 36px;
   background-color: var(--active-purple);
   border: 3px solid var(--border-hover);
 }
@@ -100,10 +91,7 @@
 
     .hero__link{
         margin-top: 40px;
-        padding-top: 12px;
-        padding-right: 19px;
-        padding-bottom: 14.45px;
-        padding-left: 22px;
+        padding: 12px 19px 14.45px 22px;
         align-self: center;
         font-style: normal;
         font-weight: bold;
@@ -112,19 +100,13 @@
     }
 
     .hero__link:focus{
-        padding-top: 9px;
-        padding-right: 16px;
-        padding-bottom: 11.45px;
-        padding-left: 19px;
+        padding: 9px 16px 11.45px 19px;
         border: 3px solid #7943A4;
         border-radius: 100px;
     }
 
     .hero__link:active{
-        padding-top: 9px;
-        padding-right: 16px;
-        padding-bottom: 11.45px;
-        padding-left: 19px;
+        padding: 9px 16px 11.45px 19px;
         background-color: #7943A4;
         border: 3px solid #D1A9F0;
     }
@@ -192,10 +174,7 @@
     .hero__link{
         max-width: 320px;
         margin-top: 135px;
-        padding-top: 22px;
-        padding-right: 29px;
-        padding-bottom: 22px;
-        padding-left: 39px;
+        padding: 22px 29px 22px 39px;
         font-size: 18px;
         line-height: 25px;
         letter-spacing: 1.1px;
@@ -212,7 +191,7 @@
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
     .main__hero_container{
-        max-width: 1024px;
+        /* max-width: 1024px; */
         margin: 0 auto;
     }
 
@@ -222,6 +201,7 @@
 
     .hero__section{
         padding-right: 235px;
+        background-size: 100%;
     }
 
     .hero__section--1{
@@ -240,21 +220,16 @@
         padding-top: 10px;
         padding-right: 142px;
         line-height: 83px;
-        letter-spacing: 3px;
     }
 
     .hero__content{
         padding-top: 9px;
-        letter-spacing: 0.7px;
     }
 
     .hero__link{
         max-width: 322px;
         margin-top: 135px;
-        padding-top: 24px;
-        padding-right: 29px;
-        padding-bottom: 26px;
-        padding-left: 39px;
+        padding: 24px 29px 26px 39px;
         font-weight: bold;
         letter-spacing: 1.6px;
         font-size: 16px;
@@ -326,10 +301,7 @@
   .hero__link{
     max-width: 322px;
     margin-top: 94px;
-    padding-top: 25px;
-    padding-right: 29px;
-    padding-bottom: 26px;
-    padding-left: 39px;
+    padding: 25px 29px 26px 39px;
     font-weight: bold;
     letter-spacing: 1.3px;
     font-size: 16px;

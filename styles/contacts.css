@@ -112,8 +112,9 @@
     }
 
     .contacts__input{
+        display: block;
         height: 40px;
-        width: 100%;
+        width: 290px;
         margin-bottom: 20px;
         padding-top: 4px;
         padding-bottom: 4px;
@@ -121,7 +122,7 @@
     }
 
     .contacts__submit{
-        width: 100%;
+        width: 290px;
         height: 40px;
     }
 
@@ -175,10 +176,7 @@
     .contacts__desc{
         display: inline-block;
         margin-top: 14px;
-        padding-top: 124px;
-        padding-right: 45px;
-        padding-bottom: 104px;
-        padding-left: 50px;
+        padding: 124px 45px 104px 50px;
         height: 700px;
         width: 430px;
         border: 1px solid #CACACA;
@@ -286,7 +284,6 @@
 
 .contacts__tittle-desc{
     padding-left: 46px;
-    font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 65px;
@@ -296,10 +293,7 @@
   .contacts__desc{
     display: inline-block;
     margin-top: 14px;
-    padding-top: 124px;
-    padding-right: 45px;
-    padding-bottom: 104px;
-    padding-left: 50px;
+    padding: 124px 45px 104px 50px;
     height: 700px;
     width: 487px;
     border: 1px solid #CACACA;
@@ -416,10 +410,7 @@
   .contacts__desc{
     display: inline-block;
     margin-top: 14px;
-    padding-top: 124px;
-    padding-right: 45px;
-    padding-bottom: 104px;
-    padding-left: 160px;
+    padding: 124px 45px 104px 160px;
     height: 700px;
     width: 683px;
     border: 1px solid #CACACA;

@@ -52,7 +52,7 @@
     }
 
     .footer__container{
-        max-width: 768px;
+        /* max-width: 768px; */
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
