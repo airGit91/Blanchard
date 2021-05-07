@@ -64,31 +64,28 @@
         display: none;
     }
 
-    .contacts{
-        /* max-width: 320px; */
-    }
-
     .contacts__container{
-        padding-right: 15px;
-        padding-left: 15px;
+      max-width: 320px;
+      margin: 0 auto;
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
     .contacts__title{
-        font-weight: normal;
+        font-weight: 400;
         font-size: 28px;
         line-height: 38px;
         color: var(--dark-gray);
     }
 
     .contacts__subtitle{
-        padding-top: 20px;
+        padding-top: 12px;
         font-size: 18px;
         line-height: 25px;
     }
 
     .contacts__text{
         font-size: 14px;
-        line-height: 25px;
     }
 
     .YandexMap {
@@ -102,13 +99,14 @@
     }
 
     .contacts__form_title{
-        padding-top: 20px;
+        padding-top: 18px;
         font-size: 18px;
         line-height: 32px;
     }
 
     .contacts__form{
-        padding-top: 20px;
+      margin-bottom: 3px;
+      padding-top: 16px;
     }
 
     .contacts__input{
@@ -122,23 +120,20 @@
     }
 
     .contacts__submit{
-        width: 290px;
+        width: 128px;
         height: 40px;
-    }
-
-    .contacts__text{
-        padding-top: 20px;
-        font-size: 18px;
-        line-height: 32px;
+        color: var(--purple);
+        font-size: 12px;
+        font-weight: 700;
     }
 
     .contacts__msg{
-        padding-top: 10px;
+        padding-top: 5px;
     }
 
     .contacts__msg-link{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         margin-right: 20px;
     }
 
