@@ -145,20 +145,19 @@
         display: none;
     }
 
-    .editions__container{
-        /* max-width: 320px; */
-        margin-top: 60px;
-    }
-
     .editions{
         min-height: 1542px;
-        padding-top: 50px;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-bottom: 25px;
+        margin-top: 62px;
         background-image: url(../images/320/bc-editions-320.jpg);
         background-size: 100%;
     }
+
+    .editions__container{
+      max-width: 320px;
+      padding-top: 50px;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
 
     .editions__subtitle{
         font-size: 28px;
@@ -226,7 +225,7 @@
     }
 
     .edition__cost{
-        padding-top: 18px;
+        margin-top: 57px;
         font-weight: bold;
         font-size: 16px;
         line-height: 32px;
@@ -263,7 +262,7 @@
 
     .edition__item_btn{
         width: 100%;
-        margin-top: 8px;
+        margin-top: 11px;
         padding-top: 10px;
         padding-right: 15.17px;
         padding-bottom: 10px;

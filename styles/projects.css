@@ -10,6 +10,7 @@
 }
 
 .projects__content_link{
+    font-weight: 600;
     color: var(--purple);
 }
 
@@ -46,7 +47,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .projects__container{
-        /* max-width: 320px; */
+        max-width: 320px;
         margin: 0 auto;
         margin-top: 50px;
     }
@@ -54,7 +55,7 @@
     .projects{
         padding-right: 15px;
         padding-bottom: 50px;
-        padding-left: 14px;
+        padding-left: 15px;
     }
 
     .projects__title{
@@ -68,12 +69,12 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.6px;
     }
 
     .projects__btn{
         width: 16px;
         height: 16px;
+        background-color: inherit;
         background-image: url(../icons/320/tootype-320.svg);
         background-repeat: no-repeat;
         border: none;
@@ -89,7 +90,7 @@
 
     .projects__swiper{
         position: relative;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .projects__slide-container{
@@ -184,7 +185,7 @@
     }
 
     .swiper__projects_btn{
-        bottom: 45px;
+        bottom: 48px;
     }
 
     .projects__btn-next{

@@ -33,9 +33,10 @@
     }
 
     .Domenico__content{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
+      padding-right: 2px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
     }
 
     .Domenico__little-title{
