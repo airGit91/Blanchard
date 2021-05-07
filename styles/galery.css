@@ -7,7 +7,7 @@
 }
 
 .galery__title{
-    font-weight: normal;
+    font-weight: 400;
     color: var(--white);
 }
 
@@ -16,7 +16,7 @@
 }
 
 .galery__content{
-    font-weight: normal;
+    font-weight: 700;
     color: var(--white);
 }
 
@@ -83,15 +83,15 @@
     }
 
     .galery__container{
-        /* max-width: 320px; */
+        max-width: 320px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     .galery{
         min-height: 962px;
         margin-top: 40px;
         padding-top: 51px;
-        padding-right: 15px;
-        padding-left: 15px;
         background-image: url(../images/320/bc-galery-320.jpg);
         background-size: 100%;
     }
@@ -283,10 +283,9 @@
 
     .galery__content{
         padding-top: 8px;
-        padding-right: 19px;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.6px;
+        letter-spacing: -0.4px;
     }
 }
 

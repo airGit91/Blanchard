@@ -19,7 +19,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
     .Domenico__container{
-        /* max-width: 320px; */
+        max-width: 320px;
         margin-top: 76px;
     }
 
@@ -36,12 +36,11 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.6px;
     }
 
     .Domenico__little-title{
         margin-top: 14px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;
