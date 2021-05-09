@@ -1,4 +1,3 @@
-// window.addEventListener('DOMContentLoaded',function(){
   $(document).ready(function () {
     $('.mask-phone').mask('+7 (999) 999-99-99');
 
@@ -226,6 +225,34 @@
       .add(myPlacemarkWithContent);
   });
 
+  ymaps.ready(function () {
+    let myMap = new ymaps.Map('desc__map', {
+        center: [55.75784872240947,37.5994923144472],
+        zoom: 14
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+
+    myPlacemarkWithContent = new ymaps.Placemark([55.75784872240947,37.5994923144472], {
+        hintContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+        balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+        iconContent: '',
+    }, {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: '../icons/320/map-target.svg',
+        iconImageSize: [20, 20],
+        iconImageOffset: [-24, -24],
+        iconContentOffset: [15, 15],
+        iconContentLayout: MyIconContentLayout
+    });
+
+myMap.geoObjects
+    .add(myPlacemarkWithContent);
+});
+
     function setCursorPosition(pos, elem) {
         elem.focus();
         if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
@@ -237,4 +264,3 @@
             range.select()
         }
     }
-// });

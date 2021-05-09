@@ -156,9 +156,12 @@
     }
 
     .contacts{
-        position: relative;
-        max-width: 768px;
         margin-top: 50px;
+    }
+
+    .container__desc{
+      max-width: 768px;
+      margin: 0 auto;
     }
 
     .contacts__tittle-desc{
@@ -168,12 +171,16 @@
         line-height: 65px;
     }
 
+    .contacts__flex-container{
+      display: flex;
+    }
+
     .contacts__desc{
         display: inline-block;
         margin-top: 14px;
         padding: 124px 45px 104px 50px;
-        height: 700px;
-        width: 430px;
+        /* height: 700px;
+        width: 430px; */
         border: 1px solid #CACACA;
     }
 
@@ -241,10 +248,10 @@
     }
 
     .YandexMap{
-        position: absolute;
+        /* position: absolute; */
         padding-top: 14px;
-        right: 0;
-        min-width: 338px;
+        /* right: 0; */
+        max-width: 338px;
         min-height: 700px;
     }
 
