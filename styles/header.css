@@ -320,9 +320,8 @@
     display: none;
   }
 
-  .header{
-    /* max-width: 1024px; */
-    margin: 0 auto;
+  .header__nav-container{
+    display: none;
   }
 
   .header__container{
@@ -453,7 +452,7 @@
     position: relative;
     padding: 0;
     color: var(--white);
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border: none;
@@ -504,7 +503,7 @@
 
   .header__nav-input{
     width: 220px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.85);

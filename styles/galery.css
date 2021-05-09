@@ -294,9 +294,9 @@
       display: none;
     }
 
-  .swiper-container{
-      display: none;
-    }
+    .swiper-container{
+        display: none;
+      }
 
     .galery-container-desc{
       display: none;
@@ -554,19 +554,27 @@
       display: none;
     }
 
-    .galery__container{
-        /* max-width: 1024px; */
-        margin: 0 auto;
+    .swiper-container{
+      display: none;
     }
+
+    .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+      display: none;
+  }
 
     .galery{
         position: relative;
         max-height: 839px;
+        background-image: url(../images/1024/bc-galery-1024.jpg);
+        background-size: 100%;
+    }
+
+    .galery__container{
+        max-width: 1024px;
+        margin: 0 auto;
         padding-top: 80px;
         padding-right: 50px;
         padding-left: 50px;
-        background-image: url(../images/1024/bc-galery-1024.jpg);
-        background-size: 100%;
     }
 
     .galery__title{

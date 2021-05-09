@@ -317,16 +317,19 @@
     }
 
     .catalog__container{
-        /* max-width: 1024px; */
+        display: grid;
+        grid-template-columns: 437px 437px;
+        grid-column-gap: 50px;
+        max-width: 1024px;
         padding-top: 80px;
         padding-right: 50px;
         padding-left: 50px;
     }
 
     .catalog{
-        display: grid;
+        /* display: grid;
         grid-template-columns: 437px 437px;
-        grid-column-gap: 50px;
+        grid-column-gap: 50px; */
     }
 
     .catalog__subtitle{
@@ -382,40 +385,32 @@
     .Domenico{
         grid-column-start: 1;
         grid-column-end: 2;
-        padding-top: 5px;
     }
 
     .Domenico__subtitle{
-        padding-top: 27px;
-        font-style: normal;
+        padding-top: 28px;
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
-        letter-spacing: 0.6px;
     }
 
     .Domenico__little-title{
-        padding-top: 7px;
-        font-style: normal;
-        font-weight: normal;
+        padding-top: 8px;
+        font-weight: 400;
         font-size: 12px;
         line-height: 16px;
-        letter-spacing: 0.3px;
     }
 
     .Domenico__content{
         padding-top: 7px;
-        font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.4px;
     }
 
     .catalog__list{
         grid-column-start: 2;
         grid-column-end: 3;
-        margin-top: 4px;
     }
 
     .catalog__item{
@@ -456,14 +451,6 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 32px;
-    }
-}
-
-@media only screen and (min-device-width: 1120px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
-      .catalog{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 50px;
     }
 }
 

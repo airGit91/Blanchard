@@ -185,19 +185,23 @@
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
-    .main__hero_container{
-        /* max-width: 1024px; */
-        margin: 0 auto;
-    }
-
-    .hero > .swiper-container{
-        max-height: 668px;
-    }
 
     .hero__section{
-        padding-right: 235px;
+        position: relative;
+        top: -82px;
         background-size: 100%;
+        background-position: 50% 100%;
     }
+
+    .main__hero_container{
+        display: flex;
+        flex-direction: column;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-top: 198px;
+        padding-left: 44px;
+        padding-bottom: 114px;
+  }
 
     .hero__section--1{
         background-image: url(../images/1024/bc-hero-1024-1.jpg);
@@ -212,22 +216,28 @@
     }
 
     .hero__main-title{
-        padding-top: 10px;
-        padding-right: 142px;
+        padding-right: 380px;
+        font-weight: 700;
+        font-size: 72px;
         line-height: 83px;
     }
 
     .hero__content{
-        padding-top: 9px;
+        padding-top: 11px;
+        padding-right: 225px;
+        padding-left: 5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .hero__link{
         max-width: 322px;
         margin-top: 135px;
         padding: 24px 29px 26px 39px;
-        font-weight: bold;
-        letter-spacing: 1.6px;
-        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0;
+        font-size: 18px;
     }
 }
 

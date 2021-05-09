@@ -396,7 +396,7 @@
         padding-right: 15.17px;
         padding-bottom: 9px;
         padding-left: 15.17px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 16px;
         line-height: 22px;
     }
@@ -411,19 +411,18 @@
         display: none;
     }
 
-    .editions__container{
-        /* max-width: 1024px; */
-        max-height: 763px;
-        margin-top: 79px;
-    }
-
     .editions{
-        position: relative;
-        max-height: 768px;
-        padding-top: 82px;
-        padding-left: 46px;
+        max-height: 763px;
         background-image: url(../images/1024/bc-editions-1024.jpg);
         background-size: 100%;
+  }
+
+    .editions__container{
+       position: relative;
+        max-width: 1024px;
+        margin-top: 79px;
+        padding-top: 82px;
+        padding-left: 46px;
     }
 
     .editions__subtitle{
@@ -443,10 +442,21 @@
 
     .swiper__editions{
       position: relative;
-      bottom: 621px;
+      bottom: 620px;
       left: 298px;
       width: 629px;
     }
+
+    .edition__book-cost {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+  }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+      display: inline-block;
+  }
 
     .swiper__editions > .swiper-button-next,
     .swiper__editions > .swiper-button-prev {
@@ -462,8 +472,8 @@
     }
 
     .swiper__editions > .swiper-pagination-fraction {
-        top: 9.5%;
-        left: -40%;
+        top: 9%;
+        left: -39.5%;
     }
 
     .edition__list_item > label{
@@ -472,26 +482,42 @@
 
     .check__text{
         padding-left: 4px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
     }
 
-    .check__box {
+    .check__box{
         margin-top: 9px;
     }
 
     .edition__cost{
         padding-top: 25px;
         padding-left: 4px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 16px;
         line-height: 32px;
     }
 
     .edition__cost-form{
-        margin-top: 6px;
+        max-width: 280px;
+        margin-top: 8px;
         margin-left: 4px;
+        padding-bottom: 3px;
+    }
+
+    .edition__cost-text {
+        padding-right: 5px;
+        padding-left: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .edition__cost-number {
+        padding-left: 10px;
+        margin-left: 4px;
+        line-height: 36px;
     }
 
     .editions__images{
@@ -506,11 +532,9 @@
     }
 
     .edition__book-name{
-        font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 16px;
         line-height: 22px;
-        letter-spacing: 0.5px;
     }
 
     .edition__book-author{
@@ -523,19 +547,12 @@
         width: 120px;
         margin-top: 14px;
         padding: 7px 15.17px 9px 15.17px;
-        font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 16px;
         line-height: 22px;
     }
 }
 
-@media only screen and (min-device-width: 1400px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
-  .swiper__editions{
-    left: 500px;
-    width: 629px;
-  }
-}
 
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
   .edition__panel_list{
