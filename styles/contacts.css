@@ -156,7 +156,7 @@
     }
 
     .contacts{
-        margin-top: 50px;
+        margin-top: 46px;
     }
 
     .container__desc{
@@ -190,12 +190,13 @@
     }
 
     .contacts__text{
+        margin-top: 5px;
         font-size: 16px;
         line-height: 32px;
     }
 
     .contacts__form_title{
-        margin-top: 31px;
+        margin-top: 28px;
         font-size: 24px;
         line-height: 32px;
     }
@@ -223,7 +224,7 @@
     }
 
     .contacts__text_subtitle{
-        margin-top: 40px;
+        margin-top: 39px;
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
@@ -248,9 +249,7 @@
     }
 
     .YandexMap{
-        /* position: absolute; */
         padding-top: 14px;
-        /* right: 0; */
         max-width: 338px;
         min-height: 700px;
     }
