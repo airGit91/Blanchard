@@ -60,7 +60,7 @@
         display: none;
     }
 
-    .contacts__desc{
+    .container__desc{
         display: none;
     }
 
@@ -157,13 +157,13 @@
 
     .contacts{
         position: relative;
-        /* max-width: 768px; */
+        max-width: 768px;
         margin-top: 50px;
     }
 
     .contacts__tittle-desc{
         padding-left: 46px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 48px;
         line-height: 65px;
     }
@@ -185,14 +185,12 @@
     .contacts__text{
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.4px;
     }
 
     .contacts__form_title{
         margin-top: 31px;
         font-size: 24px;
         line-height: 32px;
-        letter-spacing: 0.7px;
     }
 
     .contacts__form{
@@ -211,7 +209,7 @@
     .contacts__submit{
         width: 155px;
         height: 58px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 18px;
         line-height: 25px;
         color: var(--purple);
@@ -219,10 +217,9 @@
 
     .contacts__text_subtitle{
         margin-top: 40px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 24px;
         line-height: 32px;
-        letter-spacing: 0.4px;
     }
 
     .contacts__msg{

@@ -117,29 +117,28 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
-    .main__hero_container{
-        /* max-width: 768px; */
-        max-height: 669px;
-        margin: 0 auto;
-    }
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
     .hero > .swiper-container{
         max-height: 669px;
     }
 
     .hero__section{
         position: relative;
-        top: -100px;
-        display: flex;
-        flex-direction: column;
-        min-height: 768px;
-        padding-top: 207px;
-        padding-right: 58px;
-        padding-left: 46px;
+        top: -82px;
         background-size: 100%;
+        background-position: 50% 100%;
     }
 
+    .main__hero_container{
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        margin: 0 auto;
+        padding-top: 189px;
+        padding-right: 58px;
+        padding-left: 46px;
+        padding-bottom: 114px;
+  }
     .hero__section--1{
         background-image: url(../images/768/bc-hero-768-1.jpg);
     }
@@ -154,7 +153,7 @@
 
     .hero__main-title{
         padding-right: 76px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 72px;
         line-height: 90px;
     }
@@ -162,7 +161,7 @@
     .hero__content{
         padding-top: 4px;
         padding-left: 4px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 18px;
         line-height: 30px;
     }
@@ -173,7 +172,7 @@
         padding: 22px 29px 22px 39px;
         font-size: 18px;
         line-height: 25px;
-        letter-spacing: 1.1px;
+        font-weight: 700;
     }
 
     .swiper-button-next:after, .swiper-button-prev:after{

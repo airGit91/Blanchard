@@ -212,15 +212,12 @@
     }
 
     .catalog__container{
-        /* max-width: 768px; */
+        display: grid;
+        grid-template-columns: 184px 487px;
+        max-width: 768px;
         padding-top: 80px;
         padding-right: 50px;
         padding-left: 50px;
-    }
-
-    .catalog{
-        display: grid;
-        grid-template-columns: 184px 487px;
     }
 
     .catalog__subtitle{
@@ -262,11 +259,9 @@
         grid-column-start: 1;
         grid-column-end: 3;
         padding-top: 15px;
-        font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.4px;
     }
 
     .catalog__list{
@@ -279,6 +274,7 @@
         height: 113px;
         font-size: 24px;
         background-image: url('../icons/768/bc-catalog-arr-down.svg');
+        background-position: 99.5% 52%;
     }
 
     .accordion__item{
@@ -313,13 +309,6 @@
         font-size: 16px;
         line-height: 32px;
     }
-}
-
-@media only screen and (min-device-width: 800px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
-  .catalog {
-    display: grid;
-    grid-template-columns: auto;
-  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){

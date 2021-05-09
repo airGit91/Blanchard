@@ -282,28 +282,29 @@
         display: none;
     }
 
-    .editions__container{
-        /* max-width: 768px; */
+    .editions{
+        margin: 0 auto;
         margin-top: 84px;
+        background-image: url(../images/768/bc-edition-764.jpg);
+        background-size: 100%
     }
 
-    .editions{
+    .editions__container{
         position: relative;
+        max-width: 768px;
         min-height: 1048px;
         padding-top: 80px;
         padding-left: 46px;
-        background-image: url(../images/768/bc-edition-764.jpg);
-        background-size: 100%
     }
 
     .editions__subtitle{
         font-size: 48px;
         line-height: 65px;
-        letter-spacing: 1.5px;
     }
 
     .editions__list{
         margin-top: 16px;
+        padding-left: 1px;
     }
 
     .edition__panel_desc{
@@ -332,13 +333,13 @@
     }
 
     .edition__cost-form{
-        margin-top: 6px;
+        margin-top: 9px;
         margin-left: 4px;
     }
 
     .swiper__editions{
         position: relative;
-        top: 107px;
+        top: 112px;
         left: 30px;
         max-width: 614px;
     }
@@ -372,10 +373,14 @@
     }
 
     .edition__book-name{
-        font-weight: bold;
+        font-weight: 700;
         font-size: 16px;
         line-height: 22px;
-        letter-spacing: 0.5px;
+    }
+
+    .edition__book-cost{
+        font-weight: 400;
+        font-size: 15px;
     }
 
     .edition__book-author{

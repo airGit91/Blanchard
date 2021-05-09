@@ -10,7 +10,6 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  letter-spacing: 0.6px;
 }
 
 .Domenico__image{
@@ -18,7 +17,11 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
-    .Domenico__container{
+  .catalog__Domenico{
+    display: none;
+  }
+
+  .Domenico__container{
         max-width: 320px;
         margin-top: 76px;
     }
@@ -50,8 +53,8 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
     .Domenico__container{
-        /* max-width: 768px; */
-        padding-top: 50px;
+        max-width: 768px;
+        padding-top: 52px;
         padding-right: 50px;
         padding-left: 50px;
     }
@@ -62,10 +65,9 @@
 
     .Domenico__little-title{
         padding-top: 7px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 12px;
         line-height: 16px;
-        letter-spacing: 0.3px;
     }
 
     .Domenico__content{
@@ -73,6 +75,5 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.6px;
     }
 }

@@ -81,8 +81,8 @@
     }
 
     .events{
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 14px;
+        padding-left: 14px;
     }
 
     .events__subtitle{
@@ -125,6 +125,7 @@
     .events__content{
         position: relative;
         top: 200px;
+        max-width: 290px;
         min-height: 483px;
         padding: 14px 10.58px 50px 28.58px;
     }
@@ -171,9 +172,13 @@
         position: relative;
     }
 
+    .events{
+      margin-top: 71px;
+      margin-bottom: 83px;
+    }
+
     .events__container{
-        /* max-width: 768px; */
-        margin-top: 71px;
+        max-width: 768px;
         padding-right: 50px;
         padding-left: 49px;
     }
@@ -212,6 +217,7 @@
     .events__content{
         position: relative;
         top: 200px;
+        max-width: 317px;
         min-height: 483px;
         padding: 14px 10.58px 50px 28.58px;
     }
@@ -227,31 +233,33 @@
 
     .events__content-title{
         padding-top: 4px;
-        padding-right: 4px;
+        padding-right: 8px;
         padding-left: 7px;
         font-weight: 600;
         font-size: 24px;
         line-height: 33px;
-        letter-spacing: 0.5px;
     }
 
     .events__content-text{
         padding-top: 2px;
         padding-right: 11px;
         padding-left: 5px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.5px;
     }
 
     .events__link{
         position: absolute;
         bottom: 49px;
         left: 36px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 25px;
+    }
+
+    .events__link:after{
+      margin-top: 1px;
     }
 
     .events__btn{
@@ -259,7 +267,6 @@
         margin: 0 auto;
         margin-top: 47px;
         padding: 17px 35px;
-        font-style: normal;
         font-weight: bold;
         font-size: 18px;
         line-height: 25px;

@@ -59,14 +59,14 @@
     }
 
     .projects__title{
-        font-weight: normal;
+        font-weight: 400;
         font-size: 28px;
         line-height: 38px;
     }
 
     .projects__content{
         padding-top: 12px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
     }
@@ -195,33 +195,29 @@
 
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
-    .projects__container{
-        /* max-width: 768px; */
-        margin: 0 auto;
-        margin-top: 80px;
+    .projects{
+      margin-top: 80px;
     }
 
-    .projects{
-        padding-right: 50px;
+    .projects__container{
+        max-width: 768px;
+        margin: 0 auto;
+        padding-right: 57px;
         padding-left: 46px;
     }
 
     .projects__title{
-        font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 48px;
         line-height: 65px;
-        letter-spacing: 1.8px;
     }
 
     .projects__content{
         padding-top: 16px;
         padding-left: 2px;
-        font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 0.6px;
     }
 
     .projects__btn{
@@ -239,18 +235,16 @@
 
     .projects__subtitle{
         padding-top: 25px;
-        font-style: normal;
         font-weight: 600;
         font-size: 24px;
         line-height: 32px;
-        letter-spacing: 0.4px;
     }
 
     .projects__swiper{
       position: relative;
       left: 8.5%;
       width: 562px;
-      margin-top: 26px;
+      margin-top: 30px;
     }
 
     .projects__slide-container{

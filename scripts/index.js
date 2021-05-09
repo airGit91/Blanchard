@@ -123,6 +123,11 @@
       pagination: {
         el: '.swiper-pagination'
       },
+      breakpoints:{
+        768:{
+          slidesPerView: 2,
+        }
+      },
     });
 
     let eventSwiperDesc = new Swiper('.swiper-container__event-desc', {
