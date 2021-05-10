@@ -381,6 +381,7 @@
       height: 16px;
       background-image: url(../icons/320/tootype-320.svg);
       background-repeat: no-repeat;
+      background-color: inherit;
       border: none;
       outline: none;
   }
@@ -494,27 +495,28 @@
 }
 
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
-  .projects__container{
-    max-width: 1920px;
-    margin: 0 auto;
+  .projects{
     margin-top: 81px;
   }
 
-  .projects{
+
+  .projects__container{
+    max-width: 1920px;
+    margin: 0 auto;
     padding-right: 50px;
     padding-left: 159px;
   }
 
   .projects__title{
-    font-weight: normal;
+    font-weight: 400;
     font-size: 48px;
     line-height: 65px;
   }
 
   .projects__content{
     width: 1080px;
-    padding-top: 19px;
-    font-weight: 600;
+    padding-top: 17px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 32px;
   }
@@ -524,13 +526,13 @@
     height: 16px;
     background-image: url(../icons/320/tootype-320.svg);
     background-repeat: no-repeat;
+    background-color: inherit;
     border: none;
     outline: none;
   }
 
   .projects__subtitle{
     padding-top: 21px;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -551,7 +553,6 @@
     height: 150px;
     width: 450px;
 }
-
 
   .swiper__projects_btn{
     bottom: 88px;

@@ -70,11 +70,7 @@
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
   .about-us__container{
     max-width: 1920px;
-    /* padding-top: 77px;
-    padding-right: 639px;
-    padding-bottom: 70px;
-    padding-left: 158px; */
-    padding: 77px 639px 70px 158px;
+    padding: 14px 639px 70px 158px;
   }
 
   .about-us__title{

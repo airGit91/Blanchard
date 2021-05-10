@@ -813,26 +813,27 @@
 }
 
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
-  .main__galery > .swiper-container{
+  .swiper-container{
     display: none;
   }
 
-  .main__galery > .swiper-container-galery{
+  .swiper-container-galery{
     display: none;
+  }
+
+  .galery{
+    position: relative;
+    background-image: url(../images/1920/bc-galery-1920.jpg);
+    background-size: 100%;
   }
 
   .galery__container{
     max-width: 1920px;
+    max-height: 995px;
     margin: 0 auto;
-  }
-
-.galery{
-    position: relative;
-    height: 995px;
     padding-top: 80px;
     padding-right: 50px;
     padding-left: 157px;
-    background-image: url(../images/1920/bc-galery-1920.jpg);
   }
 
   .galery__title{

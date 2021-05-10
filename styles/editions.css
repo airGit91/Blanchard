@@ -418,7 +418,7 @@
   }
 
     .editions__container{
-       position: relative;
+        position: relative;
         max-width: 1024px;
         margin-top: 79px;
         padding-top: 82px;
@@ -563,18 +563,19 @@
     display: none;
   }
 
+  .editions{
+    max-height: 768px;
+    background-image: url(../images/1920/bc-editions-1920.jpg);
+    background-size: 100%;
+  }
+
   .editions__container{
+    position: relative;
     max-width: 1920px;
     max-height: 763px;
     margin-top: 79px;
-  }
-
-  .editions{
-    position: relative;
-    max-height: 768px;
     padding-top: 82px;
     padding-left: 157px;
-    background-image: url(../images/1920/bc-editions-1920.jpg);
   }
 
   .editions__subtitle{
@@ -594,7 +595,7 @@
 
   .swiper__editions{
     position: relative;
-    bottom: 506px;
+    bottom: 507px;
     left: 452px;
     width: 1150px;
   }
@@ -633,15 +634,15 @@
   }
 
   .edition__cost{
-    padding-top: 25px;
+    padding-top: 27px;
     padding-left: 4px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 32px;
   }
 
   .edition__cost-form{
-    margin-top: 6px;
+    margin-top: 8px;
     margin-left: 4px;
   }
 
@@ -652,11 +653,9 @@
   }
 
   .edition__book-name{
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: 0.5px;
   }
 
   .edition__book-author{
@@ -664,6 +663,13 @@
     font-size: 16px;
     line-height: 22px;
   }
+
+  .edition__book-cost {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
 
   .edition__item_btn{
     width: 120px;
