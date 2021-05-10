@@ -357,15 +357,14 @@
   .contacts__msg-link{
     width: 60px;
     height: 60px;
-    margin-right: 27px;
   }
 
   .wtsp{
-    background-image: url('../icons/768/Whatsapp-Icon-768.svg');
+    background-image: url('../icons/1024/Whatsapp-Icon-1024.svg');
   }
 
   .telegram{
-    background-image: url('../icons/768/telegram-Icon-768.svg');
+    background-image: url('../icons/1024/telegram-Icon-1024.svg');
   }
 
   .YandexMap{

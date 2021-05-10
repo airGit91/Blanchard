@@ -96,6 +96,29 @@
 
 .footer__container{
     max-width: 1024px;
+    padding-top: 35px;
+    padding-right: 36px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+  }
+
+  .footer__list-socials {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 20.3%;
+    padding-top: 8px;
+  }
+
+  .vk{
+    background-image: url('../icons/1024/vk-1024.svg');
+  }
+
+  .inst{
+    background-image: url('../icons/1024/instagram-1024.svg');
+  }
+
+  .fb{
+    background-image: url('../icons/1024/fb-1024.svg');
   }
 }
 
