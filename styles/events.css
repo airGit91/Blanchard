@@ -280,7 +280,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
     .swiper-container-event{
         display: none;
     }
@@ -308,6 +308,7 @@
 
     .swiper-container__event-desc{
         position: relative;
+        display: block;
     }
 
     .events__images{
