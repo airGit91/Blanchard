@@ -556,7 +556,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
     .galery-container-desc{
       display: none;
     }
@@ -571,13 +571,14 @@
 
     .galery{
         position: relative;
-        max-height: 839px;
+        min-height: 838px;
         background-image: url(../images/1024/bc-galery-1024.jpg);
         background-size: 100%;
     }
 
     .galery__container{
         max-width: 1024px;
+        max-height: 838px;
         margin: 0 auto;
         padding-top: 80px;
         padding-right: 50px;
@@ -591,10 +592,10 @@
 
     .galery__text-select{
         margin-top: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
         font-size: 16px;
         line-height: 32px;
-        letter-spacing: 1px;
+        letter-spacing: 0;
     }
 
     .choices{
@@ -642,6 +643,7 @@
         left: -39.2%;
         font-size: 16px;
         line-height: 32px;
+        letter-spacing: 0;
     }
 
     .galery__swiper{
@@ -677,6 +679,7 @@
         grid-column-gap: 35px;
         grid-row-gap: 36px;
         width: 317px;
+        margin-top: 0;
     }
 
     .galery__images--1{
@@ -811,7 +814,7 @@
 
     .galery__content{
         position: relative;
-        bottom: 233px;
+        bottom: 263px;
         width: 285px;
         font-weight: 600;
         font-size: 16px;

@@ -145,6 +145,14 @@
         display: none;
     }
 
+    .edition__panel_desc{
+       display: none;
+    }
+
+    .editions__list ~ .editions__item-text{
+        display: none;
+    }
+
     .editions{
         min-height: 1542px;
         margin-top: 62px;
