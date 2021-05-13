@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
   .catalog__Domenico{
     display: none;
   }
@@ -59,12 +59,19 @@
         padding-left: 50px;
     }
 
+    .Domenico{
+      padding-right: 0;
+      padding-left: 0;
+    }
+
     .Domenico__subtitle{
         padding-top: 27px;
     }
 
     .Domenico__little-title{
-        padding-top: 7px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 9px;
         font-weight: 400;
         font-size: 12px;
         line-height: 16px;

@@ -55,7 +55,7 @@
   color: #fff;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
     .contacts__tittle-desc{
         display: none;
     }
@@ -146,7 +146,7 @@
    }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px)  and (-webkit-min-device-pixel-ratio: 1){
     .contacts__title{
         display: none;
     }
@@ -156,15 +156,17 @@
     }
 
     .contacts{
-        margin-top: 46px;
+        margin-top: 29px;
     }
 
     .container__desc{
-      max-width: 768px;
-      margin: 0 auto;
+        display: block;
+        max-width: 768px;
+        margin: 0 auto;
     }
 
     .contacts__tittle-desc{
+        display: inline-block;
         padding-left: 46px;
         font-weight: 400;
         font-size: 48px;
@@ -177,10 +179,8 @@
 
     .contacts__desc{
         display: inline-block;
-        margin-top: 14px;
-        padding: 124px 45px 104px 50px;
-        /* height: 700px;
-        width: 430px; */
+        margin-top: 17px;
+        padding: 110px 44px 100px 50px;
         border: 1px solid #CACACA;
     }
 
@@ -196,7 +196,7 @@
     }
 
     .contacts__form_title{
-        margin-top: 28px;
+        margin-top: 9px;
         font-size: 24px;
         line-height: 32px;
     }
@@ -207,7 +207,7 @@
 
     .contacts__input{
         height: 40px;
-        width: 100%;
+        width: 334px;
         margin-bottom: 22px;
         padding-top: 4px;
         padding-bottom: 4px;
@@ -224,14 +224,14 @@
     }
 
     .contacts__text_subtitle{
-        margin-top: 39px;
+        margin-top: 40px;
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
     }
 
     .contacts__msg{
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     .contacts__msg-link{
@@ -249,7 +249,8 @@
     }
 
     .YandexMap{
-        padding-top: 14px;
+        margin-top: 16px;
+        padding-top: 0;
         max-width: 338px;
         min-height: 700px;
     }

@@ -45,7 +45,7 @@
     background-image: url('../icons/320/arr-projects-right.svg');
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
     .projects__container{
         max-width: 320px;
         margin: 0 auto;
@@ -194,9 +194,11 @@
 }
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
     .projects{
-      margin-top: 80px;
+        margin-top: 80px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .projects__container{
@@ -241,14 +243,16 @@
     }
 
     .projects__swiper{
-      position: relative;
-      left: 8.5%;
-      width: 562px;
-      margin-top: 30px;
+        position: relative;
+        left: 8.5%;
+        width: 562px;
+        margin-top: 30px;
     }
 
     .projects__slide-container{
-      max-width: 264px;
+        max-width: 264px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .swiper__slide-content{

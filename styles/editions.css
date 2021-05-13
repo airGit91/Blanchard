@@ -136,7 +136,7 @@
   color: #fff;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
     .swiper__editions > .galery__swiper{
         display: none;
     }
@@ -153,10 +153,10 @@
     }
 
     .editions__container{
-      max-width: 320px;
-      padding-top: 50px;
-      padding-right: 15px;
-      padding-left: 15px;
+        max-width: 320px;
+        padding-top: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
   }
 
     .editions__subtitle{
@@ -184,8 +184,7 @@
     .editions__panel{
         max-height: 0;
         transition: max-height 0.3s ease-out;
-        font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
         background-color: inherit;
@@ -249,7 +248,7 @@
 
     .edition__book-name{
         padding-top: 9px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 12px;
         line-height: 16px;
     }
@@ -267,13 +266,13 @@
         padding-right: 15.17px;
         padding-bottom: 10px;
         padding-left: 15.17px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 12px;
         line-height: 16px;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
     .edition__panel_list{
         display: none;
     }
@@ -282,7 +281,12 @@
         display: none;
     }
 
+    .editions__list{
+        display: none;
+  }
+
     .editions{
+        min-height: 0;
         margin: 0 auto;
         margin-top: 84px;
         background-image: url(../images/768/bc-edition-764.jpg);
@@ -302,32 +306,53 @@
         line-height: 65px;
     }
 
-    .editions__list{
+    .editions__item{
+        border: none;
+    }
+
+    .editions__item-text{
         margin-top: 16px;
-        padding-left: 1px;
+        padding-left: 3px;
     }
 
     .edition__panel_desc{
         display: grid;
         grid-template-columns: 134px 253px 222px;
-        grid-column-gap: 49px;
+        grid-column-gap: 48px;
+        padding-left: 3px;
+    }
+
+    .edition__list_item{
+        padding-top: 0;
+        border: none;
+        min-height: 32px;
     }
 
     .edition__list_item > label{
         position: relative;
     }
 
+    .check{
+       padding-left: 1em;
+    }
+
+    .option{
+        margin-bottom: 0;
+    }
+
     .check__text{
         margin-left: 7px;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 32px;
+        letter-spacing: 0;
     }
 
     .edition__cost{
+        margin-top: 0;
         padding-top: 25px;
         padding-left: 4px;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 16px;
         line-height: 32px;
     }
@@ -339,9 +364,14 @@
 
     .swiper__editions{
         position: relative;
+        display: inline-block;
         top: 112px;
         left: 30px;
         max-width: 614px;
+    }
+
+    .swiper__editions > .galery__swiper{
+      display: inline-block;
     }
 
     .swiper__editions > .swiper-button-next,
@@ -350,16 +380,17 @@
     }
 
     .swiper__editions > .swiper-button-prev{
-      left: -4.3%;
+        left: -4.3%;
     }
 
     .swiper__editions > .swiper-button-next{
-      left: 12.3%;
+        left: 12.3%;
     }
 
     .swiper__editions > .swiper-pagination-fraction {
         top: -14%;
         left: -44%;
+        letter-spacing: 0;
     }
 
     .editions__images{
@@ -373,6 +404,7 @@
     }
 
     .edition__book-name{
+        padding-top: 0;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
@@ -402,7 +434,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
     .edition__panel_list{
         display: none;
     }

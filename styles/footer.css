@@ -2,7 +2,7 @@
     background-color: var(--black);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
     .footer{
         margin-top: 38px;
     }
@@ -47,12 +47,16 @@
 }
 
 @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
+    .footer{
+        margin-top: 0;
+    }
+
     .footer__container{
         max-width: 768px;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding-top: 35px;
+        padding-top: 40px;
         padding-right: 50px;
         padding-bottom: 40px;
         padding-left: 50px;
@@ -62,6 +66,7 @@
         width: 240px;
         display: flex;
         justify-content: space-between;
+        flex-basis: 36%;
     }
 
     .footer__item-socials{

@@ -39,7 +39,7 @@
   display: none;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 320px)and (-webkit-min-device-pixel-ratio: 1) {
     .hero__section{
         position: relative;
         top: -45px;
@@ -117,16 +117,17 @@
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 768px)  and (-webkit-min-device-pixel-ratio: 1){
     .hero > .swiper-container{
         max-height: 669px;
     }
 
     .hero__section{
         position: relative;
-        top: -82px;
+        top: -77px;
+        padding-top: 0;
         background-size: 100%;
-        background-position: 50% 100%;
+        background-position: 100% 100%;
     }
 
     .main__hero_container{
@@ -134,10 +135,10 @@
         flex-direction: column;
         max-width: 768px;
         margin: 0 auto;
-        padding-top: 189px;
+        padding-top: 191px;
         padding-right: 58px;
         padding-left: 46px;
-        padding-bottom: 114px;
+        padding-bottom: 113px;
   }
     .hero__section--1{
         background-image: url(../images/768/bc-hero-768-1.jpg);
@@ -153,20 +154,24 @@
 
     .hero__main-title{
         padding-right: 76px;
+        padding-left: 0;
         font-weight: 700;
         font-size: 72px;
-        line-height: 90px;
+        text-align: left;
     }
 
     .hero__content{
-        padding-top: 4px;
+        padding-top: 12px;
+        padding-right: 0;
         padding-left: 4px;
         font-weight: 700;
         font-size: 18px;
         line-height: 30px;
+        text-align: left;
     }
 
     .hero__link{
+        align-self: auto;
         max-width: 320px;
         margin-top: 135px;
         padding: 22px 29px 22px 39px;

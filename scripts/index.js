@@ -63,6 +63,7 @@
   let swiperGalery = new Swiper('.swiper-container-galery', {
     cssMode: true,
     loop: true,
+    // slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
@@ -173,7 +174,7 @@
 
     let swiperEditions = new Swiper('.swiper__editions', {
       cssMode: true,
-      slidesPerView: 2,
+      slidesPerView: 1,
       loop: true,
       spaceBetween: 34,
       pagination: {
