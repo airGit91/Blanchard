@@ -453,6 +453,7 @@
 
     .editions{
         max-height: 763px;
+        margin-top: 80px;
         background-image: url(../images/1024/bc-editions-1024.jpg);
         background-size: 100%;
   }
@@ -460,6 +461,7 @@
     .editions__container{
         position: relative;
         max-width: 1024px;
+        max-height: 763px;
         margin-top: 79px;
         padding-top: 82px;
         padding-left: 46px;
@@ -471,31 +473,32 @@
         letter-spacing: 0.6px;
     }
 
-    .editions__list{
-        margin-top: 16px;
-        padding-left: 2px;
+    .edition__panel_desc{
+        display: inline-block;
     }
 
-    .editions__item-text{
-        letter-spacing: 0.6px;
+    .editions__list ~ .editions__item-text{
+        display: block;
     }
 
     .swiper__editions{
-      position: relative;
-      bottom: 620px;
-      left: 298px;
-      width: 629px;
+        position: relative;
+        display: flex;
+        top: auto;
+        bottom: 620px;
+        left: 298px;
+        max-width: 630px;
     }
 
     .edition__book-cost {
-      font-style: italic;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 16px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
   }
 
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-      display: inline-block;
+        display: inline-block;
   }
 
     .swiper__editions > .swiper-button-next,

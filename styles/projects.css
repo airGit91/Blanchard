@@ -354,7 +354,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
   .projects{
       margin-top: 80px;
   }
@@ -400,8 +400,8 @@
   .projects__swiper{
       position: relative;
       left: 6%;
-      max-width: 818px;
-      margin-top: 20px;
+      width: 818px;
+      margin-top: 22px;
   }
 
   .projects__slide-container{

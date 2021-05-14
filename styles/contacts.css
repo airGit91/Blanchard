@@ -266,7 +266,7 @@
 }
 
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
   .contacts__title{
     display: none;
   }
@@ -276,9 +276,7 @@
   }
 
 .contacts{
-    /* position: relative;
-    max-width: 1024px; */
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .container__desc{
@@ -300,13 +298,12 @@
   .contacts__desc{
     display: inline-block;
     margin-top: 14px;
-    padding: 124px 45px 104px 50px;
-    /* height: 700px;
-    width: 487px; */
+    padding: 111px 101px 74px 50px;
     border: 1px solid #CACACA;
   }
 
   .contacts__subtitle{
+    padding-top: 14px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -317,7 +314,7 @@
   }
 
   .contacts__form_title{
-    margin-top: 31px;
+    margin-top: 9px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -328,7 +325,7 @@
 
   .contacts__input{
     height: 40px;
-    width: 85%;
+    width: 334px;
     margin-bottom: 22px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -352,12 +349,13 @@
   }
 
   .contacts__msg{
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .contacts__msg-link{
     width: 60px;
     height: 60px;
+    margin-right: 0;
   }
 
   .wtsp{
@@ -369,10 +367,7 @@
   }
 
   .YandexMap{
-    /* position: absolute; */
-    padding-top: 14px;
-    /* right: 0; */
-    /* min-width: 537px; */
+    margin-top: 14px;
     min-height: 700px;
   }
 

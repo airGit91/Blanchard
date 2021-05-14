@@ -97,11 +97,11 @@
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
 
 .footer__container{
     max-width: 1024px;
-    padding-top: 35px;
+    padding-top: 40px;
     padding-right: 36px;
     padding-bottom: 40px;
     padding-left: 50px;
