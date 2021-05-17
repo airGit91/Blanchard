@@ -462,6 +462,7 @@
     position: relative;
     top: 300px;
     min-height: 400px;
+    max-width: 500px;
     padding: 14px 10px 50px 45px;
   }
 

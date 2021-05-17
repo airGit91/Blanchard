@@ -500,9 +500,8 @@
 
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
   .projects{
-    margin-top: 81px;
+    margin-top: 77px;
   }
-
 
   .projects__container{
     max-width: 1920px;
@@ -545,7 +544,7 @@
   .projects__swiper{
     position: relative;
     left: 4.5%;
-    max-width: 1450px;
+    width: 1450px;
     margin-top: 20px;
   }
 

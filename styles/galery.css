@@ -856,7 +856,7 @@
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 1px;
+    letter-spacing: 0.2px;
   }
 
   .choices{
@@ -865,6 +865,7 @@
 
   .choices__inner{
     width: 23.5%;
+    margin-top: 0;
   }
 
   .choices__list--dropdown{
@@ -882,8 +883,9 @@
 
   .galery-container-desc{
     position: relative;
-    bottom: 83px;
+    bottom: 82px;
     left: 26.5%;
+    display: block;
     width: 1150px;
   }
 
@@ -892,6 +894,12 @@
     display: inline-block;
     height: 20px;
     color: var(--white);
+  }
+
+  .galery-container-desc > .swiper-pagination-fraction,
+  .galery-container-desc > .galery__swiper-prev,
+  .galery-container-desc > .galery__swiper-next{
+    display: block;
   }
 
   .swiper-pagination-fraction {
@@ -1059,7 +1067,7 @@
 
   .galery__content{
     position: relative;
-    bottom: 200px;
+    bottom: 228px;
     width: 350px;
     font-weight: 600;
     font-size: 16px;

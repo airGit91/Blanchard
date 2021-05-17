@@ -79,6 +79,7 @@
   let swiperGaleryDesc = new Swiper('.galery-container-desc', {
     cssMode: true,
     loop: true,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',

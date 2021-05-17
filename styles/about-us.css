@@ -71,6 +71,7 @@
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
   .about-us__container{
     max-width: 1920px;
+    margin-top: 0;
     padding: 14px 639px 70px 158px;
   }
 

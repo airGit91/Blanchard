@@ -640,7 +640,7 @@
     position: relative;
     bottom: 507px;
     left: 452px;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   .swiper__editions > .swiper-button-next,
@@ -659,6 +659,11 @@
   .swiper__editions > .swiper-pagination-fraction {
     top: -12.5%;
     left: -44.4%;
+  }
+
+  .editions__images{
+    max-width: 350px;
+    margin-top: 0;
   }
 
   .edition__list_item > label{
