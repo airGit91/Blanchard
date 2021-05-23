@@ -60,6 +60,10 @@
     background-image: url('../icons/320/arr-projects-right.svg');
 }
 
+.tippy-popper .tippy-tooltip.customized-theme * {
+  background-color: rgb(28, 43, 83)!important;
+}
+
 @media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
     .projects__container{
         max-width: 320px;
@@ -514,6 +518,10 @@
 }
 
 @media only screen and (min-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1){
+  #projects__btn_four{
+    display: none;
+  }
+
   .projects{
     margin-top: 77px;
   }

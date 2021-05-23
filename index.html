@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/simplebar.css">
     <link rel="stylesheet" href="./styles/swiper-min.css">
     <link rel="stylesheet" href="./styles/choices.css">
+    <link rel="stylesheet" href="./styles/scale.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -28,6 +29,8 @@
     <script defer src="./scripts/choices.min.js"></script>
     <script defer src="https://api-maps.yandex.ru/2.1/?apikey=189dc73f-f9b3-41d7-b9bc-a89e60aa0fb7&lang=ru_RU"></script>
     <script defer src="./scripts/jquery.js"></script>
+    <script defer src="./scripts/popper.min.js"></script>
+    <script defer src="./scripts/tippy-bundle.umd.min.js"></script>
     <script defer src="./scripts/maskedinput.js"></script>
     <script defer src="./scripts/index.js"></script>
     <title>Blanchard</title>
@@ -2170,6 +2173,10 @@
             </ul>
 
             <div class="swiper__editions">
+                <div class="swiper-pagination"></div>
+                <button type="button" class="galery__swiper galery__swiper-prev swiper-button swiper-button-prev"></button>
+                <button type="button" class="galery__swiper galery__swiper-next swiper-button swiper-button-next"></button>
+
                 <div class="swiper-wrapper editions__desc">
                     <div class="swiper-slide editions__images">
                       <picture class="edition__book-pic">
@@ -2290,11 +2297,6 @@
                       <button class="edition__item_btn" type="button">Заказать</button>
                     </div>
                 </div>
-
-                <div class="swiper-pagination"></div>
-
-                <button type="button" class="galery__swiper galery__swiper-prev swiper-button swiper-button-prev"></button>
-                <button type="button" class="galery__swiper galery__swiper-next swiper-button swiper-button-next"></button>
             </div>
           </div>
         </section>
@@ -2304,7 +2306,7 @@
             <h1 class="projects__title">Проекты</h1>
 
             <p class="projects__content">
-                Предварительные выводы: постоянное информационно- пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно- пропагандистское <button aria-label="всплывающая подсказка" class="projects__btn" type="button" title=""></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button aria-label="всплывающая подсказка" class="projects__btn" type="button" title=""></button> исключительно в разрезе маркетинговых и финансовых <button aria-label="всплывающая подсказка" class="projects__btn" type="button" title=""></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными <button aria-label="всплывающая подсказка" class="projects__btn" type="button" title=""></button> данными до степени совершенной неузнаваемости. Подробнее:
+                Предварительные выводы: постоянное информационно- пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно- пропагандистское <button aria-label="всплывающая подсказка" id="projects__btn_one" class="projects__btn" type="button" title=""></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button aria-label="всплывающая подсказка"id="projects__btn_two" class="projects__btn" type="button" title=""></button> исключительно в разрезе маркетинговых и финансовых <button aria-label="всплывающая подсказка" id="projects__btn_three" class="projects__btn" type="button" title=""></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными <button aria-label="всплывающая подсказка" id="projects__btn_four" class="projects__btn" type="button" title=""></button> данными до степени совершенной неузнаваемости. Подробнее:
                 <a class="projects__content_link" href="#">blanchard-art.ru/projects/about</a>
             </p>
 

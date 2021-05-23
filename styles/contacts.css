@@ -105,8 +105,8 @@
     }
 
     .contacts__form{
-      margin-bottom: 3px;
-      padding-top: 16px;
+        margin-bottom: 3px;
+        padding-top: 16px;
     }
 
     .contacts__input{
@@ -132,8 +132,8 @@
     }
 
     .contacts__msg-link{
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-right: 20px;
     }
 
@@ -355,15 +355,7 @@
   .contacts__msg-link{
     width: 60px;
     height: 60px;
-    margin-right: 0;
-  }
-
-  .wtsp{
-    background-image: url('../icons/1024/Whatsapp-Icon-1024.svg');
-  }
-
-  .telegram{
-    background-image: url('../icons/1024/telegram-Icon-1024.svg');
+    margin-right: 30px;
   }
 
   .YandexMap{
@@ -470,6 +462,7 @@
   .contacts__msg-link{
     width: 60px;
     height: 60px;
+    margin-right: 0;
   }
 
   .wtsp{

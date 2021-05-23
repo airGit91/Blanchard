@@ -15,19 +15,16 @@
 }
 
 .hero__link:hover{
-  /* padding: 22px 26px 24px 36px; */
   border: 3px solid var(--border-hover);
 }
 
 .hero__link:focus{
-  /* padding: 25px 29px 26px 39px; */
   border: none;
   outline: none;
   box-shadow:  0 0 0 2px #fff, 0 0 0 5px var(--hover-purple);
 }
 
 .hero__link:active{
-  /* padding: 22px 26px 24px 36px; */
   background-color: var(--active-purple);
   border: 3px solid var(--border-hover);
 }
@@ -50,7 +47,6 @@
     }
 
     .hero__container{
-        max-width: 320px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;

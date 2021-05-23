@@ -182,11 +182,26 @@
       $(this).toggleClass('accordion__item');
     });
 
-
     $('#events__btn').on('click',function() {
       $(".events__item").css("display", "block");
       $('#events__btn').css("display", "none");
     });
+
+    tippy('#projects__btn_one', {
+      content: "Пример современных тенденций - современная методология разработки",
+      theme: 'custom',
+    });
+
+    tippy('#projects__btn_two', {
+      content: "Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции",
+      theme: 'custom',
+    });
+
+    tippy('#projects__btn_three', {
+      content: "В стремлении повысить качество ",
+      theme: 'custom',
+    });
+
 
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {
