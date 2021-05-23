@@ -67,12 +67,12 @@
 }
 
 @media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1){
-    .swiper-container__event-desc{
+    .events__btn{
         display: none;
     }
 
-    .events__btn{
-        display: none;
+    .events__list{
+      display: none;
     }
 
     .events__container{
@@ -164,8 +164,8 @@
 }
 
 @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){
-    .swiper-container__event-desc{
-        display: none;
+    .swiper-container-event{
+      display: none;
     }
 
     .swiper-container-event{
@@ -188,6 +188,18 @@
     .events__subtitle{
         font-size: 48px;
         line-height: 65px;
+    }
+
+    .events__list{
+      display: grid;
+      grid-template-columns: 317px 317px;
+      grid-template-rows: 683px;
+      grid-column-gap: 34px;
+      grid-row-gap: 34px;
+    }
+
+    .events__list > .events__item:nth-child(n+3){
+      display: none;
     }
 
     .events__images{
@@ -217,11 +229,7 @@
     }
 
     .events__content{
-        position: relative;
-        top: 200px;
         max-width: 317px;
-        min-height: 483px;
-        padding: 14px 10.58px 50px 28.58px;
     }
 
     .events__little-title{
@@ -287,7 +295,7 @@
 
     .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
       display: none;
-  }
+    }
 
     .events{
       margin-top: 32px;
@@ -306,9 +314,20 @@
         line-height: 65px;
     }
 
-    .swiper-container__event-desc{
-        position: relative;
-        display: block;
+    .events__list{
+      display: grid;
+      grid-template-columns: 290px 290px 290px;
+      grid-template-rows: 683px;
+      grid-column-gap: 27px;
+      grid-row-gap: 34px;
+    }
+
+    .events__list > .events__item:nth-child(n+3){
+      display: block;
+    }
+
+    .events__list > .events__item:nth-child(n+4){
+      display: none;
     }
 
     .events__images{
@@ -338,12 +357,12 @@
         background-image: url(../images/1024/bc-events-5.jpg);
     }
 
-    .events__content{
+    /* .events__content{
         position: relative;
         top: 200px;
         min-height: 483px;
         padding: 14px 10.58px 50px 28.58px;
-    }
+    } */
 
     .events__little-title{
         padding-left: 7px;
@@ -426,16 +445,15 @@
     line-height: 65px;
   }
 
-  .swiper-container__event-desc{
-    position: relative;
-    width: 1640px;
-}
+  .events__list{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 700px;
+    grid-column-gap: 50px;
+  }
 
   .events__images{
-    position: relative;
-    min-height: 700px;
     max-width: 500px;
-    margin-top: 15px;
   }
 
   .events__images--1{

@@ -92,6 +92,72 @@
     },
   });
 
+  let eventSwiper = new Swiper('.swiper-container-event', {
+    cssMode: true,
+    slidesPerView: 1,
+    spaceBetween: 33,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    breakpoints:{
+      768:{
+        slidesPerView: 2,
+      }
+    },
+  });
+
+  let projectSwiper = new Swiper('.projects__swiper', {
+    cssMode: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: '.projects__btn-next',
+      prevEl: '.projects__btn-prev',
+    },
+    breakpoints:{
+      768:{
+        slidesPerView: 2,
+        spaceBetween: 34,
+      },
+      1024:{
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      1920:{
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
+  let swiperEditions = new Swiper('.swiper__editions', {
+    cssMode: true,
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 34,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints:{
+      1024:{
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      1920:{
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
   const element = document.querySelector('select');
               const choices = new Choices(element, {
                   searchEnabled: false,
@@ -116,87 +182,10 @@
       $(this).toggleClass('accordion__item');
     });
 
-    let eventSwiper = new Swiper('.swiper-container-event', {
-      cssMode: true,
-      slidesPerView: 1,
-      spaceBetween: 33,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination'
-      },
-      breakpoints:{
-        768:{
-          slidesPerView: 2,
-        }
-      },
-    });
 
-    let eventSwiperDesc = new Swiper('.swiper-container__event-desc', {
-      cssMode: true,
-      slidesPerView: 3,
-      spaceBetween: 27,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints:{
-        1920:{
-          slidesPerView: 3,
-          spaceBetween: 50,
-        }
-      },
-    });
-
-    let projectSwiper = new Swiper('.projects__swiper', {
-      cssMode: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        nextEl: '.projects__btn-next',
-        prevEl: '.projects__btn-prev',
-      },
-      breakpoints:{
-        768:{
-          slidesPerView: 2,
-          spaceBetween: 34,
-        },
-        1024:{
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-        1920:{
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      },
-    });
-
-    let swiperEditions = new Swiper('.swiper__editions', {
-      cssMode: true,
-      slidesPerView: 1,
-      loop: true,
-      spaceBetween: 34,
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          type: 'fraction',
-      },
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-      breakpoints:{
-        1024:{
-          slidesPerView: 2,
-          spaceBetween: 50,
-        },
-        1920:{
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      },
+    $('#events__btn').on('click',function() {
+      $(".events__item").css("display", "block");
+      $('#events__btn').css("display", "none");
     });
 
     ymaps.ready(function () {

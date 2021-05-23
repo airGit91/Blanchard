@@ -68,11 +68,15 @@
   background-color: inherit;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  box-shadow: 0 0 0 0.1em var(--purple);
+  box-shadow: 0 0 0 0.1em var(--white);
 }
 
 .check__input:focus + .check__box {
   box-shadow: 0 0 0 0.1em var(--purple);
+}
+
+.check__box:focus{
+  border: 1px solid var(--hover-purple);
 }
 
 .edition__cost-form{

@@ -481,10 +481,8 @@
   }
 
   .YandexMap{
-    /* position: absolute; */
+    margin-top: 0;
     padding-top: 13px;
-    /* right: 17px;
-    min-width: 1220px; */
     min-height: 700px;
   }
 

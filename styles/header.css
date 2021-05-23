@@ -56,7 +56,9 @@
 }
 
 .header__link:focus{
-    outline: 2px solid var(--focus-purple);
+    padding: 10px 22px;
+    border: 2px solid var(--focus-purple);
+    outline: none;
 }
 
 .header__search{
@@ -405,7 +407,7 @@
   }
 
   .header__enter:focus{
-    outline: 1px solid var(--focus-purple);
+    outline: 2px solid var(--focus-purple);
   }
 
   .header__nav-container{
