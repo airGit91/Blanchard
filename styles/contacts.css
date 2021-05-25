@@ -65,7 +65,7 @@
     }
 
     .contacts__container{
-      max-width: 320px;
+      /* max-width: 320px; */
       margin: 0 auto;
       padding-right: 15px;
       padding-left: 15px;
@@ -161,7 +161,7 @@
 
     .container__desc{
         display: block;
-        max-width: 768px;
+        /* max-width: 768px; */
         margin: 0 auto;
     }
 
@@ -251,7 +251,7 @@
     .YandexMap{
         margin-top: 16px;
         padding-top: 0;
-        max-width: 338px;
+        /* max-width: 338px; */
         min-height: 700px;
     }
 
@@ -280,7 +280,7 @@
   }
 
   .container__desc{
-    max-width: 1024px;
+    /* max-width: 1024px; */
     margin: 0 auto;
   }
 

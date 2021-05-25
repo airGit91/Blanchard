@@ -202,6 +202,10 @@
       theme: 'custom',
     });
 
+    tippy('#projects__btn_four', {
+      content: "В стремлении повысить качество ",
+      theme: 'custom',
+    });
 
     ymaps.ready(function () {
       let myMap = new ymaps.Map('map', {
