@@ -6,10 +6,10 @@
       $(this).next().slideToggle('slow');
 
       $(document).mouseup(function (e){ // событие клика по веб-документу
-        let div = $(".header__active"); // тут указываем ID элемента
+        let div = $(".header__nav-btn"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
-          div.hide(); // скрываем его
+          $('.header__active').hide(); // скрываем его
         }
       });
     });
@@ -64,16 +64,6 @@
     }
     $(window).resize(checkWindowSize());
   });
-
-  // $('.header__search-tab-btn--open').click(function(){
-  //   $('.header__search-tab-btn--open').css('display', 'none');
-  //   $('.header__search-tab').css('display', 'flex');
-  // });
-
-  // $('.header__search-tab-btn').click(function(){
-  //   $('.header__search-tab').css('display', 'none');
-  //   $('.header__search-tab-btn--open').css('display', 'flex');
-  // });
 
   let swiper = new Swiper('.swiper-container', {
     cssMode: true,
@@ -138,31 +128,6 @@
     },
   });
 
-  let projectSwiper = new Swiper('.projects__swiper', {
-    cssMode: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-      nextEl: '.projects__btn-next',
-      prevEl: '.projects__btn-prev',
-    },
-    breakpoints:{
-      768:{
-        slidesPerView: 2,
-        spaceBetween: 34,
-      },
-      1024:{
-        slidesPerView: 2,
-        spaceBetween: 50,
-      },
-      1920:{
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
-    },
-  });
-
   let swiperEditions = new Swiper('.swiper__editions', {
     cssMode: true,
     slidesPerView: 1,
@@ -188,6 +153,34 @@
       },
     },
   });
+
+  let projectSwiper = new Swiper('.projects__swiper', {
+    cssMode: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+      nextEl: '.projects__btn-next',
+      prevEl: '.projects__btn-prev',
+    },
+    breakpoints:{
+      768:{
+        slidesPerView: 2,
+        spaceBetween: 34,
+      },
+
+      1024:{
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+
+      1920:{
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
 
   const element = document.querySelector('select');
               const choices = new Choices(element, {
