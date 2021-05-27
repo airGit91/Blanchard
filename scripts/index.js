@@ -44,6 +44,14 @@
      });
   });
 
+  $('.header__search').click(function(){
+    $('.header__search-disclosure').css('top', '0');
+  });
+
+  $('.header__search-closer, .header__search-disclosure-btn').click(function(){
+    $('.header__search-disclosure').css('top', '-99px');
+  });
+
   let swiper = new Swiper('.swiper-container', {
     cssMode: true,
     slidesPerView: 1,
