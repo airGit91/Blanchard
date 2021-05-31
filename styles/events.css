@@ -161,6 +161,30 @@
         font-size: 16px;
         line-height: 32px;
     }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 8px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background: var(--gray);
+      opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #666;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){

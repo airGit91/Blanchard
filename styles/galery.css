@@ -347,7 +347,11 @@
       top: 0;
       height: 85%;
     }
-  }
+
+    .galery__container > .swiper-container > .swiper-pagination{
+      bottom: 10px;
+    }
+}
 
 
 @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1){

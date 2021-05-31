@@ -43,16 +43,8 @@
       $('body').unbind('touchmove');
      });
 
-     $('.header__search').click(function(){
-      $('.header__search-disclosure').css('top', '0');
-    });
-
-    $('.header__search-closer, .header__search-disclosure-btn').click(function(){
-      $('.header__search-disclosure').css('top', '-99px');
-    });
-
-     function checkWindowSize() {
-       if($(window).width() >= 1024){
+    function checkWindowSize() {
+      if(window.matchMedia('(min-width: 1024px)').matches){
         $('.header__search').click(function(){
           $('.header__search-disclosure').css('top', '35px');
         });
@@ -60,12 +52,23 @@
         $('.header__search-closer, .header__search-disclosure-btn').click(function(){
           $('.header__search-disclosure').css('top', '-99px');
         });
+      }else{
+        $('.header__search').click(function(){
+          $('.header__search-disclosure').css('top', '0');
+        });
+
+        $('.header__search-closer, .header__search-disclosure-btn').click(function(){
+          $('.header__search-disclosure').css('top', '-99px');
+        });
       }
     }
-    $(window).resize(checkWindowSize());
+    checkWindowSize()
+    $(window).resize(checkWindowSize);
   });
 
   let swiper = new Swiper('.swiper-container', {
+    observer: true,
+    observeParents: true,
     cssMode: true,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -82,6 +85,8 @@
   });
 
   let swiperGalery = new Swiper('.swiper-container-galery', {
+    observer: true,
+    observeParents: true,
     cssMode: true,
     loop: true,
     // slidesPerView: 1,
@@ -98,6 +103,8 @@
   });
 
   let swiperGaleryDesc = new Swiper('.galery-container-desc', {
+    observer: true,
+    observeParents: true,
     cssMode: true,
     loop: true,
     slidesPerView: 1,
@@ -114,6 +121,8 @@
   });
 
   let eventSwiper = new Swiper('.swiper-container-event', {
+    observer: true,
+    observeParents: true,
     cssMode: true,
     slidesPerView: 1,
     spaceBetween: 33,
@@ -129,6 +138,8 @@
   });
 
   let swiperEditions = new Swiper('.swiper__editions', {
+    observer: true,
+    observeParents: true,
     cssMode: true,
     slidesPerView: 1,
     loop: true,
@@ -155,6 +166,8 @@
   });
 
   let projectSwiper = new Swiper('.projects__swiper', {
+    observer: true,
+    observeParents: true,
     cssMode: true,
     slidesPerView: 1,
     spaceBetween: 30,
