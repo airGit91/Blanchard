@@ -194,7 +194,6 @@
     },
   });
 
-
   const element = document.querySelector('select');
               const choices = new Choices(element, {
                   searchEnabled: false,
@@ -222,6 +221,61 @@
     $('#events__btn').on('click',function() {
       $(".events__item").css("display", "block");
       $('#events__btn').css("display", "none");
+    });
+
+    $('.Domenico__desc').on('click', function(){
+      $('.catalog__Domenico > picture').css('display','none');
+      $('.Domenico > picture').css('display','none');
+      $('.Domenico__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Доменико Гирландайо');
+    });
+
+    $('.Domenico__mob').on('click', function(){
+      $('.Domenico > picture').css('display','none');
+      $('.Domenico__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Доменико Гирландайо');
+    });
+
+    $('.di-Bindo__desc').on('click', function(){
+      $('.catalog__Domenico > picture').css('display','none');
+      $('.Domenico > picture').css('display','none');
+      $('.Benedetto').css('display', 'block');
+      $('.Benedetto__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Бенедетто ди Биндо');
+    });
+
+    $('.di-Bindo').on('click', function(){
+      $('.Domenico > picture').css('display','none');
+      $('.Benedetto__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Бенедетто ди Биндо');
+    });
+
+    $('.Ambrodjo__desc').on('click', function(){
+      $('.catalog__Domenico > picture').css('display','none');
+      $('.Domenico > picture').css('display','none');
+      $('.Ambrodjo').css('display', 'block');
+      $('.Ambrodjo__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Бергоньоне, Амброджо');
+    });
+
+    $('.Ambrodjo__mob').on('click', function(){
+      $('.Domenico > picture').css('display','none');
+      $('.Ambrodjo__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Бергоньоне, Амброджо');
+    });
+
+    $('.Francesco__desc').on('click', function(){
+      $('.catalog__Domenico > picture').css('display','none');
+      $('.Domenico > picture').css('display','none');
+      $('.Francesco').css('display', 'block');
+      $('.Francesco__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Биссоло, Франческо');
+    });
+
+    $('.Francesco__mob').on('click', function(){
+      $('.Domenico > picture').css('display','none');
+      $('.Francesco__pic').css('display', 'block');
+      $('.Domenico__subtitle').text('Биссоло, Франческо');
     });
 
     tippy('#projects__btn_one', {

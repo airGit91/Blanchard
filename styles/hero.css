@@ -11,22 +11,15 @@
   color: var(--white);
   background-color: var(--purple);
   border-radius: 100px;
-  transition: all 0.3s linear;
-}
-
-.hero__link:hover{
-  border: 3px solid var(--border-hover);
 }
 
 .hero__link:focus{
   border: none;
   outline: none;
-  box-shadow:  0 0 0 2px #fff, 0 0 0 5px var(--hover-purple);
 }
 
 .hero__link:active{
   background-color: var(--active-purple);
-  border: 3px solid var(--border-hover);
 }
 
 .hero > .swiper-container > .swiper-pagination{
@@ -83,29 +76,35 @@
     }
 
     .hero__link{
+        position: relative;
         margin-top: 40px;
         padding: 12px 19px 14px 22px;
         align-self: center;
-        font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 12px;
         line-height: 16px;
     }
 
-    .hero__link:focus{
-        padding: 10px 17px 12px 20px;
-        border: 3px solid #7943A4;
-        border-radius: 100px;
+    .hero__link:focus::after{
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 208px;
+      height: 48px;
+      border: 2px solid var(--hover-purple);
+      border-radius: 100px;
     }
 
     .hero__link:hover{
-        padding: 10px 17px 12px 20px;
+        padding: 9px 16px 11px 19px;
+        border: 3px solid var(--border-hover);
     }
 
     .hero__link:active{
-        padding: 10px 17px 12px 20px;
-        background-color: #7943A4;
-        border: 3px solid #D1A9F0;
+        padding: 9px 16px 11px 19px;
+        background-color: var(--active-purple);
+        border: 3px solid var(--border-hover);
     }
 
     .swiper-button-next,
@@ -181,16 +180,21 @@
         font-weight: 700;
     }
 
-    .hero__link:focus{
-      padding: 20px 27px 20px 37px;
+    .hero__link:focus::after{
+      top: -4px;
+      left: -5px;
+      width: 327px;
+      height: 74px;
     }
 
     .hero__link:hover{
-      padding: 20px 27px 20px 37px;
+      padding: 19px 26px 19px 36px;
+      border: 3px solid var(--border-hover);
     }
 
     .hero__link:active{
-      padding: 20px 27px 20px 37px;
+      padding: 19px 26px 19px 36px;
+      border: 3px solid var(--border-hover);
     }
 
     .swiper-button-next:after, .swiper-button-prev:after{
@@ -262,6 +266,11 @@
 
     .hero__link:focus{
       padding: 22px 27px 24px 38px;
+    }
+
+    .hero__link:focus::after{
+      width: 326px;
+      height: 77px;
     }
 
     .hero__link:hover{
@@ -337,15 +346,19 @@
     font-size: 16px;
   }
 
-  .hero__link:focus{
-    padding: 22px 29px 20px 35px;
+  .hero__link:focus::after{
+    width: 327px;
+    height: 75px;
   }
 
   .hero__link:hover{
-    padding: 22px 29px 20px 35px;
+    max-width: 322px;
+    padding: 20px 27px 24px 37px;
+
   }
 
   .hero__link:active{
-    padding: 22px 29px 20px 35px;
+    max-width: 322px;
+    padding: 20px 27px 24px 37px;
   }
 }
