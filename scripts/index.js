@@ -278,6 +278,11 @@
       $('.Domenico__subtitle').text('Биссоло, Франческо');
     });
 
+    // $('.check').on('click', function(){
+    //   $('.check__box').removeClass('active__checkbox');
+    //   $('.check__box').addClass('active__checkbox');
+    // });
+
     tippy('#projects__btn_one', {
       content: "Пример современных тенденций - современная методология разработки",
       theme: 'custom',

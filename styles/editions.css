@@ -12,18 +12,6 @@
     color: var(--white);
 }
 
-.check__text:hover,
-.check__text:active,
-.check__text:focus{
-    color: var(--purple);
-}
-
-/* Checked */
-.check__input:checked + .check__box {
-    background-color: inherit;
-    background-image: url('../icons/320/checbox.svg');
-}
-
 .editions__container{
   margin: 0 auto;
 }
@@ -71,12 +59,65 @@
   box-shadow: 0 0 0 0.1em var(--white);
 }
 
-.check__input:focus + .check__box {
+/* .check__text:hover,
+.check__text:active,
+.check__text:focus{
+    color: var(--purple);
+} */
+
+/* Checked */
+/* .check__input:checked + .check__box {
+    background-color: inherit;
+    background-image: url('../icons/320/checbox.svg');
+} */
+
+/* .check__input:focus + .check__box {
   box-shadow: 0 0 0 0.1em var(--purple);
+} */
+
+/* .check__box:focus{
+  border: 1px solid var(--hover-purple);
+} */
+
+.edition__list_item > label{
+  cursor: pointer;
 }
 
-.check__box:focus{
-  border: 1px solid var(--hover-purple);
+.edition__list_item:focus > label{
+  border: 1px solid var(--focus-purple);
+}
+
+.edition__list_item:hover > label > .check__box{
+  box-shadow: 0 0 0 0.1em var(--hover-purple);
+}
+
+.edition__list_item:hover > label > .check__text{
+  color: var(--hover-purple);
+}
+
+.edition__list_item:active > label > .check__text{
+  color: var(--active-purple);
+}
+
+.edition__list_item:active > label > .check__box{
+  box-shadow: 0 0 0 0.1em var(--active-purple);
+}
+
+.active__text{
+  color: var(--active-purple);
+}
+
+.active__checkbox{
+  box-shadow: 0 0 0 0.1em var(--active-purple);
+}
+
+.check__input:checked + .check__box {
+  background-color: inherit;
+  background-image: url('../icons/320/checbox.svg');
+}
+
+.edition__list_item:focus-within > label{
+  border: 1px solid var(--focus-purple);
 }
 
 .edition__cost-form{
