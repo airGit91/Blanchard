@@ -6,7 +6,7 @@
       $(this).next().slideToggle('slow');
 
       $(document).mouseup(function (e){ // событие клика по веб-документу
-        let div = $(".header__nav-btn"); // тут указываем ID элемента
+        let div = $(".header__active"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
           $('.header__active').hide(); // скрываем его
@@ -37,11 +37,11 @@
       }
     });
 
-    $('.header__item').click(function () {
-      $('#header__burger').prop('checked', false);
-      $('body').css('overflow','scroll');
-      $('body').unbind('touchmove');
-     });
+    // $('.header__item').click(function () {
+    //   $('#header__burger').prop('checked', false);
+    //   $('body').css('overflow','scroll');
+    //   $('body').unbind('touchmove');
+    //  });
 
     function checkWindowSize() {
       if(window.matchMedia('(min-width: 1024px)').matches){
