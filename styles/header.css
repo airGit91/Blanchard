@@ -619,7 +619,7 @@
     position: relative;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 0;
     padding-bottom: 0;
     background-image: inherit;
@@ -627,6 +627,7 @@
 
   .header__link{
     font-size: 18px;
+    padding-left: 0;
   }
 
   .header__enter{

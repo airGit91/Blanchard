@@ -206,7 +206,7 @@
     }
 
     .editions__container{
-        max-width: 320px;
+        /* max-width: 320px; */
         padding-top: 50px;
         padding-right: 15px;
         padding-left: 15px;
@@ -352,7 +352,7 @@
 
     .editions__container{
         position: relative;
-        max-width: 768px;
+        /* max-width: 768px; */
         height: 1048px;
         padding-top: 80px;
         padding-left: 46px;
@@ -509,7 +509,7 @@
 
     .editions__container{
         position: relative;
-        max-width: 1024px;
+        /* max-width: 1024px; */
         max-height: 763px;
         margin-top: 79px;
         padding-top: 82px;
