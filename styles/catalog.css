@@ -330,7 +330,7 @@
 
     .catalog__container{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 47% 50%;
         grid-column-gap: 50px;
         /* max-width: 1024px; */
         padding-top: 80px;
@@ -346,10 +346,10 @@
 
     .catalog__list-btn{
         position: relative;
-        right: 61%;
+        right: 63%;
         align-items: center;
         padding-top: 18px;
-        padding-right: 5px;
+        padding-right: 31px;
         padding-left: 2px;
     }
 

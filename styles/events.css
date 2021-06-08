@@ -99,7 +99,7 @@
         display: flex;
         flex-direction: column;
         min-height: 703px;
-        margin-top: 10px;
+        margin-top: 14px;
     }
 
     .events__images--1{
@@ -299,7 +299,7 @@
     .events__btn{
         display: block;
         margin: 0 auto;
-        margin-top: 47px;
+        margin-top: 64px;
         padding: 17px 35px;
         font-weight: bold;
         font-size: 18px;
@@ -322,13 +322,13 @@
     }
 
     .events{
-      margin-top: 32px;
+      margin-top: 0;
       margin-bottom: 80px;
     }
 
     .events__container{
         /* max-width: 1024px; */
-        margin-top: 32px;
+        margin-top: 0;
         padding-right: 50px;
         padding-left: 49px;
     }
@@ -431,7 +431,7 @@
     .events__btn{
         display: block;
         margin: 0 auto;
-        margin-top: 47px;
+        margin-top: 64px;
         padding: 17px 35px;
         font-style: normal;
         font-weight: bold;

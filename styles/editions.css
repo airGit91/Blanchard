@@ -223,9 +223,9 @@
     }
 
     .editions__item{
-        padding-top: 5px;
+        padding-top: 0;
         padding-right: 0;
-        padding-bottom: 2px;
+        padding-bottom: 4px;
         padding-left: 0;
         text-align: start;
         background-image: url('../icons/320/arr-galery.svg');
@@ -277,7 +277,7 @@
     }
 
     .edition__cost{
-        margin-top: 18px;
+        margin-top: 58px;
         font-weight: 700;
         font-size: 16px;
         line-height: 32px;
