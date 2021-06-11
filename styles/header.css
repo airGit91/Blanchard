@@ -17,6 +17,7 @@
 
 .header__top-list{
   display: flex;
+  align-self: center;
 }
 
 .header__top-nav{
@@ -39,12 +40,9 @@
   transition-timing-function: ease;
 }
 
-.header__top-link:focus,
-.header__link-enter:focus,
-.header__button:focus,
-.header__bottom-search-btn:focus,
-.header__bottom-input:focus{
-  outline: 2px solid var(--focus);
+.header__top-link:focus{
+  outline: none;
+  background-color: var(--focus);
 }
 
 .header__top-link:hover{
@@ -67,6 +65,11 @@
   background-position: 0% 50%;
   transition-duration: .3s;
   transition-timing-function: ease;
+}
+
+.header__link-enter:focus{
+  outline: none;
+  background-color: var(--focus);
 }
 
 .header__link-enter:hover{
@@ -118,6 +121,11 @@
   transition-timing-function: ease;
 }
 
+.header__button:focus{
+  outline: none;
+  background-color: var(--focus);
+}
+
 .header__button:hover{
   color: var(--second-hover);
   background-image: url(../icons/header-arr-down-hover.svg);
@@ -161,11 +169,20 @@
 }
 
 .header__bottom-input:focus::placeholder {
-  color: transparent
+  color: transparent;
 }
 
 .header__bottom-item:hover > .header__bottom-search-btn{
   background-image: url(../icons/header-search-hover.svg);
+}
+
+.header__bottom-search-btn:focus{
+  outline: none;
+}
+
+.header__bottom-input:focus{
+  outline: none;
+  border-bottom: 1px solid var(--hover);
 }
 
 .header__bottom-item:hover > .header__bottom-input{
