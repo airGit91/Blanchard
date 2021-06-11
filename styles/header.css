@@ -52,6 +52,7 @@
 .header__top-link:active{
   color: var(--active);
   outline: none;
+  background-color: inherit;
 }
 
 .header__link-enter{
@@ -81,6 +82,7 @@
   background-image: url(../icons/enter-active.svg);
   color:var(--purple);
   outline: none;
+  background-color: inherit;
 }
 
 .header__bottom{
@@ -135,6 +137,7 @@
   color: var(--active);
   background-image: url(../icons/header-arr-down-active.svg);
   outline: none;
+  background-color: inherit;
 }
 
 .header__bottom-search-btn{
@@ -191,6 +194,7 @@
 
 .header__bottom-input:active{
   outline: none;
+  background-color: inherit;
 }
 
 .header__dropdown{
