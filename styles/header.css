@@ -123,6 +123,10 @@
   transition-timing-function: ease;
 }
 
+.header__button_rotate{
+  background-image: url(../icons/header-arr-up.svg);
+}
+
 .header__button:focus{
   outline: none;
   background-color: var(--focus);
@@ -135,7 +139,7 @@
 
 .header__button:active{
   color: var(--active);
-  background-image: url(../icons/header-arr-down-active.svg);
+  /* background-image: url(../icons/header-arr-up.svg); */
   outline: none;
   background-color: inherit;
 }
