@@ -56,3 +56,9 @@ h2,
 p{
     margin: 0;
 }
+
+.container{
+  max-width: 1642px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

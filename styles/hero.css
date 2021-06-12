@@ -1,0 +1,40 @@
+.hero{
+  height: auto;
+  background-image:url(../images/1920/bc-hero-1920-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero > .container{
+  padding-top: 133px;
+  padding-bottom: 122px;
+}
+
+.hero__title{
+  width: 597px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  color: #fff;
+}
+
+.hero__text{
+  width: 579px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.hero__link{
+  display: inline-block;
+  margin-top: 91px;
+  padding: 22.5px 35px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--purple);
+  border-radius: 100px;
+}
