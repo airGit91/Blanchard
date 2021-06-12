@@ -27,6 +27,7 @@
 }
 
 .hero__link{
+  position: relative;
   display: inline-block;
   margin-top: 91px;
   padding: 22.5px 35px;
@@ -37,4 +38,30 @@
   color: #fff;
   background-color: var(--purple);
   border-radius: 100px;
+}
+
+.hero__link:before{
+  content: '';
+  outline: none;
+}
+
+.hero__link:focus:before{
+  position: absolute;
+  top: -6%;
+  left: -1%;
+  height: 74px;
+  width: 316px;
+  border: 2px solid #C283F3;
+  border-radius: 100px;
+}
+
+.hero__link:hover{
+  padding: 19.5px 32px;
+  border: 3px solid #D1A9F0;
+}
+
+.hero__link:active{
+  padding: 19.5px 32px;
+  background-color: var(--active);
+  border: 3px solid #D1A9F0;
 }
