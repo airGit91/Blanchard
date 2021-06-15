@@ -379,6 +379,10 @@
     display: none;
   }
 
+  .header__top-input{
+    display: none;
+  }
+
   .header__top{
     padding-bottom: 25px;
   }
@@ -389,6 +393,25 @@
     height: 28px;
     display: block;
     z-index: 2;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+  }
+
+  .header__mob-menu:focus{
+    height: 36px;
+    background-color: var(--second-hover);
+  }
+
+  .header__mob-menu:hover:after,
+  .header__mob-menu:hover:before,
+  .header__mob-menu:hover span {
+    background-color: var(--hover);
+  }
+
+  .header__mob-menu:active:after,
+  .header__mob-menu:active:before,
+  .header__mob-menu:active span {
+    background-color: var(--active);
   }
 
   .header__mob-menu span,
@@ -400,6 +423,7 @@
     width: 100%;
     background-color: #fff;
     margin: 0 auto;
+    transition-duration: 0.4s;
   }
 
   .header__mob-menu span{
@@ -496,17 +520,21 @@
   }
 
   .header__top-search{
-    display: block;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 10px;
   }
-
-  .header__top-input{
-    display: none;
+  /* toggle add!!! */
+  .header__active-search{
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 10px;
+    background-color: #18171B;
   }
 
   .header__top-btn{
     width: 29.45px;
     height: 28.82px;
-    align-self: center;
     background-color: inherit;
     border: none;
     background-image: url(../icons/1024/header-search-1024.svg);
@@ -514,5 +542,155 @@
     transition-duration: .3s;
     transition-timing-function: ease;
   }
+
+  .header__top-btn:focus{
+    background-color: var(--focus);
+  }
+
+  .header__top-btn:hover{
+    background-color: var(--focus);
+  }
+  .header__top-btn:active{
+    background-color: var(--active);
+  }
+
+  .header__top-input{
+    display: none;
+  }
+ /* toggle add!!! */
+  .header__active-input{
+    display: block;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+    color: #fff;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    caret-color:  var(--hover);
+  }
+
+  .header__active-input:focus{
+    border-bottom: 1px solid var(--hover);
+    outline: none;
+  }
+
+  .header__active-input:hover{
+    border-bottom: 1px solid var(--hover);
+  }
+
+  .header__active-input:active{
+    border-bottom: 1px solid var(--active);
+  }
+
+  .header__top-search-close{
+    display: none;
+  }
 }
 
+@media only screen and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+  .header__picture-off{
+    display: none;
+  }
+
+  .header__mob-menu-off{
+    display: none;
+  }
+
+  .header__active-search{
+    background-color: transparent;
+  }
+
+  .header__active-input{
+    width: 576px;
+  }
+
+  .header__top-search-close{
+    display: block;
+    position: relative;
+    width: 29px;
+    height: 29px;
+  }
+
+  .header__top-search-close span,
+  .header__top-search-close:before,
+  .header__top-search-close:after{
+    position: absolute;
+    right: 0;
+    height: 3.65px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    transition-duration: 0.4s;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+  .header__top{
+    padding-top: 12px;
+    padding-bottom: 5px;
+  }
+
+  .header__mob-menu {
+    width: 20px;
+}
+
+  .header__mob-menu span,
+  .header__mob-menu:after,
+  .header__mob-menu:before{
+    height: 1.96px;
+    width: 100%;
+  }
+
+  .header__mob-menu span{
+    top: 9.2px;
+    width: 15.67px
+  }
+
+  .header__mob-menu:after{
+    top: 16px;
+    width: 13.33px;
+  }
+
+  .header__mob-menu:before{
+    top: 3px;
+  }
+
+  .header__top-btn{
+    background-image: url(../icons/320/header-search-360.svg);
+  }
+
+  .open-menu:before {
+    width: 15px;
+    top: 10px;
+  }
+
+  .open-menu:after {
+    width: 15px;
+    top: 10px;
+  }
+
+  .header__top-nav_open {
+    padding-left: 15px;
+  }
+
+  .header__top-btn {
+    width: 16px;
+    height: 16px;
+  }
+
+  .header__top-list{
+    margin-bottom: 20px;
+  }
+
+  .header__top-link{
+    font-size: 16px;
+  }
+
+  .header__link-enter{
+    padding: 10px 32px;
+    font-size: 16px;
+    background-size: 11%;
+    background-position: 16% 50%;
+  }
+}

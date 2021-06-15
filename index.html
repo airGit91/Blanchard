@@ -47,6 +47,7 @@
         </div>
 
         <picture>
+          <source srcset="./images/320/logo-320.svg" media="(max-width: 767px)">
           <source srcset="./images/1024/logo-1024.svg" media="(max-width: 1919px)">
           <img srcset ="./images/1920/logo-1920.svg" alt="logo">
         </picture>
@@ -89,6 +90,10 @@
           <button class="header__top-btn" type="button" aria-label="Поиск по сайту"></button>
 
           <input class="header__top-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
+
+          <div class="header__top-search-close" type="button" aria-label="Закрыть поиск">
+              <span></span>
+          </div>
         </div>
       </div>
     </div>

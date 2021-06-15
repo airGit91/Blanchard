@@ -17,3 +17,15 @@
   font-size: 16px;
   line-height: 32px;
 }
+
+@media only screen and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+  .about-us__text{
+    width: 925px;
+  }
+}
+
+@media only screen and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
+  .about-us__text{
+    width: 666px;
+  }
+}

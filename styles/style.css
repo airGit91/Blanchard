@@ -67,8 +67,13 @@ p{
 
 @media only screen and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
   .container{
-    /* max-width: 964px; */
-    margin: 0 auto;
     padding: 0 50px;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+  .container{
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
