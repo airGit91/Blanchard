@@ -716,4 +716,28 @@
     background-size: 11%;
     background-position: 16% 50%;
   }
+
+  .header__active-search{
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+    backdrop-filter: blur(5px);
+  }
+
+  .header__top-search-close-active{
+    top: 0;
+  }
+
+  .header__top-search-close-active:before, .header__top-search-close-active:after {
+    height: 19.28px;
+    width: 1.93px;
+}
+
+  .header__top-btn{
+    width: 18px;
+  }
+
+  .header__active-input {
+    width: 80%;
+  }
 }
