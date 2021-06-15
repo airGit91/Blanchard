@@ -42,12 +42,16 @@
   <header class="header">
     <div class="header__top">
       <div class="container">
-        <picture>
-          <!-- <source srcset="" media="(max-width: 1920px)"> -->
-          <img src="./images/1920/logo-1920.svg" alt="logo">
-         </picture>
+        <div class="header__mob-menu">
+          <span></span>
+        </div>
 
-         <div class="header__top-nav">
+        <picture>
+          <source srcset="./images/1024/logo-1024.svg" media="(max-width: 1919px)">
+          <img srcset ="./images/1920/logo-1920.svg" alt="logo">
+        </picture>
+
+        <div class="header__top-nav">
             <ul class="header__top-list">
               <li class="header__top-item">
                 <a href="" class="header__top-link">О нас</a>
@@ -79,9 +83,13 @@
             </ul>
 
             <a href="" class="header__link-enter">Войти</a>
-         </div>
+        </div>
 
+        <div class="header__top-search">
+          <button class="header__top-btn" type="button" aria-label="Поиск по сайту"></button>
 
+          <input class="header__top-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
+        </div>
       </div>
     </div>
 
@@ -469,7 +477,7 @@
           </li>
 
           <li class="header__bottom-item">
-            <button class="header__bottom-search-btn" type="button" aria-label="Поиск по сайту"></button>
+            <button class="header__bottom-search-btn header__bottom-search-btn" type="button" aria-label="Поиск по сайту"></button>
 
             <input class="header__bottom-input" type="search" name="search" maxlength="100" placeholder="Поиск по сайту">
           </li>
