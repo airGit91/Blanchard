@@ -24,6 +24,17 @@ $(document).ready(function () {
   $('.header__top-btn').click(function() {
     $('.header__top-search').toggleClass('header__active-search');
     $('.header__top-input').toggleClass('header__active-input');
+    $('.header__picture').toggleClass('header__mob-off');
+    $('.header__mob-menu').toggleClass('header__mob-off');
+    $('.header__top-search-close').toggleClass('header__top-search-close-active');
+  })
+
+  $('.header__top-search-close').click(function(){
+    $('.header__top-search').toggleClass('header__active-search');
+    $('.header__top-input').toggleClass('header__active-input');
+    $('.header__picture').toggleClass('header__mob-off');
+    $('.header__mob-menu').toggleClass('header__mob-off');
+    $('.header__top-search-close').toggleClass('header__top-search-close-active');
   })
 
   function checkWindowSize() {
