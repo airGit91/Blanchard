@@ -102,9 +102,9 @@
   .hero > .container {
     display: flex;
     flex-direction: column;
-    padding-top: 33px;
-    padding-bottom: 117px;
-  }
+    padding-top: 78px;
+    padding-bottom: 92px;
+}
 
   .hero__title{
     width: 280px;
