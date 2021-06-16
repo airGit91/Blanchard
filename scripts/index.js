@@ -36,26 +36,4 @@ $(document).ready(function () {
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
   })
-
-  function checkWindowSize() {
-    if(window.matchMedia('(max-width: 1023px)').matches){
-      $('.header__search').click(function(){
-        $('.header__search-disclosure').css('top', '35px');
-      });
-
-      $('.header__search-closer, .header__search-disclosure-btn').click(function(){
-        $('.header__search-disclosure').css('top', '-99px');
-      });
-    }else{
-      $('.header__search').click(function(){
-        $('.header__search-disclosure').css('top', '0');
-      });
-
-      $('.header__search-closer, .header__search-disclosure-btn').click(function(){
-        $('.header__search-disclosure').css('top', '-99px');
-      });
-    }
-  }
-  checkWindowSize()
-  $(window).resize(checkWindowSize);
 });

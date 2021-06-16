@@ -32,11 +32,18 @@
 
 @media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
   .about-us{
-    padding-top: 50px;
+    padding-top: 37px;
     padding-bottom: 50px;
   }
 
+  .about-us__title{
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
   .about-us__text{
-    width: 292px;
+    width: 289px;
+    font-size: 14px;
+    line-height: 28px;
   }
 }
