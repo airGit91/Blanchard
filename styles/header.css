@@ -88,16 +88,18 @@
 
 .header__bottom{
   position: absolute;
+  z-index: 1;
   width: 100%;
-  padding-top: 23px;
-  padding-bottom: 18px;
+  padding-top: 25px;
+  padding-bottom: 22px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.header__bottom-list {
+.header__bottom  .container{
   display: flex;
   justify-content: space-between;
 }
+
 
 .header__bottom-list-btn{
   display: flex;

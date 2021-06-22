@@ -1,4 +1,5 @@
 .hero{
+  position: relative;
   height: auto;
   background-image:url(../images/1920/bc-hero-1920-1.jpg);
   background-size: 100%;
@@ -8,6 +9,10 @@
 .hero > .container{
   padding-top: 140px;
   padding-bottom: 125px;
+}
+
+.swiper__banner-container{
+  position: absolute;
 }
 
 .hero__title{

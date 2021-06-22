@@ -1,7 +1,21 @@
 .galery{
+  padding-top: 80px;
+  padding-bottom: 80px;
   height: auto;
   background-image: url(../images/1920/bc-galery-1920.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.galery__title{
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.galery__filter{
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
 }

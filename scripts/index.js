@@ -1,6 +1,11 @@
 $(document).ready(function () {
   $('.header__dropdown-active').hide();
   $('.header__button').click(function(e){
+    let el = $(this).next();
+    // el.slideToggle(200);
+    $(this).toggleClass("header__dropdown-active");
+    $('.header__dropdown ').not(el).slideUp(200);
+    $('.header__button').not($(this)).removeClass('header__dropdown-active');
     $(this).next().slideToggle('slow');
 
     $(this).css('backgroundImage', 'url(../icons/header-arr-up.svg)');
@@ -13,6 +18,7 @@ $(document).ready(function () {
         $('.header__button').css('backgroundImage', 'url(../icons/header-arr-down.svg)');
       }
     });
+
   });
 
   $('.header__mob-menu').click(function() {
