@@ -42,4 +42,6 @@ $(document).ready(function () {
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
   })
+
+  let swiper = new Swiper(".hero__swiper", {});
 });
