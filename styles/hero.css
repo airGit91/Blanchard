@@ -89,8 +89,16 @@
 }
 
 @media only screen and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
-  .hero{
+  .hero__slide_1{
     background-image:url(../images/1024/bc-hero-1024-1.jpg);
+  }
+
+  .hero__slide_2{
+    background-image:url(../images/1024/bc-hero-1024-2.jpg);
+  }
+
+  .hero__slide_3{
+    background-image:url(../images/1024/bc-hero-1024-3.jpg);
   }
 
   .hero > .container {
@@ -112,13 +120,29 @@
 }
 
 @media only screen and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
-  .hero{
+  .hero__slide_1{
+    background-image:url(../images/768/bc-hero-768-1.jpg);
+  }
+
+  .hero__slide_2{
+    background-image:url(../images/768/bc-hero-768-1.jpg);
+  }
+
+  .hero__slide_3{
     background-image:url(../images/768/bc-hero-768-1.jpg);
   }
 }
 
 @media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
-  .hero{
+  .hero__slide_1{
+    background-image:url(../images/320/bc-hero-320-1.jpg);
+  }
+
+  .hero__slide_2{
+    background-image:url(../images/320/bc-hero-320-1.jpg);
+  }
+
+  .hero__slide_3{
     background-image:url(../images/320/bc-hero-320-1.jpg);
   }
 

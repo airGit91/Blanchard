@@ -46,25 +46,8 @@ $(document).ready(function () {
 
 let heroSwiper = new Swiper('.hero__swiper', {
   effect: 'fade',
-  grabCursor: true,
-  centeredSlides: true,
   slidesPerView: 'auto',
-  loop: true,
-  coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-  },
   autoplay: {
-      delay: 3000,
+      delay: 2000,
   },
 });
-
-// let heroSwiper = new Swiper(".hero__swiper", {
-//   observeParents: true,
-//   cssMode: true,
-//   slidesPerView: 1,
-//   loop: true,
-// });
