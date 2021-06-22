@@ -653,6 +653,7 @@
 @media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
   .header{
     position: absolute;
+    z-index: 3;
     width: 100%;
   }
 
