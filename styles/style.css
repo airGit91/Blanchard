@@ -543,7 +543,7 @@ p{
 
 .about-us{
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 72px;
 }
 
 .about-us__title{
@@ -563,7 +563,7 @@ p{
 
 .galery{
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 87px;
   height: auto;
   background-image: url(../images/1920/bc-galery-1920.jpg);
   background-repeat: no-repeat;
@@ -583,14 +583,14 @@ p{
 }
 
 .galery__title{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 400;
   color: #fff;
 }
 
 .galery__filter{
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   font-weight: 600;
   font-size: 16px;
   color: #fff;
@@ -612,10 +612,15 @@ p{
   line-height: 32px;
 }
 
+.galery__link{
+  color: var(--purple);
+}
+
 .galery__swiper{
   position: relative;
   width: 1200px;
-  height: 750px;
+  height: 832px;
+  padding-top: 82px;
   overflow: hidden;
 }
 
