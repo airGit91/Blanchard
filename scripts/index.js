@@ -61,9 +61,13 @@ const choices = new Choices(element, {
 });
 
 let galerySwiper = new Swiper(".galery__swiper", {
+  // observer: true,
+  // observeParents: true,
+  // cssMode: true,
+  // loop: true,
   slidesPerView: 3,
   slidesPerColumn: 2,
-  spaceBetween: 30,
+  spaceBetween: 50,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction"
@@ -71,5 +75,5 @@ let galerySwiper = new Swiper(".galery__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
-  },
+  }
 });

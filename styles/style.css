@@ -571,6 +571,10 @@ p{
   background-repeat: no-repeat;
 }
 
+.galery .container{
+  display: flex;
+}
+
 .galery__title{
   font-size: 48px;
   font-weight: 400;
@@ -596,4 +600,22 @@ p{
 
 .galery__swiper{
   position: relative;
+  width: 1200px;
+  height: 750px;
+}
+
+.galery__slide {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* height: calc((100% - 30px) / 2); */
+  width: 350px;
+  height: 350px;
+}
+
+.galery__slideimg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
