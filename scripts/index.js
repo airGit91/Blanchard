@@ -51,3 +51,25 @@ let heroSwiper = new Swiper('.hero__swiper', {
       delay: 2000,
   },
 });
+
+const element = document.querySelector('select');
+
+const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: '',
+    // position: 'auto',
+});
+
+let galerySwiper = new Swiper(".galery__swiper", {
+  slidesPerView: 3,
+  slidesPerColumn: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction"
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+});
