@@ -575,13 +575,22 @@ p{
   display: flex;
 }
 
+.galery__content{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 29.5%;
+  padding-right: 50px;
+}
+
 .galery__title{
+  margin-bottom: 20px;
   font-size: 48px;
   font-weight: 400;
   color: #fff;
 }
 
 .galery__filter{
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 16px;
   color: #fff;
@@ -595,6 +604,7 @@ p{
 }
 
 .galery__text{
+  margin-top: auto;
   color: #fff;
 }
 

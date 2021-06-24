@@ -8,6 +8,7 @@
   border-radius: 6px;
   background-image: url(../icons/arr-down.svg);
   background-repeat: no-repeat;
+  background-position: 96%;
   transition-duration: .4s;
 }
 
@@ -150,7 +151,7 @@
   display: inline-block;
   z-index: 100;
   vertical-align: top;
-  min-height: 44px;
+  min-height: 0;
   width: 100%;
   padding: 0;
   background-color: inherit;
