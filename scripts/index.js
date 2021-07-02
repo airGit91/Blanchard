@@ -4,8 +4,8 @@ $(document).ready(function () {
 
   button.forEach(el => {
     el.addEventListener('click', (e) => {
-      // button.forEach(el => {el.classList.remove(('header__button_active'))});
-      // e.currentTarget.classList.add('header__button_active');
+      button.forEach(el => {el.classList.remove(('header__button_active'))});
+      e.currentTarget.classList.add('header__button_active');
       drop.forEach(el => {el.classList.remove(('dropdown_active'))})
       e.currentTarget.closest('li').querySelector('.header__dropdown-list').classList.toggle('dropdown_active');
     });
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   document.addEventListener('click', (e) => {
     if (!e.target.classList.contains('header__dropdown-list') && !e.target.classList.contains('header__button')) {
-      // button.forEach(el => {el.classList.remove(('header__button_active'))});
+      button.forEach(el => {el.classList.remove(('header__button_active'))});
       drop.forEach(el => {el.classList.remove(('dropdown_active'))})
     }
   });
