@@ -344,6 +344,7 @@ p{
 
 .header__bottom-search-btn:focus{
   outline: none;
+  background-image: url(../icons/header-search-hover.svg);
 }
 
 .header__bottom-input:focus{
@@ -818,5 +819,35 @@ p{
   transform: scale(1.1);
   border: 2px solid #000;
   border-radius: 100px;
+}
 
+.galery__swiper > .swiper-button-next:hover{
+  background-color: var(--second-hover);
+}
+
+.galery__swiper > .swiper-button-next:active{
+  transform: scale(1.1);
+  border: 2px solid #000;
+  border-radius: 100px;
+  background-color: var(--second-hover);
+}
+
+.galery__swiper > .swiper-button-prev:focus{
+  outline: none;
+  transform: scale(1.1);
+  border: 2px solid #000;
+  border-radius: 100px;
+  transform: rotate(180deg);
+}
+
+.galery__swiper > .swiper-button-prev:hover{
+  background-color: var(--second-hover);
+}
+
+.galery__swiper > .swiper-button-prev:active{
+  transform: scale(1.1);
+  border: 2px solid #000;
+  border-radius: 100px;
+  background-color: var(--second-hover);
+  transform: rotate(180deg);
 }
