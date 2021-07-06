@@ -1,22 +1,52 @@
 $(document).ready(function () {
-  const button = document.querySelectorAll('.header__button');
-  const drop = document.querySelectorAll('.header__dropdown-list')
 
-  button.forEach(el => {
-    el.addEventListener('click', (e) => {
-      button.forEach(el => {el.classList.remove(('header__button_active'))});
-      e.currentTarget.classList.add('header__button_active');
-      drop.forEach(el => {el.classList.remove(('dropdown_active'))})
-      e.currentTarget.closest('li').querySelector('.header__dropdown-list').classList.toggle('dropdown_active');
-    });
-  });
 
-  document.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('header__dropdown-list') && !e.target.classList.contains('header__button')) {
-      button.forEach(el => {el.classList.remove(('header__button_active'))});
-      drop.forEach(el => {el.classList.remove(('dropdown_active'))})
+  const params = {
+    btnClassName: "header__button",
+    activeClassName: "is-active",
+    disabledClassName: "is-disabled"
+  }
+
+  function onDisable(evt) {
+    if (evt.target.classList.contains(params.disabledClassName)) {
+      evt.target.classList.remove(params.disabledClassName, params.activeClassName);
+      evt.target.removeEventListener("animationend", onDisable);
     }
-  });
+  }
+
+  function setMenuListener() {
+    document.body.addEventListener("click", (evt) => {
+      const activeElements = document.querySelectorAll(`.${params.activeClassName}`);
+
+      if (activeElements.length && !evt.target.closest(`.${params.activeClassName}`)) {
+        activeElements.forEach((current) => {
+          if (current.classList.contains(params.btnClassName)) {
+            current.classList.remove(params.activeClassName);
+          } else {
+            current.classList.add(params.disabledClassName);
+          }
+        });
+      }
+
+      if (evt.target.closest(`.${params.btnClassName}`)) {
+        const btn = evt.target.closest(`.${params.btnClassName}`);
+        const path = btn.dataset.path;
+        const drop = document.querySelector(`[data-target="${path}"]`);
+
+        btn.classList.toggle(params.activeClassName);
+
+        if (!drop.classList.contains(params.activeClassName)) {
+          drop.classList.add(params.activeClassName);
+          drop.addEventListener("animationend", onDisable);
+        } else {
+          drop.classList.add(params.disabledClassName);
+        }
+      }
+    });
+  }
+
+  setMenuListener();
+
 
   $('.header__mob-menu').click(function() {
     $('body').toggleClass('slidemenu-open');
@@ -54,6 +84,7 @@ const element = document.querySelector('select');
 const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
+    renderChoiceLimit: 3,
 });
 
 let galerySwiper = new Swiper(".galery__swiper", {

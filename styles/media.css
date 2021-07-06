@@ -251,6 +251,14 @@
   .about-us__text{
     width: 925px;
   }
+
+  .galery__content{
+    flex-basis: 58%;
+  }
+
+  .galery__slide {
+    width: 280px;
+  }
 }
 
 @media only screen and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1){
