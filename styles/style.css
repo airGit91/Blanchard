@@ -788,7 +788,7 @@ p{
 .galery__swiper{
   position: relative;
   width: calc(1155 / 1600 * 100%);
-  height: 850px;
+  max-height: 1000px;
   flex-shrink: 0;
   padding-top: 82px;
   overflow: hidden;

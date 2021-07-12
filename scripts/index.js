@@ -99,5 +99,20 @@ let galerySwiper = new Swiper(".galery__swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
-  }
+  },
+  breakpoints:{
+    1024:{
+      slidesPerView: 2,
+      slidesPerGroup: 6,
+      slidesPerColumn: 2,
+      spaceBetween: 34,
+    },
+
+    1373:{
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 50,
+    },
+  },
 });
