@@ -88,6 +88,7 @@ const choices = new Choices(element, {
 });
 
 let galerySwiper = new Swiper(".galery__swiper", {
+  slidesPerColumnFill: "row",
   slidesPerView: 3,
   slidesPerGroup: 3,
   slidesPerColumn: 2,
@@ -108,11 +109,20 @@ let galerySwiper = new Swiper(".galery__swiper", {
       spaceBetween: 34,
     },
 
-    1373:{
+    1151:{
       slidesPerView: 3,
       slidesPerGroup: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,
     },
   },
+
+  on: {
+    /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+    beforeResize: function () {
+      this.slides.forEach((el) => {
+        el.style.marginTop = "";
+      });
+    }
+  }
 });
