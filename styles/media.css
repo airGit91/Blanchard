@@ -387,8 +387,41 @@
     background-image: url(../images/768/bc-galery-768.jpg);
   }
 
-  .galery .container{
-    flex-direction: column;
+  .galery__content{
+    width: 100%;
+  }
+
+  .choices{
+    max-width: 280px;
+  }
+
+  .galery__swiper{
+    width: 100%;
+    padding-top: 110px;
+  }
+
+  .galery__swiper > .swiper-button-prev{
+    top: 9.2%;
+    left: -0.2%;
+  }
+
+  .galery__swiper > .swiper-button-next{
+    top: 9.2%;
+    left: 15.2%;
+  }
+
+  .galery__swiper > .swiper-pagination {
+    top: 7.3%;
+    left: -40.3%;
+  }
+
+  .galery__text-container{
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .galery__text-position{
+    position: static;
   }
 }
 

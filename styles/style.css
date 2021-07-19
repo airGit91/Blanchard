@@ -729,10 +729,6 @@ p{
 }
 
 .galery__content{
-  /* display: flex;
-  flex-direction: column;
-  flex-basis: 28%;
-  padding-right: 50px; */
   width: calc(400 / 1600 * 100%);
 }
 

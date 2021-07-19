@@ -102,6 +102,13 @@ let galerySwiper = new Swiper(".galery__swiper", {
     prevEl: ".swiper-button-prev"
   },
   breakpoints:{
+    768:{
+      slidesPerView: 2,
+      slidesPerGroup: 6,
+      slidesPerColumn: 2,
+      spaceBetween: 34,
+    },
+
     1024:{
       slidesPerView: 2,
       slidesPerGroup: 6,
