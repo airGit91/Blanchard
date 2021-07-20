@@ -578,7 +578,7 @@
 
   .about-us{
     padding-top: 37px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
   }
 
   .about-us__title{
@@ -591,4 +591,29 @@
     font-size: 14px;
     line-height: 28px;
   }
+
+  .galery{
+    padding-top: 50px;
+    background-image: url(../images/320/bc-galery-320.jpg);
+  }
+
+  .galery__title{
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .galery__filter{
+    margin-bottom: 11px;
+  }
+
+  .choices {
+    max-width: 290px;
+  }
+
+  .galery__swiper{
+    padding-top: 40px;
+  }
+
 }
