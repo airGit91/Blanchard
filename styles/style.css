@@ -957,3 +957,11 @@ p{
   background-color: var(--second-hover);
   transform: rotate(180deg);
 }
+
+.choices__list--dropdown .is-selected{
+  display: none;
+}
+
+.galery__margin-top{
+  margin-bottom: 20px;
+}

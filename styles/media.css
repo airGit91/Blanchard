@@ -379,16 +379,26 @@
     background-image:url(../images/768/bc-hero-768-1.jpg);
   }
 
+  .about-us{
+    padding-bottom: 70px;
+  }
+
   .about-us__text{
     width: 666px;
   }
 
   .galery {
+    padding-top: 83px;
+    padding-bottom: 70px;
     background-image: url(../images/768/bc-galery-768.jpg);
   }
 
   .galery__content{
     width: 100%;
+  }
+
+  .galery__filter{
+    margin-bottom: 16px;
   }
 
   .choices{
@@ -422,6 +432,26 @@
 
   .galery__text-position{
     position: static;
+  }
+
+  .galery__slide:before{
+    padding-top: 88.3%;
+  }
+
+  .galery__swiper > .swiper-button-prev {
+    top: 10.2%;
+  }
+
+  .galery__swiper > .swiper-button-next {
+    top: 10.2%;
+  }
+
+  .galery__swiper > .swiper-pagination {
+    top: 8.2%;
+  }
+
+  .galery__text{
+    margin-top: 30px;
   }
 }
 
@@ -546,7 +576,7 @@
     flex-direction: column;
     padding-top: 78px;
     padding-bottom: 46px;
-}
+  }
 
   .hero__title{
     width: 280px;
@@ -594,6 +624,7 @@
 
   .galery{
     padding-top: 50px;
+    padding-bottom: 40px;
     background-image: url(../images/320/bc-galery-320.jpg);
   }
 
@@ -604,15 +635,39 @@
     line-height: 38px;
   }
 
-  .galery__filter{
-    margin-bottom: 11px;
-  }
-
   .choices {
     max-width: 290px;
   }
 
   .galery__swiper{
     padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .galery__filter{
+    margin-bottom: 11px;
+  }
+
+  .galery__slide:before {
+    padding-top: 126.3%;
+  }
+
+  .galery__swiper > .swiper-button-next {
+    top: 98.2%;
+    left: 62.2%;
+  }
+
+  .galery__swiper > .swiper-button-prev {
+    top: 98.2%;
+    left: 27.2%;
+  }
+
+  .galery__swiper > .swiper-pagination {
+    top: 95.2%;
+    left: -0.3%;
+  }
+
+  .galery__text {
+    margin-top: 20px;
   }
 }

@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-
   const params = {
     btnClassName: "header__button",
     activeClassName: "is-active",
@@ -47,7 +45,6 @@ $(document).ready(function () {
 
   setMenuListener();
 
-
   $('.header__mob-menu').click(function() {
     $('body').toggleClass('slidemenu-open');
     $('.header__mob-menu').toggleClass('open-menu');
@@ -69,6 +66,28 @@ $(document).ready(function () {
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
   })
+
+  function galeryChoicesMargin(){
+    if(window.matchMedia('(max-width: 1023px)').matches){
+      $('.choices__list').click(function(){
+        $('.galery__swiper').css('margin-top', '35px');
+      })
+
+      $(document).mouseup(function (e){ // событие клика по веб-документу
+        let div = $(".choices__list"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+              $('.galery__swiper').css('margin-top', '0');
+        }
+      });
+
+    }else{
+      $('.galery__swiper').css('margin-top', '0');
+    }
+  }
+
+  galeryChoicesMargin();
+  $(window).resize(galeryChoicesMargin);
 });
 
 let heroSwiper = new Swiper('.hero__swiper', {
@@ -85,6 +104,7 @@ const choices = new Choices(element, {
     searchEnabled: false,
     itemSelectText: '',
     renderChoiceLimit: 3,
+    duplicateItemsAllowed : false,
 });
 
 let galerySwiper = new Swiper(".galery__swiper", {
