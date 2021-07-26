@@ -706,7 +706,7 @@ p{
 }
 
 .about-us__text{
-  width: 1080px;
+  max-width: 1080px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -962,6 +962,64 @@ p{
   display: none;
 }
 
-.galery__margin-top{
-  margin-bottom: 20px;
+.catalog{
+  padding-top: 80px;
+}
+
+.catalog__top{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.catalog__title{
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+}
+
+.catalog__list-lang{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.catalog__item-lang:not(:last-child){
+  margin-right: 50px;
+}
+
+.catalog__btn-lang{
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.france{
+  background-image: url(../icons/france.svg);
+}
+
+.germany{
+  background-image: url(../icons/germany.svg);
+}
+
+.italy{
+  background-image: url(../icons/italy.svg);
+}
+
+.russia{
+  background-image: url(../icons/russia.svg);
+}
+
+.belgium{
+  background-image: url(../icons/bellgium.svg);
+}
+
+.catalog__content{
+  max-width: 1080px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }

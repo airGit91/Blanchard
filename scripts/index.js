@@ -70,7 +70,7 @@ $(document).ready(function () {
   function galeryChoicesMargin(){
     if(window.matchMedia('(max-width: 1023px)').matches){
       $('.choices__list').click(function(){
-        $('.galery__swiper').css('margin-top', '35px');
+        $('.galery__swiper').css('margin-top', '30px');
       })
 
       $(document).mouseup(function (e){ // событие клика по веб-документу

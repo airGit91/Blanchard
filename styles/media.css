@@ -412,7 +412,7 @@
 
   .galery__swiper > .swiper-button-prev{
     top: 9.2%;
-    left: -0.2%;
+    left: 0;
   }
 
   .galery__swiper > .swiper-button-next{
@@ -664,7 +664,7 @@
 
   .galery__swiper > .swiper-pagination {
     top: 95.2%;
-    left: -0.3%;
+    left: 0;
   }
 
   .galery__text {
