@@ -85,10 +85,9 @@ $(document).ready(function () {
       $('.galery__swiper').css('margin-top', '0');
     }
   }
-
   galeryChoicesMargin();
   $(window).resize(galeryChoicesMargin);
-});
+
 
 let heroSwiper = new Swiper('.hero__swiper', {
   effect: 'fade',
@@ -159,4 +158,9 @@ let galerySwiper = new Swiper(".galery__swiper", {
       });
     }
   }
+});
+
+
+$( "#accordion" ).accordion();
+
 });

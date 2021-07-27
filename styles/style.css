@@ -995,6 +995,29 @@ p{
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+}
+
+.catalog__btn-lang:focus{
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  border-radius: 29px;
+  outline: transparent;
+}
+
+.catalog__btn-lang:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  border-radius: 29px;
+}
+
+.catalog__btn-lang:active{
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  box-shadow: 0 0 0 6px #fff, 0 0 0 8px #7943A4;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #7943A4;
+  border-radius: 23px;
 }
 
 .france{
@@ -1019,6 +1042,38 @@ p{
 
 .catalog__content{
   max-width: 1080px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog__flex-container{
+  display: flex;
+}
+
+.catalog__pic{
+  display: inline-block;
+  margin-bottom: 27px;
+}
+
+.catalog__subtitle{
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.catalog__date{
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--space-gray);
+}
+
+
+.catalog__desctiption-text{
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
