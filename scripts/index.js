@@ -160,7 +160,6 @@ let galerySwiper = new Swiper(".galery__swiper", {
   }
 });
 
-
 $( "#accordion" ).accordion();
 
 });
