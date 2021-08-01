@@ -163,3 +163,35 @@ let galerySwiper = new Swiper(".galery__swiper", {
 $( "#accordion" ).accordion();
 
 });
+
+$('.catalog__btn-Beneditto').on('click', function(){
+  $('.catalog__Beneditto').css('display', 'block');
+  $('.catalog__Domenico').css('display','none');
+  $('.catalog__Ambrodjo').css('display','none');
+  $('.catalog__Francesco').css('display','none');
+  $('.catalog__subtitle').text('Бенедетто ди Биндо');
+});
+
+$('.catalog__btn-Ambrodjo').on('click', function(){
+  $('.catalog__Ambrodjo').css('display', 'block');
+  $('.catalog__Domenico').css('display','none');
+  $('.catalog__Beneditto').css('display','none');
+  $('.catalog__Francesco').css('display','none');
+  $('.catalog__subtitle').text('Бергоньоне, Амброджо');
+});
+
+$('.catalog__btn-Francesco').on('click', function(){
+  $('.catalog__Francesco').css('display','block');
+  $('.catalog__Ambrodjo').css('display', 'none');
+  $('.catalog__Domenico').css('display','none');
+  $('.catalog__Beneditto').css('display','none');
+  $('.catalog__subtitle').text('Биссоло, Франческо');
+});
+
+$('.catalog__btn-Domenico').on('click', function(){
+  $('.catalog__Domenico').css('display','block');
+  $('.catalog__Francesco').css('display','none');
+  $('.catalog__Ambrodjo').css('display', 'none');
+  $('.catalog__Beneditto').css('display','none');
+  $('.catalog__subtitle').text('Доменико Гирландайо');
+});
