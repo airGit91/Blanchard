@@ -1200,6 +1200,7 @@ p{
   font-size: 16px;
   line-height: 32px;
   color: var(--dark-gray);
+  z-index: 2;
 }
 
 .catalog__accordion-btn:after{
@@ -1219,10 +1220,8 @@ p{
 
 .catalog__accordion-btn:focus{
   color: #fff;
-  z-index: 2;
 }
 
 .catalog__accordion-btn:focus:after{
   transform: scaleX(1);
-  z-index: 1;
 }
