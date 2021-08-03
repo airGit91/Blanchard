@@ -89,109 +89,130 @@ $(document).ready(function () {
   $(window).resize(galeryChoicesMargin);
 
 
-let heroSwiper = new Swiper('.hero__swiper', {
-  effect: 'fade',
-  slidesPerView: 'auto',
-  autoplay: {
-      delay: 2000,
-  },
-});
+  let heroSwiper = new Swiper('.hero__swiper', {
+    effect: 'fade',
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 2000,
+    },
+  });
 
-const element = document.querySelector('select');
+  const element = document.querySelector('select');
 
-const choices = new Choices(element, {
-    searchEnabled: false,
-    itemSelectText: '',
-    renderChoiceLimit: 3,
-    duplicateItemsAllowed : false,
-});
+  const choices = new Choices(element, {
+      searchEnabled: false,
+      itemSelectText: '',
+      renderChoiceLimit: 3,
+      duplicateItemsAllowed : false,
+  });
 
-let galerySwiper = new Swiper(".galery__swiper", {
-  slidesPerColumnFill: "row",
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  slidesPerColumn: 2,
-  spaceBetween: 50,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction"
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  breakpoints:{
-    320:{
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerColumn: 1,
-      // spaceBetween: 34,
+  let galerySwiper = new Swiper(".galery__swiper", {
+    slidesPerColumnFill: "row",
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    slidesPerColumn: 2,
+    spaceBetween: 50,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints:{
+      320:{
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 1,
+        // spaceBetween: 34,
+      },
+
+      768:{
+        slidesPerView: 2,
+        slidesPerGroup: 6,
+        slidesPerColumn: 2,
+        spaceBetween: 34,
+      },
+
+      1024:{
+        slidesPerView: 2,
+        slidesPerGroup: 6,
+        slidesPerColumn: 2,
+        spaceBetween: 34,
+      },
+
+      1151:{
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 50,
+      },
     },
 
-    768:{
-      slidesPerView: 2,
-      slidesPerGroup: 6,
-      slidesPerColumn: 2,
-      spaceBetween: 34,
-    },
-
-    1024:{
-      slidesPerView: 2,
-      slidesPerGroup: 6,
-      slidesPerColumn: 2,
-      spaceBetween: 34,
-    },
-
-    1151:{
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      slidesPerColumn: 2,
-      spaceBetween: 50,
-    },
-  },
-
-  on: {
-    /* исправляет баг с margin-top остающимся при смене брейкпоинта */
-    beforeResize: function () {
-      this.slides.forEach((el) => {
-        el.style.marginTop = "";
-      });
+    on: {
+      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+      beforeResize: function () {
+        this.slides.forEach((el) => {
+          el.style.marginTop = "";
+        });
+      }
     }
-  }
-});
+  });
 
-$( "#accordion" ).accordion();
+  $( "#accordion" ).accordion();
 
-});
+  $('.catalog__rus').css('display','block');
+  $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
 
-$('.catalog__btn-Beneditto').on('click', function(){
-  $('.catalog__Beneditto').css('display', 'block');
-  $('.catalog__Domenico').css('display','none');
-  $('.catalog__Ambrodjo').css('display','none');
-  $('.catalog__Francesco').css('display','none');
-  $('.catalog__subtitle').text('Бенедетто ди Биндо');
-});
+  $('.france').on('click', function(){
+    $('.catalog__fra').fadeIn(1000);
+    $('.catalog__rus, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
+  });
 
-$('.catalog__btn-Ambrodjo').on('click', function(){
-  $('.catalog__Ambrodjo').css('display', 'block');
-  $('.catalog__Domenico').css('display','none');
-  $('.catalog__Beneditto').css('display','none');
-  $('.catalog__Francesco').css('display','none');
-  $('.catalog__subtitle').text('Бергоньоне, Амброджо');
-});
+  $('.russia').on('click', function(){
+    $('.catalog__rus').fadeIn(1000);
+    $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
+  });
 
-$('.catalog__btn-Francesco').on('click', function(){
-  $('.catalog__Francesco').css('display','block');
-  $('.catalog__Ambrodjo').css('display', 'none');
-  $('.catalog__Domenico').css('display','none');
-  $('.catalog__Beneditto').css('display','none');
-  $('.catalog__subtitle').text('Биссоло, Франческо');
-});
+  $('.germany').on('click', function(){
+    $('.catalog__ger').fadeIn(1000);
+    $('.catalog__fra, .catalog__rus, .catalog__ita, .catalog__belg').css('display','none');
+  });
 
-$('.catalog__btn-Domenico').on('click', function(){
-  $('.catalog__Domenico').css('display','block');
-  $('.catalog__Francesco').css('display','none');
-  $('.catalog__Ambrodjo').css('display', 'none');
-  $('.catalog__Beneditto').css('display','none');
-  $('.catalog__subtitle').text('Доменико Гирландайо');
+  $('.italy').on('click', function(){
+    $('.catalog__ita').fadeIn(1000);
+    $('.catalog__fra, .catalog__ger, .catalog__rus, .catalog__belg').css('display','none');
+  });
+
+  $('.belgium').on('click', function(){
+    $('.catalog__belg').fadeIn(1000);
+    $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__rus').css('display','none');
+  });
+
+  $('.catalog__accordion-btn').on('click', function(e) {
+    let target = e.target.textContent;
+    $('.catalog__subtitle').text(target);
+  });
+
+  $('.catalog__btn-Beneditto').on('click', function(){
+    $('.catalog__Beneditto').fadeIn(1000);
+    $('.catalog__Domenico, .catalog__Ambrodjo, .catalog__Francesco').css('display','none');
+  });
+
+  $('.catalog__btn-Ambrodjo').on('click', function(){
+    $('.catalog__Ambrodjo').fadeIn(1000);
+    $('.catalog__Domenico, .catalog__Beneditto, .catalog__Francesco').css('display','none');
+  });
+
+  $('.catalog__btn-Francesco').on('click', function(){
+    $('.catalog__Francesco').fadeIn(1000);
+    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
+  });
+
+  $('.catalog__btn-Domenico').on('click', function(){
+    $('.catalog__Domenico').fadeIn(1000);
+    $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
+  });
+
 });

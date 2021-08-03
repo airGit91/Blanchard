@@ -1047,6 +1047,22 @@ p{
   line-height: 32px;
 }
 
+.catalog__fra{
+  display: none;
+}
+
+.catalog__ger{
+  display: none;
+}
+
+.catalog__ita{
+  display: none;
+}
+
+.catalog__belg{
+  display: none;
+}
+
 .catalog__flex-container{
   display: flex;
 }
