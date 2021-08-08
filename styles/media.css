@@ -282,6 +282,10 @@
     font-size: 16px;
     line-height: 32px;
   }
+
+  .catalog__list-lang{
+    padding-bottom: 0;
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1150px) and (-webkit-min-device-pixel-ratio: 1){

@@ -160,7 +160,12 @@ $(document).ready(function () {
     }
   });
 
-  $( "#accordion" ).accordion();
+  $( ".catalog__list-accordion" ).accordion({
+    collapsible: true,
+    active: false,
+    icons: false,
+    heightStyle: 'content'
+  });
 
   $('.catalog__rus').css('display','block');
   $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
@@ -214,5 +219,4 @@ $(document).ready(function () {
     $('.catalog__Domenico').fadeIn(1000);
     $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
   });
-
 });
