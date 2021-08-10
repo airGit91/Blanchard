@@ -219,4 +219,17 @@ $(document).ready(function () {
     $('.catalog__Domenico').fadeIn(1000);
     $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
   });
+
+  function checkWindowSize() {
+    if(window.matchMedia('(max-width: 500px)').matches){
+      $('.catalog__content-lang').css('display', 'none');
+      $('.catalog__btn-lang').click(function(){
+        $('.catalog__content-lang').css('display', 'none');
+      });
+    }else{
+      $('.catalog__rus').css('display', 'block');
+    }
+  }
+  checkWindowSize()
+  $(window).resize(checkWindowSize);
 });

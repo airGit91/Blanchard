@@ -286,6 +286,28 @@
   .catalog__list-lang{
     padding-bottom: 0;
   }
+
+  .catalog__artist{
+    flex-basis: 53%;
+
+  }
+
+  .catalog__list-accordion{
+    flex-basis: 48%;
+  }
+
+  .catalog__accordion-description{
+    min-height: 434px;
+  }
+
+  .catalog__accordion-item{
+    margin-right: 75px;
+  }
+
+  .ui-accordion .ui-accordion-header{
+    padding-top: 40px;
+    padding-bottom: 41px;
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1150px) and (-webkit-min-device-pixel-ratio: 1){
@@ -452,6 +474,38 @@
 
   .galery__text{
     margin-top: 30px;
+  }
+
+  .catalog__item-lang:not(:last-child){
+    margin-right: 54px;
+  }
+
+  .catalog__content-lang{
+    margin-bottom: 20px;
+  }
+
+  .catalog__flex-container{
+    flex-direction: column-reverse;
+  }
+
+  .catalog__accordion-description{
+    min-height: 338px;
+  }
+
+  .catalog__accordion-item{
+    margin-right: 69px;
+  }
+
+  .catalog__list-accordion{
+    margin-bottom: 50px;
+  }
+
+  .catalog__pic{
+    margin-bottom: 9px;
+  }
+
+  .catalog__desctiption-text{
+    padding-right: 0;
   }
 }
 
@@ -669,5 +723,66 @@
 
   .galery__text {
     margin-top: 20px;
+  }
+
+  .catalog{
+    padding-top: 51px;
+  }
+
+  .catalog__title{
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .catalog__top{
+    flex-direction: column;
+  }
+
+  .catalog__btn-lang{
+    height: 32px;
+    width: 32px;
+  }
+
+  .france{
+    background-image: url(../icons/320/france-320.svg);
+  }
+
+  .germany {
+    background-image: url(../icons/320/germany-320.svg);
+  }
+
+  .italy {
+    background-image: url(../icons/320/italy-320.svg);
+  }
+
+  .russia {
+    background-image: url(../icons/320/russia-320.svg);
+  }
+
+  .belgium {
+    background-image: url(../icons/320/belgium-320.svg);
+  }
+
+  .catalog__item-lang:not(:last-child){
+    margin-right: 32px;
+  }
+
+  .catalog__content-lang{
+    display: none;
+  }
+
+  .ui-accordion .ui-accordion-header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .catalog__icon{
+    width: 30px;
+    height: 30px;
   }
 }
