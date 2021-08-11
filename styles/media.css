@@ -785,4 +785,30 @@
     width: 30px;
     height: 30px;
   }
+
+  .catalog__accordion-description{
+    min-height: 808px;
+    padding-top: 19px;
+    padding-bottom: 21px;
+  }
+
+  .ui-accordion .ui-accordion-header{
+    padding-bottom: 19px;
+  }
+
+  .catalog__description > .catalog__subtitle{
+    display: block;
+  }
+
+  .catalog__pic{
+    margin-bottom: 0;
+  }
+
+  .catalog__subtitle{
+    margin-bottom: 13px;
+  }
+
+  .catalog__desctiption-text{
+    padding-right: 2px;
+  }
 }

@@ -222,12 +222,12 @@ $(document).ready(function () {
 
   function checkWindowSize() {
     if(window.matchMedia('(max-width: 500px)').matches){
-      $('.catalog__content-lang').css('display', 'none');
-      $('.catalog__btn-lang').click(function(){
-        $('.catalog__content-lang').css('display', 'none');
-      });
+      $('.catalog__rus, .catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
+      $('.catalog__accordion-item > .catalog__rus').css('display', 'block');
+      $('.catalog__description > .catalog__rus').css('display', 'block');
     }else{
-      $('.catalog__rus').css('display', 'block');
+      $('.catalog__rus').css('display','block');
+      $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
     }
   }
   checkWindowSize()
