@@ -259,7 +259,8 @@
 
 .is-open .choices__list--dropdown {
   z-index: 0;
-  border-color: var(--white);
+  /* border-color: var(--white); */
+  border-color: #999;
 }
 
 .is-flipped .choices__list--dropdown {
@@ -280,7 +281,7 @@
 
 .choices__list--dropdown .choices__item {
   position: relative;
-  padding: 2px 15px 4px 15px;
+  padding: 3px 15px 4px 15px;
   font-size: 16px;
   border-bottom: 1px solid var(--white);
 }

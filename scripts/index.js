@@ -232,4 +232,17 @@ $(document).ready(function () {
   }
   checkWindowSize()
   $(window).resize(checkWindowSize);
+
+  let tabBtnAll = document.querySelectorAll('.catalog__btn-lang');
+
+  tabBtnAll.forEach(function (tabsBtn) {
+  tabsBtn.addEventListener('click', function (event) {
+    tabBtnAll.forEach(function (tabsBtn) {
+      if (tabsBtn.parentElement.classList.contains('catalog__item-lang_active')) {
+        tabsBtn.parentElement.classList.remove('catalog__item-lang_active');
+      };
+    })
+    tabsBtn.parentElement.classList.add('catalog__item-lang_active');
+    })
+  })
 });
