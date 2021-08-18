@@ -167,34 +167,6 @@ $(document).ready(function () {
     heightStyle: 'content'
   });
 
-  $('.catalog__rus').css('display','block');
-  $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
-
-  $('.france').on('click', function(){
-    $('.catalog__fra').fadeIn(1000);
-    $('.catalog__rus, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
-  });
-
-  $('.russia').on('click', function(){
-    $('.catalog__rus').fadeIn(1000);
-    $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
-  });
-
-  $('.germany').on('click', function(){
-    $('.catalog__ger').fadeIn(1000);
-    $('.catalog__fra, .catalog__rus, .catalog__ita, .catalog__belg').css('display','none');
-  });
-
-  $('.italy').on('click', function(){
-    $('.catalog__ita').fadeIn(1000);
-    $('.catalog__fra, .catalog__ger, .catalog__rus, .catalog__belg').css('display','none');
-  });
-
-  $('.belgium').on('click', function(){
-    $('.catalog__belg').fadeIn(1000);
-    $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__rus').css('display','none');
-  });
-
   $('.catalog__accordion-btn').on('click', function(e) {
     let target = e.target.textContent;
     $('.catalog__subtitle').text(target);
@@ -220,18 +192,30 @@ $(document).ready(function () {
     $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
   });
 
-  function checkWindowSize() {
-    if(window.matchMedia('(max-width: 500px)').matches){
-      $('.catalog__rus, .catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
-      $('.catalog__accordion-item > .catalog__rus').css('display', 'block');
-      $('.catalog__description > .catalog__rus').css('display', 'block');
-    }else{
-      $('.catalog__rus').css('display','block');
-      $('.catalog__fra, .catalog__ger, .catalog__ita, .catalog__belg').css('display','none');
-    }
-  }
-  checkWindowSize()
-  $(window).resize(checkWindowSize);
+  $('.france').on('click', function(){
+    $('.catalog__france').css('display', 'flex');
+    $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__germany').css('display','none');
+  })
+
+  $('.germany').on('click', function(){
+    $('.catalog__germany').css('display', 'flex');
+    $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__france').css('display','none');
+  })
+
+  $('.italy').on('click', function(){
+    $('.catalog__italy').css('display', 'flex');
+    $('.catalog__belgium, .catalog__germany, .catalog__russia, .catalog__france').css('display','none');
+  })
+
+  $('.russia').on('click', function(){
+    $('.catalog__russia').css('display', 'flex');
+    $('.catalog__belgium, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
+  })
+
+  $('.belgium').on('click', function(){
+    $('.catalog__belgium').css('display', 'flex');
+    $('.catalog__russia, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
+  })
 
   let tabBtnAll = document.querySelectorAll('.catalog__btn-lang');
 
@@ -245,4 +229,9 @@ $(document).ready(function () {
     tabsBtn.parentElement.classList.add('catalog__item-lang_active');
     })
   })
+
+  $('.events__all-btn').on('click',function() {
+    $(".events__item").css("display", "block");
+    $('.events__all-btn').css("display", "none");
+  });
 });

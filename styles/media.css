@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 1919px) and (-webkit-min-device-pixel-ratio: 1){
+@media only screen and (max-device-width: 1430px) and (-webkit-min-device-pixel-ratio: 1){
   .container{
     padding: 0 50px;
   }
@@ -289,7 +289,7 @@
 
   .catalog__artist{
     flex-basis: 53%;
-
+    margin-right: 5px;
   }
 
   .catalog__list-accordion{
@@ -307,6 +307,44 @@
   .ui-accordion .ui-accordion-header{
     padding-top: 40px;
     padding-bottom: 41px;
+  }
+
+  .events__item{
+    width: 290px;
+  }
+
+  .events__item:not(:nth-child(3n)){
+    margin-right: 27px;
+  }
+
+  .events__pic{
+    max-width: 290px;
+    max-height: 200px;
+  }
+
+  .events__place, .events__date {
+    margin-right: 19px;
+  }
+
+  .events__content {
+    padding: 0 24px 0 35px;
+  }
+
+  .events__info{
+    padding-right: 0;
+  }
+
+  .events__description{
+    margin-bottom: 63px;
+    padding-right: 8px;
+  }
+
+  .events__btn{
+    bottom: 46px;
+  }
+
+  .events__all-btn{
+    padding: 19px 34px;
   }
 }
 
@@ -327,6 +365,29 @@
   .galery__text-container {
     width: calc(470/ 1600 * 100%);
     padding-top: 10px;
+  }
+
+  .catalog__Beneditto{
+    max-width: 437px;
+    max-height: 274px;
+  }
+
+  .catalog__Ambrodjo{
+    max-width: 437px;
+    max-height: 274px;
+  }
+
+  .catalog__Francesco{
+    max-width: 437px;
+    max-height: 274px;
+  }
+
+  .events__list{
+    display: grid;
+    grid-template-columns: 290px 290px 290px;
+    grid-template-rows: 683px;
+    grid-column-gap: 27px;
+    grid-row-gap: 34px;
   }
 }
 
@@ -476,6 +537,14 @@
     margin-top: 30px;
   }
 
+  .catalog{
+    margin-bottom: 70px;
+  }
+
+  .catalog__list-lang{
+    align-items: center;
+  }
+
   .catalog__item-lang:not(:last-child){
     margin-right: 54px;
   }
@@ -506,6 +575,50 @@
 
   .catalog__desctiption-text{
     padding-right: 0;
+  }
+
+  .catalog__Beneditto{
+    max-width: 668px;
+    max-height: 419px;
+  }
+
+  .catalog__Ambrodjo{
+    max-width: 668px;
+    max-height: 419px;
+  }
+
+  .catalog__Francesco{
+    max-width: 668px;
+    max-height: 419px;
+  }
+
+  .events__list{
+    display: grid;
+    grid-template-columns: 317px 317px;
+    grid-template-rows: 683px;
+    grid-column-gap: 34px;
+    grid-row-gap: 34px;
+  }
+
+  .events__item{
+    width: 317px;
+  }
+
+  .events__list > .events__item:nth-child(n+3){
+    display: none;
+  }
+
+  .events__pic{
+    max-width: 317px;
+    max-height: 200px;
+  }
+
+  .events__description{
+    margin-bottom: 131px;
+  }
+
+  .events__btn{
+    bottom: 44px;
   }
 }
 
@@ -810,5 +923,20 @@
 
   .catalog__desctiption-text{
     padding-right: 2px;
+  }
+
+  .catalog__Beneditto{
+    max-width: 290px;
+    max-height: 181px;
+  }
+
+  .catalog__Ambrodjo{
+    max-width: 290px;
+    max-height: 181px;
+  }
+
+  .catalog__Francesco{
+    max-width: 290px;
+    max-height: 181px;
   }
 }
