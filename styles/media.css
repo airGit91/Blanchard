@@ -383,11 +383,11 @@
   }
 
   .events__list{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 290px 290px 290px;
     grid-template-rows: 683px;
     grid-column-gap: 27px;
-    grid-row-gap: 34px;
+    grid-row-gap: 34px; */
   }
 }
 
@@ -557,6 +557,11 @@
     flex-direction: column-reverse;
   }
 
+  .catalog__artist {
+    flex-basis: 53%;
+    margin-right: 0px;
+}
+
   .catalog__accordion-description{
     min-height: 338px;
   }
@@ -593,19 +598,33 @@
   }
 
   .events__list{
-    display: grid;
+    /* flex-wrap: nowrap; */
+    /* display: grid;
     grid-template-columns: 317px 317px;
     grid-template-rows: 683px;
     grid-column-gap: 34px;
-    grid-row-gap: 34px;
+    grid-row-gap: 34px; */
+  }
+
+  /* .events__list > .events__item:nth-child(n+3){
+    display: none;
+  } */
+
+  .slides-wrap{
+    flex-wrap: nowrap;
+  }
+
+  .slides-wrap > .events__item:nth-child(n+3){
+    display: none;
   }
 
   .events__item{
     width: 317px;
+    padding-bottom: 6px;
   }
 
-  .events__list > .events__item:nth-child(n+3){
-    display: none;
+  .events__item:not(:nth-child(3n)) {
+    margin-right: 33px;
   }
 
   .events__pic{
@@ -938,5 +957,9 @@
   .catalog__Francesco{
     max-width: 290px;
     max-height: 181px;
+  }
+
+  .events__item {
+    width: 290px;
   }
 }
