@@ -49,7 +49,11 @@ html {
 
 html,
 body,
-.ui-widget {
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
   }
@@ -1568,25 +1572,12 @@ p{
 }
 
 .events__title{
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
   color: #333;
 }
-
-.events__list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* display: grid;
-  justify-content: space-between;
-  grid-template-columns: 500px 500px 500px;
-  grid-template-rows: 700px;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px; */
-}
-
 
 .slides-wrap {
   display: flex;
@@ -1594,18 +1585,12 @@ p{
   flex-wrap: wrap;
 }
 
-.slides-wrap > .events__item:nth-child(n+4){
-  display: none;
-}
-
-.events__item {
-  display: flex;
-  flex-wrap: wrap;
-  width: 500px;
-  margin-bottom: 20px;
-  border: 1px solid #cacaca;
+.slide {
+  /* width: calc(100% / 3 - 32px); */
   position: relative;
-  padding-bottom: 41px;
+  max-width: 500px;
+  margin-bottom: 25px;
+  border: 1px solid var(--gray);
 }
 
 .events__list > .events__item:nth-child(n+4){
@@ -1630,7 +1615,7 @@ p{
 }
 
 .events__place {
-  padding-top: 16px;
+  padding-top: 10px;
 }
 
 .events__date {
@@ -1744,7 +1729,7 @@ p{
   font-size: 18px;
   text-align: center;
   color: var(--purple);
-  border: 1px solid var(--purple);
+  border: 2px solid var(--purple);
   border-radius: 30px;
   padding: 17px 34px;
   background: transparent;
