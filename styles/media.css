@@ -845,10 +845,8 @@
     padding-top: 51px;
   }
 
-
-
   .catalog__title{
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
@@ -941,7 +939,7 @@
   }
 
   .catalog__desctiption-text{
-    padding-right: 2px;
+    padding-right: 4px;
   }
 
   .catalog__Beneditto{
@@ -992,5 +990,45 @@
 
   .events__all-btn{
     display: none;
+  }
+}
+
+@media only screen and (max-device-width: 580px) and (-webkit-min-device-pixel-ratio: 1){
+  .events__slider-container{
+    overflow: hidden;
+  }
+
+  .events__list{
+    flex-wrap: nowrap;
+  }
+
+  .slides-wrap .events__item{
+    max-width: 99.4%;
+    flex-shrink: 0;
+  }
+
+  .events__pic{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .events__slider-container > .events-pagination{
+    position: absolute;
+    bottom: 60px;
+    left: 85px;
+  }
+
+  .events-pagination > .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+  }
+
+  .events-pagination > .swiper-pagination-bullet-active{
+    background-color: var(--dark-gray);
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 7px;
   }
 }
