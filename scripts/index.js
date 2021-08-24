@@ -223,10 +223,11 @@ $(document).ready(function () {
   tabsBtn.addEventListener('click', function (event) {
     tabBtnAll.forEach(function (tabsBtn) {
       if (tabsBtn.parentElement.classList.contains('catalog__item-lang_active')) {
-        tabsBtn.parentElement.classList.remove('catalog__item-lang_active');
+          tabsBtn.parentElement.classList.remove('catalog__item-lang_active');
       };
     })
     tabsBtn.parentElement.classList.add('catalog__item-lang_active');
+
     })
   })
 
@@ -236,97 +237,126 @@ $(document).ready(function () {
   });
 
 
-  const MOBILE_WIDTH = 500;
+  const MOBILE_WIDTH = 580;
 
-const sliderParams = {
-  paginationClassName: 'events-pagination',
-  cardsContainerName: 'js-slider',
-  cardsWrapName: 'js-slides-wrap',
-  card: 'slide'
-};
+  const sliderParams = {
+    paginationClassName: 'events-pagination',
+    cardsContainerName: 'js-slider',
+    cardsWrapName: 'js-slides-wrap',
+    card: 'slide'
+  };
 
-function getWindowWidth () {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.body.clientWidth,
-    document.documentElement.clientWidth
-  );
-}
+  function getWindowWidth () {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.body.clientWidth,
+      document.documentElement.clientWidth
+    );
+  }
 
-function activateEventsSlider (params) {
-  const pagination = document.createElement("div");
-  pagination.classList.add(params.paginationClassName);
-  params.cardsContainer.append(pagination);
+  function activateEventsSlider (params) {
+    const pagination = document.createElement("div");
+    pagination.classList.add(params.paginationClassName);
+    params.cardsContainer.append(pagination);
 
-  params.cardsContainer.classList.add("swiper-container");
-  params.cardsWrap.classList.add("swiper-wrapper");
+    params.cardsContainer.classList.add("swiper-container");
+    params.cardsWrap.classList.add("swiper-wrapper");
 
 
-  params.cardsSlider = new Swiper(`.${params.cardsContainerName}`, {
-    slidesPerColumnFill: "row",
-    slidesPerView: 1,
-    slidesPerColumn: 1,
-    slidesPerView: 1,
-    spaceBetween: 20,
+    params.cardsSlider = new Swiper(`.${params.cardsContainerName}`, {
+      slidesPerColumnFill: "row",
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      slidesPerView: 1,
+      spaceBetween: 20,
 
-    pagination: {
-      el: `.${params.cardsContainerName} .${params.paginationClassName}`
-    },
-
-    on: {
-      beforeInit() {
-        document
-          .querySelectorAll(`.${params.card}`)
-          .forEach((el) => {
-            el.classList.add("swiper-slide");
-        });
+      pagination: {
+        el: `.${params.cardsContainerName} .${params.paginationClassName}`
       },
 
-      beforeDestroy() {
-        this.slides.forEach((el) => {
-          el.classList.remove("swiper-slide");
-          el.removeAttribute("role");
-          el.removeAttribute("aria-label");
-        });
+      on: {
+        beforeInit() {
+          document
+            .querySelectorAll(`.${params.card}`)
+            .forEach((el) => {
+              el.classList.add("swiper-slide");
+          });
+        },
 
-        this.pagination.el.remove();
+        beforeDestroy() {
+          this.slides.forEach((el) => {
+            el.classList.remove("swiper-slide");
+            el.removeAttribute("role");
+            el.removeAttribute("aria-label");
+          });
+
+          this.pagination.el.remove();
+        }
+      }
+    });
+  }
+
+  function destroyEventsSlider (params) {
+    params.cardsSlider.destroy();
+    params.cardsContainer.classList.remove("swiper-container");
+    params.cardsWrap.classList.remove("swiper-wrapper");
+    params.cardsWrap.removeAttribute("aria-live");
+    params.cardsWrap.removeAttribute("id");
+  }
+
+  function checkWindowWidth (params) {
+    const currentWidth = getWindowWidth();
+    params.cardsContainer = document.querySelector(`.${params.cardsContainerName}`);
+    params.cardsWrap = document.querySelector(`.${params.cardsWrapName}`);
+
+    if (currentWidth <= MOBILE_WIDTH && (!params.cardsSlider || params.cardsSlider.destroyed)) {
+      activateEventsSlider(params);
+    } else if (
+      currentWidth >= MOBILE_WIDTH &&
+      params.cardsSlider
+    ) {
+      destroyEventsSlider(params);
+    }
+  }
+
+  checkWindowWidth(sliderParams);
+
+  window.addEventListener('resize', function () {
+    checkWindowWidth(sliderParams);
+  })
+
+  let checkbox = document.querySelector('.checkbox');
+
+  checkbox.addEventListener('click', (event) => {
+    let input = event.target.closest('input');
+    if (!input) return;
+    if (input.checked) {
+      input.parentNode.style.color = "#C283F3";
+    } else {
+      input.parentNode.style.color = "#fff";
+    }
+  })
+
+  checkbox.addEventListener('keyup', (event) => {
+    if (event.key == 'Tab') {
+      let elem = event.target.closest(":focus");
+      if (elem.classList.contains('checkbox__label')) {
+        elem.addEventListener('keyup', (event) => {
+          if (event.key == 'Enter') {
+            let input = elem.querySelector('input');
+            if (input.checked) {
+              input.removeAttribute('checked');
+              input.parentNode.style.color = "#fff";
+            } else {
+              input.setAttribute('checked', '');
+              input.parentNode.style.color = "#C283F3";
+            }
+          }
+        })
       }
     }
-  });
-}
-
-function destroyEventsSlider (params) {
-  params.cardsSlider.destroy();
-  params.cardsContainer.classList.remove("swiper-container");
-  params.cardsWrap.classList.remove("swiper-wrapper");
-  params.cardsWrap.removeAttribute("aria-live");
-  params.cardsWrap.removeAttribute("id");
-}
-
-function checkWindowWidth (params) {
-  const currentWidth = getWindowWidth();
-  params.cardsContainer = document.querySelector(`.${params.cardsContainerName}`);
-  params.cardsWrap = document.querySelector(`.${params.cardsWrapName}`);
-
-  if (currentWidth <= MOBILE_WIDTH && (!params.cardsSlider || params.cardsSlider.destroyed)) {
-    activateEventsSlider(params);
-  } else if (
-    currentWidth >= MOBILE_WIDTH &&
-    params.cardsSlider
-  ) {
-    destroyEventsSlider(params);
-  }
-}
-
-checkWindowWidth(sliderParams);
-
-window.addEventListener('resize', function () {
-  checkWindowWidth(sliderParams);
-})
-
-
-
+  })
 });

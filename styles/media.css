@@ -248,9 +248,9 @@
     margin-top: 137px;
   }
 
-  .about-us__text{
+  /* .about-us__text{
     width: 925px;
-  }
+  } */
 
   .galery {
     padding-top: 80px;
@@ -468,9 +468,9 @@
     padding-bottom: 70px;
   }
 
-  .about-us__text{
+  /* .about-us__text{
     width: 666px;
-  }
+  } */
 
   .galery {
     padding-top: 83px;
@@ -786,7 +786,8 @@
   }
 
   .about-us__text{
-    width: 289px;
+    /* width: 289px; */
+    padding-right: 2px;
     font-size: 14px;
     line-height: 28px;
   }
@@ -844,6 +845,8 @@
     padding-top: 51px;
   }
 
+
+
   .catalog__title{
     margin-bottom: 12px;
     font-weight: 400;
@@ -879,6 +882,11 @@
 
   .belgium {
     background-image: url(../icons/320/belgium-320.svg);
+  }
+
+  .catalog__item-lang_active:after{
+    width: 44px;
+    height: 44px;
   }
 
   .catalog__item-lang:not(:last-child){
@@ -922,6 +930,10 @@
 
   .catalog__pic{
     margin-bottom: 0;
+  }
+
+  .catalog__img{
+    max-width: 500px;
   }
 
   .catalog__subtitle{
