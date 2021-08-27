@@ -1944,7 +1944,7 @@ p{
 }
 
 .editions__swiper-container > .swiper-button-next{
-  top: -7.3%;
+  top: -7.6%;
   left: 8.8%;
   width: 30px;
   height: 30px;
@@ -1957,7 +1957,7 @@ p{
 }
 
 .editions__swiper-container > .swiper-button-prev{
-  top: -7.3%;
+  top: -7.6%;
   left: 0;
   width: 30px;
   height: 30px;
@@ -1971,9 +1971,8 @@ p{
 }
 
 .editions__swiper-container > .swiper-pagination{
-  display: flex;
-  top: -11%;
-  left: 4%;
+  top: -10.5%;
+  left: -44.4%;
   z-index: 0;
   color: #fff;
 }
