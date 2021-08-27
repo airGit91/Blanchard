@@ -199,6 +199,7 @@ $(document).ready(function () {
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__germany').css('display','none');
     $('.catalog__Francesco').fadeIn(1000);
     $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
+    $('.catalog__subtitle').text('Алофе, Мари-Александр');
   })
 
   $('.germany').on('click', function(){
@@ -206,17 +207,19 @@ $(document).ready(function () {
     $('.catalog__content-lang_rus, .catalog__content-lang_fra, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
     $('.catalog__germany').css('display', 'flex');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__france').css('display','none');
-    $('.catalog__Francesco').fadeIn(1000);
-    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
+    $('.catalog__Ambrodjo').fadeIn(1000);
+    $('.catalog__Domenico, .catalog__Beneditto, .catalog__Francesco').css('display','none');
+    $('.catalog__subtitle').text('Адлер, Янкель');
   })
 
   $('.italy').on('click', function(){
     $('.catalog__content-lang').fadeIn(1000);
-    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-ger, .catalog__content-lang_bel').css('display','none');
+    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang_fra, .catalog__content-lang_bel').css('display','none');
     $('.catalog__italy').css('display', 'flex');
     $('.catalog__belgium, .catalog__germany, .catalog__russia, .catalog__france').css('display','none');
     $('.catalog__Domenico').fadeIn(1000);
     $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
+    $('.catalog__subtitle').text('Доменико Гирландайо');
   })
 
   $('.russia').on('click', function(){
@@ -226,6 +229,7 @@ $(document).ready(function () {
     $('.catalog__belgium, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
     $('.catalog__Francesco').fadeIn(1000);
     $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
+    $('.catalog__subtitle').text('Андрей Рублев');
   })
 
   $('.belgium').on('click', function(){
@@ -233,8 +237,9 @@ $(document).ready(function () {
     $('.catalog__belgium').css('display', 'flex');
     $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_fra').css('display','none');
     $('.catalog__russia, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
-    $('.catalog__Francesco').fadeIn(1000);
-    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
+    $('.catalog__Ambrodjo').fadeIn(1000);
+    $('.catalog__Domenico, .catalog__Beneditto, .catalog__Francesco').css('display','none');
+    $('.catalog__subtitle').text('Ауденарде, Роберт ван');
   })
 
   let tabBtnAll = document.querySelectorAll('.catalog__btn-lang');
