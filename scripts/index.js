@@ -360,57 +360,33 @@ $(document).ready(function () {
     }
   })
 
-  let editionsSwiper = new Swiper(".editions__swiper-container", {
-    // slidesPerColumnFill: "row",
-    slidesPerView: 3,
+  let swiperEditions = new Swiper('.editions__swiper-container', {
+    observer: true,
+    observeParents: true,
+    cssMode: true,
+    slidesPerView: 1,
+    // slidesPerView: 3,
     slidesPerGroup: 2,
-    slidesPerColumn: 1,
-    spaceBetween: 50,
+    loop: true,
+    spaceBetween: 34,
     pagination: {
-      el: ".swiper-pagination",
-      type: "fraction"
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'fraction',
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-    // breakpoints:{
-    //   320:{
-    //     slidesPerView: 1,
-    //     slidesPerGroup: 1,
-    //     slidesPerColumn: 1,
-    //     // spaceBetween: 34,
-    //   },
-
-    //   768:{
-    //     slidesPerView: 2,
-    //     slidesPerGroup: 6,
-    //     slidesPerColumn: 2,
-    //     spaceBetween: 34,
-    //   },
-
-    //   1024:{
-    //     slidesPerView: 2,
-    //     slidesPerGroup: 6,
-    //     slidesPerColumn: 2,
-    //     spaceBetween: 34,
-    //   },
-
-    //   1151:{
-    //     slidesPerView: 3,
-    //     slidesPerGroup: 3,
-    //     slidesPerColumn: 1,
-    //     spaceBetween: 50,
-    //   },
-    // },
-
-    on: {
-      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
-      beforeResize: function () {
-        this.slides.forEach((el) => {
-          el.style.marginTop = "";
-        });
-      }
-    }
+    breakpoints:{
+      1024:{
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      1920:{
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
   });
 });
