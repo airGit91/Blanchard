@@ -1138,6 +1138,51 @@ p{
   line-height: 32px;
 }
 
+.catalog__content-lang_rus{
+  display: none;
+  max-width: 1080px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog__content-lang_ger{
+  display: none;
+  max-width: 1080px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog__content-lang_bel{
+  display: none;
+  max-width: 1080px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog__content-lang_fra{
+  display: none;
+  max-width: 1080px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog__lorem{
+  display: none;
+  max-width: 1080px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
 .ui-accordion .ui-accordion-content{
   border-top: 1px solid var(--active);
 }

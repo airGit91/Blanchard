@@ -193,28 +193,48 @@ $(document).ready(function () {
   });
 
   $('.france').on('click', function(){
+    $('.catalog__content-lang_fra').fadeIn(1000);
+    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
     $('.catalog__france').css('display', 'flex');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__germany').css('display','none');
+    $('.catalog__Francesco').fadeIn(1000);
+    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
   })
 
   $('.germany').on('click', function(){
+    $('.catalog__content-lang_ger').fadeIn(1000);
+    $('.catalog__content-lang_rus, .catalog__content-lang_fra, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
     $('.catalog__germany').css('display', 'flex');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__france').css('display','none');
+    $('.catalog__Francesco').fadeIn(1000);
+    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
   })
 
   $('.italy').on('click', function(){
+    $('.catalog__content-lang').fadeIn(1000);
+    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-ger, .catalog__content-lang_bel').css('display','none');
     $('.catalog__italy').css('display', 'flex');
     $('.catalog__belgium, .catalog__germany, .catalog__russia, .catalog__france').css('display','none');
+    $('.catalog__Domenico').fadeIn(1000);
+    $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
   })
 
   $('.russia').on('click', function(){
+    $('.catalog__content-lang_rus').fadeIn(1000);
     $('.catalog__russia').css('display', 'flex');
+    $('.catalog__content-lang_fra, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
     $('.catalog__belgium, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
+    $('.catalog__Francesco').fadeIn(1000);
+    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
   })
 
   $('.belgium').on('click', function(){
+    $('.catalog__content-lang_bel').fadeIn(1000);
     $('.catalog__belgium').css('display', 'flex');
+    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_fra').css('display','none');
     $('.catalog__russia, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
+    $('.catalog__Francesco').fadeIn(1000);
+    $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
   })
 
   let tabBtnAll = document.querySelectorAll('.catalog__btn-lang');
