@@ -1497,9 +1497,9 @@
       <div class="container">
         <h2 class="events__title">События</h2>
 
-        <div class="slider js-slider events__slider-container">
-          <ul class="slides-wrap js-slides-wrap events__list">
-            <li class="slide events__item">
+        <div class="events__slider-container events__slider events__js-slider">
+          <ul class="events__list events__slides-wrap events__js-slides-wrap">
+            <li class="events__item events__slide">
               <picture>
                 <source class="events__pic" srcset="./images/320/events-320-1.jpg" media="(max-width: 767px)">
                 <source class="events__pic" srcset="./images/768/events-768-1.jpg" media="(max-width: 1023px)">
@@ -1526,7 +1526,7 @@
               </div>
             </li>
 
-             <li class="slide events__item">
+             <li class="events__item events__slide">
               <picture>
                 <source class="events__pic" srcset="./images/320/events-320-2.jpg" media="(max-width: 767px)">
                 <source class="events__pic" srcset="./images/768/events-768-2.jpg" media="(max-width: 1023px)">
@@ -1553,7 +1553,7 @@
               </div>
             </li>
 
-            <li class="slide events__item">
+            <li class="events__item events__slide">
               <picture>
                 <source class="events__pic" srcset="./images/320/events-320-3.jpg" media="(max-width: 767px)">
                 <source class="events__pic" srcset="./images/768/events-768-3.jpg" media="(max-width: 1023px)">
@@ -1580,7 +1580,7 @@
               </div>
             </li>
 
-            <li class="slide events__item">
+            <li class="events__item events__slide">
               <picture>
                 <source class="events__pic" srcset="./images/320/events-320-4.jpg" media="(max-width: 767px)">
                 <source class="events__pic" srcset="./images/768/events-768-4.jpg" media="(max-width: 1023px)">
@@ -1607,7 +1607,7 @@
               </div>
             </li>
 
-            <li class="slide events__item">
+            <li class="events__item events__slide">
               <picture>
                 <source class="events__pic" srcset="./images/320/events-320-5.jpg" media="(max-width: 767px)">
                 <source class="events__pic" srcset="./images/768/events-768-5.jpg" media="(max-width: 1023px)">
@@ -1642,7 +1642,7 @@
 
     <section class="editions">
       <div class="container container-editions">
-        <h2 class="editions__title gallery__title">Издания</h2>
+        <h2 class="editions__title">Издания</h2>
 
         <div class="editions__content">
           <div class="editions__categories">
@@ -1724,8 +1724,64 @@
             </div>
           </div>
 
-          <div class="editions__slider swiper">
+          <div class="editions__swiper-container">
+            <div class="swiper-pagination"></div>
+            <button type="button" class="editions__swiper-btn swiper-button-prev"></button>
+            <button type="button" class="editions__swiper-btn swiper-button-next"></button>
 
+            <div class="swiper-wrapper">
+              <div class="editions__block swiper-slide">
+                <picture class="editions__pic">
+                  <source class="events__img" srcset="./images/320/edition-book-320-1" media="(max-width: 767px)">
+                  <source class="events__img" srcset="./images/1024/edition-book-768-1024-1" media="(max-width: 1400px)">
+                  <img class="events__img" src="./images/1920/edition-book-1920-1.jpg" alt="издание">
+                </picture>
+
+                <div class="editions__details">
+                  <div class="editions__info">
+                    <span class="editions__name">Искусство цвета</span>
+                    <span class="editions__author">Иттен, Иоханнес</span>
+                  </div>
+                  <div class="editions__sum">620 руб</div>
+                </div>
+                <button class="editions__btn" tabindex="0">Заказать</button>
+              </div>
+
+              <div class="editions__block swiper-slide">
+                <picture class="editions__pic">
+                  <source class="events__img" srcset="./images/320/edition-book-320-2" media="(max-width: 767px)">
+                  <source class="events__img" srcset="./images/1024/edition-book-768-1024-2" media="(max-width: 1400px)">
+                  <img class="events__img" src="./images/1920/edition-book-1920-2.jpg" alt="издание">
+                </picture>
+
+                <div class="editions__details">
+                  <div class="editions__info">
+                    <span class="editions__name">Искусство цвета</span>
+                    <span class="editions__author">Иттен, Иоханнес</span>
+                  </div>
+                  <div class="editions__sum">620 руб</div>
+                </div>
+                <button class="editions__btn" tabindex="0">Заказать</button>
+              </div>
+
+              <div class="editions__block swiper-slide">
+                <picture class="editions__pic">
+                  <source class="events__img" srcset="./images/320/edition-book-320-3" media="(max-width: 767px)">
+                  <source class="events__img" srcset="./images/1024/edition-book-768-1024-3" media="(max-width: 1400px)">
+                  <img class="events__img" src="./images/1920/edition-book-1920-3.jpg" alt="издание">
+                </picture>
+
+                <div class="editions__details">
+                  <div class="editions__info">
+                    <span class="editions__name">Искусство цвета</span>
+                    <span class="editions__author">Иттен, Иоханнес</span>
+                  </div>
+                  <div class="editions__sum">620 руб</div>
+                </div>
+                <button class="editions__btn" tabindex="0">Заказать</button>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>

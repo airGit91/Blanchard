@@ -1013,6 +1013,14 @@
     height: auto;
   }
 
+  .events__subtitle{
+    margin-bottom: 6px;
+  }
+
+  .events__description{
+    margin-bottom: 95px;
+  }
+
   .events__slider-container > .events-pagination{
     position: absolute;
     bottom: 60px;
