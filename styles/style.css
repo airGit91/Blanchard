@@ -1793,7 +1793,7 @@ p{
 
 .editions__categories {
   display: inline-block;
-  margin-right: 109px;
+  margin-right: 172px;
 }
 
 .checkbox__title {
@@ -1918,8 +1918,13 @@ p{
   border: none;
 }
 
-.editions__swiper-container{
+.edition__container-swiper{
   position: relative;
+}
+
+.editions__swiper-container{
+  position: absolute;
+  top: 7px;
   /* top: 1.1%;
   left: 27.8%; */
   max-width: 1150px;
