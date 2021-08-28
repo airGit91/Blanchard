@@ -322,7 +322,6 @@
     max-width: 290px;
   }
 
-
   .events__pic{
     max-width: 290px;
     max-height: 200px;
@@ -356,6 +355,14 @@
   .events__all-btn{
     margin-top: 51px;
     padding: 19px 34px;
+  }
+
+  .editions__swiper-container{
+    max-width: 1024px;
+  }
+
+  .editions__block{
+    max-width: 290px;
   }
 }
 
