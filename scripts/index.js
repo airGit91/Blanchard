@@ -408,7 +408,7 @@ $(document).ready(function () {
         slidesPerView: 2,
         spaceBetween: 50,
       },
-      1920:{
+      1640:{
         slidesPerView: 3,
         spaceBetween: 50,
       },
