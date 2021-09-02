@@ -150,14 +150,14 @@ $(document).ready(function () {
       },
     },
 
-    on: {
-      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
-      beforeResize: function () {
-        this.slides.forEach((el) => {
-          el.style.marginTop = "";
-        });
-      }
-    }
+    // on: {
+    //   /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+    //   beforeResize: function () {
+    //     this.slides.forEach((el) => {
+    //       el.style.marginTop = "";
+    //     });
+    //   }
+    // }
   });
 
   $( ".catalog__list-accordion" ).accordion({
@@ -386,9 +386,9 @@ $(document).ready(function () {
   })
 
   let swiperEditions = new Swiper('.editions__swiper-container', {
-    observer: true,
-    observeParents: true,
-    cssMode: true,
+    // observer: true,
+    // observeParents: true,
+    // cssMode: true,
     slidesPerView: 1,
     // slidesPerView: 3,
     slidesPerGroup: 2,
