@@ -390,4 +390,19 @@ $(document).ready(function () {
       }
     }
   });
+
+  tippy('#projects__tooltype-one', {
+    content: 'Пример современных тенденций - современная методология разработки',
+    maxWidth: 264,
+  });
+
+  tippy('#projects__tooltype-two', {
+    content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+    maxWidth: 264,
+  });
+
+  tippy('#projects__tooltype-three', {
+    content: 'В стремлении повысить качество',
+    maxWidth: 264,
+  });
 });
