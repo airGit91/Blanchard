@@ -150,21 +150,26 @@ $(document).ready(function () {
       },
     },
 
-    // on: {
-    //   /* исправляет баг с margin-top остающимся при смене брейкпоинта */
-    //   beforeResize: function () {
-    //     this.slides.forEach((el) => {
-    //       el.style.marginTop = "";
-    //     });
-    //   }
-    // }
+    on: {
+      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+      beforeResize: function () {
+        this.slides.forEach((el) => {
+          el.style.marginTop = "";
+        });
+      }
+    }
   });
 
   $( ".catalog__list-accordion" ).accordion({
     collapsible: true,
-    active: false,
+    active: 0,
     icons: false,
-    heightStyle: 'content'
+    heightStyle: 'content',
+  });
+
+
+  $('.catalog__item-accordion').on('click', function(){
+    $('.catalog__icon').toggleClass('catalog__icon_active');
   });
 
   $('.catalog__accordion-btn').on('click', function(e) {
@@ -193,8 +198,8 @@ $(document).ready(function () {
   });
 
   $('.france').on('click', function(){
-    $('.catalog__content-lang_fra').fadeIn(1000);
-    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
+    $('.catalog__lang-fra').fadeIn(1000);
+    $('.catalog__lang-rus, .catalog__lang-ger, .catalog__lang-ita, .catalog__lang-bel').css('display','none');
     $('.catalog__france').css('display', 'flex');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__germany').css('display','none');
     $('.catalog__Francesco').fadeIn(1000);
@@ -203,8 +208,8 @@ $(document).ready(function () {
   })
 
   $('.germany').on('click', function(){
-    $('.catalog__content-lang_ger').fadeIn(1000);
-    $('.catalog__content-lang_rus, .catalog__content-lang_fra, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
+    $('.catalog__lang-ger').fadeIn(1000);
+    $('.catalog__lang-rus, .catalog__lang-fra, .catalog__lang-ita, .catalog__lang-bel').css('display','none');
     $('.catalog__germany').css('display', 'flex');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__france').css('display','none');
     $('.catalog__Ambrodjo').fadeIn(1000);
@@ -213,8 +218,8 @@ $(document).ready(function () {
   })
 
   $('.italy').on('click', function(){
-    $('.catalog__content-lang').fadeIn(1000);
-    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang_fra, .catalog__content-lang_bel').css('display','none');
+    $('.catalog__lang-ita').fadeIn(1000);
+    $('.catalog__lang-rus, .catalog__lang-ger, .catalog__lang-fra, .catalog__lang-bel').css('display','none');
     $('.catalog__italy').css('display', 'flex');
     $('.catalog__belgium, .catalog__germany, .catalog__russia, .catalog__france').css('display','none');
     $('.catalog__Domenico').fadeIn(1000);
@@ -223,9 +228,9 @@ $(document).ready(function () {
   })
 
   $('.russia').on('click', function(){
-    $('.catalog__content-lang_rus').fadeIn(1000);
+    $('.catalog__lang-rus').fadeIn(1000);
     $('.catalog__russia').css('display', 'flex');
-    $('.catalog__content-lang_fra, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_bel').css('display','none');
+    $('.catalog__lang-fra, .catalog__lang-ger, .catalog__lang-ita, .catalog__lang-bel').css('display','none');
     $('.catalog__belgium, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
     $('.catalog__Francesco').fadeIn(1000);
     $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
@@ -233,9 +238,9 @@ $(document).ready(function () {
   })
 
   $('.belgium').on('click', function(){
-    $('.catalog__content-lang_bel').fadeIn(1000);
+    $('.catalog__lang-bel').fadeIn(1000);
     $('.catalog__belgium').css('display', 'flex');
-    $('.catalog__content-lang_rus, .catalog__content-lang_ger, .catalog__content-lang, .catalog__content-lang_fra').css('display','none');
+    $('.catalog__lang-rus, .catalog__lang-ger, .catalog__lang-ita, .catalog__lang-fra').css('display','none');
     $('.catalog__russia, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
     $('.catalog__Ambrodjo').fadeIn(1000);
     $('.catalog__Domenico, .catalog__Beneditto, .catalog__Francesco').css('display','none');
@@ -261,7 +266,6 @@ $(document).ready(function () {
     $('.events__all-btn').css("display", "none");
   });
 
-
   const MOBILE_WIDTH = 580;
 
   const sliderParams = {
@@ -286,11 +290,8 @@ $(document).ready(function () {
     const pagination = document.createElement("div");
     pagination.classList.add(params.paginationClassName);
     params.cardsContainer.append(pagination);
-
     params.cardsContainer.classList.add("swiper-container");
     params.cardsWrap.classList.add("swiper-wrapper");
-
-
     params.cardsSlider = new Swiper(`.${params.cardsContainerName}`, {
       slidesPerColumnFill: "row",
       slidesPerView: 1,
@@ -353,65 +354,42 @@ $(document).ready(function () {
     checkWindowWidth(sliderParams);
   })
 
-  let checkbox = document.querySelector('.checkbox');
+$('.editions__label > span:before').css('border', '1px solid red');
 
-  checkbox.addEventListener('click', (event) => {
-    let input = event.target.closest('input');
-    if (!input) return;
-    if (input.checked) {
-      input.parentNode.style.color = "#C283F3";
-    } else {
-      input.parentNode.style.color = "#fff";
-    }
-  })
-
-  checkbox.addEventListener('keyup', (event) => {
-    if (event.key == 'Tab') {
-      let elem = event.target.closest(":focus");
-      if (elem.classList.contains('checkbox__label')) {
-        elem.addEventListener('keyup', (event) => {
-          if (event.key == 'Enter') {
-            let input = elem.querySelector('input');
-            if (input.checked) {
-              input.removeAttribute('checked');
-              input.parentNode.style.color = "#fff";
-            } else {
-              input.setAttribute('checked', '');
-              input.parentNode.style.color = "#C283F3";
-            }
-          }
-        })
-      }
-    }
-  })
-
-  let swiperEditions = new Swiper('.editions__swiper-container', {
-    // observer: true,
-    // observeParents: true,
-    // cssMode: true,
-    slidesPerView: 1,
-    // slidesPerView: 3,
-    slidesPerGroup: 2,
-    loop: true,
-    spaceBetween: 34,
+  let editionsSwiper = new Swiper(".editions__swiper-container", {
+    // slidesPerColumnFill: "row",
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    // slidesPerColumn: 2,
+    spaceBetween: 50,
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        type: 'fraction',
+      el: ".swiper-pagination",
+      type: "fraction"
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
     },
     breakpoints:{
       1024:{
         slidesPerView: 2,
-        spaceBetween: 50,
+        slidesPerGroup: 6,
+        spaceBetween: 34,
       },
-      1640:{
+      1430:{
         slidesPerView: 3,
+        slidesPerGroup: 3,
         spaceBetween: 50,
       },
     },
+
+    on: {
+      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+      beforeResize: function () {
+        this.slides.forEach((el) => {
+          el.style.marginTop = "";
+        });
+      }
+    }
   });
 });
