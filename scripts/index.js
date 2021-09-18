@@ -405,4 +405,39 @@ $(document).ready(function () {
     content: 'В стремлении повысить качество',
     maxWidth: 264,
   });
+
+  let projectsSwiper = new Swiper(".projects__swiper-container", {
+    slidesPerView: 3,
+    slidesPerView: 'auto',
+    cssMode: true,
+    spaceBetween: 50,
+    pagination: {
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    // breakpoints:{
+    //   1024:{
+    //     slidesPerView: 2,
+    //     slidesPerGroup: 6,
+    //     spaceBetween: 34,
+    //   },
+    //   1430:{
+    //     slidesPerView: 3,
+    //     slidesPerGroup: 3,
+    //     spaceBetween: 50,
+    //   },
+    // },
+
+    on: {
+      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
+      beforeResize: function () {
+        this.slides.forEach((el) => {
+          el.style.marginTop = "";
+        });
+      }
+    }
+  });
 });
