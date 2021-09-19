@@ -460,7 +460,7 @@ $(document).ready(function () {
     ),
 
     myPlacemarkWithContent = new ymaps.Placemark([55.758135, 37.600401], {
-        // hintContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+        hintContent: 'Здесь живет искусство',
         // balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
         iconContent: '',
     },
