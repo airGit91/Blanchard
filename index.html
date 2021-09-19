@@ -1938,6 +1938,80 @@
         </div>
       </div>
     </section>
+
+    <div class="container">
+      <h2 class="contacts__title">Контакты</h2>
+    </div>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__main">
+          <div class="contacts__content">
+            <p class="contacts__content-title">Шоурум №4</p>
+
+            <p class="contacts__address">Леонтьевский переулок, дом 5/1</p>
+
+            <p class="contacts__callback">Заказать обратный звонок</p>
+
+            <form class="contacts__form" action="#" enctype="multipart/form-data"  method="POST" action="https://echo.htmlacademy.ru/">
+              <label class="contacts__label">
+                <input class="contacts__input" type="text" name="name" placeholder="Имя*" required/>
+              </label>
+
+              <label class="contacts__label">
+                <input class="contacts__input mask-phone form-control" type="tel" name="phone" placeholder="Телефон*" required/>
+              </label>
+
+              <button class="contacts__submit" type="submit">Заказать</button>
+            </form>
+
+            <h2 class="contacts__form_title">Связаться в один клик</h2>
+
+            <address class="contacts__group">
+              <ul class="contacts__list">
+                  <li class="contacts__item">
+                      <a class="contacts__link wtsp" href="https://www.whatsapp.com/?lang=ru"  target="_blank" rel="noopener" aria-label="Вотсап"></a>
+                  </li>
+
+                  <li class="contacts__item">
+                      <a class="contacts__link telegram" href="https://web.telegram.org/#/login" target="_blank" rel="noopener" aria-label="Телеграмм"></a>
+                  </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="contacts__yandex-map">
+            <div id="map"></div>   <!--style="width: 600px; height: 400px"-->
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="footer__logo" href="#">
+        <picture class="footer__picture">
+          <source srcset="./images/320/logo-320.svg" media="(max-width: 767px)">
+          <source srcset="./images/1024/logo-1024.svg" media="(max-width: 1919px)">
+          <img src ="./images/1920/logo-1920.svg" alt="logo">
+        </picture>
+      </a>
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link vk"></a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link instagramm"></a>
+        </li>
+
+        <li class="footer__item">
+          <a href="#" class="footer__link facebook"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

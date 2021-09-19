@@ -394,16 +394,19 @@ $(document).ready(function () {
   tippy('#projects__tooltype-one', {
     content: 'Пример современных тенденций - современная методология разработки',
     maxWidth: 264,
+    trigger: 'click',
   });
 
   tippy('#projects__tooltype-two', {
     content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
     maxWidth: 264,
+    trigger: 'click',
   });
 
   tippy('#projects__tooltype-three', {
     content: 'В стремлении повысить качество',
     maxWidth: 264,
+    trigger: 'click',
   });
 
   let projectsSwiper = new Swiper(".projects__swiper-container", {
@@ -439,5 +442,38 @@ $(document).ready(function () {
         });
       }
     }
+  });
+
+  $('.mask-phone').mask('+7 (999) 999-99-99');
+
+
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [55.758135, 37.600401],
+        zoom: 15,
+    },
+    {
+        searchControlProvider: 'yandex#search'
+    }),
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+
+    myPlacemarkWithContent = new ymaps.Placemark([55.758135, 37.600401], {
+        // hintContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+        // balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
+        iconContent: '',
+    },
+     {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: '../icons/target-map.svg',
+        iconImageSize: [20, 20],
+        iconImageOffset: [-24, -24],
+        iconContentOffset: [15, 15],
+        iconContentLayout: MyIconContentLayout,
+    });
+
+
+    myMap.geoObjects.add(myPlacemarkWithContent);
   });
 });
