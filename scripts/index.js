@@ -356,6 +356,7 @@ $(document).ready(function () {
 
   let editionsSwiper = new Swiper(".editions__swiper-container", {
     // slidesPerColumnFill: "row",
+    speed: 4000,
     slidesPerView: 3,
     slidesPerGroup: 3,
     // slidesPerColumn: 2,
@@ -451,6 +452,7 @@ $(document).ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [55.758135, 37.600401],
         zoom: 15,
+        controls: ['geolocationControl', 'zoomControl'],
     },
     {
         searchControlProvider: 'yandex#search'
@@ -460,7 +462,7 @@ $(document).ready(function () {
     ),
 
     myPlacemarkWithContent = new ymaps.Placemark([55.758135, 37.600401], {
-        hintContent: 'Здесь живет искусство',
+        //hintContent: 'Здесь живет искусство',
         // balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
         iconContent: '',
     },
