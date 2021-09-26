@@ -451,8 +451,17 @@ $(document).ready(function () {
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [55.758135, 37.600401],
-        zoom: 15,
+        zoom: 14,
         controls: ['geolocationControl', 'zoomControl'],
+    },
+    {
+      suppressMapOpenBlock: true,
+      geolocationControlSize: "large",
+      geolocationControlPosition:  { top: "300px", right: "20px" },
+      geolocationControlFloat: 'none',
+      zoomControlSize: "small",
+      zoomControlFloat: "none",
+      zoomControlPosition: { top: "220px", right: "20px" }
     },
     {
         searchControlProvider: 'yandex#search'
