@@ -108,12 +108,13 @@ $(document).ready(function () {
 
   let galerySwiper = new Swiper(".galery__swiper", {
     slidesPerColumnFill: "row",
+    speed: 400,
     slidesPerView: 3,
     slidesPerGroup: 3,
     slidesPerColumn: 2,
     spaceBetween: 50,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".galery__swiper-nav > .swiper-pagination",
       type: "fraction"
     },
     navigation: {
@@ -166,11 +167,6 @@ $(document).ready(function () {
     icons: false,
     heightStyle: 'content',
   });
-
-
-  // $('.catalog__item-accordion').on('click', function(){
-  //   $('.catalog__icon').toggleClass('catalog__icon_active');
-  // });
 
   $('.catalog__accordion-btn').on('click', function(e) {
     let target = e.target.textContent;
@@ -356,7 +352,7 @@ $(document).ready(function () {
 
   let editionsSwiper = new Swiper(".editions__swiper-container", {
     // slidesPerColumnFill: "row",
-    speed: 4000,
+    speed: 400,
     slidesPerView: 3,
     slidesPerGroup: 3,
     // slidesPerColumn: 2,
