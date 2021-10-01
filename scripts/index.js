@@ -351,14 +351,14 @@ $(document).ready(function () {
   })
 
   let editionsSwiper = new Swiper(".editions__swiper-container", {
-    // slidesPerColumnFill: "row",
+    slidesPerColumnFill: "row",
     speed: 400,
     slidesPerView: 3,
     slidesPerGroup: 3,
     // slidesPerColumn: 2,
-    spaceBetween: 50,
+    // spaceBetween: 40,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".editions__nav > .swiper-pagination",
       type: "fraction"
     },
     navigation: {
@@ -369,12 +369,12 @@ $(document).ready(function () {
       1024:{
         slidesPerView: 2,
         slidesPerGroup: 6,
-        spaceBetween: 34,
+        // spaceBetween: 34,
       },
       1430:{
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 50,
+        // spaceBetween: 30,
       },
     },
 
