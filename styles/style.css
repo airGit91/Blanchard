@@ -775,6 +775,13 @@ img{
   align-items: flex-start;
 }
 
+.galery__content-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .galery__content{
   width: calc(400 / 1600 * 100%);
 }
