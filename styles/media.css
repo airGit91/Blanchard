@@ -393,7 +393,7 @@
   }
 
   .galery__swiper{
-    width: calc(1030 / 1600 * 100%);
+    /* width: calc(1030 / 1600 * 100%); */
   }
 
   .galery__text-container {

@@ -107,58 +107,105 @@ $(document).ready(function () {
   });
 
   let galerySwiper = new Swiper(".galery__swiper", {
-    slidesPerColumnFill: "row",
-    speed: 400,
+    // slidesPerColumnFill: "row",
+    // speed: 400,
+    // slidesPerView: 3,
+    // slidesPerGroup: 3,
+    // slidesPerColumn: 2,
+    // spaceBetween: 50,
+    // pagination: {
+    //   el: ".galery__swiper-nav > .swiper-pagination",
+    //   type: "fraction"
+    // },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev"
+    // },
+    // breakpoints:{
+    //   320:{
+    //     slidesPerView: 1,
+    //     slidesPerGroup: 1,
+    //     slidesPerColumn: 1,
+    //     // spaceBetween: 34,
+    //   },
+
+    //   768:{
+    //     slidesPerView: 2,
+    //     slidesPerGroup: 6,
+    //     slidesPerColumn: 2,
+    //     spaceBetween: 34,
+    //   },
+
+    //   1024:{
+    //     slidesPerView: 2,
+    //     slidesPerGroup: 6,
+    //     slidesPerColumn: 2,
+    //     spaceBetween: 34,
+    //   },
+
+    //   1151:{
+    //     slidesPerView: 3,
+    //     slidesPerGroup: 3,
+    //     slidesPerColumn: 3,
+    //     spaceBetween: 50,
+    //   },
+    // },
+
     slidesPerView: 3,
-    slidesPerGroup: 3,
-    slidesPerColumn: 2,
-    spaceBetween: 50,
+    speed: 400,
+    grid: {
+      rows: 1,
+      fill: "row"
+    },
+    spaceBetween: 20,
     pagination: {
-      el: ".galery__swiper-nav > .swiper-pagination",
+      el: ".galery .swiper-pagination",
       type: "fraction"
     },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
-    breakpoints:{
-      320:{
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        slidesPerColumn: 1,
-        // spaceBetween: 34,
+
+    breakpoints: {
+      441: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2
+        },
+        spaceBetween: 30
       },
 
       768:{
         slidesPerView: 2,
-        slidesPerGroup: 6,
-        slidesPerColumn: 2,
+        grid: {
+          rows: 2,
+          column: 2,
+        },
         spaceBetween: 34,
       },
 
-      1024:{
+      1025:{
         slidesPerView: 2,
-        slidesPerGroup: 6,
-        slidesPerColumn: 2,
-        spaceBetween: 34,
-      },
-
-      1151:{
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        slidesPerColumn: 2,
+        grid: {
+          rows: 2,
+          column: 2,
+        },
         spaceBetween: 50,
       },
+
+      1150: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grid: {
+          rows: 2,
+          column: 2,
+        },
+        spaceBetween: 50,
+      }
     },
 
-    on: {
-      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
-      beforeResize: function () {
-        this.slides.forEach((el) => {
-          el.style.marginTop = "";
-        });
-      }
-    }
+    a11y: false
   });
 
   $( ".catalog__list-accordion" ).accordion({
