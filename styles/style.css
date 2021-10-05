@@ -2316,7 +2316,7 @@ input::-webkit-inner-spin-button {
 
 .editions__slide {
   position: relative;
-  flex-basis: 33.5%;
+  /* flex-basis: 33.5%; */
   padding-left: 5px;
   padding-bottom: 5px;
   height: auto;

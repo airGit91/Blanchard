@@ -16,7 +16,7 @@
   }
 
   .header__top{
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   .header__mob-menu{
@@ -243,16 +243,16 @@
 
   .hero__text{
     width: 661px;
-    margin-bottom: 137px;
+    margin-bottom: 133px;
   }
 
-  /* .hero__link{
-    margin-top: 137px;
-  } */
-
   .galery {
-    padding-top: 80px;
+    padding-top: 82px;
     padding-bottom: 80px;
+  }
+
+  .galery__swiper-block{
+    width: calc(1030 / 1600 * 100%);
   }
 
   .galery__slide {
@@ -281,8 +281,13 @@
     line-height: 32px;
   }
 
+  .catalog{
+    margin-bottom: 80px;
+  }
+
   .catalog__list-lang{
     padding-bottom: 0;
+    padding-left: 3px;
   }
 
   .catalog__artist{
@@ -313,7 +318,7 @@
   }
 
   .events__title{
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 
   .events__item:not(:nth-child(3n)){
@@ -321,7 +326,7 @@
   }
 
   .events__slide{
-    /* max-width: 290px; */
+    width: calc(100% / 3 - 35px);
   }
 
   .events__pic{
@@ -356,11 +361,20 @@
   }
 
   .events__slider-container{
-    margin-bottom: 51px;
+    margin-bottom: 23px;
   }
 
   .events__all-btn{
     padding: 19px 34px;
+  }
+
+  .editions{
+    min-height: 761px;
+  }
+
+  .editions__content{
+    width: calc(424 / 1600 * 100%);
+    padding-top: 77px;
   }
 
   .editions__swiper-container{
@@ -368,7 +382,37 @@
   }
 
   .editions__categories{
-    margin-right: 49px;
+    margin-right: 0;
+  }
+
+  .editions__checkbox {
+    margin-bottom: 27px;
+  }
+
+  .editions__label{
+    margin-bottom: 13.5px;
+  }
+
+  .editions__right-swiper {
+    width: calc(1100 / 1600 * 100%);
+    padding-top: 118px;
+  }
+
+  .editions__nav > .swiper-button-prev{
+    left: 6%;
+  }
+
+  .editions__nav > .swiper-pagination{
+    padding-left: 55px;
+  }
+
+  .editions__nav > .swiper-button-next{
+    left: 107px;
+  }
+
+  .editions__details{
+    padding-top: 13px;
+    padding-right: 10px;
   }
 
   .editions__block{
@@ -379,6 +423,10 @@
   .events__img{
     /* max-width: 100%; */
     width: 100%;
+  }
+
+  .projects__content > br{
+    display: none;
   }
 }
 
@@ -392,13 +440,21 @@
     width: calc(482 / 1600 * 100%);
   }
 
-  .galery__swiper{
-    /* width: calc(1030 / 1600 * 100%); */
-  }
+  /* .galery__swiper{
+    width: calc(1030 / 1600 * 100%);
+  } */
+
+  /* .galery__swiper-block{
+    width: calc(1030 / 1600 * 100%);
+  } */
 
   .galery__text-container {
     width: calc(470/ 1600 * 100%);
     padding-top: 10px;
+  }
+
+  .catalog{
+    padding-top: 80px;
   }
 
   .catalog__Beneditto{
@@ -498,9 +554,13 @@
     background-image: url(../images/768/bc-galery-768.jpg);
   }
 
-  .galery__content{
-    width: 100%;
+  .galery__swiper-block{
+    width: calc(1024 / 1600 * 100%);
   }
+
+  /* .galery__content{
+    width: 100%;
+  } */
 
   .galery__filter{
     margin-bottom: 16px;

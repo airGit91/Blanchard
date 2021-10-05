@@ -170,38 +170,21 @@ $(document).ready(function () {
     breakpoints: {
       441: {
         slidesPerView: 2,
+        slidesPerGroup: 5,
         grid: {
           rows: 2
         },
         spaceBetween: 30
       },
 
-      768:{
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-          column: 2,
-        },
-        spaceBetween: 34,
-      },
-
-      1025:{
-        slidesPerView: 2,
-        grid: {
-          rows: 2,
-          column: 2,
-        },
-        spaceBetween: 50,
-      },
-
-      1150: {
+      1200: {
         slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerGroup: 5,
+        slidesPerColumn: 3,
         grid: {
-          rows: 2,
-          column: 2,
+          rows: 2
         },
-        spaceBetween: 50,
+        spaceBetween: 50
       }
     },
 
@@ -402,8 +385,10 @@ $(document).ready(function () {
     speed: 400,
     slidesPerView: 3,
     slidesPerGroup: 3,
-    // slidesPerColumn: 2,
-    // spaceBetween: 40,
+    grid: {
+      rows: 1,
+      fill: "row"
+    },
     pagination: {
       el: ".editions__nav > .swiper-pagination",
       type: "fraction"
@@ -413,10 +398,13 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev"
     },
     breakpoints:{
-      1024:{
+      441: {
         slidesPerView: 2,
-        slidesPerGroup: 6,
-        // spaceBetween: 34,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+        },
+        spaceBetween: 30,
       },
       1430:{
         slidesPerView: 3,
