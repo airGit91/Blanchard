@@ -107,50 +107,6 @@ $(document).ready(function () {
   });
 
   let galerySwiper = new Swiper(".galery__swiper", {
-    // slidesPerColumnFill: "row",
-    // speed: 400,
-    // slidesPerView: 3,
-    // slidesPerGroup: 3,
-    // slidesPerColumn: 2,
-    // spaceBetween: 50,
-    // pagination: {
-    //   el: ".galery__swiper-nav > .swiper-pagination",
-    //   type: "fraction"
-    // },
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev"
-    // },
-    // breakpoints:{
-    //   320:{
-    //     slidesPerView: 1,
-    //     slidesPerGroup: 1,
-    //     slidesPerColumn: 1,
-    //     // spaceBetween: 34,
-    //   },
-
-    //   768:{
-    //     slidesPerView: 2,
-    //     slidesPerGroup: 6,
-    //     slidesPerColumn: 2,
-    //     spaceBetween: 34,
-    //   },
-
-    //   1024:{
-    //     slidesPerView: 2,
-    //     slidesPerGroup: 6,
-    //     slidesPerColumn: 2,
-    //     spaceBetween: 34,
-    //   },
-
-    //   1151:{
-    //     slidesPerView: 3,
-    //     slidesPerGroup: 3,
-    //     slidesPerColumn: 3,
-    //     spaceBetween: 50,
-    //   },
-    // },
-
     slidesPerView: 3,
     speed: 400,
     grid: {
@@ -172,9 +128,9 @@ $(document).ready(function () {
         slidesPerView: 2,
         slidesPerGroup: 5,
         grid: {
-          rows: 2
+          rows: 2,
         },
-        spaceBetween: 30
+        spaceBetween: 30,
       },
 
       1200: {
@@ -182,9 +138,9 @@ $(document).ready(function () {
         slidesPerGroup: 5,
         slidesPerColumn: 3,
         grid: {
-          rows: 2
+          rows: 2,
         },
-        spaceBetween: 50
+        spaceBetween: 50,
       }
     },
 
@@ -409,7 +365,7 @@ $(document).ready(function () {
       1430:{
         slidesPerView: 3,
         slidesPerGroup: 3,
-        // spaceBetween: 30,
+        spaceBetween: 60,
       },
     },
 

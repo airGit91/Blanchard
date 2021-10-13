@@ -332,7 +332,7 @@
   .events__pic{
     /* max-width: 290px; */
     width: 100%;
-    max-height: 200px;
+    /* max-height: 200px; */
   }
 
   .events__place, .events__date {
