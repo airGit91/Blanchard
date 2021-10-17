@@ -51,13 +51,15 @@ $(document).ready(function () {
     $('.header__top-nav').toggleClass('header__top-nav_open');
   });
 
-  $('.header__top-btn').click(function() {
+  $('.header__top-btn-button').click(function() {
     $('.header__top-search').toggleClass('header__active-search');
     $('.header__top-input').toggleClass('header__active-input');
     $('.header__picture').toggleClass('header__mob-off');
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
-  })
+    $('.header__top-btn-button').addClass('header__top-btn-button_active');
+  });
+
 
   $('.header__top-search-close').click(function(){
     $('.header__top-search').toggleClass('header__active-search');
@@ -65,7 +67,20 @@ $(document).ready(function () {
     $('.header__picture').toggleClass('header__mob-off');
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
-  })
+  });
+
+  $(document).mouseup(function (e){
+    let container = $(".header__active-search");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.header__top-search').removeClass('header__active-search');
+      $('.header__top-btn-button').removeClass('header__top-btn-button_active');
+      // alert('Клик снаружи.');
+    } else {
+      // alert('Клик внутри.');
+      // $('.header__top-btn-button').removeClass('header__top-btn-button_active');
+    }
+});
 
   function galeryChoicesMargin(){
     if(window.matchMedia('(max-width: 1023px)').matches){
@@ -365,7 +380,7 @@ $(document).ready(function () {
       1430:{
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 60,
+        spaceBetween: 50,
       },
     },
 
