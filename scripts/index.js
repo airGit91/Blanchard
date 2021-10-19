@@ -51,21 +51,42 @@ $(document).ready(function () {
     $('.header__top-nav').toggleClass('header__top-nav_open');
   });
 
-  $('.header__top-btn').click(function() {
-    $('.header__top-search').toggleClass('header__active-search');
-    $('.header__top-input').toggleClass('header__active-input');
+  $('.header__top-btn_open-form').click(() => {
+    $('.header__top-btn_open-form').hide();
+    $('.header__top-search').css('display', 'flex');
+    $('.header__picture').toggleClass('header__mob-off');
+    $('.header__mob-menu').toggleClass('header__mob-off');
+    $('.header__top-search-close').toggleClass('header__top-search-close-active');
+  });
+
+  $('.header__top-search').click(() => {
+    $('.header__top-btn_open-form').hide();
+  });
+
+
+  $(document).mouseup((e) => { // событие клика по веб-документу
+    let formBtn = $(".header__top-btn_open-form"); // тут указываем ID элемента
+    let formHead = $(".header__top-search");
+    if (!formBtn.is(e.target) // если клик был не по нашему блоку
+        && formBtn.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.header__top-btn_open-form').show();
+    }
+    if (!formHead.is(e.target) // если клик был не по нашему блоку
+        && formHead.has(e.target).length === 0) { // и не по его дочерним элементам
+          $('.header__top-search').hide();
+    }
+  });
+
+  $('.header__top-search-close').click(function(){
+    $('.header__top-search').hide();
     $('.header__picture').toggleClass('header__mob-off');
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
   })
 
-  $('.header__top-search-close').click(function(){
-    $('.header__top-search').toggleClass('header__active-search');
-    $('.header__top-input').toggleClass('header__active-input');
-    $('.header__picture').toggleClass('header__mob-off');
-    $('.header__mob-menu').toggleClass('header__mob-off');
-    $('.header__top-search-close').toggleClass('header__top-search-close-active');
-  })
+  $('.header__top-search-close-active').click(function(){
+    alert('BTN');
+  });
 
   function galeryChoicesMargin(){
     if(window.matchMedia('(max-width: 1023px)').matches){

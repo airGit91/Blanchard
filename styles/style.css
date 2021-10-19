@@ -112,6 +112,7 @@ img{
 }
 
 .header__top{
+  position: relative;
   padding-top: 32px;
   padding-bottom: 25px;
   background-color: #000;
@@ -931,11 +932,6 @@ img{
 }
 
 .galery__swiper{
-  /* position: relative;
-  width: calc(1155 / 1600 * 100%);
-  margin-left: auto;
-  flex-shrink: 0;
-  padding-top: 82px; */
   overflow: hidden;
 }
 
@@ -1432,9 +1428,6 @@ img{
   font-weight: 600;
   line-height: 32px;
   color: #000;
-  /* background-color: inherit;
-  border: none;
-  outline: none; */
 }
 
 .catalog__btn:before{
@@ -1463,69 +1456,6 @@ img{
 .catalog__item-accordion:hover > .catalog__title-accordion > .catalog__btn{
   color: var(--second-hover);
 }
-
-/* .catalog__item-accordion:hover > .catalog__title-accordion > .catalog__icon{
-  background-color: var(--border-hover);
-}
-
-.catalog__item-accordion:active > .catalog__title-accordion > .catalog__icon{
-  background-color: var(--border-hover);
-  border: 2px solid #9D5CD0;
-}
-
-.catalog__icon_active{
-  background-color: var(--border-hover);
-  border: 2px solid #9D5CD0;
-}
-
-.catalog__icon {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: lightgray;
-  transform: translateY(-50%) rotate(45deg);
-  transition: background-color.3s, .6s ease, transform .3s, .6s ease;
-}
-
-.catalog__icon:before,
-.catalog__icon:after {
-  content: "";
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  transform: translate(-100%, -100%);
-  background-color: #000;
-  transition: background-color, .3s ease;
-}
-
-.catalog__icon:before {
-  width: 26%;
-  height: 1px;
-}
-
-.catalog__icon:after {
-  width: 1px;
-  height: 26%;
-}
-
-.catalog__title-accordion:hover > .catalog__icon,
-.catalog__title-accordion:focus > .catalog__icon {
-  background-color: var(--border-hover);
-}
-
-.catalog__title-accordion:hover > .catalog__icon:before,
-.catalog__title-accordion:hover > .catalog__icon:after,
-.catalog__title-accordion:focus > .catalog__icon:before,
-.catalog__title-accordion:focus > .catalog__icon:after {
-  background-color: #000;
-}
-
-.catalog__title-accordion.ui-accordion-header-active .catalog__icon {
-  transform: translateY(-50%) rotate(225deg);
-} */
 
 .ui-accordion-header-icon{
   display: none;
@@ -1994,6 +1924,8 @@ img{
 .editions{
   min-height: 765px;
   margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 60px;
   background-image: url(../images/1920/bc-editions-1920.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -2006,7 +1938,6 @@ img{
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 81px 0 60px 50px;
 }
 
 .editions__content{
@@ -2048,7 +1979,7 @@ img{
 }
 
 .editions__checkbox{
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .editions__form{
@@ -2058,7 +1989,7 @@ img{
 .editions__label {
   position: relative;
   display: inline-block;
-  margin-bottom: 13.3px;
+  margin-bottom: 13px;
   padding-left: 25px;
   cursor: pointer;
   transition: all .3s ease;
@@ -2229,7 +2160,7 @@ input::-webkit-inner-spin-button {
 }
 
 .editions__right-swiper{
-  width: calc(1160 / 1600 * 100%);
+  width: calc(1155 / 1600 * 100%);
   margin-right: 0;
   padding-top: 40px;
 }
@@ -2237,10 +2168,11 @@ input::-webkit-inner-spin-button {
 .editions__nav{
   position: relative;
   display: inline-flex;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .editions__swiper{
+  padding-left: 5px;
   overflow: hidden;
 }
 
@@ -2327,7 +2259,6 @@ input::-webkit-inner-spin-button {
 .editions__slide {
   position: relative;
   display: block;
-  padding-left: 5px;
   padding-bottom: 5px;
   height: auto;
   overflow: hidden;
@@ -2347,9 +2278,8 @@ input::-webkit-inner-spin-button {
 .editions__details {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
-  margin-bottom: 15px;
-  padding-right: 22px;
+  padding-top: 22px;
+  margin-bottom: 18px;
 }
 
 .editions__name {
@@ -2373,6 +2303,7 @@ input::-webkit-inner-spin-button {
 .editions__btn {
   position: relative;
   display: block;
+  margin-left: 4px;
   outline: none;
   background: transparent;
   color: #fff;
@@ -2860,7 +2791,7 @@ input::-webkit-inner-spin-button {
 
 .contacts__yandex-map{
   min-height: 320px;
-  width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2)); /* 1078 - в данном случае это ширина карты внутри контейнера, её можно менять */
+  width: calc(1078 / 1600 * 100% + ((100vw - 100%) / 2));
   margin-right: calc((-100vw + 100%) / 2);
   margin-top: -1px;
 }
