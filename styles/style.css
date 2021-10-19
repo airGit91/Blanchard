@@ -243,6 +243,10 @@ img{
   background-color: inherit;
 }
 
+.header__top-btn-button{
+  display: none;
+}
+
 .header__bottom{
   position: absolute;
   z-index: 3;

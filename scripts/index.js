@@ -82,7 +82,20 @@ $(document).ready(function () {
     $('.header__picture').toggleClass('header__mob-off');
     $('.header__mob-menu').toggleClass('header__mob-off');
     $('.header__top-search-close').toggleClass('header__top-search-close-active');
-  })
+  });
+
+  $(document).mouseup(function (e){
+    let container = $(".header__active-search");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.header__top-search').removeClass('header__active-search');
+      $('.header__top-btn-button').removeClass('header__top-btn-button_active');
+      // alert('Клик снаружи.');
+    } else {
+      // alert('Клик внутри.');
+      // $('.header__top-btn-button').removeClass('header__top-btn-button_active');
+    }
+});
 
   $('.header__top-search-close-active').click(function(){
     alert('BTN');
@@ -386,7 +399,7 @@ $(document).ready(function () {
       1430:{
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 60,
+        spaceBetween: 50,
       },
     },
 
