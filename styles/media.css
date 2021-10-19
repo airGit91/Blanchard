@@ -251,21 +251,29 @@
 
   .hero > .container {
     padding-top: 115px;
-    padding-bottom: 117px;
+    padding-bottom: 115px;
   }
 
   .hero__title{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .hero__text{
     width: 661px;
-    margin-bottom: 133px;
+    margin-bottom: 135px;
   }
 
   .galery {
-    padding-top: 82px;
+    padding-top: 84px;
     padding-bottom: 80px;
+  }
+
+  .galery__title {
+    margin-bottom: 28px;
+  }
+
+  .galery__swiper-nav > .swiper-button-next{
+    left: 17%;
   }
 
   .galery__swiper-block{
@@ -353,11 +361,11 @@
   }
 
   .events__place, .events__date {
-    margin-right: 19px;
+    margin-right: 16px;
   }
 
   .events__content {
-    padding: 0 24px 0 35px;
+    padding: 0 22px 0 35px;
   }
 
   .events__info{
@@ -370,7 +378,7 @@
   }
 
   .events__place {
-    padding-top: 15px;
+    padding-top: 18px;
   }
 
   .events__btn{
@@ -382,11 +390,13 @@
   }
 
   .events__all-btn{
+    margin-bottom: 79px;
     padding: 19px 34px;
   }
 
   .editions{
     min-height: 761px;
+    padding-top: 2px;
   }
 
   .editions__content{

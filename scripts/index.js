@@ -90,10 +90,7 @@ $(document).ready(function () {
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $('.header__top-search').removeClass('header__active-search');
       $('.header__top-btn-button').removeClass('header__top-btn-button_active');
-      // alert('Клик снаружи.');
     } else {
-      // alert('Клик внутри.');
-      // $('.header__top-btn-button').removeClass('header__top-btn-button_active');
     }
 });
 
