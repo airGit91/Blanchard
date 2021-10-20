@@ -71,8 +71,8 @@ $(document).ready(function () {
         && formBtn.has(e.target).length === 0) { // и не по его дочерним элементам
           $('.header__top-btn_open-form').show();
     }
-    if (!formHead.is(e.target) // если клик был не по нашему блоку
-        && formHead.has(e.target).length === 0) { // и не по его дочерним элементам
+    if (!formHead.is(e.target)
+        && formHead.has(e.target).length === 0) {
           $('.header__top-search').hide();
     }
   });
@@ -393,6 +393,14 @@ $(document).ready(function () {
         },
         spaceBetween: 30,
       },
+      960:{
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+        },
+        spaceBetween: 50,
+      },
       1430:{
         slidesPerView: 3,
         slidesPerGroup: 3,
@@ -430,8 +438,7 @@ $(document).ready(function () {
 
   let projectsSwiper = new Swiper(".projects__swiper-container", {
     slidesPerView: 3,
-    slidesPerView: 'auto',
-    cssMode: true,
+    // cssMode: true,
     spaceBetween: 50,
     pagination: {
       clickable: true,
@@ -440,7 +447,19 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
-    // breakpoints:{
+    breakpoints:{
+      960:{
+        slidesPerView: 2,
+        grid: {
+          rows: 1,
+        },
+        spaceBetween: 50,
+      },
+      1430:{
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
     //   1024:{
     //     slidesPerView: 2,
     //     slidesPerGroup: 6,
@@ -463,8 +482,8 @@ $(document).ready(function () {
     }
   });
 
-  var selector = document.querySelector("input[type='tel']");
-  var im = new Inputmask("+7 (999)-999-99-99");
+  let selector = document.querySelector("input[type='tel']");
+  let im = new Inputmask("+7 (999)-999-99-99");
 
   im.mask(selector);
 

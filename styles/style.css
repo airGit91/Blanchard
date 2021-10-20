@@ -247,6 +247,10 @@ img{
   display: none;
 }
 
+.header__top-btn_open-form{
+  display: none;
+}
+
 .header__bottom{
   position: absolute;
   z-index: 3;
@@ -1983,7 +1987,7 @@ img{
 }
 
 .editions__checkbox{
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .editions__form{
@@ -1993,7 +1997,7 @@ img{
 .editions__label {
   position: relative;
   display: inline-block;
-  margin-bottom: 13px;
+  margin-bottom: 13.5px;
   padding-left: 25px;
   cursor: pointer;
   transition: all .3s ease;
@@ -2473,9 +2477,10 @@ input::-webkit-inner-spin-button {
 .projects__slide{
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  width: 450px;
+  /* width: 450px; */
   height: 150px;
   background-color: #FFFFFF;
   border: 1px solid #CACACA;
@@ -2502,8 +2507,8 @@ input::-webkit-inner-spin-button {
 }
 
 .projects__swiper > .swiper-button-next{
-  top: 54%;
-  right: 0;
+  top: 56%;
+  right: -1px;
   width: 30px;
   height: 30px;
   background-color: #ECECEC;
@@ -2517,7 +2522,7 @@ input::-webkit-inner-spin-button {
 }
 
 .projects__swiper > .swiper-button-prev{
-  top: 54%;
+  top: 56%;
   left: 0;
   width: 30px;
   height: 30px;
@@ -2583,14 +2588,6 @@ input::-webkit-inner-spin-button {
   margin: 0 auto;
 }
 
-.projects__img-1{
-
-}
-
-.projects__img-1:hover{
-
-}
-
 .contacts{
   overflow-x: hidden;
 }
@@ -2615,12 +2612,12 @@ input::-webkit-inner-spin-button {
   width: calc(522 / 1600 * 100%);
   padding-top: 125px;
   padding-right: 120px;
-  padding-bottom: 123px;
+  padding-bottom: 120px;
   border-right: 1px solid #CACACA;
 }
 
 .contacts__content-title{
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -2801,8 +2798,8 @@ input::-webkit-inner-spin-button {
 }
 
 .footer{
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 51px;
+  padding-bottom: 45px;
   background-color: #000;
 }
 
