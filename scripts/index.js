@@ -438,7 +438,7 @@ $(document).ready(function () {
 
   let projectsSwiper = new Swiper(".projects__swiper-container", {
     slidesPerView: 3,
-    // cssMode: true,
+    cssMode: true,
     spaceBetween: 50,
     pagination: {
       clickable: true,

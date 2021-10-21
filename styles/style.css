@@ -2466,12 +2466,16 @@ input::-webkit-inner-spin-button {
   color: var(--dark-gray);
 }
 
+.projects__slider-wrapper{
+  display: flex;
+  align-items: center;
+}
+
 .projects__swiper{
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-left: 75px;
-  padding-right: 70px;
+  margin-right: 45px;
 }
 
 .projects__slide{
@@ -2501,14 +2505,12 @@ input::-webkit-inner-spin-button {
   filter: none;
 }
 
-.projects__swiper > .swiper-button-next:after,
-.projects__swiper > .swiper-button-prev:after{
-  content: '';
-}
-
-.projects__swiper > .swiper-button-next{
-  top: 56%;
-  right: -1px;
+.projects__slider-wrapper > .swiper-button-next,
+.projects__slider-wrapper > .swiper-button-prev{ /*.projects__slider-btn*/
+  position: relative;
+  top: 12px;
+  left: 0;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   background-color: #ECECEC;
@@ -2521,53 +2523,47 @@ input::-webkit-inner-spin-button {
   transition-timing-function: ease;
 }
 
-.projects__swiper > .swiper-button-prev{
-  top: 56%;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  background-color:#ECECEC;
-  border: 2px solid transparent;
-  border-radius: 50%;
-  background-image: url(../icons/arr-projects.svg);
-  background-repeat: no-repeat;
-  background-position: 40% 50%;
+.projects__slider-wrapper > .swiper-button-prev{ /*.projects__slider-btn_prev*/
+  margin-right: 45px;
   transform: rotate(180deg);
-  transition-duration: .3s;
-  transition-timing-function: ease;
 }
 
-.projects__swiper > .swiper-button-next:focus{
+.projects__slider-wrapper > .swiper-button-next:after,
+.projects__slider-wrapper > .swiper-button-prev:after{
+  content: '';
+}
+
+.projects__slider-wrapper > .swiper-button-next:focus{
   outline: none;
   border-color: var(--purple);
   border-radius: 50%;
 }
 
-.projects__swiper > .swiper-button-next:hover{
+.projects__slider-wrapper > .swiper-button-next:hover{
   background-color: var(--hover);
 }
 
-.projects__swiper > .swiper-button-next:active{
+.projects__slider-wrapper > .swiper-button-next:active{
   border-color:var(--purple);
   border-radius: 50%;
   background-color: var(--hover);
 }
 
-.projects__swiper > .swiper-button-prev:focus{
+.projects__slider-wrapper > .swiper-button-prev:focus{
   outline: none;
   border-color: var(--purple);
   border-radius: 50%;
   transform: rotate(180deg);
 }
 
-.projects__swiper > .swiper-button-prev:hover{
-  background-color: var(--second-hover);
+.projects__slider-wrapper > .swiper-button-prev:hover{
+  background-color: var(--hover);
 }
 
-.projects__swiper > .swiper-button-prev:active{
-  border-color:#000;
+.projects__slider-wrapper > .swiper-button-prev:active{
+  border-color:var(--purple);
   border-radius: 50%;
-  background-color: var(--second-hover);
+  background-color: var(--hover);
   transform: rotate(180deg);
 }
 

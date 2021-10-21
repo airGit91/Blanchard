@@ -469,13 +469,15 @@
     margin-bottom: 24px;
   }
 
+  .projects__slider-wrapper > .swiper-button-prev{
+    margin-right: 24px;
+  }
+
   .projects__swiper {
-    padding-left: 50px;
-    padding-right: 2px;
+    margin-right: 24px;
   }
 
   .projects__slide{
-    /* width: 384px; */
     height: 128px;
   }
 
