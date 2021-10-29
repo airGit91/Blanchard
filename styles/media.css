@@ -878,11 +878,33 @@
   }
 
   .editions__content{
+    width: 100%;
     padding-top: 82px;
   }
 
   .container-editions{
     flex-direction: column;
+  }
+
+  .editions__form {
+    display: flex;
+    height: 160px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  .editions__form > .editions__label:nth-child(7){
+    width: 244px;
+  }
+
+  .editions__checkbox{
+    margin-bottom: 24px;
+  }
+
+  .editions__right-swiper{
+    width: 100%;
+    padding-top: 56px;
   }
 }
 
