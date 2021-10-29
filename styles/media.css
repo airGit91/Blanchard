@@ -903,8 +903,21 @@
   }
 
   .editions__right-swiper{
-    width: 100%;
+    width: calc(1100 / 1152 * 100%);
     padding-top: 56px;
+    padding-left: 23px;
+  }
+
+  .editions__nav > .swiper-button-next{
+    left: 87%;
+  }
+
+  .editions__nav > .swiper-button-prev{
+    left: -27%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    left: -28px;
   }
 }
 
