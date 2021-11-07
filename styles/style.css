@@ -1739,6 +1739,7 @@ img{
 
 .events__slider-container{
   margin-bottom: 26px;
+  overflow: hidden;
 }
 
 .events__slides-wrap {
@@ -1756,13 +1757,17 @@ img{
   border: 1px solid var(--gray);
 }
 
+.slide.is-hidden {
+  display: none;
+}
+
 .events__list > .events__item:nth-child(n+4){
   display: none;
 }
 
 .events__pic{
   width: 100%;
-  max-height: 300px;
+  /* max-height: 300px; */
   margin-bottom: -5px;
 }
 

@@ -335,7 +335,7 @@ $(window).resize(headerForm);
     $('.events__all-btn').css("display", "none");
   });
 
-  const MOBILE_WIDTH = 580;
+  const MOBILE_WIDTH = 768;
 
   const sliderParams = {
     paginationClassName: 'events-pagination',
