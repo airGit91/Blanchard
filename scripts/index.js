@@ -441,6 +441,14 @@ $(window).resize(headerForm);
       prevEl: ".swiper-button-prev"
     },
     breakpoints:{
+      320:{
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 4,
+        },
+        spaceBetween: 30,
+      },
       441: {
         slidesPerView: 2,
         slidesPerGroup: 2,
@@ -616,4 +624,8 @@ $(window).resize(headerForm);
 
     myMap.geoObjects.add(myPlacemarkWithContent);
   });
+
+  $('.checkbox__title').on('click', () => {
+    $('.editions__label').toggleClass('editions__label_active');
+  })
 });
