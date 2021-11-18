@@ -1616,12 +1616,18 @@
 
   .editions__details{
     flex-direction: column;
+    margin-bottom: 13px;
+    padding-top: 7px;
     font-size: 12px;
+  }
+
+  .editions__info{
+    margin-bottom: 4px;
   }
 
   .editions__btn{
     margin-left: 0;
-    padding: 9px 32px;
+    padding: 11px 34px;
     font-size: 12px;
   }
 
@@ -1633,4 +1639,11 @@
   .projects__content{
     font-size: 16px;
   }
+
+  .editions__right-swiper {
+    width: calc(1100 / 1110 * 100%);
+    padding-top: 50px;
+  }
+
+
 }
