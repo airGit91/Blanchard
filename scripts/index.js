@@ -512,6 +512,13 @@ $(window).resize(headerForm);
       prevEl: ".swiper-button-prev"
     },
     breakpoints:{
+      320:{
+        slidesPerView: 1,
+        grid: {
+          rows: 1,
+        },
+        spaceBetween: 50,
+      },
       660:{
         slidesPerView: 2,
         // grid: {
