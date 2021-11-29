@@ -247,7 +247,7 @@ img{
   display: none;
 }
 
-.header__top-btn_open-form{
+.header__top-btn-open-form{
   display: none;
 }
 
@@ -2591,6 +2591,10 @@ input::-webkit-inner-spin-button {
 
 .contacts{
   overflow-x: hidden;
+}
+
+.contacts__mobile-text{
+  display: none;
 }
 
 .contacts__wrap {

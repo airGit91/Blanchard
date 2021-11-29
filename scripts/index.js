@@ -53,8 +53,8 @@ $(document).ready(function () {
 
 headerForm = () => {
   if(window.matchMedia('(max-width: 1430px)').matches){
-    $('.header__top-btn_open-form').click(() => {
-      $('.header__top-btn_open-form').hide();
+    $('.header__top-btn-open-form').click(() => {
+      $('.header__top-btn-open-form').hide();
       $('.header__top-search').css('display', 'flex');
       $('.header__picture').toggleClass('header__mob-off');
       $('.header__mob-menu').toggleClass('header__mob-off');
@@ -62,15 +62,15 @@ headerForm = () => {
     });
 
     $('.header__top-search').click(() => {
-      $('.header__top-btn_open-form').hide();
+      $('.header__top-btn-open-form').hide();
     });
 
     $(document).mouseup((e) => { // событие клика по веб-документу
-      let formBtn = $(".header__top-btn_open-form"); // тут указываем ID элемента
+      let formBtn = $(".header__top-btn-open-form"); // тут указываем ID элемента
       let formHead = $(".header__top-search");
       if (!formBtn.is(e.target) // если клик был не по нашему блоку
           && formBtn.has(e.target).length === 0) { // и не по его дочерним элементам
-            $('.header__top-btn_open-form').show();
+            $('.header__top-btn-open-form').show();
       }
       if (!formHead.is(e.target)
           && formHead.has(e.target).length === 0) {
@@ -83,7 +83,7 @@ headerForm = () => {
       $('.header__picture').toggleClass('header__mob-off');
       $('.header__mob-menu').toggleClass('header__mob-off');
       $('.header__top-search-close').toggleClass('header__top-search-close-active');
-      $('.header__top-btn_open-form').show()
+      $('.header__top-btn-open-form').show()
     });
 
     $(document).mouseup(function (e){
@@ -100,8 +100,8 @@ headerForm = () => {
 headerForm();
 $(window).resize(headerForm);
 
-  // $('.header__top-btn_open-form').click(() => {
-  //   $('.header__top-btn_open-form').hide();
+  // $('.header__top-btn-open-form').click(() => {
+  //   $('.header__top-btn-open-form').hide();
   //   $('.header__top-search').css('display', 'flex');
   //   $('.header__picture').toggleClass('header__mob-off');
   //   $('.header__mob-menu').toggleClass('header__mob-off');
@@ -109,16 +109,16 @@ $(window).resize(headerForm);
   // });
 
   // $('.header__top-search').click(() => {
-  //   $('.header__top-btn_open-form').hide();
+  //   $('.header__top-btn-open-form').hide();
   // });
 
 
   // $(document).mouseup((e) => { // событие клика по веб-документу
-  //   let formBtn = $(".header__top-btn_open-form"); // тут указываем ID элемента
+  //   let formBtn = $(".header__top-btn-open-form"); // тут указываем ID элемента
   //   let formHead = $(".header__top-search");
   //   if (!formBtn.is(e.target) // если клик был не по нашему блоку
   //       && formBtn.has(e.target).length === 0) { // и не по его дочерним элементам
-  //         $('.header__top-btn_open-form').show();
+  //         $('.header__top-btn-open-form').show();
   //   }
   //   if (!formHead.is(e.target)
   //       && formHead.has(e.target).length === 0) {
