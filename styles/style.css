@@ -56,7 +56,8 @@ body,
 .ui-widget button {
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
-  }
+}
+
 
 ul{
     margin: 0;
@@ -391,7 +392,9 @@ img{
 }
 
 .header__dropdown{
+  position: absolute;
   bottom: 0;
+  z-index: 1;
   transform: translateY(100%);
   display: none;
   padding: 40px 20px 40px 40px;
@@ -401,10 +404,6 @@ img{
 .header__dropdown-wrap{
   width: 240px;
   height: 260px;
-}
-
-.header__dropdown{
-  position: absolute;
 }
 
 .header__dropdown > ul {
@@ -504,64 +503,128 @@ img{
   background-image: url('../images/Моне.jpg');
 }
 
+.mone:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Моне.jpg);
+}
+
 .sisley{
   background-image: url('../images/Сислей.jpg');
+}
+
+.sisley:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Сислей.jpg);
 }
 
 .mane{
   background-image: url('../images/Мане.jpg');
 }
 
+.mane:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Мане.jpg);
+}
+
 .renuar{
   background-image: url('../images/Ренуар.jpg');
+}
+
+.renuar:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Ренуар.jpg);
 }
 
 .gog{
   background-image: url('../images/ВанГог.jpg');
 }
 
+.gog:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/ВанГог.jpg);
+}
+
 .sez{
   background-image: url('../images/Сезанн.jpg');
+}
+
+.sez:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Сезанн.jpg);
 }
 
 .gogen{
   background-image: url('../images/Гоген.jpg');
 }
 
+.gogen:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Гоген.jpg);
+}
+
 .sera{
   background-image: url('../images/Сера.jpg');
+}
+
+.sera:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Сера.jpg);
 }
 
 .kand{
   background-image: url('../images/Кандински.jpg');
 }
 
+.kand:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Кандински.jpg);
+}
+
 .marin{
   background-image: url('../images/Мариннети.jpg');
+}
+
+.marin:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Мариннети.jpg);
 }
 
 .malevich{
   background-image: url('../images/Малевич.jpg');
 }
 
+.malevich:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Малевич.jpg);
+}
+
 .picasso{
   background-image: url('../images/Пикассо.jpg');
+}
+
+.picasso:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Пикассо.jpg);
 }
 
 .karra{
   background-image: url('../images/Карра.jpg');
 }
 
+.karra:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Карра.jpg);
+}
+
 .prat{
   background-image: url('../images/Прателла.jpg');
+}
+
+.prat:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Прателла.jpg);
 }
 
 .severini{
   background-image: url('../images/Северинни.jpg');
 }
 
+.severini:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Северинни.jpg);
+}
+
 .balla{
   background-image: url('../images/Балла.jpg');
+}
+
+.balla:active{
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url(../images/Балла.jpg);
 }
 
 .header__bottom-search-btn{
@@ -1382,7 +1445,7 @@ img{
 
 .catalog__icon {
   position: absolute;
-  top: 52%;
+  top: 47%;
   right: 0;
   width: 50px;
   height: 50px;
@@ -1587,13 +1650,14 @@ img{
 }
 
 .catalog__accordion-description{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  column-count: 3;
   max-height: 338px;
   max-width: 738px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border: none;
 }
 
@@ -2275,7 +2339,6 @@ input::-webkit-inner-spin-button {
   padding-bottom: 5px;
   height: auto;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .editions__slide > picture{

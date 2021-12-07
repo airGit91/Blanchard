@@ -269,7 +269,7 @@ $(window).resize(headerForm);
   $('.france').on('click', function(){
     $('.catalog__lang-fra').fadeIn(1000);
     $('.catalog__lang-rus, .catalog__lang-ger, .catalog__lang-ita, .catalog__lang-bel').css('display','none');
-    $('.catalog__france').css('display', 'flex');
+    $('.catalog__france').css('display', 'block');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__germany').css('display','none');
     $('.catalog__Francesco').fadeIn(1000);
     $('.catalog__Ambrodjo, .catalog__Domenico, .catalog__Beneditto').css('display', 'none');
@@ -279,7 +279,7 @@ $(window).resize(headerForm);
   $('.germany').on('click', function(){
     $('.catalog__lang-ger').fadeIn(1000);
     $('.catalog__lang-rus, .catalog__lang-fra, .catalog__lang-ita, .catalog__lang-bel').css('display','none');
-    $('.catalog__germany').css('display', 'flex');
+    $('.catalog__germany').css('display', 'block');
     $('.catalog__belgium, .catalog__italy, .catalog__russia, .catalog__france').css('display','none');
     $('.catalog__Ambrodjo').fadeIn(1000);
     $('.catalog__Domenico, .catalog__Beneditto, .catalog__Francesco').css('display','none');
@@ -289,7 +289,7 @@ $(window).resize(headerForm);
   $('.italy').on('click', function(){
     $('.catalog__lang-ita').fadeIn(1000);
     $('.catalog__lang-rus, .catalog__lang-ger, .catalog__lang-fra, .catalog__lang-bel').css('display','none');
-    $('.catalog__italy').css('display', 'flex');
+    $('.catalog__italy').css('display', 'block');
     $('.catalog__belgium, .catalog__germany, .catalog__russia, .catalog__france').css('display','none');
     $('.catalog__Domenico').fadeIn(1000);
     $('.catalog__Francesco, .catalog__Ambrodjo, .catalog__Beneditto').css('display','none');
@@ -298,7 +298,7 @@ $(window).resize(headerForm);
 
   $('.russia').on('click', function(){
     $('.catalog__lang-rus').fadeIn(1000);
-    $('.catalog__russia').css('display', 'flex');
+    $('.catalog__russia').css('display', 'block');
     $('.catalog__lang-fra, .catalog__lang-ger, .catalog__lang-ita, .catalog__lang-bel').css('display','none');
     $('.catalog__belgium, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
     $('.catalog__Francesco').fadeIn(1000);
@@ -308,7 +308,7 @@ $(window).resize(headerForm);
 
   $('.belgium').on('click', function(){
     $('.catalog__lang-bel').fadeIn(1000);
-    $('.catalog__belgium').css('display', 'flex');
+    $('.catalog__belgium').css('display', 'block');
     $('.catalog__lang-rus, .catalog__lang-ger, .catalog__lang-ita, .catalog__lang-fra').css('display','none');
     $('.catalog__russia, .catalog__germany, .catalog__italy, .catalog__france').css('display','none');
     $('.catalog__Ambrodjo').fadeIn(1000);

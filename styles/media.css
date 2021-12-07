@@ -1,6 +1,6 @@
 @media only screen and (max-device-width: 1430px) and (-webkit-min-device-pixel-ratio: 1){
   .slidemenu-open{
-    overflow-y: scroll;
+    overflow: hidden;
   }
 
   .container{
@@ -25,7 +25,7 @@
     width: 36px;
     height: 28px;
     display: block;
-    z-index: 4;
+    z-index: 6;
     transition-duration: .3s;
     transition-timing-function: ease;
     cursor: pointer;
@@ -87,14 +87,14 @@
   }
 
   .open-menu:before {
-    width: 37.28px;
+    width: 29px;
     transform: rotate(45deg);
     top: 8px;
     transition-duration: 0.4s;
   }
 
   .open-menu:after {
-    width: 37.28px;
+    width: 29px;
     transform: rotate(-45deg);
     top: 8px;
     transition-duration: 0.4s;
@@ -123,13 +123,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 1000vh;
+    height: 768px;
     padding-top: 100px;
     padding-left: 50px;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.9);
-    z-index: 3;
+    z-index: 5;
     transition-duration: 0.4s;
+    overflow-y: scroll;
   }
 
   .header__top-list {
@@ -158,7 +159,7 @@
   .header__link-enter{
     border: 2px solid var(--purple);
     border-radius: 100px;
-    padding: 22px 88px;
+    padding: 22px 108px;
     background-position: 32% 50%;
   }
 
