@@ -50,37 +50,41 @@
         </a>
 
         <nav class="header__top-nav">
-            <ul class="header__top-list">
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">О нас</a>
-              </li>
+          <div class="header__mob-menu">
+            <span></span>
+          </div>
 
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">Галерея</a>
-              </li>
+          <ul class="header__top-list">
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">О нас</a>
+            </li>
 
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">Каталог</a>
-              </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Галерея</a>
+            </li>
 
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">События</a>
-              </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Каталог</a>
+            </li>
 
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">Издания</a>
-              </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">События</a>
+            </li>
 
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">Проекты</a>
-              </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Издания</a>
+            </li>
 
-              <li class="header__top-item">
-                <a href="#" class="header__top-link">Контакты</a>
-              </li>
-            </ul>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Проекты</a>
+            </li>
 
-            <a href="#" class="header__link-enter">Войти</a>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Контакты</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__link-enter">Войти</a>
         </nav>
 
         <button class="header__top-btn-open-form" type="button" aria-label="Поиск по сайту"></button>
@@ -1701,70 +1705,116 @@
           <h2 class="editions__title">Издания</h2>
 
           <form class="editions__categories" action="#" enctype="multipart/form-data" method="get">
-            <div class="editions__checkbox checkbox">
-              <h3 class="checkbox__title">Категории</h3>
-              <div class="editions__form">
+            <div class="editions__questions">
+              <button class="editions__heading editions__js-check-heading" type="button">Категории</button>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Бестселлеры</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-one">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Бестселлеры</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Искусство</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-two">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Искусство</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Архитектура</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-three">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Архитектура</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox" checked="checked">
-                  <span>Дизайн</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-four" checked>
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Дизайн</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span> Мода</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-five">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Мода</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Детям</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-six">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Детям</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Художественная литература</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-seven">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Художественная литература</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Публицистика</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-eight">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Публицистика</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Путеводители</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-nine">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Путеводители</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Философия</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-ten">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Философия</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Учебная литература</span>
-                </label>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-eleven">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Учебная литература</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
 
-                <label class="editions__label">
-                  <input type="checkbox">
-                  <span>Журналы и газеты</span>
-                </label>
-              </div>
+              <label class="editions__checkbox-wrap">
+                <input class="editions__checkbox visually-hidden" type="checkbox" name="check-twelve">
+                <span class="editions__checkbox-content">
+                  <span class="editions__visual-check"></span>
+                  <span class="editions__check-text">Журналы и газеты</span>
+                  <span class="editions__close-icon"></span>
+                </span>
+              </label>
             </div>
 
             <div class="editions__price price">
@@ -1921,7 +1971,7 @@
         <h2 class="projects__title">Проекты</h2>
 
         <p class="projects__content">
-          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское <button id="projects__tooltype-one" class="projects__tooltype" type="button"></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button id="projects__tooltype-two" class="projects__tooltype" type="button"></button> исключительно в разрезе маркетинговых и финансовых <button id="projects__tooltype-three" class="projects__tooltype" type="button"></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__content-link">blanchard-art.ru/projects/about</a>
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское <button class="projects__tooltype projects__tooltype-js" type="button" data-tippy-content="Пример современных тенденций - современная методология разработки"></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button class="projects__tooltype projects__tooltype-js" type="button" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"></button> исключительно в разрезе маркетинговых и финансовых <button class="projects__tooltype projects__tooltype-js" type="button" data-tippy-content="В стремлении повысить качество"></button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__content-link">blanchard-art.ru/projects/about</a>
         </p>
 
         <h3 class="projects__subtitle">Партнёры проектов:</h3>
@@ -2089,7 +2139,7 @@
       <a class="footer__logo" href="#">
         <picture class="footer__picture">
           <source srcset="./images/320/logo-320.svg" media="(max-width: 767px)">
-          <source srcset="./images/1024/logo-1024.svg" media="(max-width: 1023px)">
+          <!-- <source srcset="./images/1024/logo-1024.svg" media="(max-width: 1023px)"> -->
           <img src ="./images/1920/logo-1920.svg" alt="logo">
         </picture>
       </a>

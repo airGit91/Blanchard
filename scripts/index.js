@@ -47,6 +47,7 @@ $(document).ready(function () {
 
   $('.header__mob-menu').click(function() {
     $('body').toggleClass('slidemenu-open');
+    $('.container > .header__mob-menu').toggleClass('header__mob-menu_close');
     $('.header__mob-menu').toggleClass('open-menu');
     $('.header__top-nav').toggleClass('header__top-nav_open');
   });
@@ -335,7 +336,7 @@ $(window).resize(headerForm);
     $('.events__all-btn').css("display", "none");
   });
 
-  const MOBILE_WIDTH = 768;
+  const MOBILE_WIDTH = 767;
 
   const sliderParams = {
     paginationClassName: 'events-pagination',
@@ -482,20 +483,7 @@ $(window).resize(headerForm);
     }
   });
 
-  tippy('#projects__tooltype-one', {
-    content: 'Пример современных тенденций - современная методология разработки',
-    maxWidth: 264,
-    trigger: 'click',
-  });
-
-  tippy('#projects__tooltype-two', {
-    content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
-    maxWidth: 264,
-    trigger: 'click',
-  });
-
-  tippy('#projects__tooltype-three', {
-    content: 'В стремлении повысить качество',
+  tippy('.projects__tooltype-js', {
     maxWidth: 264,
     trigger: 'click',
   });
@@ -632,7 +620,12 @@ $(window).resize(headerForm);
     myMap.geoObjects.add(myPlacemarkWithContent);
   });
 
-  $('.checkbox__title').on('click', () => {
-    $('.editions__label').toggleClass('editions__label_active');
-  })
+  (() => {
+    const checkBtn = document.querySelector('.editions__js-check-heading');
+
+    checkBtn.addEventListener('click', function () {
+        this.classList.toggle('is-active');
+    });
+})();
+
 });
