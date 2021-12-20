@@ -58,6 +58,9 @@ body,
     scroll-behavior: smooth;
 }
 
+body{
+  min-width: 320px;
+}
 
 ul{
     margin: 0;

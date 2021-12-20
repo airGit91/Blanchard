@@ -37,7 +37,7 @@
 
   .header__top-nav > .header__mob-menu{
     position: absolute;
-    top: 9%;
+    top: 5%;
   }
 
   .header__mob-menu:focus{
@@ -878,6 +878,10 @@
     margin-bottom: 9px;
   }
 
+  .catalog__img{
+    max-width: 100%;
+  }
+
   .slide{
     padding-bottom: 76px;
   }
@@ -1151,9 +1155,9 @@
   }
 
   .hero__title{
-    width: 280px;
+    width: 269px;
     margin-bottom: 12px;
-    padding-left: 15px;
+    padding-left: 2px;
     text-align: center;
     font-size: 32px;
   }
@@ -1339,7 +1343,7 @@
   }
 
   .catalog__img{
-    max-width: 500px;
+    max-width: 100%;
   }
 
   .catalog__subtitle{
@@ -1422,12 +1426,20 @@
     flex-direction: column;
   }
 
+  .editions__questions > .editions__checkbox-wrap:nth-child(7){
+    padding-top: 0;
+  }
+
+  .editions__questions > .editions__checkbox-wrap:nth-child(11){
+    padding-top: 0;
+  }
+
   .editions__heading{
     width: 100%;
   }
 
   .editions__checkbox-wrap{
-    width: 290px;
+    width: 100%;
   }
 }
 
@@ -1437,33 +1449,61 @@
     padding-bottom: 2px;
   }
 
+  .header__top > .container {
+    padding-right: 16px;
+  }
+
   .header__mob-menu:before {
-    top: 0;
+    top: -2px;
+    width: 25px;
+  }
+
+  .header__top-nav > .header__mob-menu:before{
+    top: 0px;
+    width: 15px;
+  }
+
+  .header__top-nav > .header__mob-menu:after{
+    width: 15px;
   }
 
   .header__mob-menu span {
-    top: 6.2px;
+    top: 6px;
+    width: 17px;
   }
 
   .header__mob-menu:after {
-    top: 13px;
+    top: 14px;
+    width: 11px;
+  }
+
+  .header__top-nav > .header__mob-menu:after{
+    top: 0;
+  }
+
+  .header__top-item{
+    margin-bottom: 15px;
   }
 
   .header__link {
     top: 55%;
   }
 
-  .hero > .container{
-    padding-bottom: 45px;
-  }
-
-  .hero__text{
-    margin-bottom: 41px;
-    padding-left: 12px;
+  .header__link-enter{
+    font-size: 12px;
+    background-size: 10%;
+    background-position: 20% 54%;
   }
 
   .hero > .container{
     margin-bottom: -2px;
+    padding-bottom: 45px;
+    padding-left: 14px;
+  }
+
+  .hero__text{
+    margin-bottom: 41px;
+    padding-left: 5px;
   }
 
   .choices {
@@ -1609,6 +1649,8 @@
   }
 
   .editions__heading {
+    padding-top: 8px;
+    padding-bottom: 11px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     font-size: 16px;
@@ -1684,11 +1726,6 @@
     width: 1px;
     height: 100%;
     background-color: var(--hover);
-  }
-
-  .editions__heading{
-    padding-top: 8px;
-    padding-bottom: 11px;
   }
 
   .editions__heading::after{
