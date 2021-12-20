@@ -1767,9 +1767,17 @@
     padding-left: 0;
   }
 
-  .editions__nav{
+  /* .editions__nav{
     display: none;
+  } */
+
+  .editions__nav > .swiper-button-prev{
+    left: 0;
   }
+
+  .editions__nav > .swiper-pagination {
+    padding-left: 75px;
+}
 
   .editions__details{
     flex-direction: column;

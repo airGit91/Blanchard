@@ -1539,7 +1539,7 @@ img{
   margin: 0;
   margin-bottom: -1px;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 40.5px;
   padding-bottom: 40.5px;
   font-size: 24px;
 }
@@ -1797,7 +1797,7 @@ img{
 }
 
 .events__title{
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
