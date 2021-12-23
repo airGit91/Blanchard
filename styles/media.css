@@ -514,7 +514,7 @@
   }
 
   .contacts__yandex-map{
-    max-height: 487px;
+    max-height: 100%;
   }
 
   .contacts__link{
@@ -1001,8 +1001,9 @@
   }
 
   .contacts__yandex-map{
-    width: calc(500 / 1600 * 100% + ((100vw - 100%) / 2));
-    max-height: 700px;
+    /* width: calc(500 / 1600 * 100% + ((100vw - 100%) / 2)); */
+    width: 100%;
+    max-height: 100%;
   }
 
   .footer__list{
