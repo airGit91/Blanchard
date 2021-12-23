@@ -101,60 +101,16 @@ headerForm = () => {
 headerForm();
 $(window).resize(headerForm);
 
-  // $('.header__top-btn-open-form').click(() => {
-  //   $('.header__top-btn-open-form').hide();
-  //   $('.header__top-search').css('display', 'flex');
-  //   $('.header__picture').toggleClass('header__mob-off');
-  //   $('.header__mob-menu').toggleClass('header__mob-off');
-  //   $('.header__top-search-close').toggleClass('header__top-search-close-active');
-  // });
-
-  // $('.header__top-search').click(() => {
-  //   $('.header__top-btn-open-form').hide();
-  // });
-
-
-  // $(document).mouseup((e) => { // событие клика по веб-документу
-  //   let formBtn = $(".header__top-btn-open-form"); // тут указываем ID элемента
-  //   let formHead = $(".header__top-search");
-  //   if (!formBtn.is(e.target) // если клик был не по нашему блоку
-  //       && formBtn.has(e.target).length === 0) { // и не по его дочерним элементам
-  //         $('.header__top-btn-open-form').show();
-  //   }
-  //   if (!formHead.is(e.target)
-  //       && formHead.has(e.target).length === 0) {
-  //         $('.header__top-search').hide();
-  //   }
-  // });
-
-  // $('.header__top-search-close').click(function(){
-  //   $('.header__top-search').hide();
-  //   $('.header__picture').toggleClass('header__mob-off');
-  //   $('.header__mob-menu').toggleClass('header__mob-off');
-  //   $('.header__top-search-close').toggleClass('header__top-search-close-active');
-
-  // });
-
-  // $(document).mouseup(function (e){
-  //   let container = $(".header__active-search");
-
-  //   if (!container.is(e.target) && container.has(e.target).length === 0) {
-  //     $('.header__top-search').removeClass('header__active-search');
-  //     $('.header__top-btn-button').removeClass('header__top-btn-button_active');
-  //   } else {
-  //   }
-  // });
-
   function galeryChoicesMargin(){
     if(window.matchMedia('(max-width: 1023px)').matches){
       $('.choices__list').click(function(){
         $('.galery__swiper').css('margin-top', '30px');
       })
 
-      $(document).mouseup(function (e){ // событие клика по веб-документу
-        let div = $(".choices__list"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      $(document).mouseup(function (e){
+        let div = $(".choices__list");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
               $('.galery__swiper').css('margin-top', '0');
         }
       });
@@ -204,12 +160,7 @@ $(window).resize(headerForm);
     breakpoints: {
       320: {
         slidesPerView: 1,
-        // slidesPerGroup: 5,
         slidesPerColumn: 1,
-        // grid: {
-        //   rows: 1,
-        // },
-        // spaceBetween: 34,
       },
       441: {
         slidesPerView: 2,
@@ -474,7 +425,6 @@ $(window).resize(headerForm);
     },
 
     on: {
-      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
       beforeResize: function () {
         this.slides.forEach((el) => {
           el.style.marginTop = "";
@@ -509,9 +459,6 @@ $(window).resize(headerForm);
       },
       660:{
         slidesPerView: 2,
-        // grid: {
-        //   rows: 1,
-        // },
         spaceBetween: 34,
       },
       960:{
@@ -526,20 +473,8 @@ $(window).resize(headerForm);
         spaceBetween: 50,
       },
     },
-    //   1024:{
-    //     slidesPerView: 2,
-    //     slidesPerGroup: 6,
-    //     spaceBetween: 34,
-    //   },
-    //   1430:{
-    //     slidesPerView: 3,
-    //     slidesPerGroup: 3,
-    //     spaceBetween: 50,
-    //   },
-    // },
 
     on: {
-      /* исправляет баг с margin-top остающимся при смене брейкпоинта */
       beforeResize: function () {
         this.slides.forEach((el) => {
           el.style.marginTop = "";
@@ -603,8 +538,6 @@ $(window).resize(headerForm);
     ),
 
     myPlacemarkWithContent = new ymaps.Placemark([55.758135, 37.600401], {
-        //hintContent: 'Здесь живет искусство',
-        // balloonContent: 'Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур Сен Дени 54',
         iconContent: '',
     },
      {
