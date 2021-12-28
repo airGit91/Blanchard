@@ -15,7 +15,6 @@ $(document).ready(function () {
   function setMenuListener() {
     document.body.addEventListener("click", (evt) => {
       const activeElements = document.querySelectorAll(`.${params.activeClassName}`);
-
       if (activeElements.length && !evt.target.closest(`.${params.activeClassName}`)) {
         activeElements.forEach((current) => {
           if (current.classList.contains(params.btnClassName)) {
@@ -30,9 +29,7 @@ $(document).ready(function () {
         const btn = evt.target.closest(`.${params.btnClassName}`);
         const path = btn.dataset.path;
         const drop = document.querySelector(`[data-target="${path}"]`);
-
         btn.classList.toggle(params.activeClassName);
-
         if (!drop.classList.contains(params.activeClassName)) {
           drop.classList.add(params.activeClassName);
           drop.addEventListener("animationend", onDisable);
@@ -42,7 +39,6 @@ $(document).ready(function () {
       }
     });
   }
-
   setMenuListener();
 
   $('.header__mob-menu').click(function() {
@@ -54,7 +50,6 @@ $(document).ready(function () {
 
 headerForm = () => {
   const $openBtn = $('.header__top-btn-open-form');
-
   if(window.matchMedia('(max-width: 1430px)').matches){
     $('.header__top-btn-open-form').click(() => {
       $openBtn.hide();
@@ -64,23 +59,6 @@ headerForm = () => {
       $('.header__top-search-close').toggleClass('header__top-search-close-active');
     });
 
-    // $('.header__top-search').click(() => {
-    //   $('.header__top-btn-open-form').hide();
-    // });
-
-    // $(document).mouseup((e) => { // событие клика по веб-документу
-    //   let formBtn = $(".header__top-btn-open-form"); // тут указываем ID элемента
-    //   let formHead = $(".header__top-search");
-    //   if (!formBtn.is(e.target) // если клик был не по нашему блоку
-    //       && formBtn.has(e.target).length === 0) { // и не по его дочерним элементам
-    //         $('.header__top-btn-open-form').show();
-    //   }
-    //   if (!formHead.is(e.target)
-    //       && formHead.has(e.target).length === 0) {
-    //         $('.header__top-search').hide();
-    //   }
-    // });
-
     $('.header__top-search-close').click(function(){
       $('.header__top-search').hide();
       $('.header__picture').toggleClass('header__mob-off');
@@ -88,10 +66,8 @@ headerForm = () => {
       $('.header__top-search-close').toggleClass('header__top-search-close-active');
       $openBtn.show()
     });
-
     $(document).mouseup(function (e){
     let container = $(".header__active-search");
-
     if (!container.is(e.target) && container.has(e.target).length === 0) {
         $('.header__top-search').removeClass('header__active-search');
         $('.header__top-btn-button').removeClass('header__top-btn-button_active');
@@ -102,7 +78,6 @@ headerForm = () => {
 
 headerForm();
 $(window).resize(headerForm);
-
   function galeryChoicesMargin(){
     if(window.matchMedia('(max-width: 1023px)').matches){
       $('.choices__list').click(function(){
@@ -116,14 +91,12 @@ $(window).resize(headerForm);
               $('.galery__swiper').css('margin-top', '0');
         }
       });
-
     }else{
       $('.galery__swiper').css('margin-top', '0');
     }
   }
   galeryChoicesMargin();
   $(window).resize(galeryChoicesMargin);
-
 
   let heroSwiper = new Swiper('.hero__swiper', {
     effect: 'fade',
@@ -134,7 +107,6 @@ $(window).resize(headerForm);
   });
 
   const element = document.querySelector('select');
-
   const choices = new Choices(element, {
       searchEnabled: false,
       itemSelectText: '',
@@ -158,7 +130,6 @@ $(window).resize(headerForm);
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
-
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -173,7 +144,6 @@ $(window).resize(headerForm);
         },
         spaceBetween: 34,
       },
-
       1200: {
         slidesPerView: 3,
         slidesPerGroup: 5,
@@ -184,7 +154,6 @@ $(window).resize(headerForm);
         spaceBetween: 50,
       }
     },
-
     a11y: false
   });
 
@@ -280,7 +249,6 @@ $(window).resize(headerForm);
       };
     })
     tabsBtn.parentElement.classList.add('catalog__item-lang_active');
-
     })
   })
 
@@ -341,7 +309,6 @@ $(window).resize(headerForm);
             el.removeAttribute("role");
             el.removeAttribute("aria-label");
           });
-
           this.pagination.el.remove();
         }
       }
@@ -487,7 +454,6 @@ $(window).resize(headerForm);
 
   let selector = document.querySelector("input[type='tel']");
   let im = new Inputmask("+7 (999)-999-99-99");
-
   im.mask(selector);
 
   new JustValidate('.contacts__form', {
@@ -515,7 +481,6 @@ $(window).resize(headerForm);
       },
      },
   });
-
 
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
@@ -551,7 +516,6 @@ $(window).resize(headerForm);
         iconContentLayout: MyIconContentLayout,
     });
 
-
     myMap.geoObjects.add(myPlacemarkWithContent);
   });
 
@@ -562,5 +526,4 @@ $(window).resize(headerForm);
         this.classList.toggle('is-active');
     });
 })();
-
 });
