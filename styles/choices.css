@@ -277,6 +277,7 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   will-change: scroll-position;
+  background-color: #131313;
 }
 
 .choices__list--dropdown .choices__item {
@@ -284,6 +285,7 @@
   padding: 3px 15px 4px 15px;
   font-size: 16px;
   border-bottom: 1px solid var(--white);
+  background-color: #131313;
 }
 
 .choices__list--dropdown .choices__item:last-child{

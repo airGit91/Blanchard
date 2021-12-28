@@ -859,6 +859,8 @@ img{
 }
 
 .galery__content{
+  position: relative;
+  z-index: 5;
   width: calc(400 / 1600 * 100%);
 }
 
@@ -912,6 +914,7 @@ img{
 
 .galery__swiper-nav{
   position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
@@ -1655,7 +1658,7 @@ img{
 .catalog__accordion-description{
   column-count: 3;
   max-height: 338px;
-  max-width: 738px;
+  /* max-width: 738px; */
   padding-top: 40px;
   padding-bottom: 40px;
   border: none;
@@ -1689,6 +1692,7 @@ img{
   font-size: 16px;
   line-height: 32px;
   color: var(--dark-gray);
+  text-align: left;
   z-index: 2;
 }
 
@@ -1696,10 +1700,10 @@ img{
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
+  top: 0;
   z-index: -1;
   width: calc(100% + 6px);
-  height: calc(100% + 6px);
+  height: 100%;
   background-color: var(--purple);
   transform: scaleX(0);
   transition-duration: .3s;
